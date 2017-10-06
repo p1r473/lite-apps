@@ -38,20 +38,19 @@ public class AppManifestWriter {
     manifest.versions = new ArrayList<>();
     AppVersion version = new AppVersion()
         .track("production")
-        .versionCode(100000)
+        .versionCode(100102)
         .os("android")
-        .versionName("10.0.0")
-        .released(new SchemaDate(2017, 8, 18))
+        .versionName("10.1.2")
+        .released(new SchemaDate(2017, 9, 19))
         .minSdkVersion(19);
 
     version.features = new ArrayList<>();
-    version.features.add("<b>Android O</b>: The version has no name, but new features are coming. Hermit is ready for Android O!");
-    version.features.add("<b>Notification Channels</b>: Control every aspect of Lite App notifications through Android O’s centralized notification manager.");
-    version.features.add("<b>Phishing and Malware Protection</b>: If any malware sites manage to get through Hermit’s Ad & Malware Blocker, then they will be automatically flagged by Google’s Malware Blocker");
-    version.features.add("<b>Incognito Keyboard</b>: Any URLs or queries you type will be marked as private by your keyboard. Form data won’t be saved either.");
-    version.features.add("Halo! Ciao! Now in Indonesian and Italian too.");
-    version.features.add("<b>Cleaner Reader View</b>: Large images at the top, cleaner text formatting makes it easier to read.");
-    version.features.add("<b>Alphabetical Sorting</b> for Lite Apps.");
+    version.features.add("This upgrade contains important fixes for many recent issues.");
+    version.features.add("Google acknowledged that Notification Channels on Oreo cause phone reboots, so we are temporarily removing Notification Channels until the next Android Oreo system update. https://issuetracker.google.com/issues/65650999");
+    version.features.add("Lite App customizations are now correctly saved.");
+    version.features.add("AMP Cache was broken by Google; this version does not use it any more.");
+    version.features.add("Night Mode has been temporarily disabled for main app, but still available in Lite Apps, until we can reliably fix an issue on Android Oreo.");
+    version.features.add("Added French translation!");
     version.features.add("See the full list at https://hermit.chimbori.com/changes");
     manifest.versions.add(version);
 
