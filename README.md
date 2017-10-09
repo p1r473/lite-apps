@@ -20,16 +20,18 @@ Please see the [step by step instructions](CONTRIBUTING.md) and an overview of t
 Hermit Lite Apps are zip files, with the extension `.hermit`. Each zip file contains multiple files that define the Lite App, how it should be installed, and default settings to be used. Only two files are required, all others are optional.
 
 - `manifest.json` : The basic metadata about a Lite App is contained in a `manifest.json` file. This follows the [W3C Web App Manifest](https://www.w3.org/TR/appmanifest/) format with additional vendor-specific fields for Hermit that are not yet a part of the W3C standard.
-- `icon.png` : This file can be named anything, as long as the same name is used in the `manifest.json` in the `icons` field. Ensure that icons are large enough (typically at least 192×192px; larger is fine too). Only one icon is required and only the first entry in the `icons` array is currently used by Hermit; all others are ignored.
+
+- `icons/favicon.png`: The icon to be used for this site when importing the Lite App. Ensure that icons are large enough (our automated tests require that the size be exactly 300×300px).
 
 All Hermit Lite Apps fully support localization, but it’s optional. So if you’re a German publication or Chinese site and only want to include one language in your Lite App definition, that’s completely fine. If included, localized strings must follow a specific directory structure (same as what Chrome extensions use.)
 
 ## Directory Structure
 
     Lite App.hermit
-    - manifest.json  (required)
-    - icon.png       (required)
-    + _locales/      (optional)
+    - manifest.json    (required)
+    + icons
+      - favicon.png    (required)
+    + _locales/
       + en/
         - messages.json
       + es/
@@ -49,11 +51,7 @@ All Hermit Lite Apps fully support localization, but it’s optional. So if you�
       "start_url": "https://example.com",
       "theme_color": "#ff0000",
       "secondary_color": "#00ff00",
-      "icons": [
-        {
-          "src": "icon.png"
-        }
-      ],
+      "icon": "favicon.png",
       "hermit_settings": {
         "block_malware":  true | false,
         "do_not_track":  true | false,
@@ -109,14 +107,14 @@ All Hermit Lite Apps fully support localization, but it’s optional. So if you�
 
 ### Required Fields
 
-- `manifest_version`: Integer, must be `1`. Only one manifest version is currently supported; this field is reserved for future use.
+- `manifest_version`: Integer, must be `2` (the current version). Lite Apps may require Hermit to be upgraded if it is too old to support an older version of the manifest.
 - `lang`: The default language to use, in case there are no localized strings available. Ensure that strings for this language are available under the `_locales` directory.
 - `name`: The name of the Lite App, shown on the home screen & at the top of the app.
 - `manifest_url`: The URL where this Lite App Manifest will be hosted. Typically, this should be `https://hermit.chimbori.com/lite-apps/YOUR_APP_NAME.hermit`. This must be explicitly specified for every Lite App, although it is not present when you create your own Lite App in Hermit and export it.
 - `start_url`: The URL for the home page of the Lite App.
 - `theme_color`: A hex-formatted color used as the theme color for the app.
 - `secondary_color`: A hex-formatted color used for the navigation bar and in other places in the app.
-- `icons`: Hermit currently only uses the first icon specified in this array.
+- `icon`: The default is `favicon.png`. When users set custom icons or monograms, the exported `manifest.json` contains the filename of the icon chosen by the user.
 
 ### Optional Fields
 
