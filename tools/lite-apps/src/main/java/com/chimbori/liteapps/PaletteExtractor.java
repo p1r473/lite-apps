@@ -33,7 +33,7 @@ public class PaletteExtractor {
       Manifest manifest = gson.fromJson(new FileReader(manifestJsonFile), Manifest.class);
 
       if (manifest.themeColor.equals("#") || manifest.secondaryColor.equals("#")) {
-        System.err.println("manifest: " + manifest.name);
+        System.out.println("manifest: " + manifest.name);
 
         File iconsDirectory = new File(liteAppDirectory, FilePaths.ICONS_DIR_NAME);
         iconsDirectory.mkdirs();
