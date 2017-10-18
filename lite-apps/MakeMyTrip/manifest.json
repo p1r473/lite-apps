@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "MakeMyTrip",
+  "start_url": "https://makemytrip.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/MakeMyTrip.hermit",
+  "theme_color": "#ce381e",
+  "secondary_color": "#b9321b",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "India",
+    "Travel"
+  ]
+}

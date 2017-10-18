@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Naukri",
+  "start_url": "https://naukri.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Naukri.hermit",
+  "theme_color": "#0c77c0",
+  "secondary_color": "#0a6bac",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "India"
+  ]
+}

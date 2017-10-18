@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "SnapDeal",
+  "start_url": "https://snapdeal.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/SnapDeal.hermit",
+  "theme_color": "#ff2341",
+  "secondary_color": "#e51f3a",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "India",
+    "Shopping"
+  ]
+}

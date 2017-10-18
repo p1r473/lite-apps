@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "CricInfo",
+  "start_url": "https://cricinfo.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/CricInfo.hermit",
+  "theme_color": "#00a9f4",
+  "secondary_color": "#0098db",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "India",
+    "Sports"
+  ]
+}

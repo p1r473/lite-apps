@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "PepperFry",
+  "start_url": "https://pepperfry.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/PepperFry.hermit",
+  "theme_color": "#ea983a",
+  "secondary_color": "#d28834",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "India",
+    "Shopping"
+  ]
+}

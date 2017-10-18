@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "JustDial",
+  "start_url": "https://justdial.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/JustDial.hermit",
+  "theme_color": "#bcd9ed",
+  "secondary_color": "#a9c3d5",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "India",
+    "Search",
+    "Food and Cuisine",
+    "Shopping"
+  ]
+}

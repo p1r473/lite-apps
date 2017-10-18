@@ -208,6 +208,11 @@
           "url": "https://duckduckgo.com"
         },
         {
+          "theme_color": "#bcd9ed",
+          "name": "JustDial",
+          "url": "https://justdial.com"
+        },
+        {
           "theme_color": "#e9effa",
           "name": "StartPage",
           "url": "https://www.startpage.com/"
@@ -280,6 +285,11 @@
           "url": "https://www.axios.com"
         },
         {
+          "theme_color": "#f58220",
+          "name": "Bhaskar",
+          "url": "https://bhaskar.com"
+        },
+        {
           "theme_color": "#2800d7",
           "name": "Bloomberg",
           "url": "https://bloomberg.com"
@@ -348,6 +358,11 @@
           "theme_color": "#4372b8",
           "name": "NBC",
           "url": "http://www.nbcnews.com/"
+        },
+        {
+          "theme_color": "#4d0001",
+          "name": "NDTV",
+          "url": "https://www.ndtv.com"
         },
         {
           "theme_color": "#2851a0",
@@ -499,6 +514,11 @@
           "url": "https://news.ycombinator.com"
         },
         {
+          "theme_color": "#005aab",
+          "name": "Jio",
+          "url": "https://jio.com"
+        },
+        {
           "theme_color": "#da552f",
           "name": "Product Hunt",
           "url": "https://producthunt.com"
@@ -646,6 +666,26 @@
           "theme_color": "#004278",
           "name": "Citibank",
           "url": "https://online.citi.com"
+        },
+        {
+          "theme_color": "#ee7873",
+          "name": "HDFC Bank",
+          "url": "https://hdfcbank.com"
+        },
+        {
+          "theme_color": "#9c2e23",
+          "name": "ICICI Bank",
+          "url": "https://icicibank.com"
+        },
+        {
+          "theme_color": "#54a732",
+          "name": "MoneyControl",
+          "url": "https://moneycontrol.com"
+        },
+        {
+          "theme_color": "#2b74ba",
+          "name": "Online SBI",
+          "url": "https://onlinesbi.com"
         },
         {
           "theme_color": "#009cde",
@@ -807,14 +847,49 @@
           "url": "https://groupon.com"
         },
         {
+          "theme_color": "#f7931d",
+          "name": "Jabong",
+          "url": "https://www.jabong.com"
+        },
+        {
+          "theme_color": "#bcd9ed",
+          "name": "JustDial",
+          "url": "https://justdial.com"
+        },
+        {
+          "theme_color": "#b92156",
+          "name": "Myntra",
+          "url": "https://myntra.com"
+        },
+        {
+          "theme_color": "#ea983a",
+          "name": "PepperFry",
+          "url": "https://pepperfry.com"
+        },
+        {
+          "theme_color": "#0faa13",
+          "name": "Quikr",
+          "url": "https://quikr.com"
+        },
+        {
           "theme_color": "#783a8e",
           "name": "Retail Me Not",
           "url": "https://m.retailmenot.com"
         },
         {
+          "theme_color": "#38b2bb",
+          "name": "ShopClues",
+          "url": "https://shopclues.com"
+        },
+        {
           "theme_color": "#0094d1",
           "name": "SlickDeals",
           "url": "https://slickdeals.net"
+        },
+        {
+          "theme_color": "#ff2341",
+          "name": "SnapDeal",
+          "url": "https://snapdeal.com"
         },
         {
           "theme_color": "#cc0000",
@@ -884,9 +959,24 @@
           "url": "https://www.fuelly.com/"
         },
         {
+          "theme_color": "#bad9b7",
+          "name": "Incredible India",
+          "url": "https://incredibleindia.org"
+        },
+        {
+          "theme_color": "#3c9ccf",
+          "name": "IRCTC",
+          "url": "https://irctc.co.in"
+        },
+        {
           "theme_color": "#fc903b",
           "name": "Kayak",
           "url": "https://kayak.com"
+        },
+        {
+          "theme_color": "#ce381e",
+          "name": "MakeMyTrip",
+          "url": "https://makemytrip.com"
         },
         {
           "theme_color": "#00b1ff",
@@ -902,6 +992,11 @@
           "theme_color": "#000099",
           "name": "United Airlines",
           "url": "https://mobile.united.com"
+        },
+        {
+          "theme_color": "#ea2330",
+          "name": "Yatra",
+          "url": "https://yatra.com"
         }
       ]
     },
@@ -976,6 +1071,11 @@
           "theme_color": "#ff7e1a",
           "name": "All Recipes",
           "url": "https://allrecipes.com"
+        },
+        {
+          "theme_color": "#bcd9ed",
+          "name": "JustDial",
+          "url": "https://justdial.com"
         },
         {
           "theme_color": "#c9101d",
@@ -1063,6 +1163,16 @@
         "name": "Sports"
       },
       "apps": [
+        {
+          "theme_color": "#bdceda",
+          "name": "CricBuzz",
+          "url": "https://cricbuzz.com"
+        },
+        {
+          "theme_color": "#00a9f4",
+          "name": "CricInfo",
+          "url": "https://cricinfo.com"
+        },
         {
           "theme_color": "#ee1533",
           "name": "ESPN",
@@ -1365,9 +1475,94 @@
           "url": "https://zomato.com"
         },
         {
+          "theme_color": "#e81f1a",
+          "name": "AirTel",
+          "url": "https://airtel.in"
+        },
+        {
+          "theme_color": "#f58220",
+          "name": "Bhaskar",
+          "url": "https://bhaskar.com"
+        },
+        {
+          "theme_color": "#bdceda",
+          "name": "CricBuzz",
+          "url": "https://cricbuzz.com"
+        },
+        {
+          "theme_color": "#00a9f4",
+          "name": "CricInfo",
+          "url": "https://cricinfo.com"
+        },
+        {
+          "theme_color": "#ee7873",
+          "name": "HDFC Bank",
+          "url": "https://hdfcbank.com"
+        },
+        {
           "theme_color": "#6f6f00",
           "name": "Hotstar",
           "url": "http://hotstar.com"
+        },
+        {
+          "theme_color": "#9c2e23",
+          "name": "ICICI Bank",
+          "url": "https://icicibank.com"
+        },
+        {
+          "theme_color": "#bad9b7",
+          "name": "Incredible India",
+          "url": "https://incredibleindia.org"
+        },
+        {
+          "theme_color": "#3c9ccf",
+          "name": "IRCTC",
+          "url": "https://irctc.co.in"
+        },
+        {
+          "theme_color": "#f7931d",
+          "name": "Jabong",
+          "url": "https://www.jabong.com"
+        },
+        {
+          "theme_color": "#005aab",
+          "name": "Jio",
+          "url": "https://jio.com"
+        },
+        {
+          "theme_color": "#bcd9ed",
+          "name": "JustDial",
+          "url": "https://justdial.com"
+        },
+        {
+          "theme_color": "#ce381e",
+          "name": "MakeMyTrip",
+          "url": "https://makemytrip.com"
+        },
+        {
+          "theme_color": "#54a732",
+          "name": "MoneyControl",
+          "url": "https://moneycontrol.com"
+        },
+        {
+          "theme_color": "#b92156",
+          "name": "Myntra",
+          "url": "https://myntra.com"
+        },
+        {
+          "theme_color": "#0c77c0",
+          "name": "Naukri",
+          "url": "https://naukri.com"
+        },
+        {
+          "theme_color": "#4d0001",
+          "name": "NDTV",
+          "url": "https://www.ndtv.com"
+        },
+        {
+          "theme_color": "#2b74ba",
+          "name": "Online SBI",
+          "url": "https://onlinesbi.com"
         },
         {
           "theme_color": "#012b72",
@@ -1375,9 +1570,34 @@
           "url": "https://paytm.com"
         },
         {
+          "theme_color": "#ea983a",
+          "name": "PepperFry",
+          "url": "https://pepperfry.com"
+        },
+        {
+          "theme_color": "#0faa13",
+          "name": "Quikr",
+          "url": "https://quikr.com"
+        },
+        {
+          "theme_color": "#38b2bb",
+          "name": "ShopClues",
+          "url": "https://shopclues.com"
+        },
+        {
+          "theme_color": "#ff2341",
+          "name": "SnapDeal",
+          "url": "https://snapdeal.com"
+        },
+        {
           "theme_color": "#0e5ba8",
           "name": "The Hindu",
           "url": "http://www.thehindu.com"
+        },
+        {
+          "theme_color": "#ea2330",
+          "name": "Yatra",
+          "url": "https://yatra.com"
         }
       ]
     },
