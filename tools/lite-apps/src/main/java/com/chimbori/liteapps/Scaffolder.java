@@ -20,6 +20,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.file.Files;
@@ -75,7 +76,7 @@ class Scaffolder {
 
       // Empty fields that must be manually populated.
       manifest.priority = 10;
-      manifest.tags = new ArrayList<>(Arrays.asList(new String[]{"TODO"} ));
+      manifest.tags = new ArrayList<>(Arrays.asList(new String[]{"TODO"}));
     }
 
     // TODO: Fetch favicon or apple-touch-icon.
@@ -87,12 +88,19 @@ class Scaffolder {
 
     if (!iconFile.exists() && manifest.icon != null && !manifest.icon.isEmpty()) {
       Log.i("Fetching icon from %s…", manifest.icon);
-      URL iconUrl = new URL(remoteIconUrl);
-      try (InputStream inputStream = iconUrl.openStream()) {
-        Files.copy(inputStream, iconFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-      } catch (IOException e) {
+      URL iconUrl = null;
+      try {
+        iconUrl = new URL(remoteIconUrl);
+      } catch (MalformedURLException e) {
         e.printStackTrace();
-        // But still continue with the rest of the manifest generation.
+      }
+      if (iconUrl != null) {
+        try (InputStream inputStream = iconUrl.openStream()) {
+          Files.copy(inputStream, iconFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        } catch (IOException e) {
+          e.printStackTrace();
+          // But still continue with the rest of the manifest generation.
+        }
       }
     }
 
