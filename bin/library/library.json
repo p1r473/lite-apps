@@ -179,6 +179,11 @@
           "theme_color": "#3bd443",
           "name": "Imgur",
           "url": "https://imgur.com"
+        },
+        {
+          "theme_color": "#000000",
+          "name": "Unsplash",
+          "url": "https://unsplash.com"
         }
       ]
     },
