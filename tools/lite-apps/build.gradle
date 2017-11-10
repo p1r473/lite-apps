@@ -1,12 +1,23 @@
 apply plugin: 'application'
 
 // Support running the Scaffolder from the command line, with arguments.
-// ./gradlew run -Pargs="--url https://example.com --name Example"
-mainClassName = "com.chimbori.liteapps.Scaffolder"
-run {
+// ./gradlew scaffold -Pargs="--url https://example.com --name Example"
+task(scaffold, dependsOn: jar, type: JavaExec) {
+  main = 'com.chimbori.liteapps.Scaffolder'
+  classpath = sourceSets.main.runtimeClasspath
   if (project.hasProperty('args')) {
     args project.args.split('\\s+')
   }
+}
+
+task(extractPalette, dependsOn: jar, type: JavaExec) {
+  main = 'com.chimbori.liteapps.PaletteExtractor'
+  classpath = sourceSets.main.runtimeClasspath
+}
+
+task(generateLibrary, dependsOn: jar, type: JavaExec) {
+  main = 'com.chimbori.liteapps.LibraryGenerator'
+  classpath = sourceSets.main.runtimeClasspath
 }
 
 dependencies {

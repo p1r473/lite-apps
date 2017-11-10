@@ -29,7 +29,7 @@ public class FileUtils {
   static {
     try {
       PROJECT_ROOT = new File(new File(
-          ClassLoader.getSystemResource(".").toURI()), "../../../../../").getCanonicalFile();
+          ClassLoader.getSystemResource(".").toURI()), "../../../../../../").getCanonicalFile();
     } catch (URISyntaxException | IOException e) {
       e.printStackTrace();
     }
