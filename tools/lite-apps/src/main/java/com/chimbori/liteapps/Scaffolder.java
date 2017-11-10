@@ -138,12 +138,12 @@ class Scaffolder {
   public static void main(String[] arguments) {
     CommandLineParser parser = new DefaultParser();
     Options options = new Options()
-        .addOption(Option.builder("u").required(true).hasArg(true)
+        .addOption(Option.builder().required(true).hasArg(true)
             .longOpt(COMMAND_LINE_OPTION_URL)
             .argName("https://example.com")
             .desc("URL to create a Lite App for")
             .build())
-        .addOption(Option.builder("t").required(true).hasArg(true)
+        .addOption(Option.builder().required(true).hasArg(true)
             .longOpt(COMMAND_LINE_OPTION_NAME)
             .argName("Example")
             .desc("Name of Lite App")

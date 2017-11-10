@@ -26,10 +26,10 @@ This repository contains not only the manifests for the individual Lite App defi
 
 # Step by Step
 
-1. Run the Scaffolder for the site `https://example.com/` with title `Example`. To include spaces in the title of the app, type an underscore instead of a space. E.g. `New_York_Times` instead of `New York Times`.
+1. Run the Scaffolder for the site `https://example.com/` with name `Example`. To include spaces in the name of the app, type an underscore instead of a space. E.g. `New_York_Times` instead of `New York Times`.
 
     ```
-    ./gradlew run -Pargs="--url https://example.com/ --title Example"
+    ./gradlew run -Pargs="--url https://example.com --name Example"
     ```
 
 1. Manually inspect the generated `manifest.json`, modify any fields as required. [See the full syntax](README.md).
@@ -52,6 +52,6 @@ This repository contains not only the manifests for the individual Lite App defi
 
 1. `git commit`, `git push`, etc.
 
-1. Send a pull request, with the Title and URL of the new Lite App in the commit message.
+1. Send a pull request, with the Name and URL of the new Lite App in the commit message.
 
 1. Submit a separate pull request for each new Lite App.
