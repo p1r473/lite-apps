@@ -29,12 +29,12 @@ This repository contains not only the manifests for the individual Lite App defi
 1. Run the Scaffolder for the site `https://example.com/` with name `Example`. To include spaces in the name of the app, type an underscore instead of a space. E.g. `New_York_Times` instead of `New York Times`.
 
     ```
-    ./gradlew run -Pargs="--url https://example.com --name Example"
+    ./gradlew scaffold -Pargs="--url https://example.com --name Example"
     ```
 
 1. Manually inspect the generated `manifest.json`, modify any fields as required. [See the full syntax](README.md).
 
-1. Check if `icon.png` is the appropriate size: should be 300×300.
+1. Check if `favicon.png` is the appropriate size: should be 300×300.
 
 1. If an icon could not be automatically downloaded, or is not high quality, locate an alternate high quality icon. Here is a sample query for obtaining a 300×300 icon from a specific sample domain:
 
@@ -42,11 +42,17 @@ This repository contains not only the manifests for the individual Lite App defi
     https://www.google.com/search?q=example+site:play.google.com&espv=2&tbm=isch&source=lnt&tbs=isz:ex,iszw:300,iszh:300
     ```
 
+1. Extract the theme colors automatically:
+
+    ```
+    ./gradlew extractPalette
+    ```
+
 1. Run all the tests:
 
-  ```
-  ./gradlew check --info
-  ```
+    ```
+    ./gradlew clean && ./gradlew check --info
+    ```
 
 1. As a side effect of running the tests, your JSON files will be auto-formatted, and a new `*.hermit` file will be generated. This generated file must be included in your commit.
 
