@@ -1169,6 +1169,11 @@
       },
       "apps": [
         {
+          "theme_color": "#000000",
+          "name": "Bleacher Report",
+          "url": "https://bleacherreport.com"
+        },
+        {
           "theme_color": "#bdceda",
           "name": "CricBuzz",
           "url": "https://cricbuzz.com"
