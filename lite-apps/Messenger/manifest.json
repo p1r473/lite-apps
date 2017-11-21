@@ -15,7 +15,7 @@
     {
       "name": "Messenger",
       "url": "https://mbasic.facebook.com/messages",
-      "selector": ".e.bi",
+      "selector": ".bs",
       "icon": "facebook"
     }
   ],
