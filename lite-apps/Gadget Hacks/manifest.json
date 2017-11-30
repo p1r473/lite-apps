@@ -10,7 +10,7 @@
   "hermit_feeds": [
     {
       "url": "https://www.gadgethacks.com/rss.xml",
-      "name": "Gadget Hacks RSS Feed"
+      "name": "Gadget Hacks"
     }
   ],
   "priority": 10,

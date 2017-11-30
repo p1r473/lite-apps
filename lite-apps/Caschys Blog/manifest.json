@@ -15,12 +15,8 @@
   ],
   "hermit_feeds": [
     {
-      "url": "http://stadt-bremerhaven.de/feed/",
-      "name": "RSS 2.0"
-    },
-    {
       "url": "http://stadt-bremerhaven.de/feed/atom/",
-      "name": "Atom 0.3"
+      "name": "Caschys Blog"
     }
   ],
   "priority": 10,

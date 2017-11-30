@@ -10,11 +10,7 @@
   "hermit_feeds": [
     {
       "url": "http://www.lunarbaboon.com/comics/atom.xml",
-      "name": "ATOM"
-    },
-    {
-      "url": "http://www.lunarbaboon.com/comics/rss.xml",
-      "name": "RSS"
+      "name": "Lunar Baboon"
     }
   ],
   "priority": 10,
