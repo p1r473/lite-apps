@@ -524,6 +524,11 @@
           "url": "https://jio.com"
         },
         {
+          "theme_color": "#1565c0",
+          "name": "Malware Tips",
+          "url": "https://malwaretips.com"
+        },
+        {
           "theme_color": "#da552f",
           "name": "Product Hunt",
           "url": "https://producthunt.com"
