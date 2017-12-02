@@ -7,6 +7,21 @@
       "name": "Social"
     },
     {
+      "name": "News"
+    },
+    {
+      "name": "Technology"
+    },
+    {
+      "name": "Shopping"
+    },
+    {
+      "name": "Travel"
+    },
+    {
+      "name": "Movies and TV"
+    },
+    {
       "name": "Communication"
     },
     {
@@ -16,28 +31,13 @@
       "name": "Search"
     },
     {
-      "name": "News"
-    },
-    {
       "name": "Weather"
-    },
-    {
-      "name": "Technology"
-    },
-    {
-      "name": "Movies and TV"
     },
     {
       "name": "Banking & Financial"
     },
     {
       "name": "Tools & Productivity"
-    },
-    {
-      "name": "Shopping"
-    },
-    {
-      "name": "Travel"
     },
     {
       "name": "Education"

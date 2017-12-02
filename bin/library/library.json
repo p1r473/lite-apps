@@ -118,126 +118,13 @@
     },
     {
       "category": {
-        "name": "Communication"
-      },
-      "apps": [
-        {
-          "theme_color": "#0086ff",
-          "name": "Messenger",
-          "url": "https://mobile.facebook.com/messages",
-          "user_agent": "desktop"
-        },
-        {
-          "theme_color": "#019ed8",
-          "name": "Skype",
-          "url": "https://web.skype.com",
-          "user_agent": "desktop"
-        },
-        {
-          "theme_color": "#73cddc",
-          "name": "Slack",
-          "url": "https://slack.com"
-        },
-        {
-          "theme_color": "#2196f3",
-          "name": "TeamViewer Chat",
-          "url": "https://integratedchat.teamviewer.com/"
-        },
-        {
-          "theme_color": "#1f95d4",
-          "name": "Telegram",
-          "url": "https://web.telegram.org"
-        }
-      ]
-    },
-    {
-      "category": {
-        "name": "Art and Photography"
-      },
-      "apps": [
-        {
-          "theme_color": "#253938",
-          "name": "Instagram",
-          "url": "https://instagram.com"
-        },
-        {
-          "theme_color": "#06cc47",
-          "name": "Deviant Art",
-          "url": "https://deviantart.com"
-        },
-        {
-          "theme_color": "#0d64d2",
-          "name": "Flickr",
-          "url": "https://flickr.com"
-        },
-        {
-          "theme_color": "#fe6666",
-          "name": "Giphy",
-          "url": "https://giphy.com"
-        },
-        {
-          "theme_color": "#3bd443",
-          "name": "Imgur",
-          "url": "https://imgur.com"
-        },
-        {
-          "theme_color": "#000000",
-          "name": "Unsplash",
-          "url": "https://unsplash.com"
-        }
-      ]
-    },
-    {
-      "category": {
-        "name": "Search"
-      },
-      "apps": [
-        {
-          "theme_color": "#4485a7",
-          "name": "Google",
-          "url": "https://www.google.com"
-        },
-        {
-          "theme_color": "#b3c9ff",
-          "name": "Baidu",
-          "url": "https://baidu.com"
-        },
-        {
-          "theme_color": "#008485",
-          "name": "Bing",
-          "url": "https://www.bing.com"
-        },
-        {
-          "theme_color": "#e0572a",
-          "name": "DuckDuckGo",
-          "url": "https://duckduckgo.com"
-        },
-        {
-          "theme_color": "#bcd9ed",
-          "name": "JustDial",
-          "url": "https://justdial.com"
-        },
-        {
-          "theme_color": "#e9effa",
-          "name": "StartPage",
-          "url": "https://www.startpage.com/"
-        },
-        {
-          "theme_color": "#ff0000",
-          "name": "Yandex",
-          "url": "https://yandex.ru"
-        }
-      ]
-    },
-    {
-      "category": {
         "name": "News"
       },
       "apps": [
         {
-          "theme_color": "#005689",
-          "name": "The Guardian",
-          "url": "https://theguardian.com"
+          "theme_color": "#cc0000",
+          "name": "CNN",
+          "url": "http://cnn.com"
         },
         {
           "theme_color": "#bd160d",
@@ -250,9 +137,14 @@
           "url": "http://mobile.nytimes.com"
         },
         {
-          "theme_color": "#000000",
-          "name": "Wall St. Journal",
-          "url": "https://mobile.wsj.com"
+          "theme_color": "#ffa74e",
+          "name": "Reuters",
+          "url": "http://www.reuters.com/"
+        },
+        {
+          "theme_color": "#005689",
+          "name": "The Guardian",
+          "url": "https://theguardian.com"
         },
         {
           "theme_color": "#001212",
@@ -298,11 +190,6 @@
           "theme_color": "#2800d7",
           "name": "Bloomberg",
           "url": "https://bloomberg.com"
-        },
-        {
-          "theme_color": "#cc0000",
-          "name": "CNN",
-          "url": "http://cnn.com"
         },
         {
           "theme_color": "#6490b4",
@@ -375,11 +262,6 @@
           "url": "http://npr.org"
         },
         {
-          "theme_color": "#ffa74e",
-          "name": "Reuters",
-          "url": "http://www.reuters.com/"
-        },
-        {
           "theme_color": "#760c3f",
           "name": "Slate",
           "url": "http://slate.com"
@@ -415,26 +297,14 @@
           "url": "https://www.vibbo.com"
         },
         {
+          "theme_color": "#000000",
+          "name": "Wall St. Journal",
+          "url": "https://mobile.wsj.com"
+        },
+        {
           "theme_color": "#3d0092",
           "name": "Yahoo! Finance",
           "url": "https://finance.yahoo.com"
-        }
-      ]
-    },
-    {
-      "category": {
-        "name": "Weather"
-      },
-      "apps": [
-        {
-          "theme_color": "#f05714",
-          "name": "AccuWeather",
-          "url": "https://m.accuweather.com"
-        },
-        {
-          "theme_color": "#3b438f",
-          "name": "Forecast.io",
-          "url": "https://forecast.io"
         }
       ]
     },
@@ -572,242 +442,6 @@
           "theme_color": "#ff8600",
           "name": "XDA Developers",
           "url": "https://xda-developers.com"
-        }
-      ]
-    },
-    {
-      "category": {
-        "name": "Movies and TV"
-      },
-      "apps": [
-        {
-          "theme_color": "#f17604",
-          "name": "Fandango",
-          "url": "https://mobile.fandango.com/"
-        },
-        {
-          "theme_color": "#f6e397",
-          "name": "IMDb",
-          "url": "https://m.imdb.com"
-        },
-        {
-          "theme_color": "#0c89c9",
-          "name": "Rotten Tomatoes",
-          "url": "https://rottentomatoes.com"
-        },
-        {
-          "theme_color": "#00acf2",
-          "name": "Vimeo",
-          "url": "https://www.vimeo.com"
-        },
-        {
-          "theme_color": "#ffca00",
-          "name": "AlloCine",
-          "url": "http://allocine.fr"
-        },
-        {
-          "theme_color": "#35a5a1",
-          "name": "Can I Stream It",
-          "url": "http://www.canistream.it/mobile/query"
-        },
-        {
-          "theme_color": "#3e4f53",
-          "name": "E! Online",
-          "url": "https://m.eonline.com"
-        },
-        {
-          "theme_color": "#6f6f00",
-          "name": "Hotstar",
-          "url": "http://hotstar.com"
-        },
-        {
-          "theme_color": "#ce7d00",
-          "name": "Plex",
-          "url": "https://plex.tv"
-        },
-        {
-          "theme_color": "#1c243c",
-          "name": "The A.V. Club",
-          "url": "http://avclub.com/"
-        },
-        {
-          "theme_color": "#ed2224",
-          "name": "Trakt.tv",
-          "url": "https://trakt.tv/"
-        },
-        {
-          "theme_color": "#9f150a",
-          "name": "TV Guide",
-          "url": "https://tvguide.com/listings"
-        },
-        {
-          "theme_color": "#34aad2",
-          "name": "Twit.tv",
-          "url": "https://twit.tv"
-        }
-      ]
-    },
-    {
-      "category": {
-        "name": "Banking \u0026 Financial"
-      },
-      "apps": [
-        {
-          "theme_color": "#103a79",
-          "name": "American Express",
-          "url": "https://www.americanexpress.com"
-        },
-        {
-          "theme_color": "#dc1431",
-          "name": "Bank of America",
-          "url": "https://bankofamerica.com"
-        },
-        {
-          "theme_color": "#99d7ee",
-          "name": "Capital One 360",
-          "url": "https://home.capitalone360.com"
-        },
-        {
-          "theme_color": "#0459a9",
-          "name": "Chase",
-          "url": "https://m.chase.com/"
-        },
-        {
-          "theme_color": "#004278",
-          "name": "Citibank",
-          "url": "https://online.citi.com"
-        },
-        {
-          "theme_color": "#ee7873",
-          "name": "HDFC Bank",
-          "url": "https://hdfcbank.com"
-        },
-        {
-          "theme_color": "#9c2e23",
-          "name": "ICICI Bank",
-          "url": "https://icicibank.com"
-        },
-        {
-          "theme_color": "#54a732",
-          "name": "MoneyControl",
-          "url": "https://moneycontrol.com"
-        },
-        {
-          "theme_color": "#2b74ba",
-          "name": "Online SBI",
-          "url": "https://onlinesbi.com"
-        },
-        {
-          "theme_color": "#009cde",
-          "name": "PayPal",
-          "url": "https://paypal.com"
-        },
-        {
-          "theme_color": "#012b72",
-          "name": "PayTM",
-          "url": "https://paytm.com"
-        },
-        {
-          "theme_color": "#263780",
-          "name": "RBC Canada",
-          "url": "https://www.rbcroyalbank.com"
-        },
-        {
-          "theme_color": "#f1b6bc",
-          "name": "Wells Fargo",
-          "url": "https://m.wellsfargo.com"
-        }
-      ]
-    },
-    {
-      "category": {
-        "name": "Tools \u0026 Productivity"
-      },
-      "apps": [
-        {
-          "theme_color": "#508ff5",
-          "name": "Translate",
-          "url": "https://translate.google.com/m/translate"
-        },
-        {
-          "theme_color": "#5f7d8c",
-          "name": "QRCode Scanner",
-          "url": "https://qrcodescan.in/"
-        },
-        {
-          "theme_color": "#b46202",
-          "name": "Clipperz",
-          "url": "https://clipperz.is/app"
-        },
-        {
-          "theme_color": "#e12828",
-          "name": "Flipboard",
-          "url": "https://flipboard.com"
-        },
-        {
-          "theme_color": "#9e9e9e",
-          "name": "Google Tasks",
-          "url": "https://mail.google.com/tasks/ig"
-        },
-        {
-          "theme_color": "#9a938d",
-          "name": "Instapaper",
-          "url": "https://instapaper.com"
-        },
-        {
-          "theme_color": "#319b56",
-          "name": "Life Hacker",
-          "url": "https://lifehacker.com"
-        },
-        {
-          "theme_color": "#000000",
-          "name": "Notes",
-          "url": "https://sii.im/playground/notes"
-        },
-        {
-          "theme_color": "#ee4055",
-          "name": "Pocket",
-          "url": "https://getpocket.com"
-        },
-        {
-          "theme_color": "#000000",
-          "name": "Sleepy Time",
-          "url": "http://sleepyti.me"
-        },
-        {
-          "theme_color": "#b1951b",
-          "name": "Smaller Pictures",
-          "url": "https://smaller-pictures.appspot.com"
-        },
-        {
-          "theme_color": "#120d2f",
-          "name": "Tempo",
-          "url": "https://sii.im/playground/tempo"
-        },
-        {
-          "theme_color": "#bc342d",
-          "name": "Todoist",
-          "url": "https://todoist.com"
-        },
-        {
-          "theme_color": "#4d7eb4",
-          "name": "Toodledo",
-          "url": "https://www.toodledo.com"
-        },
-        {
-          "theme_color": "#673ab7",
-          "name": "Voice Memos",
-          "url": "https://voice-memos.appspot.com"
-        },
-        {
-          "theme_color": "#f3a294",
-          "name": "Wolfram Alpha",
-          "url": "http://m.wolframalpha.com"
-        },
-        {
-          "theme_color": "#ff72b5",
-          "name": "Zenkit",
-          "url": "https://zenkit.com"
         }
       ]
     },
@@ -1012,6 +646,372 @@
           "theme_color": "#ea2330",
           "name": "Yatra",
           "url": "https://yatra.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Movies and TV"
+      },
+      "apps": [
+        {
+          "theme_color": "#f17604",
+          "name": "Fandango",
+          "url": "https://mobile.fandango.com/"
+        },
+        {
+          "theme_color": "#f6e397",
+          "name": "IMDb",
+          "url": "https://m.imdb.com"
+        },
+        {
+          "theme_color": "#0c89c9",
+          "name": "Rotten Tomatoes",
+          "url": "https://rottentomatoes.com"
+        },
+        {
+          "theme_color": "#00acf2",
+          "name": "Vimeo",
+          "url": "https://www.vimeo.com"
+        },
+        {
+          "theme_color": "#ffca00",
+          "name": "AlloCine",
+          "url": "http://allocine.fr"
+        },
+        {
+          "theme_color": "#35a5a1",
+          "name": "Can I Stream It",
+          "url": "http://www.canistream.it/mobile/query"
+        },
+        {
+          "theme_color": "#3e4f53",
+          "name": "E! Online",
+          "url": "https://m.eonline.com"
+        },
+        {
+          "theme_color": "#6f6f00",
+          "name": "Hotstar",
+          "url": "http://hotstar.com"
+        },
+        {
+          "theme_color": "#ce7d00",
+          "name": "Plex",
+          "url": "https://plex.tv"
+        },
+        {
+          "theme_color": "#1c243c",
+          "name": "The A.V. Club",
+          "url": "http://avclub.com/"
+        },
+        {
+          "theme_color": "#ed2224",
+          "name": "Trakt.tv",
+          "url": "https://trakt.tv/"
+        },
+        {
+          "theme_color": "#9f150a",
+          "name": "TV Guide",
+          "url": "https://tvguide.com/listings"
+        },
+        {
+          "theme_color": "#34aad2",
+          "name": "Twit.tv",
+          "url": "https://twit.tv"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Communication"
+      },
+      "apps": [
+        {
+          "theme_color": "#0086ff",
+          "name": "Messenger",
+          "url": "https://mobile.facebook.com/messages",
+          "user_agent": "desktop"
+        },
+        {
+          "theme_color": "#019ed8",
+          "name": "Skype",
+          "url": "https://web.skype.com",
+          "user_agent": "desktop"
+        },
+        {
+          "theme_color": "#73cddc",
+          "name": "Slack",
+          "url": "https://slack.com"
+        },
+        {
+          "theme_color": "#2196f3",
+          "name": "TeamViewer Chat",
+          "url": "https://integratedchat.teamviewer.com/"
+        },
+        {
+          "theme_color": "#1f95d4",
+          "name": "Telegram",
+          "url": "https://web.telegram.org"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Art and Photography"
+      },
+      "apps": [
+        {
+          "theme_color": "#253938",
+          "name": "Instagram",
+          "url": "https://instagram.com"
+        },
+        {
+          "theme_color": "#06cc47",
+          "name": "Deviant Art",
+          "url": "https://deviantart.com"
+        },
+        {
+          "theme_color": "#0d64d2",
+          "name": "Flickr",
+          "url": "https://flickr.com"
+        },
+        {
+          "theme_color": "#fe6666",
+          "name": "Giphy",
+          "url": "https://giphy.com"
+        },
+        {
+          "theme_color": "#3bd443",
+          "name": "Imgur",
+          "url": "https://imgur.com"
+        },
+        {
+          "theme_color": "#000000",
+          "name": "Unsplash",
+          "url": "https://unsplash.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Search"
+      },
+      "apps": [
+        {
+          "theme_color": "#4485a7",
+          "name": "Google",
+          "url": "https://www.google.com"
+        },
+        {
+          "theme_color": "#b3c9ff",
+          "name": "Baidu",
+          "url": "https://baidu.com"
+        },
+        {
+          "theme_color": "#008485",
+          "name": "Bing",
+          "url": "https://www.bing.com"
+        },
+        {
+          "theme_color": "#e0572a",
+          "name": "DuckDuckGo",
+          "url": "https://duckduckgo.com"
+        },
+        {
+          "theme_color": "#bcd9ed",
+          "name": "JustDial",
+          "url": "https://justdial.com"
+        },
+        {
+          "theme_color": "#e9effa",
+          "name": "StartPage",
+          "url": "https://www.startpage.com/"
+        },
+        {
+          "theme_color": "#ff0000",
+          "name": "Yandex",
+          "url": "https://yandex.ru"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Weather"
+      },
+      "apps": [
+        {
+          "theme_color": "#f05714",
+          "name": "AccuWeather",
+          "url": "https://m.accuweather.com"
+        },
+        {
+          "theme_color": "#3b438f",
+          "name": "Forecast.io",
+          "url": "https://forecast.io"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Banking \u0026 Financial"
+      },
+      "apps": [
+        {
+          "theme_color": "#103a79",
+          "name": "American Express",
+          "url": "https://www.americanexpress.com"
+        },
+        {
+          "theme_color": "#dc1431",
+          "name": "Bank of America",
+          "url": "https://bankofamerica.com"
+        },
+        {
+          "theme_color": "#99d7ee",
+          "name": "Capital One 360",
+          "url": "https://home.capitalone360.com"
+        },
+        {
+          "theme_color": "#0459a9",
+          "name": "Chase",
+          "url": "https://m.chase.com/"
+        },
+        {
+          "theme_color": "#004278",
+          "name": "Citibank",
+          "url": "https://online.citi.com"
+        },
+        {
+          "theme_color": "#ee7873",
+          "name": "HDFC Bank",
+          "url": "https://hdfcbank.com"
+        },
+        {
+          "theme_color": "#9c2e23",
+          "name": "ICICI Bank",
+          "url": "https://icicibank.com"
+        },
+        {
+          "theme_color": "#54a732",
+          "name": "MoneyControl",
+          "url": "https://moneycontrol.com"
+        },
+        {
+          "theme_color": "#2b74ba",
+          "name": "Online SBI",
+          "url": "https://onlinesbi.com"
+        },
+        {
+          "theme_color": "#009cde",
+          "name": "PayPal",
+          "url": "https://paypal.com"
+        },
+        {
+          "theme_color": "#012b72",
+          "name": "PayTM",
+          "url": "https://paytm.com"
+        },
+        {
+          "theme_color": "#263780",
+          "name": "RBC Canada",
+          "url": "https://www.rbcroyalbank.com"
+        },
+        {
+          "theme_color": "#f1b6bc",
+          "name": "Wells Fargo",
+          "url": "https://m.wellsfargo.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Tools \u0026 Productivity"
+      },
+      "apps": [
+        {
+          "theme_color": "#508ff5",
+          "name": "Translate",
+          "url": "https://translate.google.com/m/translate"
+        },
+        {
+          "theme_color": "#5f7d8c",
+          "name": "QRCode Scanner",
+          "url": "https://qrcodescan.in/"
+        },
+        {
+          "theme_color": "#b46202",
+          "name": "Clipperz",
+          "url": "https://clipperz.is/app"
+        },
+        {
+          "theme_color": "#e12828",
+          "name": "Flipboard",
+          "url": "https://flipboard.com"
+        },
+        {
+          "theme_color": "#9e9e9e",
+          "name": "Google Tasks",
+          "url": "https://mail.google.com/tasks/ig"
+        },
+        {
+          "theme_color": "#9a938d",
+          "name": "Instapaper",
+          "url": "https://instapaper.com"
+        },
+        {
+          "theme_color": "#319b56",
+          "name": "Life Hacker",
+          "url": "https://lifehacker.com"
+        },
+        {
+          "theme_color": "#000000",
+          "name": "Notes",
+          "url": "https://sii.im/playground/notes"
+        },
+        {
+          "theme_color": "#ee4055",
+          "name": "Pocket",
+          "url": "https://getpocket.com"
+        },
+        {
+          "theme_color": "#000000",
+          "name": "Sleepy Time",
+          "url": "http://sleepyti.me"
+        },
+        {
+          "theme_color": "#b1951b",
+          "name": "Smaller Pictures",
+          "url": "https://smaller-pictures.appspot.com"
+        },
+        {
+          "theme_color": "#120d2f",
+          "name": "Tempo",
+          "url": "https://sii.im/playground/tempo"
+        },
+        {
+          "theme_color": "#bc342d",
+          "name": "Todoist",
+          "url": "https://todoist.com"
+        },
+        {
+          "theme_color": "#4d7eb4",
+          "name": "Toodledo",
+          "url": "https://www.toodledo.com"
+        },
+        {
+          "theme_color": "#673ab7",
+          "name": "Voice Memos",
+          "url": "https://voice-memos.appspot.com"
+        },
+        {
+          "theme_color": "#f3a294",
+          "name": "Wolfram Alpha",
+          "url": "http://m.wolframalpha.com"
+        },
+        {
+          "theme_color": "#ff72b5",
+          "name": "Zenkit",
+          "url": "https://zenkit.com"
         }
       ]
     },
@@ -1413,6 +1413,11 @@
       },
       "apps": [
         {
+          "theme_color": "#cc0000",
+          "name": "CNN",
+          "url": "http://cnn.com"
+        },
+        {
           "theme_color": "#f17604",
           "name": "Fandango",
           "url": "https://mobile.fandango.com/"
@@ -1431,11 +1436,6 @@
           "theme_color": "#004278",
           "name": "Citibank",
           "url": "https://online.citi.com"
-        },
-        {
-          "theme_color": "#cc0000",
-          "name": "CNN",
-          "url": "http://cnn.com"
         },
         {
           "theme_color": "#4372b8",
