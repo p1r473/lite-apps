@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Hot UK Deals",
+  "start_url": "https://www.hotukdeals.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Hot%20UK%20Deals.hermit",
+  "theme_color": "#708c00",
+  "secondary_color": "#647e00",
+  "icon": "favicon.png",
+  "related_applications": [
+    {
+      "id": "com.tippingcanoe.hukd",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.tippingcanoe.hukd"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "UK",
+    "Shopping"
+  ]
+}

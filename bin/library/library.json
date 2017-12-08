@@ -491,6 +491,11 @@
           "url": "https://groupon.com"
         },
         {
+          "theme_color": "#708c00",
+          "name": "Hot UK Deals",
+          "url": "https://www.hotukdeals.com"
+        },
+        {
           "theme_color": "#f7931d",
           "name": "Jabong",
           "url": "https://www.jabong.com"
@@ -1737,6 +1742,11 @@
           "theme_color": "#bd160d",
           "name": "BBC",
           "url": "https://bbc.com"
+        },
+        {
+          "theme_color": "#708c00",
+          "name": "Hot UK Deals",
+          "url": "https://www.hotukdeals.com"
         }
       ]
     }
