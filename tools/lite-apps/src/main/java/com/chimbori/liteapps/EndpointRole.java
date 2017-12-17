@@ -5,6 +5,5 @@ enum EndpointRole {
   FEED,
   SEARCH,
   SHARE,
-  MONITOR,
-  CREATE
+  MONITOR
 }

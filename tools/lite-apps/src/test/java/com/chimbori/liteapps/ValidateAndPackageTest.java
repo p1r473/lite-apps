@@ -165,7 +165,6 @@ public class ValidateAndPackageTest {
     // Test Endpoints for basic parseability.
     validateEndpoints(tag, manifest.hermitBookmarks, EndpointRole.BOOKMARK);
     validateEndpoints(tag, manifest.hermitFeeds, EndpointRole.FEED);
-    validateEndpoints(tag, manifest.hermitCreate, EndpointRole.CREATE);
     validateEndpoints(tag, manifest.hermitShare, EndpointRole.SHARE);
     validateEndpoints(tag, manifest.hermitSearch, EndpointRole.SEARCH);
     validateEndpoints(tag, manifest.hermitMonitors, EndpointRole.MONITOR);
