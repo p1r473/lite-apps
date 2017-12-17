@@ -28,12 +28,6 @@
       "name": "Search"
     }
   ],
-  "hermit_create": [
-    {
-      "url": "http://www.apkmirror.com/apk-upload/",
-      "name": "Submit APK"
-    }
-  ],
   "hermit_feeds": [
     {
       "url": "http://www.apkmirror.com/feed/",

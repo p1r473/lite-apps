@@ -29,12 +29,6 @@
       "url": "https://m.reddit.com/message/inbox"
     }
   ],
-  "hermit_create": [
-    {
-      "name": "__MSG_submit__",
-      "url": "https://m.reddit.com/submit"
-    }
-  ],
   "hermit_search": [
     {
       "name": "__MSG_search__",

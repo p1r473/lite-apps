@@ -20,12 +20,6 @@
       "url": "https://craigslist.org/search/sss?sort=rel&query=%s"
     }
   ],
-  "hermit_create": [
-    {
-      "name": "__MSG_post_to_craigslist__",
-      "url": "https://post.craigslist.org"
-    }
-  ],
   "tags": [
     "Shopping"
   ]

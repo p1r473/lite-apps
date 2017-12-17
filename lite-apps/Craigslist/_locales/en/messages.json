@@ -2,9 +2,6 @@
   "craigslist": {
     "message": "Craigslist"
   },
-  "post_to_craigslist": {
-    "message": "Post to Craigslist"
-  },
   "account": {
     "message": "Account"
   }

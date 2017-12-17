@@ -86,12 +86,6 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
           "name": "Share from the native Android dialog to any Lite App"
         }
       ],
-      "hermit_create": [
-        {
-          "url": "https://example.com/create",
-          "name": "Create New Content"
-        }
-      ],
       "hermit_feeds": [
         {
           "url": "https://example.com/rss.xml",
@@ -122,7 +116,6 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
 - `hermit_bookmarks`: A list of bookmarks shown in the left sidebar in every Hermit Lite App.
 - `hermit_search`: Search can be integrated into any Lite App. [See details on how to configure this](https://hermit.chimbori.com/help/integrations).
 - `hermit_share`: Share text from any Android app directly (natively) into a Hermit Lite App. [See details on how to configure this](https://hermit.chimbori.com/help/integrations).
-- `hermit_create`: A floating action button can be a quick shortcut to load a common action in any Lite App. [See details on how to configure this](https://hermit.chimbori.com/help/integrations).
 - `hermit_feeds`: RSS or Atom feed URLs that Hermit will check regularly and notify the user about.
 
 ### Settings
