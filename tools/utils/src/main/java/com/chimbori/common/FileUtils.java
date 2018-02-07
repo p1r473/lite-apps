@@ -35,7 +35,7 @@ public class FileUtils {
     }
   }
 
-  private static final int BUFFER_SIZE = 8192;
+  public static final int BUFFER_SIZE = 8192;
 
   private static final OkHttpClient client = new OkHttpClient();
 

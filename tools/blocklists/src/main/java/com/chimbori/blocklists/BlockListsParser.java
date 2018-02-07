@@ -2,24 +2,28 @@ package com.chimbori.blocklists;
 
 import com.chimbori.common.FileUtils;
 import com.chimbori.hermitcrab.schema.blocklists.BlockList;
-import com.chimbori.hermitcrab.schema.blocklists.SourceBlockList;
 import com.chimbori.hermitcrab.schema.blocklists.BlockListsLibrary;
 import com.chimbori.hermitcrab.schema.blocklists.CombinedBlockList;
+import com.chimbori.hermitcrab.schema.blocklists.SourceBlockList;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
 import com.chimbori.hermitcrab.schema.common.SchemaDate;
 import com.google.common.collect.ImmutableList;
-import com.google.gson.Gson;
 
+import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.file.attribute.FileTime;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipOutputStream;
 
 /**
  * Parses a meta-list of block-lists, fetches the original blocklists from various remote URLs,
@@ -151,8 +155,35 @@ public class BlockListsParser {
 
     System.out.println(String.format("Wrote %d hosts.\n", hosts.size()));
 
-    FileUtils.writeFile(new File(rootDirectory, fileName),
-        GsonInstance.getPrettyPrinter().toJson(appManifestBlockList));
+    File jsonFile = new File(rootDirectory, fileName);
+    File zippedJsonFile = new File(rootDirectory, fileName + ".zip");
+
+    FileUtils.writeFile(jsonFile, GsonInstance.getPrettyPrinter().toJson(appManifestBlockList));
+
+    // Zip up the JSON file in the same directory.
+    try (ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zippedJsonFile)))) {
+      out.setLevel(9);
+      try (FileInputStream fis = new FileInputStream(jsonFile)) {
+        // Intentionally set the last-modified date to the epoch, so running the zip command
+        // multiple times on the same (unchanged) source does not result in a different (binary)
+        // zip file everytime.
+        FileTime epochTime = FileTime.fromMillis(0);
+        ZipEntry zipEntry = new ZipEntry(jsonFile.getName())
+            .setCreationTime(epochTime)
+            .setLastModifiedTime(epochTime)
+            .setLastAccessTime(epochTime);
+        out.putNextEntry(zipEntry);
+
+        // Write file contents.
+        int length;
+        byte[] buffer = new byte[FileUtils.BUFFER_SIZE];
+        while ((length = fis.read(buffer)) > 0) {
+          out.write(buffer, 0, length);
+        }
+      } finally {
+        out.closeEntry();
+      }
+    }
   }
 
   /**
