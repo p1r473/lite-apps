@@ -2,7 +2,7 @@
   "blocklists": [
     {
       "blocklist": "Adware and Malware",
-      "name": "adware-malware.json",
+      "filename": "v2/adware-malware.json",
       "sources": [
         {
           "name": "PaidContentLinks.txt"

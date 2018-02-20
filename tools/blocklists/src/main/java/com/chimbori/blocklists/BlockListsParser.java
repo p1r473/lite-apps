@@ -9,21 +9,16 @@ import com.chimbori.hermitcrab.schema.common.GsonInstance;
 import com.chimbori.hermitcrab.schema.common.SchemaDate;
 import com.google.common.collect.ImmutableList;
 
-import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.file.attribute.FileTime;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.util.zip.ZipEntry;
-import java.util.zip.ZipOutputStream;
 
 /**
  * Parses a meta-list of block-lists, fetches the original blocklists from various remote URLs,
@@ -84,7 +79,7 @@ public class BlockListsParser {
         }
       }
 
-      writeToDisk(FilePaths.OUT_ROOT_DIR, combinedBlockList.name, hosts);
+      writeToDisk(FilePaths.OUT_ROOT_DIR, combinedBlockList.filename, hosts);
       hosts.clear();  // Empty the list before writing each one.
     }
   }
@@ -144,46 +139,20 @@ public class BlockListsParser {
     return false;
   }
 
-  private static void writeToDisk(File rootDirectory, String fileName, Set<String> hosts) throws IOException {
+  private static void writeToDisk(File rootDirectory, String relativeFileName, Set<String> hosts) throws IOException {
     String[] hostsArray = hosts.toArray(new String[0]);
     Arrays.sort(hostsArray);
 
+    File jsonFile = new File(rootDirectory, relativeFileName);
+
     BlockList appManifestBlockList = new BlockList();
-    appManifestBlockList.name = fileName;
+    appManifestBlockList.name = jsonFile.getName();
     appManifestBlockList.updated = SchemaDate.fromTimestamp(System.currentTimeMillis());
     appManifestBlockList.hosts = hostsArray;
 
-    System.out.println(String.format("Wrote %d hosts.\n", hosts.size()));
-
-    File jsonFile = new File(rootDirectory, fileName);
-    File zippedJsonFile = new File(rootDirectory, fileName + ".zip");
-
     FileUtils.writeFile(jsonFile, GsonInstance.getPrettyPrinter().toJson(appManifestBlockList));
 
-    // Zip up the JSON file in the same directory.
-    try (ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zippedJsonFile)))) {
-      out.setLevel(9);
-      try (FileInputStream fis = new FileInputStream(jsonFile)) {
-        // Intentionally set the last-modified date to the epoch, so running the zip command
-        // multiple times on the same (unchanged) source does not result in a different (binary)
-        // zip file everytime.
-        FileTime epochTime = FileTime.fromMillis(0);
-        ZipEntry zipEntry = new ZipEntry(jsonFile.getName())
-            .setCreationTime(epochTime)
-            .setLastModifiedTime(epochTime)
-            .setLastAccessTime(epochTime);
-        out.putNextEntry(zipEntry);
-
-        // Write file contents.
-        int length;
-        byte[] buffer = new byte[FileUtils.BUFFER_SIZE];
-        while ((length = fis.read(buffer)) > 0) {
-          out.write(buffer, 0, length);
-        }
-      } finally {
-        out.closeEntry();
-      }
-    }
+    System.out.println(String.format("Wrote %d hosts.\n", hosts.size()));
   }
 
   /**
