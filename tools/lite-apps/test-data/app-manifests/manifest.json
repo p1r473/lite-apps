@@ -1,0 +1,42 @@
+{
+  "manifest": {
+    "locale": "en",
+    "versions": [
+      {
+        "track": "production",
+        "version_code": 80102,
+        "os": "android",
+        "version_name": "8.1.2",
+        "released": "2017-05-04",
+        "min_sdk_version": 19,
+        "features": [
+          "<b>New Unlocker App</b>: Hermit Premium can now be purchased via a separate Unlocker App: https://hermit.chimbori.com/unlocker",
+          "Recently, we heard a few complaints from users who were unable to purchase Hermit through the in-app purchase. After investigating, we found these linked to a bug in Google Play. Since we have no other way to fix this, we quickly created a separate Unlocker App so you can continue to enjoy Hermit.",
+          "<b>More updates coming soon.</b> This release is a quick fix that only adds support for Unlocker.",
+          "See the full list at https://hermit.chimbori.com/changes"
+        ]
+      }
+    ],
+    "blocklists": [
+      {
+        "name": "Adware and Malware",
+        "updated": "2017-04-24",
+        "url": "https://hermit.chimbori.com/app/adware-malware.json.zip"
+      }
+    ],
+    "fonts": [
+      {
+        "name": "Basic Fonts",
+        "updated": "2016-12-07",
+        "url": "https://hermit.chimbori.com/app/basic-fonts.zip"
+      }
+    ],
+    "styles": [
+      {
+        "name": "Night Styles",
+        "updated": "2017-01-04",
+        "url": "https://hermit.chimbori.com/app/night-styles.zip"
+      }
+    ]
+  }
+}

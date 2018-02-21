@@ -5,9 +5,11 @@ import com.chimbori.common.FileUtils;
 import com.chimbori.hermitcrab.schema.appmanifest.AppManifest;
 import com.chimbori.hermitcrab.schema.appmanifest.AppVersion;
 import com.chimbori.hermitcrab.schema.appmanifest.AssetArchive;
+import com.chimbori.hermitcrab.schema.appmanifest.AssetFormat;
 import com.chimbori.hermitcrab.schema.appmanifest.Manifest;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
 import com.chimbori.hermitcrab.schema.common.SchemaDate;
+import com.google.common.collect.ImmutableList;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,7 +29,7 @@ public class AppManifestWriter {
     AppManifest appManifest = new AppManifest().manifest(createManifestForHardCodedVersion());
     FileUtils.writeFile(
         new File(FilePaths.OUT_APP_MANIFEST_DIR, FilePaths.APP_MANIFEST_FILE_NAME),
-        GsonInstance.getMinifier().toJson(appManifest));
+        GsonInstance.getPrettyPrinter().toJson(appManifest));
   }
 
   /**
@@ -69,18 +71,21 @@ public class AppManifestWriter {
     manifest.blocklists.add(new AssetArchive()
         .name("Adware and Malware")
         .updated(new SchemaDate(2017, 8, 16))
+        .format(AssetFormat.ZIP)
         .url("https://hermit.chimbori.com/app/adware-malware.json.zip"));
 
     manifest.fonts = new ArrayList<>();
     manifest.fonts.add(new AssetArchive()
         .name("Basic Fonts")
         .updated(new SchemaDate(2016, 12, 7))
+        .format(AssetFormat.ZIP)
         .url("https://hermit.chimbori.com/app/basic-fonts.zip"));
 
     manifest.styles = new ArrayList<>();
     manifest.styles.add(new AssetArchive()
         .name("Night Styles")
         .updated(new SchemaDate(2017, 1, 4))
+        .format(AssetFormat.ZIP)
         .url("https://hermit.chimbori.com/app/night-styles.zip"));
 
     return manifest;

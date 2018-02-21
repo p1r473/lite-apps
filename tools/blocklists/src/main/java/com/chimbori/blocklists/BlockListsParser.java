@@ -169,7 +169,7 @@ public class BlockListsParser {
   }
 
   private static BlockListsLibrary readBlockListsLibrary() throws IOException {
-    return GsonInstance.getMinifier().fromJson(
+    return GsonInstance.getPrettyPrinter().fromJson(
         FileUtils.readFully(new FileInputStream(FilePaths.SRC_BLOCK_LISTS_JSON)),
         BlockListsLibrary.class);
   }

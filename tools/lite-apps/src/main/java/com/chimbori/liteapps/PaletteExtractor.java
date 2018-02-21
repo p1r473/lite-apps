@@ -4,6 +4,7 @@ import com.chimbori.FilePaths;
 import com.chimbori.common.ColorExtractor;
 import com.chimbori.common.FileUtils;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
+import com.chimbori.hermitcrab.schema.manifest.IconFile;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
 import com.google.gson.Gson;
 
@@ -37,7 +38,7 @@ public class PaletteExtractor {
 
         File iconsDirectory = new File(liteAppDirectory, FilePaths.ICONS_DIR_NAME);
         iconsDirectory.mkdirs();
-        File iconFile = new File(iconsDirectory, FilePaths.FAVICON_FILENAME);
+        File iconFile = new File(iconsDirectory, IconFile.FAVICON_FILE.fileName);
 
         // Extract the color from the icon (either newly downloaded, or from existing icon).
         if (iconFile.exists()) {

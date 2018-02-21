@@ -31,15 +31,11 @@ public class Scraper {
   private final String url;
   private Document doc;
 
-  public static Manifest scrape(String url) {
-    return new Scraper(url).fetch().parse();
-  }
-
-  private Scraper(String url) {
+  public Scraper(String url) {
     this.url = url;
   }
 
-  private Scraper fetch() {
+  public Scraper fetch() {
     try {
       doc = Jsoup.connect(url)
           .ignoreContentType(true)
@@ -54,10 +50,10 @@ public class Scraper {
     return this;
   }
 
-  private Manifest parse() {
+  public Manifest extractManifest() throws ManifestUnavailableException {
     Manifest manifest = new Manifest();
     if (doc == null) {  // Fetch failed or never fetched.
-      return manifest;  // NonNull {@code Manifest}, but empty fields.
+      throw new ManifestUnavailableException();
     }
 
     // First try to get the Site’s name (not just the current page’s title) via OpenGraph tags.
@@ -67,20 +63,20 @@ public class Scraper {
       manifest.name = doc.select("title").text();
     }
     manifest.themeColor = doc.select("meta[name=theme-color]").attr("content");
-    // The "abs:" prefix is a JSoup shortcut that converts this into an absolute URL.
-    String iconUrl = doc.select("link[rel=apple-touch-icon]").attr("abs:href");
-    if (iconUrl == null || iconUrl.isEmpty()) {
-      iconUrl = doc.select("link[rel=apple-touch-icon-precomposed]").attr("abs:href");
-    }
-    if (iconUrl != null) {
-      manifest.icon = iconUrl;
-    }
-
     manifest.hermitBookmarks = findBookmarkableLinks();
     manifest.hermitFeeds = findAtomAndRssFeeds();
     manifest.relatedApplications = findRelatedApps();
 
     return manifest;
+  }
+
+  public String extractIconUrl() {
+    // The "abs:" prefix is a JSoup shortcut that converts this into an absolute URL.
+    String iconUrl = doc.select("link[rel=apple-touch-icon]").attr("abs:href");
+    if (iconUrl == null || iconUrl.isEmpty()) {
+      iconUrl = doc.select("link[rel=apple-touch-icon-precomposed]").attr("abs:href");
+    }
+    return iconUrl;
   }
 
   private List<RelatedApp> findRelatedApps() {
@@ -128,5 +124,11 @@ public class Scraper {
     }
 
     return bookmarkableLinks.isEmpty() ? null : new ArrayList<>(bookmarkableLinks.values());
+  }
+
+  static class ManifestUnavailableException extends Exception {
+    ManifestUnavailableException() {
+      super("Did you call Scraper.fetch() first?");
+    }
   }
 }

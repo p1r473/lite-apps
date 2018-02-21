@@ -6,6 +6,7 @@ import com.chimbori.hermitcrab.schema.common.GsonInstance;
 import com.chimbori.hermitcrab.schema.library.Library;
 import com.chimbori.hermitcrab.schema.library.LibraryApp;
 import com.chimbori.hermitcrab.schema.library.LibraryTagsList;
+import com.chimbori.hermitcrab.schema.manifest.IconFile;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
 import com.google.gson.Gson;
 
@@ -75,7 +76,7 @@ class LibraryGenerator {
       // Resize the icon to be suitable for the Web, and copy it to the Web-accessible icons directory.
       File thumbnailImage = new File(FilePaths.OUT_LIBRARY_ICONS_DIR, appName + FilePaths.ICON_EXTENSION);
       if (!thumbnailImage.exists()) {
-        Thumbnails.of(new File(iconsDirectory, FilePaths.FAVICON_FILENAME))
+        Thumbnails.of(new File(iconsDirectory, IconFile.FAVICON_FILE.fileName))
             .outputQuality(1.0f)
             .useOriginalFormat()
             .size(LIBRARY_ICON_SIZE, LIBRARY_ICON_SIZE)

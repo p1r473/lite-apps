@@ -10,7 +10,6 @@ public class FilePaths {
   public static final String MESSAGES_JSON_FILE_NAME = "messages.json";
   public static final String LOCALES_DIR_NAME = "_locales";
   public static final String ICONS_DIR_NAME = "icons";
-  public static final String FAVICON_FILENAME = "favicon.png";
   public static final String ICON_EXTENSION = ".png";
 
   // App Manifest

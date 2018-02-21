@@ -5,6 +5,7 @@ import com.chimbori.common.ColorExtractor;
 import com.chimbori.common.FileUtils;
 import com.chimbori.common.Log;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
+import com.chimbori.hermitcrab.schema.manifest.IconFile;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
 
 import org.apache.commons.cli.CommandLine;
@@ -25,8 +26,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 
 import javax.imageio.ImageIO;
 
@@ -47,14 +47,15 @@ class Scaffolder {
    * The library.json file (containing metadata about all Lite Apps) is used as the basis for
    * generating scaffolding for the Lite App manifests.
    */
-  private static void createScaffolding(String startUrl, String appName) throws IOException {
+  private static void createScaffolding(String startUrl, String appName) throws IOException, Scraper.ManifestUnavailableException {
     File liteAppDirectoryRoot = new File(FilePaths.SRC_ROOT_DIR, appName);
 
     Manifest manifest;
     File manifestJsonFile = new File(liteAppDirectoryRoot, FilePaths.MANIFEST_JSON_FILE_NAME);
     // If the manifest.json exists, read it before modifying, else create a new JSON object.
     if (manifestJsonFile.exists()) {
-      manifest = GsonInstance.getMinifier().fromJson(new FileReader(manifestJsonFile), Manifest.class);
+      manifest = GsonInstance.getPrettyPrinter().fromJson(new FileReader(manifestJsonFile), Manifest.class);
+
     } else {
       Log.i("Creating new Lite App %s", appName);
       // Create the root directory if it doesn’t exist yet.
@@ -62,7 +63,8 @@ class Scaffolder {
 
       // Scrape the Web looking for RSS & Atom feeds, theme colors, and site metadata.
       Log.i("Fetching %s…", startUrl);
-      manifest = Scraper.scrape(startUrl);
+      Scraper scraper = new Scraper(startUrl).fetch();
+      manifest = scraper.extractManifest();
       System.out.println(manifest);
 
       // Constant fields, same for all apps.
@@ -72,50 +74,55 @@ class Scaffolder {
       // Fields that can be populated from the data provided on the command-line.
       manifest.name = appName;
       manifest.startUrl = startUrl;
-      manifest.manifestUrl = String.format(MANIFEST_URL_TEMPLATE, URLEncoder.encode(appName, "UTF-8").replace("+", "%20"));
+      manifest.manifestUrl = String.format(MANIFEST_URL_TEMPLATE,
+          URLEncoder.encode(appName, "UTF-8").replace("+", "%20"));
 
       // Empty fields that must be manually populated.
       manifest.priority = 10;
-      manifest.tags = new ArrayList<>(Arrays.asList(new String[]{"TODO"}));
-    }
+      manifest.tags = Collections.singletonList("TODO");
 
-    // TODO: Fetch favicon or apple-touch-icon.
-    String remoteIconUrl = manifest.icon;
+      // Put the icon JSON entry even if we don’t manage to fetch an icon successfully.
+      // This way, we can avoid additional typing, and the validator will check for the presence
+      // of the file anyway (and fail as expected).
+      manifest.icon = IconFile.FAVICON_FILE;
 
-    File iconsDirectory = new File(liteAppDirectoryRoot, FilePaths.ICONS_DIR_NAME);
-    iconsDirectory.mkdirs();
-    File iconFile = new File(iconsDirectory, FilePaths.FAVICON_FILENAME);
+      File iconsDirectory = new File(liteAppDirectoryRoot, FilePaths.ICONS_DIR_NAME);
+      iconsDirectory.mkdirs();
+      File iconFile = new File(iconsDirectory, IconFile.FAVICON_FILE.fileName);
 
-    if (!iconFile.exists() && manifest.icon != null && !manifest.icon.isEmpty()) {
-      Log.i("Fetching icon from %s…", manifest.icon);
-      URL iconUrl = null;
-      try {
-        iconUrl = new URL(remoteIconUrl);
-      } catch (MalformedURLException e) {
-        e.printStackTrace();
-      }
-      if (iconUrl != null) {
-        try (InputStream inputStream = iconUrl.openStream()) {
-          Files.copy(inputStream, iconFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
-        } catch (IOException e) {
+      String remoteIconUrl = scraper.extractIconUrl();
+      if (!iconFile.exists() && remoteIconUrl != null && !remoteIconUrl.isEmpty()) {
+        Log.i("Fetching icon from %s…", remoteIconUrl);
+        URL iconUrl = null;
+        try {
+          iconUrl = new URL(remoteIconUrl);
+        } catch (MalformedURLException e) {
           e.printStackTrace();
-          // But still continue with the rest of the manifest generation.
+        }
+        if (iconUrl != null) {
+          try (InputStream inputStream = iconUrl.openStream()) {
+            Files.copy(inputStream, iconFile.toPath(), StandardCopyOption.REPLACE_EXISTING);
+          } catch (IOException e) {
+            e.printStackTrace();
+            // But still continue with the rest of the manifest generation.
+          }
         }
       }
-    }
 
-    // Put the icon JSON entry even if we don’t manage to fetch an icon successfully.
-    // This way, we can avoid additional typing, and the validator will check for the presence
-    // of the file anyway (and fail as expected).
-    manifest.icon = FilePaths.FAVICON_FILENAME;
-
-    // Extract the color from the icon (either newly downloaded, or from existing icon).
-    if (iconFile.exists()) {
-      ColorExtractor.Color themeColor = ColorExtractor.getDominantColor(ImageIO.read(iconFile));
-      if (themeColor != null) {
-        // Overwrite the dummy values already inserted, if we are able to extract real values.
-        manifest.themeColor = themeColor.toString();
-        manifest.secondaryColor = themeColor.darken(0.9f).toString();
+      // Extract the color from the icon (either newly downloaded, or from existing icon).
+      if (iconFile.exists()) {
+        ColorExtractor.Color themeColor = ColorExtractor.getDominantColor(ImageIO.read(iconFile));
+        if (themeColor != null) {
+          // Overwrite the dummy values already inserted, if we are able to extract real values.
+          manifest.themeColor = themeColor.toString();
+          manifest.secondaryColor = themeColor.darken(0.9f).toString();
+        } else {
+          // Insert a placeholder for theme_color and secondary_color so we don’t have to
+          // type it in manually, but put invalid values so that the validator will catch it
+          // in case we forget to replace with valid values.
+          manifest.themeColor = "#";
+          manifest.secondaryColor = "#";
+        }
       } else {
         // Insert a placeholder for theme_color and secondary_color so we don’t have to
         // type it in manually, but put invalid values so that the validator will catch it
@@ -123,12 +130,6 @@ class Scaffolder {
         manifest.themeColor = "#";
         manifest.secondaryColor = "#";
       }
-    } else {
-      // Insert a placeholder for theme_color and secondary_color so we don’t have to
-      // type it in manually, but put invalid values so that the validator will catch it
-      // in case we forget to replace with valid values.
-      manifest.themeColor = "#";
-      manifest.secondaryColor = "#";
     }
 
     // Write the output manifest.
@@ -164,7 +165,7 @@ class Scaffolder {
       writer.flush();
       System.exit(1);
 
-    } catch (IOException e) {
+    } catch (IOException | Scraper.ManifestUnavailableException e) {
       e.printStackTrace();
       System.exit(1);
     }

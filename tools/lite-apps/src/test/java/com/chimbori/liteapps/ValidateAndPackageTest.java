@@ -4,6 +4,7 @@ package com.chimbori.liteapps;
 import com.chimbori.FilePaths;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
 import com.chimbori.hermitcrab.schema.manifest.Endpoint;
+import com.chimbori.hermitcrab.schema.manifest.IconFile;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
 import com.chimbori.hermitcrab.schema.manifest.RelatedApp;
 import com.google.gson.Gson;
@@ -117,7 +118,7 @@ public class ValidateAndPackageTest {
   @Test
   public void testIconIs300x300() {
     File iconsDirectory = new File(liteApp, FilePaths.ICONS_DIR_NAME);
-    TestHelpers.assertThatIconIs300x300(new File(iconsDirectory, FilePaths.FAVICON_FILENAME));
+    TestHelpers.assertThatIconIs300x300(new File(iconsDirectory, IconFile.FAVICON_FILE.fileName));
   }
 
   @Test
@@ -158,9 +159,9 @@ public class ValidateAndPackageTest {
     // Test that the name of the icon file is "icon.png" & that the file exists.
     // Although any filename should work, having it be consistent in the library can let us
     // avoid a filename lookup in automated tests and refactors.
-    assertEquals(FilePaths.FAVICON_FILENAME, manifest.icon);
+    assertEquals(IconFile.FAVICON_FILE, manifest.icon);
     File iconsDirectory = new File(liteApp, FilePaths.ICONS_DIR_NAME);
-    assertTrue(new File(iconsDirectory, FilePaths.FAVICON_FILENAME).exists());
+    assertTrue(new File(iconsDirectory, IconFile.FAVICON_FILE.fileName).exists());
 
     // Test Endpoints for basic parseability.
     validateEndpoints(tag, manifest.hermitBookmarks, EndpointRole.BOOKMARK);
@@ -220,7 +221,7 @@ public class ValidateAndPackageTest {
   }
 
   private void validateSettings(String tag, File manifest) {
-    Gson gson = GsonInstance.getMinifier();
+    Gson gson = GsonInstance.getPrettyPrinter();
     LinkedTreeMap<String, Object> json = null;
     try {
       json = (LinkedTreeMap<String, Object>) gson.fromJson(new FileReader(manifest), Object.class);
@@ -241,7 +242,7 @@ public class ValidateAndPackageTest {
       fail("Not found: " + file.getAbsolutePath());
     }
 
-    Gson gson = GsonInstance.getMinifier();
+    Gson gson = GsonInstance.getPrettyPrinter();
     try {
       return file.exists() ? gson.fromJson(new FileReader(file), Manifest.class) : null;
     } catch (IOException e) {
