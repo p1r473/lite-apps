@@ -102,7 +102,6 @@ public class FileUtils {
 
   public static void writeFile(File file, String content) throws IOException {
     file.getParentFile().mkdirs();
-    System.out.println("Writing: " + file.getCanonicalPath());
     try (FileOutputStream fout = new FileOutputStream(file)) {
       fout.write(content.getBytes());
     }
