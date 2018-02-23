@@ -33,4 +33,8 @@ dependencies {
   // Eclipse Parser used only to confirm well-formed-ness of JSON, because the org.json parser does
   // not do a strict parse, allowing malformed files to be pushed that break the Android app.
   compile 'com.eclipsesource.minimal-json:minimal-json:0.9.4'
+
+  // Make available any test utility classes defined in the Schema module to be
+  // used in this module.
+  testCompile project(':schema').sourceSets.test.output
 }

@@ -1,7 +1,7 @@
 package com.chimbori.hermit.appmanifest;
 
-import com.chimbori.common.FileUtils;
 import com.chimbori.common.ResourceNotFoundException;
+import com.chimbori.common.TestUtils;
 import com.chimbori.hermitcrab.schema.appmanifest.AppManifest;
 import com.chimbori.hermitcrab.schema.appmanifest.AppVersion;
 import com.chimbori.hermitcrab.schema.appmanifest.Manifest;
@@ -27,7 +27,7 @@ public class AppManifestWriterTest {
 
   @Test
   public void testAppManifestParsing() throws FileNotFoundException, ResourceNotFoundException {
-    File manifestFile = FileUtils.getResource(this.getClass(), "manifest.json");
+    File manifestFile = TestUtils.getResource(this.getClass(), "manifest.json");
     AppManifest appManifest = GsonInstance.getPrettyPrinter().fromJson(
         new FileReader(manifestFile), AppManifest.class);
     assertNotNull(appManifest);

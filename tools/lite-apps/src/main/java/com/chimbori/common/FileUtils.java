@@ -8,7 +8,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URISyntaxException;
-import java.nio.file.Paths;
 import java.nio.file.attribute.FileTime;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
@@ -110,14 +109,5 @@ public class FileUtils {
     Request request = new Request.Builder().url(url).build();
     Response response = client.newCall(request).execute();
     return response.body().string();
-  }
-
-  public static File getResource(Class clazz, String filename) throws ResourceNotFoundException {
-    try {
-      return Paths.get(clazz.getClassLoader().getResource(filename).toURI()).toFile();
-    } catch (URISyntaxException | NullPointerException e) {
-      // Catch NPE when a resource could not be found.
-      throw new ResourceNotFoundException(filename);
-    }
   }
 }
