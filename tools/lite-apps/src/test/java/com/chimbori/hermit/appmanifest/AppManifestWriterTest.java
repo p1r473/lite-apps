@@ -1,6 +1,7 @@
 package com.chimbori.hermit.appmanifest;
 
-import com.chimbori.hermitcrab.schema.FilePaths;
+import com.chimbori.common.FileUtils;
+import com.chimbori.common.ResourceNotFoundException;
 import com.chimbori.hermitcrab.schema.appmanifest.AppManifest;
 import com.chimbori.hermitcrab.schema.appmanifest.AppVersion;
 import com.chimbori.hermitcrab.schema.appmanifest.Manifest;
@@ -25,10 +26,10 @@ public class AppManifestWriterTest {
   }
 
   @Test
-  public void testAppManifestParsing() throws FileNotFoundException {
-    File manifestFile = new File(FilePaths.PROJECT_ROOT, "app-manifests/manifest.json");
-    System.out.println("manifestFile: " + manifestFile.getAbsolutePath());
-    AppManifest appManifest = GsonInstance.getPrettyPrinter().fromJson(new FileReader(manifestFile), AppManifest.class);
+  public void testAppManifestParsing() throws FileNotFoundException, ResourceNotFoundException {
+    File manifestFile = FileUtils.getResource(this.getClass(), "manifest.json");
+    AppManifest appManifest = GsonInstance.getPrettyPrinter().fromJson(
+        new FileReader(manifestFile), AppManifest.class);
     assertNotNull(appManifest);
 
     Manifest manifest = appManifest.manifest;
