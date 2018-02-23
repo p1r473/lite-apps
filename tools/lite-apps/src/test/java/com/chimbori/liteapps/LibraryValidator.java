@@ -12,7 +12,7 @@ import static org.junit.Assert.fail;
 /**
  * Generates the library JSON file, updates tags.json, and reformat it.
  */
-public class LibraryGeneratorTest {
+public class LibraryValidator {
   @Test
   public void testTagsJSONIsWellFormedAndReformat() throws IOException {
     TestHelpers.assertJsonIsWellFormedAndReformat(FilePaths.SRC_TAGS_JSON_FILE);

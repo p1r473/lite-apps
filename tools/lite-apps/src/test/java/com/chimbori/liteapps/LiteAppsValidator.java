@@ -51,7 +51,7 @@ import static org.junit.Assert.fail;
  * - Extra files that are not part of the expected structure.
  */
 @RunWith(Parameterized.class)
-public class ValidateAndPackageTest {
+public class LiteAppsValidator {
   private static final String HEX_COLOR_REGEXP = "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$";
   private static final Pattern HEX_COLOR_PATTERN = Pattern.compile(HEX_COLOR_REGEXP);
 
@@ -79,7 +79,7 @@ public class ValidateAndPackageTest {
 
   private final File liteApp;
 
-  public ValidateAndPackageTest(File liteApp) {
+  public LiteAppsValidator(File liteApp) {
     this.liteApp = liteApp;
   }
 
@@ -95,7 +95,7 @@ public class ValidateAndPackageTest {
 
   @Test
   public void testPackageAllLiteApps() {
-    assertTrue("Packaging failed for " + liteApp.getName(), Packager.packageManifest(liteApp));
+    assertTrue("Packaging failed for " + liteApp.getName(), LiteAppPackager.packageManifest(liteApp));
   }
 
   @Test

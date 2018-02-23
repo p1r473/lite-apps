@@ -13,7 +13,7 @@ import java.io.IOException;
  * Does not validate each Lite App prior to packaging: it is assumed that this is run on a green
  * build which has already passed all validation tests.
  */
-class Packager {
+class LiteAppPackager {
   /**
    * Packages a single manifest from a source directory & individual files into a zipped file and
    * places it in the correct location.

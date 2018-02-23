@@ -1,4 +1,4 @@
-package com.chimbori.blocklists;
+package com.chimbori.liteapps;
 
 import com.chimbori.FilePaths;
 import com.chimbori.common.FileUtils;
@@ -25,7 +25,7 @@ import java.util.Set;
  * Parses a meta-list of block-lists, fetches the original blocklists from various remote URLs,
  * and combines them into a single JSON file suitable for consumption in Hermit.
  */
-class BlockListsParser {
+class BlockListPackager {
   private static final List<String> WHITELISTED_SUBSTRINGS = ImmutableList.of(
       "youtube"
   );

@@ -1,4 +1,4 @@
-package com.chimbori.hermit.appmanifest;
+package com.chimbori.liteapps;
 
 import com.chimbori.common.ResourceNotFoundException;
 import com.chimbori.common.TestUtils;
@@ -13,18 +13,12 @@ import org.junit.Test;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-public class AppManifestWriterTest {
-  @Test
-  public void testWriteAppManifest() throws IOException {
-    AppManifestWriter.writeManifest();
-  }
-
+public class AppManifestValidator {
   @Test
   public void testAppManifestParsing() throws FileNotFoundException, ResourceNotFoundException {
     File manifestFile = TestUtils.getResource(this.getClass(), "manifest.json");
