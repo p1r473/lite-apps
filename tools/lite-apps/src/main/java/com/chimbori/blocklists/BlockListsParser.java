@@ -25,7 +25,7 @@ import java.util.Set;
  * Parses a meta-list of block-lists, fetches the original blocklists from various remote URLs,
  * and combines them into a single JSON file suitable for consumption in Hermit.
  */
-public class BlockListsParser {
+class BlockListsParser {
   private static final List<String> WHITELISTED_SUBSTRINGS = ImmutableList.of(
       "youtube"
   );

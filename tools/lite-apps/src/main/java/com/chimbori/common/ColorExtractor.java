@@ -1,7 +1,6 @@
 package com.chimbori.common;
 
 import java.awt.image.BufferedImage;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -75,8 +74,8 @@ public class ColorExtractor {
   private static Color getDominantColor(Map<Color, Integer> map) {
     List<Map.Entry<Color, Integer>> list = new LinkedList<>(map.entrySet());
 
-    Collections.sort(list, (Map.Entry<Color, Integer> obj1, Map.Entry<Color, Integer> obj2)
-        -> ((Comparable) obj1.getValue()).compareTo(obj2.getValue()));
+    list.sort((Map.Entry<Color, Integer> obj1, Map.Entry<Color, Integer> obj2)
+        -> obj1.getValue().compareTo(obj2.getValue()));
 
     return (list.size() > 0)
         ? list.get(list.size() - 1).getKey()

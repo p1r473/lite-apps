@@ -14,8 +14,8 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
-public class PaletteExtractor {
-  public static void extractPaletteIfMissing() throws IOException {
+class PaletteExtractor {
+  private static void extractPaletteIfMissing() throws IOException {
     Gson gson = GsonInstance.getPrettyPrinter();
 
     File[] liteAppDirs = FilePaths.SRC_ROOT_DIR_LITE_APPS.listFiles();

@@ -18,7 +18,7 @@ import java.util.ArrayList;
  * Writes an app manifest with the provided values. This is a convenience writer class for the JSON
  * to avoid having to write (and then validate) JSON by hand.
  */
-public class AppManifestWriter {
+class AppManifestWriter {
   /**
    * Static entry point into this class. It writes the current manifest as a minified JSON file
    * to the output bin/ directory.

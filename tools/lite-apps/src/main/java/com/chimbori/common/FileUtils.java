@@ -18,6 +18,10 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class FileUtils {
+  private static final int BUFFER_SIZE = 8192;
+
+  private static final OkHttpClient client = new OkHttpClient();
+
   /**
    * The project root directory cannot be hard-coded in the code because it can and will be
    * different in different environments, e.g. local runs, continuous test environments, etc.
@@ -32,10 +36,6 @@ public class FileUtils {
       e.printStackTrace();
     }
   }
-
-  public static final int BUFFER_SIZE = 8192;
-
-  private static final OkHttpClient client = new OkHttpClient();
 
   public static boolean zip(File rootDir, File zipFile) {
     try (ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)))) {

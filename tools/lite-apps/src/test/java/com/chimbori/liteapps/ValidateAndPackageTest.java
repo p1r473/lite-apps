@@ -20,6 +20,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLDecoder;
@@ -123,7 +124,7 @@ public class ValidateAndPackageTest {
   }
 
   @Test
-  public void testManifestIsValid() {
+  public void testManifestIsValid() throws UnsupportedEncodingException {
     File manifestFile = new File(liteApp, FilePaths.MANIFEST_JSON_FILE_NAME);
     Manifest manifest = readManifest(manifestFile);
     String tag = liteApp.getName();
@@ -146,7 +147,7 @@ public class ValidateAndPackageTest {
       assertEquals("hermit.chimbori.com", manifestUrl.getHost());
       assertTrue(manifestUrl.getPath().startsWith("/lite-apps/"));
       assertTrue(manifestUrl.getPath().endsWith(".hermit"));
-      assertEquals(liteApp.getName() + ".hermit", new File(URLDecoder.decode(manifestUrl.getFile())).getName());
+      assertEquals(liteApp.getName() + ".hermit", new File(URLDecoder.decode(manifestUrl.getFile(), "UTF-8")).getName());
     } catch (MalformedURLException e) {
       fail(e.getMessage());
     }
@@ -238,7 +239,7 @@ public class ValidateAndPackageTest {
     }
   }
 
-  public Manifest readManifest(File file) {
+  private Manifest readManifest(File file) {
     if (file == null || !file.exists()) {
       fail("Not found: " + file.getAbsolutePath());
     }
@@ -252,7 +253,7 @@ public class ValidateAndPackageTest {
     }
   }
 
-  public static void assertFieldExists(String tag, String field, Object value) {
+  private static void assertFieldExists(String tag, String field, Object value) {
     assertNotNull(String.format("File [%s] is missing the field [%s]", tag, field), value);
   }
 }
