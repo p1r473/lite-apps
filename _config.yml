@@ -3,9 +3,9 @@ tagline:  "Lite Apps for use with Hermit: https://hermit.chimbori.com/"
 url:      "https://chimbori.github.io/lite-apps"
 cdn_url:  "https://chimbori.github.io/lite-apps"
 exclude:  [
+            # Don’t add an exclusion for *.jsx, the JSX is compiled to JS inside the _site directory.
             "*.bat",
             "*.gradle",
-            "*.jsx",
             "*.properties",
             "*.sh",
             "blocklists/src",
