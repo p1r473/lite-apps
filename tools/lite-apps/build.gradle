@@ -21,7 +21,6 @@ task(generateLibrary, dependsOn: jar, type: JavaExec) {
 }
 
 dependencies {
-  compile project(':utils')
   compile project(':schema')
 
   compile 'com.google.code.gson:gson:2.8.0'

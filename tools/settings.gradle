@@ -1,1 +1,1 @@
-include ':lite-apps', ':utils', ':schema'
+include ':lite-apps', ':schema'
