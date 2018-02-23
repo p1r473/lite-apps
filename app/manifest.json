@@ -1,0 +1,44 @@
+{
+  "manifest": {
+    "locale": "en",
+    "versions": [
+      {
+        "track": "production",
+        "os": "android",
+        "version_code": 110006,
+        "version_name": "11.0.6",
+        "released": "2018-01-30",
+        "min_sdk_version": 19,
+        "features": [
+          "3 Free Lite Apps instead of 2; change your picks anytime",
+          "🐞 Completely Rewrote Night Mode!",
+          "🆕 Estimated Reading Time for every article, with Instant Reader View",
+          "🆕 Set Screen Orientation for each Lite App",
+          "🐞 Temporary work-around for bug introduced by Google in WebView, which broke back/forward navigation.",
+          "See the full list at https://hermit.chimbori.com/changes"
+        ]
+      }
+    ],
+    "blocklists": [
+      {
+        "name": "Adware and Malware",
+        "url": "https://hermit.chimbori.com/app/v1/adware-malware.json.zip",
+        "updated": "2018-01-24"
+      }
+    ],
+    "fonts": [
+      {
+        "name": "Basic Fonts",
+        "url": "https://hermit.chimbori.com/app/v1/basic-fonts.zip",
+        "updated": "2016-12-07"
+      }
+    ],
+    "styles": [
+      {
+        "name": "Night Styles",
+        "url": "https://hermit.chimbori.com/app/v1/night-styles.zip",
+        "updated": "2017-01-04"
+      }
+    ]
+  }
+}

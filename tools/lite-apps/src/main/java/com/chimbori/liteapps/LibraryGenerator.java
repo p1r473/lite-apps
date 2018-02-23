@@ -30,7 +30,7 @@ class LibraryGenerator {
    * or anything about a Lite App other than its name (same as the directory name).
    * <p>
    * This generator tool combines the basic organizational metadata from index.json & detailed
-   * Lite Apps data from * / manifest.json files. It outputs library.json,
+   * Lite Apps data from * / manifest.json files. It outputs the Library Data JSON file,
    * which is used as the basis for generating the Hermit Library page at
    * https://hermit.chimbori.com/library.
    */

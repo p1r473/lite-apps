@@ -2,22 +2,20 @@ title:    "Lite App Manifests"
 tagline:  "Lite Apps for use with Hermit: https://hermit.chimbori.com/"
 url:      "https://chimbori.github.io/lite-apps"
 cdn_url:  "https://chimbori.github.io/lite-apps"
-include:  [
-            "_data"
-          ]
+cdn_url:
 exclude:  [
             "*.bat",
             "*.gradle",
+            "*.jsx",
             "*.properties",
             "*.sh",
-            "blocklists/",
-            "build/",
+            "blocklists/src",
+            "fonts/src",
             "Gemfile",
             "Gemfile.lock",
-            "gradle/",
-            "gradlew",
-            "lite-apps/",
+            "lite-apps/src",
             "node_modules/",
             "package.json",
-            "src/"
+            "styles/src",
+            "tools/"
           ]

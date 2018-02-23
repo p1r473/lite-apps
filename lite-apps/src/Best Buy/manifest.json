@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Best Buy",
+  "start_url": "https://www.bestbuy.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Best%20Buy.hermit",
+  "theme_color": "#fff200",
+  "secondary_color": "#e5d900",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Shopping"
+  ]
+}

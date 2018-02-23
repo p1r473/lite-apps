@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Costco",
+  "start_url": "https://www.costco.com",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Costco.hermit",
+  "theme_color": "#ee3a43",
+  "secondary_color": "#d6343c",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Shopping"
+  ]
+}

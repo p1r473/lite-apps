@@ -10,7 +10,7 @@ function encodeLiteAppName(liteApp) {
 }
 
 function makeImageUrl(liteApp) {
-  return '{{ site.cdn_url }}/bin/library/112x112/' + encodeLiteAppName(liteApp) + '.png';
+  return '{{ site.cdn_url }}/library/112x112/' + encodeLiteAppName(liteApp) + '.png';
 }
 
 function makeManifestUrl(liteApp) {
@@ -118,7 +118,7 @@ function getQueryVariable(paramName) {
 }
 
 function fetchJson() {
-  $.getJSON("../bin/library/library.json", function (data) {
+  $.getJSON("../library/lite-apps.json", function (data) {
     libraryJson = data;
     applyQueryFilter(document.querySelector('#query').value.toLowerCase());
     updateDisplay(libraryJson);

@@ -44,7 +44,7 @@ class Scaffolder {
   private static final Integer CURRENT_MANIFEST_VERSION = 2;
 
   /**
-   * The library.json file (containing metadata about all Lite Apps) is used as the basis for
+   * The Library Data JSON file (containing metadata about all Lite Apps) is used as the basis for
    * generating scaffolding for the Lite App manifests.
    */
   private static void createScaffolding(String startUrl, String appName) throws IOException, Scraper.ManifestUnavailableException {

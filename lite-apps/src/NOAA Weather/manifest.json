@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "NOAA Weather",
+  "start_url": "http://mobile.weather.gov",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/NOAA%20Weather.hermit",
+  "theme_color": "#fd2e2e",
+  "secondary_color": "#e32929",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "TODO"
+  ]
+}
