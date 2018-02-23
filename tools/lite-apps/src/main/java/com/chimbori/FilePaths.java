@@ -1,8 +1,8 @@
 package com.chimbori;
 
-import com.chimbori.common.FileUtils;
-
 import java.io.File;
+import java.io.IOException;
+import java.net.URISyntaxException;
 
 public class FilePaths {
   // Filenames
@@ -15,18 +15,33 @@ public class FilePaths {
   // App Manifest
   public static final String APP_MANIFEST_FILE_NAME = "manifest";  // No extension.
 
+  /**
+   * The project root directory cannot be hard-coded in the code because it can and will be
+   * different in different environments, e.g. local runs, continuous test environments, etc.
+   * Using the ClassLoader offers us the most hermetic way of determining the correct paths.
+   */
+  public static File PROJECT_ROOT = null;
+  static {
+    try {
+      PROJECT_ROOT = new File(new File(
+          ClassLoader.getSystemResource(".").toURI()), "../../../../../../").getCanonicalFile();
+    } catch (URISyntaxException | IOException e) {
+      e.printStackTrace();
+    }
+  }
+
   // Inputs
-  public static final File SRC_ROOT_DIR_LITE_APPS   = new File(FileUtils.PROJECT_ROOT, "lite-apps/");
-  public static final File SRC_TAGS_JSON_FILE       = new File(FileUtils.PROJECT_ROOT, "lite-apps/tags.json");
-  public static final File SRC_ROOT_DIR_BLOCK_LISTS = new File(FileUtils.PROJECT_ROOT, "blocklists/");
-  public static final File SRC_BLOCK_LISTS_JSON     = new File(FileUtils.PROJECT_ROOT, "blocklists/index.json");
+  public static final File SRC_ROOT_DIR_LITE_APPS   = new File(PROJECT_ROOT, "lite-apps/");
+  public static final File SRC_TAGS_JSON_FILE       = new File(PROJECT_ROOT, "lite-apps/tags.json");
+  public static final File SRC_ROOT_DIR_BLOCK_LISTS = new File(PROJECT_ROOT, "blocklists/");
+  public static final File SRC_BLOCK_LISTS_JSON     = new File(PROJECT_ROOT, "blocklists/index.json");
 
   // Outputs
-  public static final File OUT_APP_MANIFEST_DIR     = new File(FileUtils.PROJECT_ROOT, "bin/app/");
-  public static final File OUT_LITE_APPS_DIR        = new File(FileUtils.PROJECT_ROOT, "bin/lite-apps/");
-  public static final File OUT_LIBRARY_ICONS_DIR    = new File(FileUtils.PROJECT_ROOT, "bin/library/112x112/");
-  public static final File OUT_LIBRARY_JSON         = new File(FileUtils.PROJECT_ROOT, "bin/library/library.json");
-  public static final File OUT_ROOT_DIR_BLOCK_LISTS = new File(FileUtils.PROJECT_ROOT, "bin/blocklists/");
+  public static final File OUT_APP_MANIFEST_DIR     = new File(PROJECT_ROOT, "bin/app/");
+  public static final File OUT_LITE_APPS_DIR        = new File(PROJECT_ROOT, "bin/lite-apps/");
+  public static final File OUT_LIBRARY_ICONS_DIR    = new File(PROJECT_ROOT, "bin/library/112x112/");
+  public static final File OUT_LIBRARY_JSON         = new File(PROJECT_ROOT, "bin/library/library.json");
+  public static final File OUT_ROOT_DIR_BLOCK_LISTS = new File(PROJECT_ROOT, "bin/blocklists/");
 
   static {
     OUT_LITE_APPS_DIR.mkdirs();

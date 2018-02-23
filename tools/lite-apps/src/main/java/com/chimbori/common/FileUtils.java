@@ -7,7 +7,6 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URISyntaxException;
 import java.nio.file.attribute.FileTime;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
@@ -20,21 +19,6 @@ public class FileUtils {
   private static final int BUFFER_SIZE = 8192;
 
   private static final OkHttpClient client = new OkHttpClient();
-
-  /**
-   * The project root directory cannot be hard-coded in the code because it can and will be
-   * different in different environments, e.g. local runs, continuous test environments, etc.
-   * Using the ClassLoader offers us the most hermetic way of determining the correct paths.
-   */
-  public static File PROJECT_ROOT = null;
-  static {
-    try {
-      PROJECT_ROOT = new File(new File(
-          ClassLoader.getSystemResource(".").toURI()), "../../../../../../").getCanonicalFile();
-    } catch (URISyntaxException | IOException e) {
-      e.printStackTrace();
-    }
-  }
 
   public static boolean zip(File rootDir, File zipFile) {
     try (ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)))) {
