@@ -1,5 +1,6 @@
 package com.chimbori.blocklists;
 
+import com.chimbori.FilePaths;
 import com.chimbori.common.FileUtils;
 import com.chimbori.hermitcrab.schema.blocklists.BlockList;
 import com.chimbori.hermitcrab.schema.blocklists.BlockListsLibrary;
@@ -44,7 +45,7 @@ public class BlockListsParser {
   public static void downloadFromSources() throws IOException {
     BlockListsLibrary blockListsLibrary = readBlockListsLibrary();
     for (CombinedBlockList combinedBlockList : blockListsLibrary.blocklists) {
-      File blockListDirectory = new File(FilePaths.SRC_ROOT_DIR, combinedBlockList.blocklist);
+      File blockListDirectory = new File(FilePaths.SRC_ROOT_DIR_BLOCK_LISTS, combinedBlockList.blocklist);
       blockListDirectory.mkdirs();
       for (SourceBlockList source : combinedBlockList.sources) {
         // A blank URL means it’s a local file, so no need to fetch it from a remote server.
@@ -66,7 +67,7 @@ public class BlockListsParser {
     for (CombinedBlockList combinedBlockList : blockListsLibrary.blocklists) {
       Set<String> hosts = new HashSet<>();
 
-      File blockListDirectory = new File(FilePaths.SRC_ROOT_DIR, combinedBlockList.blocklist);
+      File blockListDirectory = new File(FilePaths.SRC_ROOT_DIR_BLOCK_LISTS, combinedBlockList.blocklist);
       blockListDirectory.mkdirs();
 
       for (SourceBlockList source : combinedBlockList.sources) {
@@ -79,7 +80,7 @@ public class BlockListsParser {
         }
       }
 
-      writeToDisk(FilePaths.OUT_ROOT_DIR, combinedBlockList.filename, hosts);
+      writeToDisk(FilePaths.OUT_ROOT_DIR_BLOCK_LISTS, combinedBlockList.filename, hosts);
       hosts.clear();  // Empty the list before writing each one.
     }
   }

@@ -42,7 +42,7 @@ class LibraryGenerator {
     LibraryTagsList globalTags = LibraryTagsList.fromGson(gson, new FileReader(FilePaths.SRC_TAGS_JSON_FILE));
     Library outputLibrary = new Library(globalTags);
 
-    File[] liteAppDirs = FilePaths.SRC_ROOT_DIR.listFiles();
+    File[] liteAppDirs = FilePaths.SRC_ROOT_DIR_LITE_APPS.listFiles();
     for (File liteAppDirectory : liteAppDirs) {
       if (!liteAppDirectory.isDirectory()) {
         continue; // Probably a temporary file, like .DS_Store.

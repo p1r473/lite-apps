@@ -18,7 +18,7 @@ public class PaletteExtractor {
   public static void extractPaletteIfMissing() throws IOException {
     Gson gson = GsonInstance.getPrettyPrinter();
 
-    File[] liteAppDirs = FilePaths.SRC_ROOT_DIR.listFiles();
+    File[] liteAppDirs = FilePaths.SRC_ROOT_DIR_LITE_APPS.listFiles();
     for (File liteAppDirectory : liteAppDirs) {
       if (!liteAppDirectory.isDirectory()) {
         continue; // Probably a temporary file, like .DS_Store.

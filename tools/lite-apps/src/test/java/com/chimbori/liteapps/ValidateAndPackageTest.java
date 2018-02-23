@@ -83,7 +83,7 @@ public class ValidateAndPackageTest {
 
   @Parameterized.Parameters
   public static Collection listOfLiteApps() {
-    return Arrays.asList(FilePaths.SRC_ROOT_DIR.listFiles(File::isDirectory));
+    return Arrays.asList(FilePaths.SRC_ROOT_DIR_LITE_APPS.listFiles(File::isDirectory));
   }
 
   @Before
