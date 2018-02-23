@@ -9,7 +9,6 @@ import com.chimbori.hermitcrab.schema.appmanifest.AssetFormat;
 import com.chimbori.hermitcrab.schema.appmanifest.Manifest;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
 import com.chimbori.hermitcrab.schema.common.SchemaDate;
-import com.google.common.collect.ImmutableList;
 
 import java.io.File;
 import java.io.IOException;
@@ -20,7 +19,6 @@ import java.util.ArrayList;
  * to avoid having to write (and then validate) JSON by hand.
  */
 public class AppManifestWriter {
-
   /**
    * Static entry point into this class. It writes the current manifest as a minified JSON file
    * to the output bin/ directory.
