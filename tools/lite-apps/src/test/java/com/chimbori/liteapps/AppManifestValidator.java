@@ -21,7 +21,7 @@ import static org.junit.Assert.assertTrue;
 public class AppManifestValidator {
   @Test
   public void testAppManifestParsing() throws FileNotFoundException, ResourceNotFoundException {
-    File manifestFile = TestUtils.getResource(this.getClass(), "manifest.json");
+    File manifestFile = TestUtils.getResource(this.getClass(), "app-manifest.json");
     AppManifest appManifest = GsonInstance.getPrettyPrinter().fromJson(
         new FileReader(manifestFile), AppManifest.class);
     assertNotNull(appManifest);
