@@ -21,10 +21,10 @@ class TagsCollector {
 
     // Read the list of all known tags from the tags.json file. In case we discover any new tags,
     // we will add them to this file, taking care not to overwrite those that already exist.
-    LibraryTagsList tagsGson = LibraryTagsList.fromGson(gson, new FileReader(FilePaths.SRC_TAGS_JSON_FILE));
+    LibraryTagsList tagsGson = LibraryTagsList.fromGson(gson, new FileReader(FilePaths.LITE_APPS_TAGS_JSON));
 
     Map<String, LibraryTag> globalTags = new HashMap<>();
-    File[] liteAppDirs = FilePaths.SRC_ROOT_DIR_LITE_APPS.listFiles();
+    File[] liteAppDirs = FilePaths.LITE_APPS_SRC_DIR.listFiles();
     for (File liteAppDirectory : liteAppDirs) {
       if (!liteAppDirectory.isDirectory()) {
         continue; // Probably a temporary file, like .DS_Store.
@@ -58,6 +58,6 @@ class TagsCollector {
     }
 
     // Write the tags to JSON
-    FileUtils.writeFile(FilePaths.SRC_TAGS_JSON_FILE, tagsGson.toJson(gson));
+    FileUtils.writeFile(FilePaths.LITE_APPS_TAGS_JSON, tagsGson.toJson(gson));
   }
 }

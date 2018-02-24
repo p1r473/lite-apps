@@ -27,24 +27,35 @@ public class FilePaths {
     }
   }
 
-  // Inputs
-  public static final File SRC_ROOT_DIR_LITE_APPS    = new File(PROJECT_ROOT, "lite-apps/src");
-  public static final File SRC_TAGS_JSON_FILE        = new File(PROJECT_ROOT, "lite-apps/src/tags.json");
-  public static final File SRC_ROOT_DIR_BLOCK_LISTS  = new File(PROJECT_ROOT, "blocklists/src/");
-  public static final File SRC_BLOCK_LISTS_JSON      = new File(PROJECT_ROOT, "blocklists/src/sources.json");
+  // Lite Apps
+  public static final File LITE_APPS_SRC_DIR        = new File(PROJECT_ROOT, "lite-apps/src");
+  public static final File LITE_APPS_TAGS_JSON      = new File(PROJECT_ROOT, "lite-apps/src/tags.json");
+  public static final File LITE_APPS_OUTPUT_DIR     = new File(PROJECT_ROOT, "lite-apps/v2/");
 
-  // Outputs
-  public static final File OUT_LITE_APPS_DIR         = new File(PROJECT_ROOT, "lite-apps/v2/");
-  public static final File OUT_LIBRARY_ICONS_DIR     = new File(PROJECT_ROOT, "library/112x112/");
-  public static final File OUT_LIBRARY_JSON          = new File(PROJECT_ROOT, "library/lite-apps.json");
+  // Library
+  public static final File LIBRARY_ICONS_DIR        = new File(PROJECT_ROOT, "library/112x112/");
+  public static final File LIBRARY_JSON             = new File(PROJECT_ROOT, "library/lite-apps.json");
 
-  public static final File OUT_ROOT_DIR_APP_MANIFEST = new File(PROJECT_ROOT, "app/v2/");
-  public static final File OUT_ROOT_DIR_BLOCK_LISTS  = new File(PROJECT_ROOT, "blocklists/v2/");
-  public static final File OUT_ROOT_DIR_FONTS        = new File(PROJECT_ROOT, "fonts/v2/");
-  public static final File OUT_ROOT_DIR_STYLES       = new File(PROJECT_ROOT, "styles/v2/");
+  // Block Lists
+  public static final File BLOCKLISTS_SRC_DIR       = new File(PROJECT_ROOT, "blocklists/src/");
+  public static final File BLOCKLISTS_SOURCES_JSON  = new File(PROJECT_ROOT, "blocklists/src/sources.json");
+  public static final File BLOCKLISTS_OUTPUT_DIR    = new File(PROJECT_ROOT, "blocklists/v2/");
+
+  // App Manifest
+  public static final File APP_MANIFEST_OUTPUT_DIR  = new File(PROJECT_ROOT, "app/v2/");
+
+  // Fonts
+  public static final File FONTS_OUTPUT_DIR         = new File(PROJECT_ROOT, "fonts/v2/");
+
+  // Styles
+  public static final File STYLES_OUTPUT_DIR        = new File(PROJECT_ROOT, "styles/v2/");
 
   static {
-    OUT_LITE_APPS_DIR.mkdirs();
-    OUT_LIBRARY_ICONS_DIR.mkdirs();
+    LITE_APPS_OUTPUT_DIR.mkdirs();
+    LIBRARY_ICONS_DIR.mkdirs();
+    BLOCKLISTS_OUTPUT_DIR.mkdirs();
+    APP_MANIFEST_OUTPUT_DIR.mkdirs();
+    FONTS_OUTPUT_DIR.mkdirs();
+    STYLES_OUTPUT_DIR.mkdirs();
   }
 }

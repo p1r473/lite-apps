@@ -15,7 +15,7 @@ import static org.junit.Assert.fail;
 public class LibraryValidator {
   @Test
   public void testTagsJSONIsWellFormedAndReformat() throws IOException {
-    TestHelpers.assertJsonIsWellFormedAndReformat(FilePaths.SRC_TAGS_JSON_FILE);
+    TestHelpers.assertJsonIsWellFormedAndReformat(FilePaths.LITE_APPS_TAGS_JSON);
   }
 
   @Test

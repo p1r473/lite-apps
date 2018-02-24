@@ -39,10 +39,10 @@ class LibraryGenerator {
 
     // Read the list of all known tags from the tags.json file. In case we discover any new tags,
     // we will add them to this file, taking care not to overwrite those that already exist.
-    LibraryTagsList globalTags = LibraryTagsList.fromGson(gson, new FileReader(FilePaths.SRC_TAGS_JSON_FILE));
+    LibraryTagsList globalTags = LibraryTagsList.fromGson(gson, new FileReader(FilePaths.LITE_APPS_TAGS_JSON));
     Library outputLibrary = new Library(globalTags);
 
-    File[] liteAppDirs = FilePaths.SRC_ROOT_DIR_LITE_APPS.listFiles();
+    File[] liteAppDirs = FilePaths.LITE_APPS_SRC_DIR.listFiles();
     for (File liteAppDirectory : liteAppDirs) {
       if (!liteAppDirectory.isDirectory()) {
         continue; // Probably a temporary file, like .DS_Store.
@@ -74,7 +74,7 @@ class LibraryGenerator {
       outputLibrary.addAppToCategories(outputApp, manifest.tags);
 
       // Resize the icon to be suitable for the Web, and copy it to the Web-accessible icons directory.
-      File thumbnailImage = new File(FilePaths.OUT_LIBRARY_ICONS_DIR, appName + FilePaths.ICON_EXTENSION);
+      File thumbnailImage = new File(FilePaths.LIBRARY_ICONS_DIR, appName + FilePaths.ICON_EXTENSION);
       if (!thumbnailImage.exists()) {
         Thumbnails.of(new File(iconsDirectory, IconFile.FAVICON_FILE.fileName))
             .outputQuality(1.0f)
@@ -85,6 +85,6 @@ class LibraryGenerator {
       }
     }
 
-    FileUtils.writeFile(FilePaths.OUT_LIBRARY_JSON, outputLibrary.toJson(gson));
+    FileUtils.writeFile(FilePaths.LIBRARY_JSON, outputLibrary.toJson(gson));
   }
 }

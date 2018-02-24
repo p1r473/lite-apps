@@ -20,7 +20,7 @@ class LiteAppPackager {
    */
   public static boolean packageManifest(File liteAppDirectory) {
     File manifestJsonFile = new File(liteAppDirectory, FilePaths.MANIFEST_JSON_FILE_NAME);
-    File liteAppZippedFile = new File(FilePaths.OUT_LITE_APPS_DIR, String.format("%s.hermit", liteAppDirectory.getName()));
+    File liteAppZippedFile = new File(FilePaths.LITE_APPS_OUTPUT_DIR, String.format("%s.hermit", liteAppDirectory.getName()));
     try {
       Json.parse(new FileReader(manifestJsonFile));
     } catch (IOException e) {

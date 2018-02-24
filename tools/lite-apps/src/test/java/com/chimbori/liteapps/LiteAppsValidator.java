@@ -85,12 +85,12 @@ public class LiteAppsValidator {
 
   @Parameterized.Parameters
   public static Collection listOfLiteApps() {
-    return Arrays.asList(FilePaths.SRC_ROOT_DIR_LITE_APPS.listFiles(File::isDirectory));
+    return Arrays.asList(FilePaths.LITE_APPS_SRC_DIR.listFiles(File::isDirectory));
   }
 
   @Before
   public void setUp() {
-    FilePaths.OUT_LITE_APPS_DIR.delete();
+    FilePaths.LITE_APPS_OUTPUT_DIR.delete();
   }
 
   @Test

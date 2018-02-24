@@ -48,7 +48,7 @@ class Scaffolder {
    * generating scaffolding for the Lite App manifests.
    */
   private static void createScaffolding(String startUrl, String appName) throws IOException, Scraper.ManifestUnavailableException {
-    File liteAppDirectoryRoot = new File(FilePaths.SRC_ROOT_DIR_LITE_APPS, appName);
+    File liteAppDirectoryRoot = new File(FilePaths.LITE_APPS_SRC_DIR, appName);
 
     Manifest manifest;
     File manifestJsonFile = new File(liteAppDirectoryRoot, FilePaths.MANIFEST_JSON_FILE_NAME);

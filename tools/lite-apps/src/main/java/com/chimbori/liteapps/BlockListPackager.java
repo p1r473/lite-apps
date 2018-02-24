@@ -45,7 +45,7 @@ class BlockListPackager {
   public static void downloadFromSources() throws IOException {
     BlockListsLibrary blockListsLibrary = readBlockListsLibrary();
     for (CombinedBlockList combinedBlockList : blockListsLibrary.blocklists) {
-      File blockListDirectory = new File(FilePaths.SRC_ROOT_DIR_BLOCK_LISTS, combinedBlockList.blocklist);
+      File blockListDirectory = new File(FilePaths.BLOCKLISTS_SRC_DIR, combinedBlockList.blocklist);
       blockListDirectory.mkdirs();
       for (SourceBlockList source : combinedBlockList.sources) {
         // A blank URL means it’s a local file, so no need to fetch it from a remote server.
@@ -67,7 +67,7 @@ class BlockListPackager {
     for (CombinedBlockList combinedBlockList : blockListsLibrary.blocklists) {
       Set<String> hosts = new HashSet<>();
 
-      File blockListDirectory = new File(FilePaths.SRC_ROOT_DIR_BLOCK_LISTS, combinedBlockList.blocklist);
+      File blockListDirectory = new File(FilePaths.BLOCKLISTS_SRC_DIR, combinedBlockList.blocklist);
       blockListDirectory.mkdirs();
 
       for (SourceBlockList source : combinedBlockList.sources) {
@@ -80,7 +80,7 @@ class BlockListPackager {
         }
       }
 
-      writeToDisk(FilePaths.OUT_ROOT_DIR_BLOCK_LISTS, combinedBlockList.filename, hosts);
+      writeToDisk(FilePaths.BLOCKLISTS_OUTPUT_DIR, combinedBlockList.filename, hosts);
       hosts.clear();  // Empty the list before writing each one.
     }
   }
@@ -171,7 +171,7 @@ class BlockListPackager {
 
   private static BlockListsLibrary readBlockListsLibrary() throws IOException {
     return GsonInstance.getPrettyPrinter().fromJson(
-        FileUtils.readFully(new FileInputStream(FilePaths.SRC_BLOCK_LISTS_JSON)),
+        FileUtils.readFully(new FileInputStream(FilePaths.BLOCKLISTS_SOURCES_JSON)),
         BlockListsLibrary.class);
   }
 }
