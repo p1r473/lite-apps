@@ -1,5 +1,6 @@
 package com.chimbori.liteapps;
 
+import com.chimbori.FilePaths;
 import com.chimbori.common.ResourceNotFoundException;
 import com.chimbori.common.TestUtils;
 import com.chimbori.hermitcrab.schema.appmanifest.AppManifest;
@@ -20,7 +21,17 @@ import static org.junit.Assert.assertTrue;
 
 public class AppManifestValidator {
   @Test
-  public void testAppManifestParsing() throws FileNotFoundException, ResourceNotFoundException {
+  public void testLiveAppManifestIsValid() throws FileNotFoundException {
+    File appManifestFile = new File(FilePaths.APP_MANIFEST_OUTPUT_DIR, FilePaths.MANIFEST_JSON_FILE_NAME);
+
+    AppManifest appManifest = GsonInstance.getPrettyPrinter().fromJson(
+        new FileReader(appManifestFile), AppManifest.class);
+    assertNotNull(appManifest);
+    assertEquals(110006, appManifest.getLatestProdVersion().versionCode);
+  }
+
+  @Test
+  public void testThatAppManifestParsingIsCorrect() throws FileNotFoundException, ResourceNotFoundException {
     File manifestFile = TestUtils.getResource(this.getClass(), "app-manifest.json");
     AppManifest appManifest = GsonInstance.getPrettyPrinter().fromJson(
         new FileReader(manifestFile), AppManifest.class);
