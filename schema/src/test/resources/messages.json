@@ -1,0 +1,11 @@
+{
+  "photos": {
+    "message": "Photos"
+  },
+  "notifications": {
+    "message": "Notifications"
+  },
+  "settings": {
+    "message": "Settings"
+  }
+}
