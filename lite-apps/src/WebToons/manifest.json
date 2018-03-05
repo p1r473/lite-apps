@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "WebToons",
+  "start_url": "https://m.webtoons.com/en/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/WebToons.hermit",
+  "theme_color": "#00d564",
+  "secondary_color": "#00bf5a",
+  "icon": "favicon.png",
+  "hermit_bookmarks": [
+    {
+      "url": "http://m.webtoons.com/en/dailySchedule",
+      "name": "Daily Featured"
+    }
+  ],
+  "related_applications": [
+    {
+      "id": "com.naver.linewebtoon",
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.naver.linewebtoon"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Korea",
+    "Comics"
+  ]
+}

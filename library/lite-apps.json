@@ -1382,6 +1382,11 @@
           "url": "https://www.smbc-comics.com"
         },
         {
+          "theme_color": "#00d564",
+          "name": "WebToons",
+          "url": "https://m.webtoons.com/en/"
+        },
+        {
           "theme_color": "#95a7c9",
           "name": "XKCD",
           "url": "https://m.xkcd.com"
@@ -1767,6 +1772,18 @@
           "theme_color": "#708c00",
           "name": "Hot UK Deals",
           "url": "https://www.hotukdeals.com"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Korea"
+      },
+      "apps": [
+        {
+          "theme_color": "#00d564",
+          "name": "WebToons",
+          "url": "https://m.webtoons.com/en/"
         }
       ]
     }
