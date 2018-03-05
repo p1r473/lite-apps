@@ -29,7 +29,7 @@ This repository contains not only the manifests for the individual Lite App defi
 1. Run the Scaffolder for the site `https://example.com/` with name `Example`. To include spaces in the name of the app, type an underscore instead of a space. E.g. `New_York_Times` instead of `New York Times`.
 
     ```
-    ./gradlew scaffold -Pargs="--url https://example.com --name Example"
+    ./gradlew :tools:scaffold -Pargs="--url https://example.com/ --name Example_Lite_App"
     ```
 
 1. Manually inspect the generated `manifest.json`, modify any fields as required. [See the full syntax](README.md).
@@ -45,7 +45,7 @@ This repository contains not only the manifests for the individual Lite App defi
 1. Extract the theme colors automatically:
 
     ```
-    ./gradlew extractPalette
+    ./gradlew :tools:extractPalette
     ```
 
 1. Run all the tests:

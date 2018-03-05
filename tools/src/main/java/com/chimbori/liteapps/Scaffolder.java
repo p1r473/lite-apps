@@ -141,13 +141,13 @@ class Scaffolder {
     Options options = new Options()
         .addOption(Option.builder().required(true).hasArg(true)
             .longOpt(COMMAND_LINE_OPTION_URL)
-            .argName("https://example.com")
-            .desc("URL to create a Lite App for")
+            .argName("https://example.com/")
+            .desc("Root URL of the Lite App")
             .build())
         .addOption(Option.builder().required(true).hasArg(true)
             .longOpt(COMMAND_LINE_OPTION_NAME)
-            .argName("Example")
-            .desc("Name of Lite App")
+            .argName("Example_Lite_App")
+            .desc("Name of the Lite App")
             .build());
     try {
       // The Gradle wrapper makes it hard to pass spaces within arguments, so allow users
