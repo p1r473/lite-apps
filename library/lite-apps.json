@@ -700,6 +700,11 @@
           "url": "http://www.canistream.it/mobile/query"
         },
         {
+          "theme_color": "#79c142",
+          "name": "Cinema Lounge",
+          "url": "https://cinemalounge.io"
+        },
+        {
           "theme_color": "#3e4f53",
           "name": "E! Online",
           "url": "https://m.eonline.com"
@@ -863,6 +868,11 @@
           "theme_color": "#3b438f",
           "name": "Forecast.io",
           "url": "https://forecast.io"
+        },
+        {
+          "theme_color": "#fd2e2e",
+          "name": "NOAA Weather",
+          "url": "http://mobile.weather.gov"
         }
       ]
     },
@@ -1757,23 +1767,6 @@
           "theme_color": "#708c00",
           "name": "Hot UK Deals",
           "url": "https://www.hotukdeals.com"
-        }
-      ]
-    },
-    {
-      "category": {
-        "name": "TODO"
-      },
-      "apps": [
-        {
-          "theme_color": "#79c142",
-          "name": "Cinema Lounge",
-          "url": "https://cinemalounge.io"
-        },
-        {
-          "theme_color": "#fd2e2e",
-          "name": "NOAA Weather",
-          "url": "http://mobile.weather.gov"
         }
       ]
     }
