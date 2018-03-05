@@ -1714,6 +1714,11 @@
           "theme_color": "#b3c9ff",
           "name": "Baidu",
           "url": "https://baidu.com"
+        },
+        {
+          "theme_color": "#e81f1f",
+          "name": "腾讯首页",
+          "url": "http://qq.com/"
         }
       ]
     },
