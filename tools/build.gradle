@@ -17,6 +17,9 @@ task(extractPalette, dependsOn: jar, type: JavaExec) {
 
 test {
   systemProperties System.getProperties()
+
+  // Ensure that tests are re-run when no code has changed, because resources may have changed.
+  dependsOn 'cleanTest'
 }
 
 dependencies {

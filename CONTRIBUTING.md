@@ -51,7 +51,7 @@ This repository contains not only the manifests for the individual Lite App defi
 1. Run all the tests:
 
     ```
-    ./gradlew clean && ./gradlew check --info
+    ./gradlew check --info
     ```
 
 1. As a side effect of running the tests, your JSON files will be auto-formatted, and a new `*.hermit` file will be generated. This generated file must be included in your commit.
