@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Slack",
   "priority": 10,
-  "start_url": "https://slack.com",
+  "start_url": "https://slack.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Slack.hermit",
   "secondary_color": "#67b8c6",
   "icon": "favicon.png",

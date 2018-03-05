@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "The Guardian",
   "priority": 50,
-  "start_url": "https://theguardian.com",
+  "start_url": "https://theguardian.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20Guardian.hermit",
   "secondary_color": "#004d7b",
   "icon": "favicon.png",

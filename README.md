@@ -48,7 +48,7 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
       "manifest_version": 1,
       "lang": "en",
       "name": "__MSG_lite_app_title__",
-      "start_url": "https://example.com",
+      "start_url": "https://example.com/",
       "theme_color": "#ff0000",
       "secondary_color": "#00ff00",
       "icon": "favicon.png",

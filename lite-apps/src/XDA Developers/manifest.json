@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "lang": "en",
   "name": "XDA Developers",
-  "start_url": "https://xda-developers.com",
+  "start_url": "https://xda-developers.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/XDA%20Developers.hermit",
   "theme_color": "#ff8400",
   "secondary_color": "#e57600",

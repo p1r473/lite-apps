@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Tumblr",
   "priority": 10,
-  "start_url": "https://tumblr.com",
+  "start_url": "https://tumblr.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Tumblr.hermit",
   "secondary_color": "#303f53",
   "icon": "favicon.png",

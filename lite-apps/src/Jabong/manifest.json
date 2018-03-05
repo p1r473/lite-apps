@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "lang": "en",
   "name": "Jabong",
-  "start_url": "https://www.jabong.com",
+  "start_url": "https://www.jabong.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Jabong.hermit",
   "theme_color": "#f7931d",
   "secondary_color": "#de841a",

@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Google",
   "priority": 100,
-  "start_url": "https://www.google.com",
+  "start_url": "https://www.google.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Google.hermit",
   "lang": "en",
   "theme_color": "#4485a7",

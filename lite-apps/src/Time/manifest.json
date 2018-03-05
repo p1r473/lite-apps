@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Time",
   "priority": 10,
-  "start_url": "https://time.com",
+  "start_url": "https://time.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Time.hermit",
   "secondary_color": "#c00001",
   "icon": "favicon.png",

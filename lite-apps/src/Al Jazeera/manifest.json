@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Al Jazeera",
   "priority": 10,
-  "start_url": "http://aljazeera.com",
+  "start_url": "http://aljazeera.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Al%20Jazeera.hermit",
   "secondary_color": "#e47300",
   "icon": "favicon.png",

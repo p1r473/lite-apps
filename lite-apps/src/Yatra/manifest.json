@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "lang": "en",
   "name": "Yatra",
-  "start_url": "https://yatra.com",
+  "start_url": "https://yatra.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Yatra.hermit",
   "theme_color": "#ea2330",
   "secondary_color": "#d21f2b",

@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "GoodReads",
   "priority": 50,
-  "start_url": "https://www.goodreads.com",
+  "start_url": "https://www.goodreads.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/GoodReads.hermit",
   "secondary_color": "#cfc9af",
   "icon": "favicon.png",

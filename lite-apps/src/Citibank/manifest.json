@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Citibank",
   "priority": 10,
-  "start_url": "https://online.citi.com",
+  "start_url": "https://online.citi.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Citibank.hermit",
   "secondary_color": "#003b6c",
   "icon": "favicon.png",

@@ -3,7 +3,7 @@
   "lang": "en",
   "name": "Target",
   "priority": 10,
-  "start_url": "https://www.target.com",
+  "start_url": "https://www.target.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Target.hermit",
   "theme_color": "#cc0000",
   "secondary_color": "#b70000",

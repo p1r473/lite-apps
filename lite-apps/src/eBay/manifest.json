@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "eBay",
   "priority": 10,
-  "start_url": "https://m.ebay.com",
+  "start_url": "https://m.ebay.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/eBay.hermit",
   "secondary_color": "#cd2c32",
   "icon": "favicon.png",

@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Jerusalem Post",
   "priority": 10,
-  "start_url": "http://m.jpost.com",
+  "start_url": "http://m.jpost.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Jerusalem%20Post.hermit",
   "secondary_color": "#ac4548",
   "icon": "favicon.png",

@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "lang": "en",
   "name": "Bleacher Report",
-  "start_url": "https://bleacherreport.com",
+  "start_url": "https://bleacherreport.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Bleacher%20Report.hermit",
   "theme_color": "#000000",
   "secondary_color": "#000000",

@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "IMDb",
   "priority": 50,
-  "start_url": "https://m.imdb.com",
+  "start_url": "https://m.imdb.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/IMDb.hermit",
   "secondary_color": "#ddcc87",
   "icon": "favicon.png",

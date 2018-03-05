@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Bloomberg",
   "priority": 10,
-  "start_url": "https://bloomberg.com",
+  "start_url": "https://bloomberg.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Bloomberg.hermit",
   "secondary_color": "#2400c1",
   "icon": "favicon.png",

@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "lang": "en",
   "name": "Lunar Baboon",
-  "start_url": "http://www.lunarbaboon.com",
+  "start_url": "http://www.lunarbaboon.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Lunar%20Baboon.hermit",
   "theme_color": "#1f2900",
   "secondary_color": "#1b2400",

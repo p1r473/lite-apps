@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Outlook",
   "priority": 10,
-  "start_url": "https://outlook.com",
+  "start_url": "https://outlook.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Outlook.hermit",
   "secondary_color": "#005ea3",
   "icon": "favicon.png",

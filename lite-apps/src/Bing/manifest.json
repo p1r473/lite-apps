@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Bing",
   "priority": 10,
-  "start_url": "https://www.bing.com",
+  "start_url": "https://www.bing.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Bing.hermit",
   "lang": "en",
   "theme_color": "#008485",

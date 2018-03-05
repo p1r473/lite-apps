@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Yelp",
   "priority": 90,
-  "start_url": "https://m.yelp.com",
+  "start_url": "https://m.yelp.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Yelp.hermit",
   "secondary_color": "#bb1b0a",
   "icon": "favicon.png",

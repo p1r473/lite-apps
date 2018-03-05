@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Instructables",
   "priority": 10,
-  "start_url": "https://m.instructables.com",
+  "start_url": "https://m.instructables.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Instructables.hermit",
   "secondary_color": "#e0a94f",
   "icon": "favicon.png",

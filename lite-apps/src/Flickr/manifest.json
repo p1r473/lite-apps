@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Flickr",
   "priority": 10,
-  "start_url": "https://flickr.com",
+  "start_url": "https://flickr.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Flickr.hermit",
   "secondary_color": "#0b5abd",
   "icon": "favicon.png",

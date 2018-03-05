@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "lang": "en",
   "name": "Bhaskar",
-  "start_url": "https://bhaskar.com",
+  "start_url": "https://bhaskar.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Bhaskar.hermit",
   "theme_color": "#f58220",
   "secondary_color": "#dc751c",

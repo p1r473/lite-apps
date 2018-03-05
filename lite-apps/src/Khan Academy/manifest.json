@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Khan Academy",
   "priority": 10,
-  "start_url": "https://khanacademy.org",
+  "start_url": "https://khanacademy.org/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Khan%20Academy.hermit",
   "secondary_color": "#8ca333",
   "icon": "favicon.png",

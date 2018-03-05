@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "ReCode",
   "priority": 10,
-  "start_url": "https://recode.net",
+  "start_url": "https://recode.net/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/ReCode.hermit",
   "secondary_color": "#b20015",
   "icon": "favicon.png",

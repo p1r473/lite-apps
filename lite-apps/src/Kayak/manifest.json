@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Kayak",
   "priority": 10,
-  "start_url": "https://kayak.com",
+  "start_url": "https://kayak.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Kayak.hermit",
   "secondary_color": "#e28135",
   "icon": "favicon.png",

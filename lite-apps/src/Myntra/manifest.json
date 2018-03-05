@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "lang": "en",
   "name": "Myntra",
-  "start_url": "https://myntra.com",
+  "start_url": "https://myntra.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Myntra.hermit",
   "theme_color": "#b92156",
   "secondary_color": "#a61d4d",

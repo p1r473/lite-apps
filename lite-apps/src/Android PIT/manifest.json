@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Android PIT",
   "priority": 10,
-  "start_url": "https://www.androidpit.com",
+  "start_url": "https://www.androidpit.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20PIT.hermit",
   "secondary_color": "#3c9cc9",
   "icon": "favicon.png",

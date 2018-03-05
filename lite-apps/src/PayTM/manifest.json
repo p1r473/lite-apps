@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "PayTM",
   "priority": 10,
-  "start_url": "https://paytm.com",
+  "start_url": "https://paytm.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/PayTM.hermit",
   "secondary_color": "#002666",
   "lang": "en",

@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Gmail",
   "priority": 90,
-  "start_url": "https://mail.google.com",
+  "start_url": "https://mail.google.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Gmail.hermit",
   "secondary_color": "#c6483c",
   "icon": "favicon.png",

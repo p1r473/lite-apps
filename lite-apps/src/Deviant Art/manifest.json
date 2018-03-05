@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Deviant Art",
   "priority": 10,
-  "start_url": "https://deviantart.com",
+  "start_url": "https://deviantart.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Deviant%20Art.hermit",
   "secondary_color": "#05b73f",
   "icon": "favicon.png",

@@ -3,7 +3,7 @@
   "lang": "en",
   "name": "Twitter",
   "priority": 90,
-  "start_url": "https://mobile.twitter.com/home",
+  "start_url": "https://mobile.twitter.com/home/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Twitter.hermit",
   "theme_color": "#4798d8",
   "secondary_color": "#378ac8",

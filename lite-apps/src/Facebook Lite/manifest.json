@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Facebook Lite",
   "priority": 90,
-  "start_url": "https://mbasic.facebook.com",
+  "start_url": "https://mbasic.facebook.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Facebook%20Lite.hermit",
   "secondary_color": "#385490",
   "icon": "favicon.png",

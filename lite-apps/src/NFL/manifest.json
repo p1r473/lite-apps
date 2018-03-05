@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "NFL",
   "priority": 10,
-  "start_url": "http://www.nfl.com",
+  "start_url": "http://www.nfl.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/NFL.hermit",
   "secondary_color": "#a10011",
   "lang": "en",

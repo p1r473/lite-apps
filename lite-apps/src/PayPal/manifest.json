@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "PayPal",
   "priority": 10,
-  "start_url": "https://paypal.com",
+  "start_url": "https://paypal.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/PayPal.hermit",
   "secondary_color": "#008cc7",
   "icon": "favicon.png",

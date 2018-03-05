@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "FastMail",
   "priority": 10,
-  "start_url": "https://www.fastmail.com",
+  "start_url": "https://www.fastmail.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/FastMail.hermit",
   "secondary_color": "#e2ab22",
   "icon": "favicon.png",

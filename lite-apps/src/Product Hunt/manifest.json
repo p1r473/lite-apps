@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Product Hunt",
   "priority": 10,
-  "start_url": "https://producthunt.com",
+  "start_url": "https://producthunt.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Product%20Hunt.hermit",
   "secondary_color": "#c44c2a",
   "icon": "favicon.png",

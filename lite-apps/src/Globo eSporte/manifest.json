@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Globo eSporte",
   "priority": 10,
-  "start_url": "http://globoesporte.globo.com",
+  "start_url": "http://globoesporte.globo.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Globo%20eSporte.hermit",
   "secondary_color": "#5e674a",
   "lang": "en",

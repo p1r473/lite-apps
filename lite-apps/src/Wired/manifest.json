@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Wired",
   "priority": 10,
-  "start_url": "https://wired.com",
+  "start_url": "https://wired.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Wired.hermit",
   "secondary_color": "#000000",
   "icon": "favicon.png",

@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Coursera",
   "priority": 10,
-  "start_url": "https://www.coursera.org",
+  "start_url": "https://www.coursera.org/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Coursera.hermit",
   "secondary_color": "#3f7bb2",
   "lang": "en",

@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Zomato",
   "priority": 90,
-  "start_url": "https://zomato.com",
+  "start_url": "https://zomato.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Zomato.hermit",
   "secondary_color": "#b61c28",
   "lang": "en",

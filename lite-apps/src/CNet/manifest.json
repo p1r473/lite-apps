@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "CNet",
   "priority": 10,
-  "start_url": "http://cnet.com",
+  "start_url": "http://cnet.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/CNet.hermit",
   "secondary_color": "#a50000",
   "icon": "favicon.png",

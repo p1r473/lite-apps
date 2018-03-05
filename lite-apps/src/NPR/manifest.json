@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "NPR",
   "priority": 10,
-  "start_url": "http://npr.org",
+  "start_url": "http://npr.org/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/NPR.hermit",
   "secondary_color": "#244890",
   "icon": "favicon.png",

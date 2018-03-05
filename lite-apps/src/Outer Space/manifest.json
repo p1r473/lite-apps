@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Outer Space",
   "priority": 10,
-  "start_url": "https://www.outerspace.com.br",
+  "start_url": "https://www.outerspace.com.br/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Outer%20Space.hermit",
   "secondary_color": "#000000",
   "lang": "en",

@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "lang": "en",
   "name": "Dictionary.com",
-  "start_url": "http://www.dictionary.com",
+  "start_url": "http://www.dictionary.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Dictionary.hermit",
   "theme_color": "#297dbe",
   "secondary_color": "#2470ab",

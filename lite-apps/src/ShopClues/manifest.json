@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "lang": "en",
   "name": "ShopClues",
-  "start_url": "https://shopclues.com",
+  "start_url": "https://shopclues.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/ShopClues.hermit",
   "theme_color": "#38b2bb",
   "secondary_color": "#32a0a8",

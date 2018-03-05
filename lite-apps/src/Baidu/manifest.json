@@ -3,7 +3,7 @@
   "manifest_version": 2,
   "name": "Baidu",
   "priority": 10,
-  "start_url": "https://baidu.com",
+  "start_url": "https://baidu.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Baidu.hermit",
   "secondary_color": "#a1b4e5",
   "lang": "en",
