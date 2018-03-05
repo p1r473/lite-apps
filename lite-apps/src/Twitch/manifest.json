@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Twitch",
+  "start_url": "https://twitch.tv/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Twitch.hermit",
+  "theme_color": "#6341a5",
+  "secondary_color": "#593a94",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Games"
+  ]
+}

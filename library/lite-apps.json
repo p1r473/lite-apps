@@ -1353,6 +1353,11 @@
           "url": "https://www.pokedex.org"
         },
         {
+          "theme_color": "#6341a5",
+          "name": "Twitch",
+          "url": "https://twitch.tv/"
+        },
+        {
           "theme_color": "#719836",
           "name": "WebFlap",
           "url": "https://www.progressivewebflap.com"
