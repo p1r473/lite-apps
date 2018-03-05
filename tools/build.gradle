@@ -15,6 +15,10 @@ task(extractPalette, dependsOn: jar, type: JavaExec) {
   classpath = sourceSets.main.runtimeClasspath
 }
 
+test {
+  systemProperties System.getProperties()
+}
+
 dependencies {
   implementation project(':schema')
 
