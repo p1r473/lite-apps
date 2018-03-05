@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "TaoBao",
+  "start_url": "http://taobao.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/TaoBao.hermit",
+  "theme_color": "#fe7100",
+  "secondary_color": "#e46500",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "China",
+    "Shopping"
+  ]
+}

@@ -551,6 +551,11 @@
           "url": "https://snapdeal.com"
         },
         {
+          "theme_color": "#fe7100",
+          "name": "TaoBao",
+          "url": "http://taobao.com/"
+        },
+        {
           "theme_color": "#cc0000",
           "name": "Target",
           "url": "https://www.target.com"
@@ -1714,6 +1719,11 @@
           "theme_color": "#b3c9ff",
           "name": "Baidu",
           "url": "https://baidu.com"
+        },
+        {
+          "theme_color": "#fe7100",
+          "name": "TaoBao",
+          "url": "http://taobao.com/"
         },
         {
           "theme_color": "#e81f1f",
