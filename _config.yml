@@ -9,12 +9,16 @@ exclude:  [
             "*.properties",
             "*.sh",
             "blocklists/src",
-            "fonts/src",
             "Gemfile",
             "Gemfile.lock",
             "lite-apps/src",
+            "gradle.properties",
+            "gradle/",
+            "gradlew",
+            "local.properties",
             "node_modules/",
             "package.json",
-            "styles/src",
+            "schema/",
+            "settings.gradle",
             "tools/"
           ]
