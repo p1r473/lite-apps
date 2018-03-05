@@ -65,7 +65,6 @@ class Scaffolder {
       Log.i("Fetching %s…", startUrl);
       Scraper scraper = new Scraper(startUrl).fetch();
       manifest = scraper.extractManifest();
-      System.out.println(manifest);
 
       // Constant fields, same for all apps.
       manifest.manifestVersion = CURRENT_MANIFEST_VERSION;
@@ -133,6 +132,7 @@ class Scaffolder {
     }
 
     // Write the output manifest.
+    System.out.println(manifest);
     FileUtils.writeFile(manifestJsonFile, GsonInstance.getPrettyPrinter().toJson(manifest));
   }
 
