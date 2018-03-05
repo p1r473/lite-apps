@@ -1,26 +1,39 @@
-buildscript {
-  repositories {
-    jcenter()
+apply plugin: 'application'
+
+// Support running the Scaffolder from the command line, with arguments.
+// ./gradlew scaffold -Pargs="--url https://example.com --name Example"
+task(scaffold, dependsOn: jar, type: JavaExec) {
+  main = 'com.chimbori.liteapps.Scaffolder'
+  classpath = sourceSets.main.runtimeClasspath
+  if (project.hasProperty('args')) {
+    args project.args.split('\\s+')
   }
 }
 
-allprojects {
-  repositories {
-    jcenter()
-    google()
-  }
+task(extractPalette, dependsOn: jar, type: JavaExec) {
+  main = 'com.chimbori.liteapps.PaletteExtractor'
+  classpath = sourceSets.main.runtimeClasspath
+}
 
-  apply plugin: 'java'
+task(generateLibrary, dependsOn: jar, type: JavaExec) {
+  main = 'com.chimbori.liteapps.LibraryGenerator'
+  classpath = sourceSets.main.runtimeClasspath
+}
 
-  dependencies {
-    testCompile 'junit:junit:4.12'
-  }
+dependencies {
+  implementation project(':schema')
 
-  jar {
-    manifest.attributes provider: 'gradle'
-  }
+  implementation 'com.google.code.gson:gson:2.8.0'
+  implementation 'com.google.guava:guava:20.0'
+  implementation 'commons-cli:commons-cli:1.3.1'
+  implementation 'net.coobird:thumbnailator:0.4.8'
+  implementation 'org.jsoup:jsoup:1.9.2'
 
-  test {
-    testLogging.showStandardStreams = true
-  }
+  // Eclipse Parser used only to confirm well-formed-ness of JSON, because the org.json parser does
+  // not do a strict parse, allowing malformed files to be pushed that break the Android app.
+  implementation 'com.eclipsesource.minimal-json:minimal-json:0.9.4'
+
+  // Make available any test utility classes defined in the Schema module to be
+  // used in this module.
+  testImplementation project(':schema').sourceSets.test.output
 }
