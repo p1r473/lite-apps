@@ -90,6 +90,7 @@ public class LiteAppsValidator {
 
   @Before
   public void setUp() {
+    //noinspection ResultOfMethodCallIgnored
     FilePaths.LITE_APPS_OUTPUT_DIR.delete();
   }
 
@@ -129,6 +130,7 @@ public class LiteAppsValidator {
     Manifest manifest = readManifest(manifestFile);
     String tag = liteApp.getName();
 
+    assertNotNull(manifest);
     assertFieldExists(tag, "name", manifest.name);
     assertFieldExists(tag, "start_url", manifest.startUrl);
     assertFieldExists(tag, "lang", manifest.lang);
@@ -189,13 +191,15 @@ public class LiteAppsValidator {
     File localesDirectory = new File(liteApp, FilePaths.LOCALES_DIR_NAME);
     if (localesDirectory.exists()) {
       File[] localizations = localesDirectory.listFiles(File::isDirectory);
-      for (File localization : localizations) {
-        File messagesFile = new File(localization, FilePaths.MESSAGES_JSON_FILE_NAME);
-        // With no specific field checks, we at least validate that the file is well-formed JSON.
-        try {
-          TestHelpers.assertJsonIsWellFormedAndReformat(messagesFile);
-        } catch (IOException e) {
-          fail(e.getMessage());
+      if (localizations != null) {
+        for (File localization : localizations) {
+          File messagesFile = new File(localization, FilePaths.MESSAGES_JSON_FILE_NAME);
+          // With no specific field checks, we at least validate that the file is well-formed JSON.
+          try {
+            TestHelpers.assertJsonIsWellFormedAndReformat(messagesFile);
+          } catch (IOException e) {
+            fail(e.getMessage());
+          }
         }
       }
     }
@@ -226,11 +230,13 @@ public class LiteAppsValidator {
     Gson gson = GsonInstance.getPrettyPrinter();
     LinkedTreeMap<String, Object> json = null;
     try {
+      //noinspection unchecked
       json = (LinkedTreeMap<String, Object>) gson.fromJson(new FileReader(manifest), Object.class);
     } catch (FileNotFoundException e) {
       fail(e.getMessage());
     }
 
+    //noinspection unchecked
     LinkedTreeMap settings = (LinkedTreeMap<String, Object>) json.get("hermit_settings");
     if (settings != null) {
       for (Object key : settings.keySet()) {
