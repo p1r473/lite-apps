@@ -1,13 +1,10 @@
 package com.chimbori.liteapps;
 
 import com.chimbori.FilePaths;
-import com.chimbori.common.ResourceNotFoundException;
-import com.chimbori.common.TestUtils;
 import com.chimbori.hermitcrab.schema.appmanifest.AppManifest;
 import com.chimbori.hermitcrab.schema.appmanifest.AppVersion;
 import com.chimbori.hermitcrab.schema.appmanifest.Manifest;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
-import com.chimbori.hermitcrab.schema.common.SchemaDate;
 
 import org.junit.Test;
 
@@ -28,14 +25,6 @@ public class AppManifestValidator {
         new FileReader(appManifestFile), AppManifest.class);
     assertNotNull(appManifest);
     assertEquals(110006, appManifest.getLatestProdVersion().versionCode);
-  }
-
-  @Test
-  public void testThatAppManifestParsingIsCorrect() throws FileNotFoundException, ResourceNotFoundException {
-    File manifestFile = TestUtils.getResource(this.getClass(), "app-manifest.json");
-    AppManifest appManifest = GsonInstance.getPrettyPrinter().fromJson(
-        new FileReader(manifestFile), AppManifest.class);
-    assertNotNull(appManifest);
 
     Manifest manifest = appManifest.manifest;
     assertNotNull(manifest);
@@ -46,28 +35,15 @@ public class AppManifestValidator {
     AppVersion version = manifest.versions.get(0);
     assertEquals("android", version.os);
     assertEquals("production", version.track);
-    assertEquals(new SchemaDate(2017, 5, 4), version.released);
     assertEquals(19, version.minSdkVersion);
-    assertEquals("8.1.2", version.versionName);
-    assertEquals(80102, version.versionCode);
 
     // The changes link should be in the last feature in the list.
     String changesListLink = version.features.get(version.features.size() - 1);
     assertTrue(changesListLink.contains("https://hermit.chimbori.com/changes"));
 
     assertEquals(1, manifest.blocklists.size());
-    assertEquals("Adware and Malware", manifest.blocklists.get(0).name);
-    assertEquals("https://hermit.chimbori.com/app/adware-malware.json.zip", manifest.blocklists.get(0).url);
-    assertEquals(new SchemaDate(2017, 4, 24), manifest.blocklists.get(0).updated);
-
-    assertEquals(1, manifest.fonts.size());
-    assertEquals("Basic Fonts", manifest.fonts.get(0).name);
-    assertEquals("https://hermit.chimbori.com/app/basic-fonts.zip", manifest.fonts.get(0).url);
-    assertEquals(new SchemaDate(2016, 12, 7), manifest.fonts.get(0).updated);
-
-    assertEquals(1, manifest.styles.size());
-    assertEquals("Night Styles", manifest.styles.get(0).name);
-    assertEquals("https://hermit.chimbori.com/app/night-styles.zip", manifest.styles.get(0).url);
-    assertEquals(new SchemaDate(2017, 1, 4), manifest.styles.get(0).updated);
+    assertEquals("https://hermit.chimbori.com/blocklists/v2/%s", manifest.blocklists.get(0).urlPattern);
+    assertEquals("%s", manifest.blocklists.get(0).filePattern);
+    assertEquals("adware-malware.json", manifest.blocklists.get(0).files.get(0));
   }
 }

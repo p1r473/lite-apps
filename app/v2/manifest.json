@@ -21,23 +21,58 @@
     ],
     "blocklists": [
       {
-        "name": "Adware and Malware",
-        "url": "https://hermit.chimbori.com/app/v1/adware-malware.json.zip",
-        "updated": "2018-01-24"
+        "url_pattern": "https://hermit.chimbori.com/blocklists/v2/%s",
+        "file_pattern": "%s",
+        "files": [
+          "adware-malware.json"
+        ]
       }
     ],
     "fonts": [
       {
-        "name": "Basic Fonts",
-        "url": "https://hermit.chimbori.com/app/v1/basic-fonts.zip",
-        "updated": "2016-12-07"
+        "url_pattern": "https://hermit.chimbori.com/fonts/src/%s-Regular.ttf",
+        "file_pattern": "%s-Regular.ttf",
+        "files": [
+          "Alegreya",
+          "Cabin",
+          "FiraSansCondensed",
+          "HammersmithOne",
+          "Lora",
+          "Montserrat",
+          "Muli",
+          "OpenSans",
+          "Overpass",
+          "Raleway",
+          "Roboto",
+          "Sanchez"
+        ]
+      },
+      {
+        "url_pattern": "https://hermit.chimbori.com/fonts/src/%s.ttf",
+        "file_pattern": "%s.ttf",
+        "files": [
+          "QuattrocentoSans-Italic",
+          "RobotoMono-Medium"
+        ]
       }
     ],
     "styles": [
       {
-        "name": "Night Styles",
-        "url": "https://hermit.chimbori.com/app/v1/night-styles.zip",
-        "updated": "2017-01-04"
+        "url_pattern": "https://hermit.chimbori.com/styles/src/%s.css",
+        "file_pattern": "%s.css",
+        "files": [
+          "Azure Blue",
+          "Burgundy Red",
+          "Burnt Orange",
+          "Butterscotch Yellow",
+          "Chocolate Brown",
+          "Crimson Red",
+          "Hermit Orange",
+          "Navy Blue",
+          "Neutral White",
+          "Olive Green",
+          "Royal Purple"
+        ]
       }
     ]
   }
