@@ -51,7 +51,8 @@
       "name": "Tweets",
       "url": "https://mobile.twitter.com/i/nojs_router?path=%2Fhome",
       "selector": ".tweet",
-      "icon": "twitter"
+      "icon": "twitter",
+      "enabled": false
     }
   ],
   "related_applications": [
