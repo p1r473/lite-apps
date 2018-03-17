@@ -10,39 +10,39 @@
   "icon": "favicon.png",
   "hermit_bookmarks": [
     {
-      "name": "__MSG_home__",
+      "name": "Home",
       "url": "https://mobile.twitter.com/home"
     },
     {
-      "name": "__MSG_notifications__",
+      "name": "Notifications",
       "url": "https://mobile.twitter.com/notifications"
     },
     {
-      "name": "__MSG_messages__",
+      "name": "Messages",
       "url": "https://mobile.twitter.com/messages"
     },
     {
-      "name": "__MSG_account__",
+      "name": "Account",
       "url": "https://mobile.twitter.com/account"
     },
     {
-      "name": "__MSG_settings__",
+      "name": "Settings",
       "url": "https://mobile.twitter.com/settings"
     },
     {
-      "name": "__MSG_help__",
+      "name": "Help",
       "url": "https://support.twitter.com/"
     }
   ],
   "hermit_search": [
     {
-      "name": "__MSG_search__",
+      "name": "Search Twitter",
       "url": "https://twitter.com/search?q=%s"
     }
   ],
   "hermit_share": [
     {
-      "name": "__MSG_tweet__",
+      "name": "Tweet",
       "url": "https://twitter.com/intent/tweet?text=%s"
     }
   ],

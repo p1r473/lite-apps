@@ -24,7 +24,7 @@ public class AppManifestValidator {
     AppManifest appManifest = GsonInstance.getPrettyPrinter().fromJson(
         new FileReader(appManifestFile), AppManifest.class);
     assertNotNull(appManifest);
-    assertEquals(110006, appManifest.getLatestProdVersion().versionCode);
+    assertEquals(110006, appManifest.getLatestProdVersion(27).versionCode);
 
     Manifest manifest = appManifest.manifest;
     assertNotNull(manifest);

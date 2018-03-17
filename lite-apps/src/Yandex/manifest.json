@@ -11,7 +11,7 @@
   "hermit_search": [
     {
       "url": "https://yandex.ru/search/smart/?text=%s",
-      "name": "__MSG_search__"
+      "name": "Search Yandex"
     }
   ],
   "related_applications": [

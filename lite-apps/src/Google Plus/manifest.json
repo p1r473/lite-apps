@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "lang": "en",
-  "name": "__MSG_google_plus__",
+  "name": "Google Plus",
   "priority": 10,
   "start_url": "https://plus.google.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20Plus.hermit",
@@ -9,35 +9,35 @@
   "secondary_color": "#e25f51",
   "hermit_bookmarks": [
     {
-      "name": "__MSG_collections__",
+      "name": "Collections",
       "url": "https://plus.google.com/collections/featured"
     },
     {
-      "name": "__MSG_communities__",
+      "name": "Communities",
       "url": "https://plus.google.com/communities/member"
     },
     {
-      "name": "__MSG_profile__",
+      "name": "Profile",
       "url": "https://plus.google.com/me"
     },
     {
-      "name": "__MSG_people__",
+      "name": "People",
       "url": "https://plus.google.com/people"
     },
     {
-      "name": "__MSG_notifications__",
+      "name": "Notifications",
       "url": "https://plus.google.com/notifications/all"
     }
   ],
   "hermit_search": [
     {
-      "name": "__MSG_search__",
+      "name": "Search Google+",
       "url": "https://plus.google.com/s/%s/top"
     }
   ],
   "hermit_share": [
     {
-      "name": "__MSG_google_plus__",
+      "name": "Google Plus",
       "url": "https://plus.google.com/share?url=%u"
     }
   ],

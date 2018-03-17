@@ -9,7 +9,7 @@
   "secondary_color": "#005d95",
   "hermit_search": [
     {
-      "name": "__MSG_search__",
+      "name": "Search Linked In",
       "url": "https://www.linkedin.com/search/?keywords=%s"
     }
   ],

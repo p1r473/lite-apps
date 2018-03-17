@@ -47,7 +47,7 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
     {
       "manifest_version": 1,
       "lang": "en",
-      "name": "__MSG_lite_app_title__",
+      "name": "Lite App Example",
       "start_url": "https://example.com/",
       "theme_color": "#ff0000",
       "secondary_color": "#00ff00",
@@ -67,11 +67,11 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
       "hermit_bookmarks": [
         {
           "url": "https://example.com/top-level-navigation",
-          "name": "__MSG_top_level__"
+          "name": "Top Level"
         },
         {
           "url": "https://example.com/another-top-level-navigation",
-          "name": "__MSG_another_top_level__"
+          "name": "Another Top Level"
         }
       ],
       "hermit_search": [
@@ -130,39 +130,6 @@ All Hermit Lite Apps fully support localization, but itâ€™s optional. So if youâ
 - `pull_to_refresh`: Whether swiping down in the Lite App should refresh the page. Boolean, `true` \| `false`
 - `text_zoom`: A percentage number between `0` to `200`, in steps of `20`. The default is `100`.
 - `user_agent`: `"desktop"` reports the user agent of this browser as a desktop user agent, `""` to use the default mobile user agent.
-
-## Localization
-
-A single Lite App can include different names for each item (app name, bookmarks, etc.) in multiple languages. On installation, the correct strings will be loaded and used in Hermit, based on the userâ€™s device language. If no strings are available for the userâ€™s language, then strings from the default locale will be used, as specified in the `lang` field in `manifest.json`.
-
-Hermit Lite Apps use the same JSON format as Chrome Extensions for localization. See examples below.
-
-A string (e.g. `app_name`) can be used in `manifest.json` by referencing it as `__MSG_app_name__`. (I.e. prefix a message key with `__MSG_` and suffix with `__` to use its value in the manifest).
-
-### _locales/en/messages.json
-
-    {
-      "lite_app_title": {
-        "message": "Lite App",
-        "description": "Name of this Lite App, shown in the Launcher and everywhere else as a title. Keep it short."
-      },
-      "top_level": {
-        "message": "Top Level Navigation",
-        "description": "Just what it says. Descriptions are for translators to understand the context in which a string is being used."
-      },
-      "another_top_level": {
-        "message": "Another Top Level Navigation",
-        "description": "Just what it says. Descriptions are for translators to understand the context in which a string is being used."
-      },
-      "search_example": {
-        "message": "Search Lite App",
-        "description": "Phrase shown as the text hint in the search box at the top of the Lite App"
-      },
-      "share_to_example": {
-        "message": "Share to Lite App",
-        "description": "Phrase shown in the dialog where a user can share text from another app directly to this Lite App"
-      }
-    }
 
 ## Questions?
 

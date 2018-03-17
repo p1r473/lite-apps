@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "lang": "en",
-  "name": "__MSG_facebook__",
+  "name": "Facebook",
   "priority": 100,
   "start_url": "https://m.facebook.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Facebook.hermit",
@@ -10,57 +10,57 @@
   "icon": "favicon.png",
   "hermit_bookmarks": [
     {
-      "name": "__MSG_most_recent__",
+      "name": "Most Recent",
       "url": "https://m.facebook.com/home.php?sk=h_chr"
     },
     {
-      "name": "__MSG_top_stories__",
+      "name": "Top Stories",
       "url": "https://m.facebook.com/?sk=h_nor"
     },
     {
-      "name": "__MSG_birthdays__",
+      "name": "Birthdays",
       "url": "https://m.facebook.com/birthdays/"
     },
     {
-      "name": "__MSG_events__",
+      "name": "Events",
       "url": "https://m.facebook.com/events/upcoming"
     },
     {
-      "name": "__MSG_trending_news__",
+      "name": "Trending News",
       "url": "https://m.facebook.com/search/trending-news/"
     },
     {
-      "name": "__MSG_games__",
+      "name": "Games",
       "url": "https://m.facebook.com/games"
     },
     {
-      "name": "__MSG_photos__",
+      "name": "Photos",
       "url": "https://m.facebook.com/photos"
     },
     {
-      "name": "__MSG_notifications__",
+      "name": "Notifications",
       "url": "https://m.facebook.com/notifications"
     },
     {
-      "name": "__MSG_settings__",
+      "name": "Settings",
       "url": "https://m.facebook.com/settings"
     }
   ],
   "hermit_search": [
     {
-      "name": "__MSG_search_facebook__",
+      "name": "Search Facebook",
       "url": "https://m.facebook.com/search/top/?q=%s"
     }
   ],
   "hermit_share": [
     {
-      "name": "__MSG_post_to_facebook__",
+      "name": "Post to Facebook",
       "url": "https://www.facebook.com/sharer/sharer.php?u=%u"
     }
   ],
   "hermit_monitors": [
     {
-      "name": "__MSG_facebook_notifications__",
+      "name": "Facebook Notifications",
       "url": "https://m.facebook.com/notifications",
       "selector": "#notifications_list .touchable-notification",
       "icon": "facebook"

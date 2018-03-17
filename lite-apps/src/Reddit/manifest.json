@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "lang": "en",
-  "name": "__MSG_reddit__",
+  "name": "Reddit",
   "priority": 90,
   "start_url": "https://m.reddit.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Reddit.hermit",
@@ -17,27 +17,27 @@
   ],
   "hermit_bookmarks": [
     {
-      "name": "__MSG_popular__",
+      "name": "Popular",
       "url": "https://m.reddit.com/r/all"
     },
     {
-      "name": "__MSG_front_page__",
+      "name": "Front Page",
       "url": "https://m.reddit.com/"
     },
     {
-      "name": "__MSG_inbox__",
+      "name": "Inbox",
       "url": "https://m.reddit.com/message/inbox"
     }
   ],
   "hermit_search": [
     {
-      "name": "__MSG_search__",
+      "name": "Search",
       "url": "https://m.reddit.com/search?q=%s"
     }
   ],
   "hermit_share": [
     {
-      "name": "__MSG_reddit__",
+      "name": "Reddit",
       "url": "https://www.reddit.com/submit?url=%u&title=%t"
     }
   ],

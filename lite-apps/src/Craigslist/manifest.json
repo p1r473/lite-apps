@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "lang": "en",
-  "name": "__MSG_craigslist__",
+  "name": "Craigslist",
   "priority": 10,
   "start_url": "https://craigslist.org/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Craigslist.hermit",
@@ -11,12 +11,12 @@
   "hermit_bookmarks": [
     {
       "url": "https://accounts.craigslist.org",
-      "name": "__MSG_account__"
+      "name": "Account"
     }
   ],
   "hermit_search": [
     {
-      "name": "__MSG_craigslist__",
+      "name": "Search Craigslist",
       "url": "https://craigslist.org/search/sss?sort=rel&query=%s"
     }
   ],
