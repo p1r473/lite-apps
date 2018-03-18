@@ -57,7 +57,7 @@ class Scaffolder {
       manifest = GsonInstance.getPrettyPrinter().fromJson(new FileReader(manifestJsonFile), Manifest.class);
 
     } else {
-      Log.i("Creating new Lite App %s", appName);
+      Log.i("Creating new Lite App “%s”", appName);
       // Create the root directory if it doesn’t exist yet.
       liteAppDirectoryRoot.mkdirs();
 
