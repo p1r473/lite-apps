@@ -603,6 +603,11 @@
           "url": "https://zomato.com/"
         },
         {
+          "theme_color": "#382c14",
+          "name": "Atlas Obscura",
+          "url": "https://www.atlasobscura.com/"
+        },
+        {
           "theme_color": "#00246d",
           "name": "Booking.com",
           "url": "https://www.booking.com/"

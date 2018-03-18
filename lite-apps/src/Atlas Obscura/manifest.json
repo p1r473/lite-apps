@@ -1,0 +1,74 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Atlas Obscura",
+  "start_url": "https://www.atlasobscura.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Atlas%20Obscura.hermit",
+  "theme_color": "#382c14",
+  "secondary_color": "#322712",
+  "icon": "favicon.png",
+  "hermit_bookmarks": [
+    {
+      "url": "https://www.atlasobscura.com/random",
+      "name": "Random Place"
+    },
+    {
+      "url": "https://www.atlasobscura.com/articles",
+      "name": "All Stories"
+    },
+    {
+      "url": "https://www.atlasobscura.com/gastro",
+      "name": "Gastro Obscura"
+    },
+    {
+      "url": "https://www.atlasobscura.com/articles?sort=interactive",
+      "name": "Interactive"
+    },
+    {
+      "url": "https://www.atlasobscura.com/articles?sort=news",
+      "name": "News"
+    },
+    {
+      "url": "https://www.atlasobscura.com/articles?sort=visual",
+      "name": "Visual"
+    },
+    {
+      "url": "https://www.atlasobscura.com/categories/found",
+      "name": "Latest Finds"
+    },
+    {
+      "url": "https://www.atlasobscura.com/articles?sort=video",
+      "name": "Video"
+    },
+    {
+      "url": "https://www.atlasobscura.com/articles/all-places-in-the-atlas-on-one-map",
+      "name": "Explore the Map"
+    },
+    {
+      "url": "https://www.atlasobscura.com/events",
+      "name": "Events"
+    },
+    {
+      "url": "https://www.atlasobscura.com/places?sort=likes_count",
+      "name": "Most Popular Places"
+    },
+    {
+      "url": "https://www.atlasobscura.com/destinations",
+      "name": "View All Destinations »"
+    },
+    {
+      "url": "https://www.atlasobscura.com/articles?sort=features",
+      "name": "Features"
+    }
+  ],
+  "hermit_feeds": [
+    {
+      "url": "https://www.atlasobscura.com/feeds/latest",
+      "name": "Latest Articles and Places"
+    }
+  ],
+  "priority": 20,
+  "tags": [
+    "Travel"
+  ]
+}
