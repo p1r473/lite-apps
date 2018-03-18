@@ -30,29 +30,24 @@
     ],
     "fonts": [
       {
-        "url_pattern": "https://hermit.chimbori.com/fonts/src/%s-Regular.ttf",
-        "file_pattern": "%s-Regular.ttf",
-        "files": [
-          "Alegreya",
-          "Cabin",
-          "FiraSansCondensed",
-          "HammersmithOne",
-          "Lora",
-          "Montserrat",
-          "Muli",
-          "OpenSans",
-          "Overpass",
-          "Raleway",
-          "Roboto",
-          "Sanchez"
-        ]
-      },
-      {
         "url_pattern": "https://hermit.chimbori.com/fonts/src/%s.ttf",
         "file_pattern": "%s.ttf",
         "files": [
-          "QuattrocentoSans-Italic",
-          "RobotoMono-Medium"
+          "Alegreya",
+          "Cabin",
+          "Fira Sans Condensed",
+          "Hammersmith One",
+          "Inter UI",
+          "Lora",
+          "Montserrat",
+          "Muli",
+          "Open Sans",
+          "Overpass",
+          "Quattrocento Sans",
+          "Raleway",
+          "Roboto Mono",
+          "Roboto",
+          "Sanchez"
         ]
       }
     ],
