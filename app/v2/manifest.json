@@ -24,7 +24,8 @@
         "url_pattern": "https://hermit.chimbori.com/blocklists/v2/%s",
         "file_pattern": "%s",
         "files": [
-          "adware-malware.json"
+          "adware-malware.json",
+          "coin-miners.json"
         ]
       }
     ],

@@ -15,24 +15,8 @@
           "name": "Abuse.ch.cached.txt"
         },
         {
-          "url": "https://disconnect.me/lists/malvertising",
-          "name": "DisconnectMe.cached.txt"
-        },
-        {
-          "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_ad.txt",
-          "name": "DisconnectMe.SimpleAd.cached.txt"
-        },
-        {
-          "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_malware.txt",
-          "name": "DisconnectMe.SimpleMalware.cached.txt"
-        },
-        {
-          "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_tracking.txt",
-          "name": "DisconnectMe.SimpleTracking.cached.txt"
-        },
-        {
-          "url": "https://s3.amazonaws.com/lists.disconnect.me/simple_malvertising.txt",
-          "name": "DisconnectMe.SimpleMalvertising.cached.txt"
+          "url": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt",
+          "name": "NoTracking.cached.txt"
         },
         {
           "url": "http://www.malwaredomainlist.com/hostslist/hosts.txt",
@@ -53,6 +37,23 @@
         {
           "url": "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
           "name": "Yoyo.cached.txt"
+        }
+      ]
+    },
+    {
+      "blocklist": "Coin Miners",
+      "filename": "coin-miners.json",
+      "sources": [
+        {
+          "name": "UserSuggested.txt"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt",
+          "name": "NoCoin.cached.txt"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Marfjeh/coinhive-block/master/domains",
+          "name": "CoinHive-Block.cached.txt"
         }
       ]
     }
