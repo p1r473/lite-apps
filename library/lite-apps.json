@@ -663,6 +663,11 @@
           "url": "http://priceline.com/"
         },
         {
+          "theme_color": "#000000",
+          "name": "Uber",
+          "url": "https://m.uber.com/looking"
+        },
+        {
           "theme_color": "#000099",
           "name": "United Airlines",
           "url": "https://mobile.united.com/"
