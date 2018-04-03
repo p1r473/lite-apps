@@ -633,6 +633,11 @@
           "url": "https://www.enterprise.com/"
         },
         {
+          "theme_color": "#d6edfd",
+          "name": "Flight Aware",
+          "url": "https://flightaware.com/"
+        },
+        {
           "theme_color": "#3eb9ae",
           "name": "Fuelly",
           "url": "https://www.fuelly.com/"

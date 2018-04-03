@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Flight Aware",
+  "start_url": "https://flightaware.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Flight%20Aware.hermit",
+  "theme_color": "#d6edfd",
+  "secondary_color": "#c0d5e3",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Travel"
+  ]
+}
