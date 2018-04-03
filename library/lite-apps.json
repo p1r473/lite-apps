@@ -588,6 +588,11 @@
           "url": "https://translate.google.com/m/translate"
         },
         {
+          "theme_color": "#dd4d40",
+          "name": "Google Maps",
+          "url": "https://www.google.com/maps/?force\u003dqVTs2FOxxTmHHo79-pwa"
+        },
+        {
           "theme_color": "#1e892f",
           "name": "TripAdvisor",
           "url": "https://tripadvisor.com/"

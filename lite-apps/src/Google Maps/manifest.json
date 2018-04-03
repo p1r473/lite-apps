@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Google Maps",
+  "start_url": "https://www.google.com/maps/?force=qVTs2FOxxTmHHo79-pwa",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20Maps.hermit",
+  "theme_color": "#dd4d40",
+  "secondary_color": "#c64539",
+  "icon": "favicon.png",
+  "priority": 90,
+  "tags": [
+    "Travel"
+  ]
+}
