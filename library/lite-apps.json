@@ -608,6 +608,16 @@
           "url": "https://www.atlasobscura.com/"
         },
         {
+          "theme_color": "#ff5a5f",
+          "name": "AirBnB",
+          "url": "https://www.airbnb.com/"
+        },
+        {
+          "theme_color": "#d74a2c",
+          "name": "B\u0026H Photo",
+          "url": "https://www.bhphotovideo.com/"
+        },
+        {
           "theme_color": "#00246d",
           "name": "Booking.com",
           "url": "https://www.booking.com/"
@@ -799,6 +809,11 @@
           "theme_color": "#253938",
           "name": "Instagram",
           "url": "https://instagram.com/"
+        },
+        {
+          "theme_color": "#d74a2c",
+          "name": "B\u0026H Photo",
+          "url": "https://www.bhphotovideo.com/"
         },
         {
           "theme_color": "#06cc47",
@@ -994,6 +1009,11 @@
           "url": "https://mail.google.com/tasks/ig/"
         },
         {
+          "theme_color": "#ff302a",
+          "name": "I Love PDF",
+          "url": "https://www.ilovepdf.com/"
+        },
+        {
           "theme_color": "#9a938d",
           "name": "Instapaper",
           "url": "https://instapaper.com/"
@@ -1079,6 +1099,11 @@
           "theme_color": "#75ca00",
           "name": "Duolingo",
           "url": "https://www.duolingo.com/"
+        },
+        {
+          "theme_color": "#ff302a",
+          "name": "I Love PDF",
+          "url": "https://www.ilovepdf.com/"
         },
         {
           "theme_color": "#f9bc58",
@@ -1449,6 +1474,11 @@
           "theme_color": "#5faa04",
           "name": "GlassDoor",
           "url": "https://www.glassdoor.com/"
+        },
+        {
+          "theme_color": "#ff302a",
+          "name": "I Love PDF",
+          "url": "https://www.ilovepdf.com/"
         },
         {
           "theme_color": "#1f63f3",

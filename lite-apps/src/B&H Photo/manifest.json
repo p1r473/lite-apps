@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "B&H Photo",
+  "start_url": "https://www.bhphotovideo.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/B%26H%20Photo.hermit",
+  "theme_color": "#d74a2c",
+  "secondary_color": "#c14227",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Art and Photography",
+    "Travel"
+  ]
+}

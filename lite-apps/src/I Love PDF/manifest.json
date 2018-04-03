@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "I Love PDF",
+  "start_url": "https://www.ilovepdf.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/I%20Love%20PDF.hermit",
+  "theme_color": "#ff302a",
+  "secondary_color": "#e52b25",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Tools & Productivity",
+    "Education",
+    "Business"
+  ]
+}
