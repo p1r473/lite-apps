@@ -5,16 +5,19 @@
       {
         "track": "production",
         "os": "android",
-        "version_code": 110006,
-        "version_name": "11.0.6",
-        "released": "2018-01-30",
+        "version_code": 120008,
+        "version_name": "120008",
+        "released": "2018-04-07",
         "min_sdk_version": 19,
         "features": [
-          "3 Free Lite Apps instead of 2; change your picks anytime",
-          "🐞 Completely Rewrote Night Mode!",
-          "🆕 Estimated Reading Time for every article, with Instant Reader View",
-          "🆕 Set Screen Orientation for each Lite App",
-          "🐞 Temporary work-around for bug introduced by Google in WebView, which broke back/forward navigation.",
+          "New app icon! (so many of you told us you loved the Hermit Crab!)",
+          "Lots of internal updates for long-term stability; please update immediately if you are using KitKat. This is the last KitKat release and will only be available for a limited time.",
+          "To comply with international law (EU GDPR), we need to ask you to accept the Terms of Use to continue using the app. No changes to the actual policies.",
+          "Use any external Download Manager for files",
+          "Site Search is now accessible from the Quick Settings sidebar even in Frameless mode",
+          "Enable/disable Bookmarks without deleting them",
+          "WebView fix for crbug.com/794020",
+          "Fixed subtle bugs when creating Lite Apps with custom names",
           "See the full list at https://hermit.chimbori.com/changes"
         ]
       }
