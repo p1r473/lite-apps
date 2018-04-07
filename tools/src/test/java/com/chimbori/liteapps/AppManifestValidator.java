@@ -5,6 +5,7 @@ import com.chimbori.hermitcrab.schema.appmanifest.AppManifest;
 import com.chimbori.hermitcrab.schema.appmanifest.AppVersion;
 import com.chimbori.hermitcrab.schema.appmanifest.Manifest;
 import com.chimbori.hermitcrab.schema.common.GsonInstance;
+import com.chimbori.hermitcrab.schema.common.SchemaDate;
 
 import org.junit.Test;
 
@@ -24,7 +25,11 @@ public class AppManifestValidator {
     AppManifest appManifest = GsonInstance.getPrettyPrinter().fromJson(
         new FileReader(appManifestFile), AppManifest.class);
     assertNotNull(appManifest);
-    assertEquals(110006, appManifest.getLatestProdVersion(27).versionCode);
+
+    AppVersion latestProdVersion = appManifest.getLatestProdVersion(27);
+    assertEquals(120008, latestProdVersion.versionCode);
+    assertEquals(19, latestProdVersion.minSdkVersion);
+    assertEquals(new SchemaDate(2018, 4, 7), latestProdVersion.released);
 
     Manifest manifest = appManifest.manifest;
     assertNotNull(manifest);
