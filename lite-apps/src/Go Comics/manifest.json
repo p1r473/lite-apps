@@ -1,0 +1,62 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Go Comics",
+  "start_url": "http://www.gocomics.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Go%20Comics.hermit",
+  "theme_color": "#a6b9ca",
+  "secondary_color": "#95a6b5",
+  "icon": "favicon.png",
+  "hermit_bookmarks": [
+    {
+      "url": "http://www.gocomics.com/comics/trending",
+      "name": "Trending"
+    },
+    {
+      "url": "http://www.gocomics.com/#",
+      "name": "Best Of"
+    },
+    {
+      "url": "http://www.gocomics.com/comics/genres",
+      "name": "All Categories"
+    },
+    {
+      "url": "http://www.gocomics.com/comics/a-to-z",
+      "name": "A-Z Comics by Title"
+    },
+    {
+      "url": "http://www.gocomics.com/comics/recommended",
+      "name": "GoComics Recommends"
+    },
+    {
+      "url": "http://www.gocomics.com/news",
+      "name": "GoComics Blog"
+    },
+    {
+      "url": "http://www.gocomics.com/comics",
+      "name": "Find Comics"
+    },
+    {
+      "url": "https://store.gocomics.com/product-category/books/",
+      "name": "Books"
+    },
+    {
+      "url": "http://www.gocomics.com/comics/todays-top-five-comics",
+      "name": "Editor's Top 5"
+    },
+    {
+      "url": "http://www.gocomics.com/comics/political",
+      "name": "Political Cartoons"
+    },
+    {
+      "url": "http://www.gocomics.com/comics/popular",
+      "name": "Popular"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Books",
+    "Comics",
+    "Fun"
+  ]
+}

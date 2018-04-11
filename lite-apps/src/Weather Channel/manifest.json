@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Weather Channel",
+  "start_url": "https://weather.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Weather%20Channel.hermit",
+  "theme_color": "#003096",
+  "secondary_color": "#002b87",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Weather"
+  ]
+}

@@ -913,6 +913,11 @@
           "theme_color": "#fd2e2e",
           "name": "NOAA Weather",
           "url": "http://mobile.weather.gov/"
+        },
+        {
+          "theme_color": "#003096",
+          "name": "Weather Channel",
+          "url": "https://weather.com/"
         }
       ]
     },
@@ -1242,6 +1247,11 @@
           "url": "https://m.booksamillion.com/"
         },
         {
+          "theme_color": "#a6b9ca",
+          "name": "Go Comics",
+          "url": "http://www.gocomics.com/"
+        },
+        {
           "theme_color": "#3ed7fa",
           "name": "Google Books",
           "url": "https://books.google.com/"
@@ -1418,6 +1428,11 @@
           "theme_color": "#daeef2",
           "name": "Air Horner",
           "url": "https://airhorner.com/"
+        },
+        {
+          "theme_color": "#a6b9ca",
+          "name": "Go Comics",
+          "url": "http://www.gocomics.com/"
         }
       ]
     },
@@ -1426,6 +1441,11 @@
         "name": "Comics"
       },
       "apps": [
+        {
+          "theme_color": "#a6b9ca",
+          "name": "Go Comics",
+          "url": "http://www.gocomics.com/"
+        },
         {
           "theme_color": "#1f2900",
           "name": "Lunar Baboon",
