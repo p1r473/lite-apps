@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Weibo",
+  "start_url": "https://m.weibo.cn/beta",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Weibo.hermit",
+  "theme_color": "#fdf1bc",
+  "secondary_color": "#e3d8a9",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "China",
+    "Social"
+  ]
+}

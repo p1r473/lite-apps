@@ -113,6 +113,11 @@
           "theme_color": "#36465d",
           "name": "Tumblr",
           "url": "https://tumblr.com/"
+        },
+        {
+          "theme_color": "#fdf1bc",
+          "name": "Weibo",
+          "url": "https://m.weibo.cn/beta"
         }
       ]
     },
@@ -1799,6 +1804,11 @@
           "theme_color": "#fe7100",
           "name": "TaoBao",
           "url": "http://taobao.com/"
+        },
+        {
+          "theme_color": "#fdf1bc",
+          "name": "Weibo",
+          "url": "https://m.weibo.cn/beta"
         },
         {
           "theme_color": "#e81f1f",
