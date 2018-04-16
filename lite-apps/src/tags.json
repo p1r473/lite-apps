@@ -88,6 +88,9 @@
       "name": "Brasil"
     },
     {
+      "name": "Deutschland"
+    },
+    {
       "name": "France"
     },
     {
@@ -100,13 +103,13 @@
       "name": "Canada"
     },
     {
-      "name": "Russia"
+      "name": "Korea"
     },
     {
       "name": "UK"
     },
     {
-      "name": "Korea"
+      "name": "Russia"
     }
   ]
 }

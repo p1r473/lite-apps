@@ -334,6 +334,11 @@
           "url": "https://m.androidcentral.com/"
         },
         {
+          "theme_color": "#1d9788",
+          "name": "Android Hilfe",
+          "url": "http://www.android-hilfe.de/"
+        },
+        {
           "theme_color": "#43aee0",
           "name": "Android PIT",
           "url": "https://www.androidpit.com/"
@@ -1780,6 +1785,18 @@
     },
     {
       "category": {
+        "name": "Deutschland"
+      },
+      "apps": [
+        {
+          "theme_color": "#1d9788",
+          "name": "Android Hilfe",
+          "url": "http://www.android-hilfe.de/"
+        }
+      ]
+    },
+    {
+      "category": {
         "name": "France"
       },
       "apps": [
@@ -1848,13 +1865,13 @@
     },
     {
       "category": {
-        "name": "Russia"
+        "name": "Korea"
       },
       "apps": [
         {
-          "theme_color": "#ff0000",
-          "name": "Yandex",
-          "url": "https://yandex.ru/"
+          "theme_color": "#00d564",
+          "name": "WebToons",
+          "url": "https://m.webtoons.com/en/"
         }
       ]
     },
@@ -1877,13 +1894,13 @@
     },
     {
       "category": {
-        "name": "Korea"
+        "name": "Russia"
       },
       "apps": [
         {
-          "theme_color": "#00d564",
-          "name": "WebToons",
-          "url": "https://m.webtoons.com/en/"
+          "theme_color": "#ff0000",
+          "name": "Yandex",
+          "url": "https://yandex.ru/"
         }
       ]
     }
