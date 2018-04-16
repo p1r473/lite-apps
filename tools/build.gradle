@@ -13,6 +13,15 @@ task(scaffold, dependsOn: jar, type: JavaExec) {
 task(extractPalette, dependsOn: jar, type: JavaExec) {
   main = 'com.chimbori.liteapps.PaletteExtractor'
   classpath = sourceSets.main.runtimeClasspath
+  systemProperties System.getProperties()
+  outputs.upToDateWhen { false }
+}
+
+task(packageBlockLists, dependsOn: jar, type: JavaExec) {
+  main = 'com.chimbori.liteapps.BlockListPackager'
+  classpath = sourceSets.main.runtimeClasspath
+  systemProperties System.getProperties()
+  outputs.upToDateWhen { false }
 }
 
 test {

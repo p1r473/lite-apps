@@ -40,6 +40,24 @@ class BlockListPackager {
   private static final String EMPTY = "";
 
   /**
+   * Downloads and packages all block lists if the corresponding flags are set correctly in
+   * gradle.properties.
+   */
+  public static void main(String[] arguments) throws IOException {
+    if (Boolean.parseBoolean(System.getProperty("blocklists.download.enabled"))) {
+      BlockListPackager.downloadFromSources();
+    } else {
+      System.err.println("Skipping downloadFromSources");
+    }
+
+    if (Boolean.parseBoolean(System.getProperty("blocklists.packaging.enabled"))) {
+      BlockListPackager.packageBlockLists();
+    } else {
+      System.err.println("Skipping packageBlockLists");
+    }
+  }
+
+  /**
    * Downloads all the meta-lists from index.json and saves them locally.
    */
   public static void downloadFromSources() throws IOException {
