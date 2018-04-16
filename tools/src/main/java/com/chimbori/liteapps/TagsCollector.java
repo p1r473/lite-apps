@@ -46,6 +46,9 @@ class TagsCollector {
       // For all tags applied to this manifest, check if they exist in the global tags list.
       if (manifest.tags != null) {
         for (String tagName : manifest.tags) {
+          if (tagName == null || tagName.isEmpty()) {
+            throw new IllegalArgumentException("Tag should not be blank");
+          }
           LibraryTag tag = globalTags.get(tagName);
           if (tag == null) {
             // If this is the first time we are seeing this tag, create a new JSONArray to hold its contents.

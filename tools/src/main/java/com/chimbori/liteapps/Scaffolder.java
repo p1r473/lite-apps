@@ -78,7 +78,7 @@ class Scaffolder {
 
       // Empty fields that must be manually populated.
       manifest.priority = 10;
-      manifest.tags = Collections.singletonList("TODO");
+      manifest.tags = Collections.singletonList("");
 
       // Put the icon JSON entry even if we don’t manage to fetch an icon successfully.
       // This way, we can avoid additional typing, and the validator will check for the presence
