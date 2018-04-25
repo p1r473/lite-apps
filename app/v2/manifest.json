@@ -73,6 +73,17 @@
           "Royal Purple"
         ]
       }
+    ],
+    "scripts": [
+      {
+        "url_pattern": "http://10.0.2.2:4000/scripts/src/%s.js",
+        "file_pattern": "%s.js",
+        "files": [
+          "Google Define",
+          "Google Translate",
+          "Show Cookies",
+        ]
+      }
     ]
   }
 }

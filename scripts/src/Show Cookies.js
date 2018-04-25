@@ -1,0 +1,1 @@
+alert(document.cookie.replace(/; /g,'\n'));

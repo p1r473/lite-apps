@@ -1,0 +1,1 @@
+window.document.location='https://translate.google.com/translate?u='+encodeURIComponent(window.document.location);
