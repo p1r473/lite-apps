@@ -22,3 +22,5 @@ exclude:  [
             "settings.gradle",
             "tools/"
           ]
+sass:
+  style: compressed
