@@ -1,12 +1,48 @@
-
 // CSS Reset.
-
 * {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, cite, code, em, img, strong, sup, b, i, dl, dt, dd, ol, ul, li, form, label, table, tr, th, td, article, aside, footer, header, nav, section {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+cite,
+code,
+em,
+img,
+strong,
+sup,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+table,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,7 +50,14 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, 
   vertical-align: baseline;
 }
 
-article, aside, figure, footer, header, hgroup, nav, section {
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
   display: block;
 }
 
@@ -23,7 +66,8 @@ html {
   overflow-y: scroll;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
@@ -67,8 +111,9 @@ sup {
 }
 
 // Standardize any monospaced elements.
-pre, code {
-  font-family: Inconsolata,monospace,sans-serif;
+pre,
+code {
+  font-family: Inconsolata, monospace, sans-serif;
 }
 
 // Hand cursor on clickable elements.
@@ -79,7 +124,10 @@ input[type=submit] {
 }
 
 // Webkit browsers add a 2px margin outside the chrome of form elements.
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   margin: 0;
 }
 
@@ -91,9 +139,11 @@ button, input, select, textarea {
   height: 0;
   overflow: hidden;
 }
+
 .clearfix:after {
   clear: both;
 }
+
 .clearfix {
   zoom: 1;
 }
