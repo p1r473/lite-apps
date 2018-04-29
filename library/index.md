@@ -13,7 +13,7 @@ description: Library of free Hermit Lite Apps
 
 <div class="main">
   <div class="query-container">
-    <input id="query" placeholder="Search for ready-made Lite Apps">
+    <input id="query" class="query" placeholder="Search Lite Apps" type="search">
   </div>
   <div class="content">
     <div class="lite-apps-json"></div>
