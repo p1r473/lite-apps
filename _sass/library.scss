@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto,sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 11pt;
   background: $color-body-background;
 }
@@ -41,9 +41,7 @@ h3 {
   margin: 0 4px 8px 4px;
   padding: 12px;
   display: inline-block;
-  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
-
-  /*width: 100px;*/
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   text-overflow: ellipsis;
   overflow: hidden;
   text-align: center;
@@ -57,6 +55,7 @@ h3 {
   p {
     margin-bottom: 0;
   }
+
 }
 
 .lite-app-icon-image {
@@ -66,17 +65,19 @@ h3 {
 }
 
 .update-required {
-  display: none;  // Default hidden; shown if version is too old.
+  display: none;
+  // Default hidden. Shown if version is too old.
   background: #fff;
   padding: 32px;
   border-radius: 8px;
-  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: 16px;
   text-align: center;
 
   p {
     margin: 32px 0;
   }
+
 }
 
 .query {
@@ -85,9 +86,11 @@ h3 {
   font-size: 16px;
   border-radius: 24px;
   border: 0;
-  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 24px;
+
   &:focus {
     outline: none;
   }
+
 }
