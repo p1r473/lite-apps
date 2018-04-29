@@ -1,13 +1,12 @@
 html,
 body,
-.library {
+.main {
   height: 100%;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  font-size: 11pt;
   margin: 0 auto;
   max-width: 800px;
   padding: 8px;
@@ -15,7 +14,7 @@ body,
 }
 
 .query-container {
-  height: 60px;
+  height: 54px;
 }
 
 .content {
