@@ -21,3 +21,10 @@ body,
   flex: 1;
   overflow-y: auto;
 }
+
+.lite-app-category {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
