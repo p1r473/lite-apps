@@ -79,6 +79,7 @@
         "url_pattern": "https://hermit.chimbori.com/scripts/src/%s.js",
         "file_pattern": "%s.js",
         "files": [
+          "Fullscreen Video",
           "Google Define",
           "Google Translate",
           "Google Web Lite",
