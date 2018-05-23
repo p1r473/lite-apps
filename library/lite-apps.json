@@ -1915,6 +1915,18 @@
           "url": "https://yandex.ru/"
         }
       ]
+    },
+    {
+      "category": {
+        "name": "Taiwan"
+      },
+      "apps": [
+        {
+          "theme_color": "#245b90",
+          "name": "DQ 地球圖輯隊",
+          "url": "https://dq.yam.com/"
+        }
+      ]
     }
   ]
 }

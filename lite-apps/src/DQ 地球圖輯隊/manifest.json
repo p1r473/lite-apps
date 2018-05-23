@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "DQ 地球圖輯隊",
+  "start_url": "https://dq.yam.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/DQ%20%E5%9C%B0%E7%90%83%E5%9C%96%E8%BC%AF%E9%9A%8A.hermit",
+  "theme_color": "#245b90",
+  "secondary_color": "#205181",
+  "icon": "favicon.png",
+  "hermit_monitors": [
+    {
+      "name": "DQ 地球圖輯隊",
+      "url": "https://dq.yam.com/",
+      "selector": ".imgWrap>a[href^=\"post\"]",
+      "icon": "news"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Taiwan"
+  ]
+}
