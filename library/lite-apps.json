@@ -1529,6 +1529,18 @@
     },
     {
       "category": {
+        "name": "Fitness"
+      },
+      "apps": [
+        {
+          "theme_color": "#005695",
+          "name": "Training Peaks",
+          "url": "https://www.trainingpeaks.com/"
+        }
+      ]
+    },
+    {
+      "category": {
         "name": "USA"
       },
       "apps": [
