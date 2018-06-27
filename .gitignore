@@ -7,3 +7,4 @@ _site
 build/
 local.properties
 node_modules
+.jekyll-metadata

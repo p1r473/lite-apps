@@ -22,5 +22,6 @@ exclude:  [
             "settings.gradle",
             "tools/"
           ]
+minify_html: true
 sass:
   style: compressed

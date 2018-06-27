@@ -1,0 +1,4 @@
+cdn_url:     "" # Reset the cdn_url to be empty, so assets and CSS are loaded from the local server.
+minify_html: false # The minification step is too slow for development.
+sass:
+  style: expanded
