@@ -85,6 +85,11 @@
           "url": "https://instagram.com/"
         },
         {
+          "theme_color": "#2b55be",
+          "name": "Android Messages",
+          "url": "https://messages.android.com/"
+        },
+        {
           "theme_color": "#ff6648",
           "name": "Ask.fm",
           "url": "https://ask.fm/"
@@ -796,6 +801,11 @@
           "name": "Messenger",
           "url": "https://m.facebook.com/messages/?more",
           "user_agent": "desktop"
+        },
+        {
+          "theme_color": "#2b55be",
+          "name": "Android Messages",
+          "url": "https://messages.android.com/"
         },
         {
           "theme_color": "#019ed8",

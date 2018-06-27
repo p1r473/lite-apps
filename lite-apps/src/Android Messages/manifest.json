@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "lang": "en",
+  "name": "Android Messages",
+  "start_url": "https://messages.android.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Messages.hermit",
+  "theme_color": "#2b55be",
+  "secondary_color": "#264cab",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Social",
+    "Communication"
+  ]
+}
