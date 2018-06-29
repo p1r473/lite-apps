@@ -79,11 +79,13 @@
         "url_pattern": "https://hermit.chimbori.com/scripts/src/%s.js",
         "file_pattern": "%s.js",
         "files": [
-          "Fullscreen Video",
           "Google Define",
           "Google Translate",
           "Google Web Lite",
+          "Let It Snow",
+          "QR Code for This Page",
           "Show Cookies",
+          "Urban Dictionary"
         ]
       }
     ]
