@@ -27,9 +27,9 @@ public class AppManifestValidator {
     assertNotNull(appManifest);
 
     AppVersion latestProdVersion = appManifest.getLatestProdVersion(27);
-    assertEquals(120008, latestProdVersion.versionCode);
-    assertEquals(19, latestProdVersion.minSdkVersion);
-    assertEquals(new SchemaDate(2018, 4, 7), latestProdVersion.released);
+    assertEquals(130004, latestProdVersion.versionCode);
+    assertEquals(21, latestProdVersion.minSdkVersion);
+    assertEquals(new SchemaDate(2018, 7, 9), latestProdVersion.released);
 
     Manifest manifest = appManifest.manifest;
     assertNotNull(manifest);
@@ -40,7 +40,7 @@ public class AppManifestValidator {
     AppVersion version = manifest.versions.get(0);
     assertEquals("android", version.os);
     assertEquals("production", version.track);
-    assertEquals(19, version.minSdkVersion);
+    assertEquals(21, version.minSdkVersion);
 
     // The changes link should be in the last feature in the list.
     String changesListLink = version.features.get(version.features.size() - 1);
