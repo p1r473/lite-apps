@@ -1,1 +1,1 @@
-window.document.location='http://googleweblight.com/?lite_url='+encodeURIComponent(window.document.location);
+window.document.location='https://googleweblight.com/?lite_url='+encodeURIComponent(window.document.location);
