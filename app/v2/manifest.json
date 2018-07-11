@@ -74,9 +74,9 @@
         ]
       }
     ],
-    "scripts": [
+    "scriptlets": [
       {
-        "url_pattern": "https://hermit.chimbori.com/scripts/src/%s.js",
+        "url_pattern": "https://hermit.chimbori.com/scriptlets/src/%s.js",
         "file_pattern": "%s.js",
         "files": [
           "Enable Text Copying",
