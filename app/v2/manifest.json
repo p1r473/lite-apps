@@ -5,9 +5,9 @@
       {
         "track": "production",
         "os": "android",
-        "version_code": 130004,
-        "version_name": "130004",
-        "released": "2018-07-09",
+        "version_code": 130009,
+        "version_name": "130009",
+        "released": "2018-07-15",
         "min_sdk_version": 21,
         "features": [
           "🎉 Use Unlimited Lite Apps without paying for Premium",
