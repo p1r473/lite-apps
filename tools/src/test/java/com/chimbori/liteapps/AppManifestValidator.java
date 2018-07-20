@@ -47,7 +47,7 @@ public class AppManifestValidator {
     assertTrue(changesListLink.contains("https://hermit.chimbori.com/changes"));
 
     assertEquals(1, manifest.blocklists.size());
-    assertEquals("https://hermit.chimbori.com/blocklists/v2/%s", manifest.blocklists.get(0).urlPattern);
+    assertEquals("https://lite-apps.chimbori.com/blocklists/v2/%s", manifest.blocklists.get(0).urlPattern);
     assertEquals("%s", manifest.blocklists.get(0).filePattern);
     assertEquals("adware-malware.json", manifest.blocklists.get(0).files.get(0));
   }

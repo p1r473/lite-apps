@@ -24,7 +24,7 @@
     ],
     "blocklists": [
       {
-        "url_pattern": "https://hermit.chimbori.com/blocklists/v2/%s",
+        "url_pattern": "https://lite-apps.chimbori.com/blocklists/v2/%s",
         "file_pattern": "%s",
         "files": [
           "adware-malware.json",
@@ -34,7 +34,7 @@
     ],
     "fonts": [
       {
-        "url_pattern": "https://hermit.chimbori.com/fonts/src/%s.ttf",
+        "url_pattern": "https://lite-apps.chimbori.com/fonts/src/%s.ttf",
         "file_pattern": "%s.ttf",
         "files": [
           "Alegreya",
@@ -57,7 +57,7 @@
     ],
     "styles": [
       {
-        "url_pattern": "https://hermit.chimbori.com/styles/src/%s.css",
+        "url_pattern": "https://lite-apps.chimbori.com/styles/src/%s.css",
         "file_pattern": "%s.css",
         "files": [
           "Azure Blue",
@@ -76,7 +76,7 @@
     ],
     "scriptlets": [
       {
-        "url_pattern": "https://hermit.chimbori.com/scriptlets/src/%s.js",
+        "url_pattern": "https://lite-apps.chimbori.com/scriptlets/src/%s.js",
         "file_pattern": "%s.js",
         "files": [
           "Enable Text Copying",
