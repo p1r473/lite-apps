@@ -1151,6 +1151,11 @@
           "url": "https://khanacademy.org/"
         },
         {
+          "theme_color": "#631a35",
+          "name": "Libby",
+          "url": "https://libbyapp.com/"
+        },
+        {
           "theme_color": "#89bb5c",
           "name": "Wikiwand",
           "url": "https://www.wikiwand.com/"
@@ -1220,6 +1225,11 @@
           "url": "https://last.fm/"
         },
         {
+          "theme_color": "#631a35",
+          "name": "Libby",
+          "url": "https://libbyapp.com/"
+        },
+        {
           "theme_color": "#395369",
           "name": "MixCloud",
           "url": "https://m.mixcloud.com/"
@@ -1275,6 +1285,11 @@
           "theme_color": "#3ed7fa",
           "name": "Google Books",
           "url": "https://books.google.com/"
+        },
+        {
+          "theme_color": "#631a35",
+          "name": "Libby",
+          "url": "https://libbyapp.com/"
         }
       ]
     },
@@ -1578,6 +1593,11 @@
           "theme_color": "#004278",
           "name": "Citibank",
           "url": "https://online.citi.com/"
+        },
+        {
+          "theme_color": "#631a35",
+          "name": "Libby",
+          "url": "https://libbyapp.com/"
         },
         {
           "theme_color": "#4372b8",
