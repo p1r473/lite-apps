@@ -105,6 +105,11 @@
           "url": "https://plus.google.com/"
         },
         {
+          "theme_color": "#252f39",
+          "name": "Letterboxd",
+          "url": "https://letterboxd.com/"
+        },
+        {
           "theme_color": "#0076b7",
           "name": "Linked In",
           "url": "https://www.linkedin.com/"
@@ -768,6 +773,11 @@
           "theme_color": "#6f6f00",
           "name": "Hotstar",
           "url": "http://hotstar.com/"
+        },
+        {
+          "theme_color": "#252f39",
+          "name": "Letterboxd",
+          "url": "https://letterboxd.com/"
         },
         {
           "theme_color": "#ce7d00",
