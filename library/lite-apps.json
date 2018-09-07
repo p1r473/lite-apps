@@ -32,6 +32,11 @@
           "url": "https://bbc.com/"
         },
         {
+          "theme_color": "#253938",
+          "name": "Instagram",
+          "url": "https://instagram.com/"
+        },
+        {
           "theme_color": "#000000",
           "name": "New York Times",
           "url": "http://mobile.nytimes.com/"
