@@ -1,14 +1,13 @@
 {
   "theme_color": "#43aee0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Android PIT",
   "priority": 10,
   "start_url": "https://www.androidpit.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20PIT.hermit",
   "secondary_color": "#3c9cc9",
   "icon": "favicon.png",
-  "lang": "en",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Home",
       "url": "https://www.androidpit.com/"
@@ -54,13 +53,13 @@
       "url": "https://www.androidpit.com/news"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "AndroidPIT",
       "url": "https://www.androidpit.com/feed/main.xml"
     }
   ],
-  "hermit_search": [
+  "search": [
     {
       "name": "Search",
       "url": "https://www.androidpit.com/search?st=%s"

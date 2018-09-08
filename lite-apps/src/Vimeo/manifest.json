@@ -1,14 +1,13 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Vimeo",
   "priority": 50,
   "start_url": "https://www.vimeo.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Vimeo.hermit",
   "theme_color": "#00acf2",
   "secondary_color": "#009bd7",
-  "lang": "en",
   "icon": "favicon.png",
-  "hermit_search": [
+  "search": [
     {
       "url": "https://vimeo.com/search?q=%s",
       "name": "Search Vimeo"

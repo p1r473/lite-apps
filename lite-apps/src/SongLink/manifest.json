@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "SongLink",
   "start_url": "https://songlink.io/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/SongLink.hermit",
@@ -8,7 +7,7 @@
   "secondary_color": "#d64a50",
   "icon": "favicon.png",
   "priority": 10,
-  "hermit_share": [
+  "share": [
     {
       "url": "https://songlink.io/%u",
       "name": "SongLink"

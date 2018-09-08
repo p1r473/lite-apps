@@ -1,14 +1,13 @@
 {
   "theme_color": "#ffa74e",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Reuters",
   "priority": 50,
   "start_url": "http://www.reuters.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Reuters.hermit",
   "secondary_color": "#e59646",
-  "lang": "en",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Top News",
       "url": "http://mobile.reuters.com/video/top-news"

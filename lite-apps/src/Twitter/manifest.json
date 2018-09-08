@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Twitter",
   "priority": 90,
   "start_url": "https://mobile.twitter.com/home/",
@@ -8,7 +7,7 @@
   "theme_color": "#4798d8",
   "secondary_color": "#378ac8",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Home",
       "url": "https://mobile.twitter.com/home"
@@ -34,19 +33,19 @@
       "url": "https://support.twitter.com/"
     }
   ],
-  "hermit_search": [
+  "search": [
     {
       "name": "Search Twitter",
       "url": "https://twitter.com/search?q=%s"
     }
   ],
-  "hermit_share": [
+  "share": [
     {
       "name": "Tweet",
       "url": "https://twitter.com/intent/tweet?text=%s"
     }
   ],
-  "hermit_monitors": [
+  "monitors": [
     {
       "name": "Tweets",
       "url": "https://mobile.twitter.com/i/nojs_router?path=%2Fhome",

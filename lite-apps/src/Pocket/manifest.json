@@ -1,13 +1,12 @@
 {
   "theme_color": "#ee4055",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Pocket",
   "priority": 10,
   "start_url": "https://getpocket.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Pocket.hermit",
   "secondary_color": "#d6394c",
   "icon": "favicon.png",
-  "lang": "en",
   "tags": [
     "Tools & Productivity"
   ]

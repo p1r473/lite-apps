@@ -1,6 +1,5 @@
 {
-  "lang": "en",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "XKCD",
   "priority": 10,
   "start_url": "https://m.xkcd.com/",
@@ -8,7 +7,7 @@
   "theme_color": "#95a7c9",
   "secondary_color": "#6e7b92",
   "icon": "favicon.png",
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "XKCD",
       "url": "https://m.xkcd.com/atom.xml"

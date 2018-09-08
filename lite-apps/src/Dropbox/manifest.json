@@ -1,13 +1,12 @@
 {
   "theme_color": "#0aa5fb",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Dropbox",
   "priority": 90,
   "start_url": "https://dropbox.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Dropbox.hermit",
   "secondary_color": "#0994e1",
   "icon": "favicon.png",
-  "lang": "en",
   "tags": [
     "Storage"
   ]

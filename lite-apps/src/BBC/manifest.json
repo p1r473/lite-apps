@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "BBC",
   "priority": 50,
   "start_url": "https://bbc.com/",
@@ -8,7 +7,7 @@
   "theme_color": "#bd160d",
   "secondary_color": "#ab140d",
   "icon": "favicon.png",
-  "hermit_monitors": [
+  "monitors": [
     {
       "name": "BBC News",
       "url": "http://www.bbc.com/",
@@ -16,7 +15,7 @@
       "icon": "news"
     }
   ],
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "News",
       "url": "http://www.bbc.com/news/"

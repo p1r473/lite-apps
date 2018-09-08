@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Coupons.com",
   "priority": 10,
   "start_url": "https://www.coupons.com/",
@@ -11,7 +10,7 @@
     "Shopping"
   ],
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "url": "https://www.coupons.com/",
       "name": "Home"

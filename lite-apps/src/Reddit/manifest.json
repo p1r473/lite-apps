@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Reddit",
   "priority": 90,
   "start_url": "https://m.reddit.com/",
@@ -15,7 +14,7 @@
       "url": "https://play.google.com/store/apps/details?id=com.reddit.frontpage"
     }
   ],
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Popular",
       "url": "https://m.reddit.com/r/all"
@@ -29,13 +28,13 @@
       "url": "https://m.reddit.com/message/inbox"
     }
   ],
-  "hermit_search": [
+  "search": [
     {
       "name": "Search",
       "url": "https://m.reddit.com/search?q=%s"
     }
   ],
-  "hermit_share": [
+  "share": [
     {
       "name": "Reddit",
       "url": "https://www.reddit.com/submit?url=%u&title=%t"

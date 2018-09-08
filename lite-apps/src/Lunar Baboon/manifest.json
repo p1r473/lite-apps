@@ -1,13 +1,12 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Lunar Baboon",
   "start_url": "http://www.lunarbaboon.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Lunar%20Baboon.hermit",
   "theme_color": "#1f2900",
   "secondary_color": "#1b2400",
   "icon": "favicon.png",
-  "hermit_feeds": [
+  "feeds": [
     {
       "url": "http://www.lunarbaboon.com/comics/atom.xml",
       "name": "Lunar Baboon"

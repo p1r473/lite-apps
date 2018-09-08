@@ -1,14 +1,13 @@
 {
   "theme_color": "#b80000",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "CNet",
   "priority": 10,
   "start_url": "http://cnet.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/CNet.hermit",
   "secondary_color": "#a50000",
   "icon": "favicon.png",
-  "lang": "en",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Hardware",
       "url": "https://www.cnet.com/forums/hardware/"
@@ -86,7 +85,7 @@
       "url": "http://www.cnet.com/topics/tech-culture/"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "CNET",
       "url": "http://www.cnet.com/rss/all/"

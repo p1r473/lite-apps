@@ -1,20 +1,19 @@
 {
   "theme_color": "#3680ba",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Amazon",
   "priority": 100,
   "start_url": "https://amazon.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Amazon.hermit",
   "secondary_color": "#3073a7",
   "icon": "favicon.png",
-  "lang": "en",
-  "hermit_search": [
+  "search": [
     {
       "url": "https://www.amazon.com/search?q=%s",
       "name": "Search"
     }
   ],
-  "hermit_share": [
+  "share": [
     {
       "url": "https://www.amazon.com/wishlist/add?u=%u&t=%t",
       "name": "Add to Wishlist"

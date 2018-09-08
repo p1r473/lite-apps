@@ -1,14 +1,13 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "The A.V. Club",
   "priority": 10,
   "start_url": "http://avclub.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20A.V.%20Club.hermit",
-  "lang": "en",
   "theme_color": "#1c243c",
   "secondary_color": "#1d263c",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Film",
       "url": "http://www.avclub.com/film/"
@@ -30,7 +29,7 @@
       "url": "http://www.avclub.com/games/"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "The A.V. Club",
       "url": "http://www.avclub.com/feeds/rss/"

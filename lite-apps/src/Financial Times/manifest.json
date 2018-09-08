@@ -1,14 +1,13 @@
 {
   "theme_color": "#fcdabb",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Financial Times",
   "priority": 10,
   "start_url": "https://m.ft.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Financial%20Times.hermit",
   "secondary_color": "#e2c4a8",
   "icon": "favicon.png",
-  "lang": "en",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Property & Mortgages",
       "url": "https://www.ft.com/personal-finance/property-mortgages"
@@ -54,7 +53,7 @@
       "url": "https://www.ft.com/markets/trading"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "Financial Times",
       "url": "https://www.ft.com/rss/home"

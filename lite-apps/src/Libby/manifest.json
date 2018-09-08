@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Libby",
   "start_url": "https://libbyapp.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Libby.hermit",

@@ -1,14 +1,13 @@
 {
   "theme_color": "#09a2f2",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Engadget",
   "priority": 10,
   "start_url": "http://engadget.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Engadget.hermit",
   "secondary_color": "#0891d9",
   "icon": "favicon.png",
-  "lang": "en",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Home",
       "url": "https://www.engadget.com/"
@@ -50,7 +49,7 @@
       "url": "https://www.engadget.com/videos/"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "Engadget",
       "url": "https://www.engadget.com/rss.xml"

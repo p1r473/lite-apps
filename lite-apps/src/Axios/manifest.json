@@ -1,14 +1,13 @@
 {
   "theme_color": "#008dc8",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Axios",
   "priority": 10,
   "start_url": "https://www.axios.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Axios.hermit",
   "secondary_color": "#007eb4",
-  "lang": "en",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Tech",
       "url": "https://www.axios.com/technology"
@@ -38,7 +37,7 @@
       "url": "https://www.axios.com/events/"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "Axios",
       "url": "https://www.axios.com/feeds/feed.rss"

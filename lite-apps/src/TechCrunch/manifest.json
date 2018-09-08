@@ -1,14 +1,13 @@
 {
   "theme_color": "#00880d",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "TechCrunch",
   "priority": 10,
   "start_url": "https://techcrunch.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/TechCrunch.hermit",
   "secondary_color": "#007a0b",
   "icon": "favicon.png",
-  "lang": "en",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Mobile",
       "url": "https://techcrunch.com/mobile/"
@@ -38,7 +37,7 @@
       "url": "https://techcrunch.com/event-type/crunchies/"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "TechCrunch",
       "url": "https://techcrunch.com/feed/"

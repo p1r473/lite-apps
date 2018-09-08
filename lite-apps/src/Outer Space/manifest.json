@@ -1,14 +1,13 @@
 {
   "theme_color": "#000000",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Outer Space",
   "priority": 10,
   "start_url": "https://www.outerspace.com.br/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Outer%20Space.hermit",
   "secondary_color": "#000000",
-  "lang": "en",
   "icon": "favicon.png",
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "Outer Space",
       "url": "https://www.outerspace.com.br/feed/"

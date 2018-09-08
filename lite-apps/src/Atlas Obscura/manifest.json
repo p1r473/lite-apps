@@ -1,13 +1,12 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Atlas Obscura",
   "start_url": "https://www.atlasobscura.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Atlas%20Obscura.hermit",
   "theme_color": "#382c14",
   "secondary_color": "#322712",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "url": "https://www.atlasobscura.com/random",
       "name": "Random Place"
@@ -61,7 +60,7 @@
       "name": "Features"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "url": "https://www.atlasobscura.com/feeds/latest",
       "name": "Latest Articles and Places"

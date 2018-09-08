@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Best Buy",
   "start_url": "https://www.bestbuy.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Best%20Buy.hermit",

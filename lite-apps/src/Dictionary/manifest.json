@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Dictionary.com",
   "start_url": "http://www.dictionary.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Dictionary.hermit",
@@ -8,13 +7,13 @@
   "secondary_color": "#2470ab",
   "icon": "favicon.png",
   "priority": 10,
-  "hermit_search": [
+  "search": [
     {
       "url": "http://www.dictionary.com/browse/%s",
       "name": "Search"
     }
   ],
-  "hermit_share": [
+  "share": [
     {
       "name": "Dictionary.com",
       "url": "http://www.dictionary.com/browse/%s"

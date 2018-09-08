@@ -1,13 +1,12 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Android Hilfe",
   "start_url": "http://www.android-hilfe.de/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Hilfe.hermit",
   "theme_color": "#1d9788",
   "secondary_color": "#1a877a",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "url": "https://www.android-hilfe.de/news/",
       "name": "News"
@@ -21,7 +20,7 @@
       "name": "Foren durchsuchen"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "url": "https://www.android-hilfe.de/forum/-/index.rss",
       "name": "Android-Hilfe.de"

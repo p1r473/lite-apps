@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Guitar Tuner",
   "start_url": "https://guitar-tuner.appspot.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Guitar%20Tuner.hermit",

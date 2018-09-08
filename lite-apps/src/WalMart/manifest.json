@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "WalMart",
   "priority": 10,
   "start_url": "https://www.walmart.com/",
@@ -11,7 +10,7 @@
     "Shopping"
   ],
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "url": "https://www.walmart.com/store/weekly-ads",
       "name": "Weekly Ads"

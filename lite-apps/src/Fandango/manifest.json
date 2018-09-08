@@ -1,14 +1,13 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Fandango",
   "priority": 50,
   "start_url": "https://mobile.fandango.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Fandango.hermit",
   "theme_color": "#f17604",
   "secondary_color": "#398ce1",
-  "lang": "en",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Spotlight",
       "url": "https://mobile.fandango.com/"
@@ -30,7 +29,7 @@
       "url": "https://mobile.fandango.com/account/dashboard"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "Top 10 Box Office",
       "url": "http://www.fandango.com/rss/top10boxoffice.rss"

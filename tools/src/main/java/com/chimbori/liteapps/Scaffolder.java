@@ -36,12 +36,10 @@ import javax.imageio.ImageIO;
 class Scaffolder {
   private static final String MANIFEST_URL_TEMPLATE = "https://hermit.chimbori.com/lite-apps/%s.hermit";
 
-  private static final String LANG_EN = "en";
-
   private static final String COMMAND_LINE_OPTION_URL = "url";
   private static final String COMMAND_LINE_OPTION_NAME = "name";
 
-  private static final Integer CURRENT_MANIFEST_VERSION = 2;
+  private static final Integer CURRENT_MANIFEST_VERSION = 3;
 
   /**
    * The Library Data JSON file (containing metadata about all Lite Apps) is used as the basis for
@@ -68,7 +66,6 @@ class Scaffolder {
 
       // Constant fields, same for all apps.
       manifest.manifestVersion = CURRENT_MANIFEST_VERSION;
-      manifest.lang = LANG_EN;
 
       // Fields that can be populated from the data provided on the command-line.
       manifest.name = appName;

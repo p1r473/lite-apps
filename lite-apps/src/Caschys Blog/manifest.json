@@ -1,19 +1,18 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Caschys Blog",
   "start_url": "http://stadt-bremerhaven.de/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Caschys%20Blog.hermit",
   "theme_color": "#0473bd",
   "secondary_color": "#0367aa",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "url": "http://stadt-bremerhaven.de/page/2/",
       "name": "Nächste Seite »»"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "url": "http://stadt-bremerhaven.de/feed/atom/",
       "name": "Caschys Blog"

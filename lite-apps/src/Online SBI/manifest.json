@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Online SBI",
   "start_url": "https://onlinesbi.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Online%20SBI.hermit",

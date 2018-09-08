@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Weibo",
   "start_url": "https://m.weibo.cn/beta",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Weibo.hermit",

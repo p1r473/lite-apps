@@ -1,13 +1,12 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "AlternativeTo",
   "start_url": "https://alternativeto.net/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/AlternativeTo.hermit",
   "theme_color": "#1073a8",
   "secondary_color": "#0e6797",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "url": "https://alternativeto.net/login/register/?redirectUrl=/",
       "name": "Sign up"
@@ -37,7 +36,7 @@
       "name": "Blog"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "url": "https://alternativeto.net/news/feed/",
       "name": "AlternativeTo - News"

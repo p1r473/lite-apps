@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Trulia",
   "start_url": "https://m.trulia.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Trulia.hermit",
@@ -11,7 +10,7 @@
     "Home and Lifestyle"
   ],
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "url": "https://m.trulia.com",
       "name": "Search"

@@ -1,14 +1,13 @@
 {
   "theme_color": "#005689",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "The Guardian",
   "priority": 50,
   "start_url": "https://theguardian.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20Guardian.hermit",
   "secondary_color": "#004d7b",
   "icon": "favicon.png",
-  "lang": "en",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "World",
       "url": "https://www.theguardian.com/world"
@@ -98,7 +97,7 @@
       "url": "https://www.theguardian.com/video"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "The Guardian",
       "url": "https://www.theguardian.com/us/rss"

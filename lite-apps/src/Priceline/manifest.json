@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Priceline",
   "priority": 10,
   "start_url": "http://priceline.com/",
@@ -11,7 +10,7 @@
     "Travel"
   ],
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "url": "https://www.priceline.com/flights/",
       "name": "Flights"

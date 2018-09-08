@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "腾讯首页",
   "start_url": "http://qq.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/%E8%85%BE%E8%AE%AF%E9%A6%96%E9%A1%B5.hermit",

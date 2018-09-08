@@ -1,14 +1,13 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Giphy",
   "priority": 10,
   "start_url": "https://giphy.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Giphy.hermit",
   "theme_color": "#fe6666",
   "secondary_color": "#00ccff",
-  "lang": "en",
   "icon": "favicon.png",
-  "hermit_search": [
+  "search": [
     {
       "url": "https://giphy.com/search/%s",
       "name": "Search Giphy"

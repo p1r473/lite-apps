@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "New York Times",
   "priority": 50,
   "start_url": "http://mobile.nytimes.com/",
@@ -8,7 +7,7 @@
   "theme_color": "#000000",
   "secondary_color": "#333333",
   "icon": "favicon.png",
-  "hermit_monitors": [
+  "monitors": [
     {
       "name": "New York Times",
       "url": "http://mobile.nytimes.com/",
@@ -16,7 +15,7 @@
       "icon": "news"
     }
   ],
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Home",
       "url": "http://mobile.nytimes.com/"
@@ -162,7 +161,7 @@
       "url": "http://mobile.nytimes.com/magazine/"
     }
   ],
-  "hermit_search": [
+  "search": [
     {
       "name": "Search",
       "url": "http://mobile.nytimes.com/search?query=%s&sort=rel"

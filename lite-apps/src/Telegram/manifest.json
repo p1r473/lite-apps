@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Telegram",
   "start_url": "https://web.telegram.org/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Telegram.hermit",

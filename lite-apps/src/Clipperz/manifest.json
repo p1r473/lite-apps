@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Clipperz",
   "start_url": "https://clipperz.is/app/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Clipperz.hermit",

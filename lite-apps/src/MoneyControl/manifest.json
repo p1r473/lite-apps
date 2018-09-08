@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "MoneyControl",
   "start_url": "https://moneycontrol.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/MoneyControl.hermit",

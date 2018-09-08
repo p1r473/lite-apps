@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "APK Mirror",
   "priority": 10,
   "start_url": "http://www.apkmirror.com/",
@@ -8,7 +7,7 @@
   "theme_color": "#ff9800",
   "secondary_color": "#f57c00",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "url": "http://www.apkmirror.com/developers/",
       "name": "All Developers"
@@ -22,13 +21,13 @@
       "name": "FAQ"
     }
   ],
-  "hermit_search": [
+  "search": [
     {
       "url": "http://www.apkmirror.com/?s=%s",
       "name": "Search"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "url": "http://www.apkmirror.com/feed/",
       "name": "Latest Uploads"

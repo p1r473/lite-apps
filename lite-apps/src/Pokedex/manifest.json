@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Pokedex",
   "start_url": "https://www.pokedex.org/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Pokedex.hermit",

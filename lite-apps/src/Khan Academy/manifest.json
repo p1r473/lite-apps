@@ -1,14 +1,13 @@
 {
   "theme_color": "#9cb639",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Khan Academy",
   "priority": 10,
   "start_url": "https://khanacademy.org/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Khan%20Academy.hermit",
   "secondary_color": "#8ca333",
   "icon": "favicon.png",
-  "lang": "en",
-  "hermit_search": [
+  "search": [
     {
       "url": "https://www.khanacademy.org/search?page_search_query=%s",
       "name": "Search"

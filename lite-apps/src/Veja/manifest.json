@@ -1,12 +1,11 @@
 {
   "theme_color": "#004f93",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Veja",
   "priority": 10,
   "start_url": "http://veja.abril.com.br/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Veja.hermit",
   "secondary_color": "#004784",
-  "lang": "en",
   "icon": "favicon.png",
   "related_applications": [
     {

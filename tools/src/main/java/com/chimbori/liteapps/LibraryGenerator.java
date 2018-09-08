@@ -66,7 +66,7 @@ class LibraryGenerator {
       outputApp.priority = manifest.priority;
 
       // Set user-agent from the settings stored in the Lite App’s manifest.json.
-      String userAgent = manifest.hermitSettings != null ? manifest.hermitSettings.userAgent : null;
+      String userAgent = manifest.settings != null ? manifest.settings.userAgent : null;
       if (USER_AGENT_DESKTOP.equals(userAgent)) {
         outputApp.user_agent = USER_AGENT_DESKTOP;
       }

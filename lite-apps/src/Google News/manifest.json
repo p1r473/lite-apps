@@ -1,20 +1,19 @@
 {
   "theme_color": "#0cacf4",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Google News",
   "priority": 10,
   "start_url": "https://news.google.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20News.hermit",
   "secondary_color": "#0a9adb",
   "icon": "favicon.png",
-  "lang": "en",
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "Google News",
       "url": "https://news.google.com/news?cf=all&hl=en&pz=1&ned=us&topic=h&num=3&output=rss"
     }
   ],
-  "hermit_settings": {
+  "settings": {
     "pull_to_refresh": false
   },
   "tags": [

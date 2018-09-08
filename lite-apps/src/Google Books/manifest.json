@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Google Books",
   "start_url": "https://books.google.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20Books.hermit",
@@ -11,7 +10,7 @@
     "Books"
   ],
   "icon": "favicon.png",
-  "hermit_search": [
+  "search": [
     {
       "url": "https://www.google.com/search?tbm=bks&q=%s",
       "name": "Search"

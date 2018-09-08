@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "AirBnB",
   "start_url": "https://www.airbnb.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/AirBnB.hermit",

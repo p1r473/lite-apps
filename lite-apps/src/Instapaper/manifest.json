@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Instapaper",
   "priority": 10,
   "start_url": "https://instapaper.com/",
@@ -15,7 +14,7 @@
       "id": "com.instapaper.android"
     }
   ],
-  "hermit_share": [
+  "share": [
     {
       "url": "https://www.instapaper.com/hello2?url=%u&title=%t",
       "name": "Instapaper"

@@ -1,14 +1,13 @@
 {
   "theme_color": "#fa4b2a",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "The Verge",
   "priority": 10,
   "start_url": "https://theverge.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20Verge.hermit",
   "secondary_color": "#e14325",
   "icon": "favicon.png",
-  "lang": "en",
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "The Verge",
       "url": "https://www.theverge.com/rss/full.xml"

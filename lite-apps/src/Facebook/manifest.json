@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Facebook",
   "priority": 100,
   "start_url": "https://m.facebook.com/",
@@ -8,7 +7,7 @@
   "theme_color": "#3b5998",
   "secondary_color": "#3b5998",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Most Recent",
       "url": "https://m.facebook.com/home.php?sk=h_chr"
@@ -42,19 +41,19 @@
       "url": "https://m.facebook.com/settings"
     }
   ],
-  "hermit_search": [
+  "search": [
     {
       "name": "Search Facebook",
       "url": "https://m.facebook.com/search/top/?q=%s"
     }
   ],
-  "hermit_share": [
+  "share": [
     {
       "name": "Post to Facebook",
       "url": "https://www.facebook.com/sharer/sharer.php?u=%u"
     }
   ],
-  "hermit_monitors": [
+  "monitors": [
     {
       "name": "Facebook Notifications",
       "url": "https://m.facebook.com/notifications",

@@ -1,14 +1,13 @@
 {
   "theme_color": "#e9effa",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "StartPage",
   "priority": 10,
   "start_url": "https://www.startpage.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/StartPage.hermit",
   "secondary_color": "#d1d7e1",
-  "lang": "en",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Advanced Search",
       "url": "https://www.startpage.com/advanced-search.html"
@@ -18,7 +17,7 @@
       "url": "https://www.startpage.com/do/preferences"
     }
   ],
-  "hermit_search": [
+  "search": [
     {
       "url": "https://www.startpage.com/do/search?query=%s",
       "name": "Search StartPage"

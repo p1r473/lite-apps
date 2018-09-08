@@ -1,12 +1,11 @@
 {
   "theme_color": "#6f6f00",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Hotstar",
   "priority": 10,
   "start_url": "http://hotstar.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Hotstar.hermit",
   "secondary_color": "#636300",
-  "lang": "en",
   "icon": "favicon.png",
   "tags": [
     "India",

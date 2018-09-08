@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Smaller Pictures",
   "start_url": "https://smaller-pictures.appspot.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Smaller%20Pictures.hermit",

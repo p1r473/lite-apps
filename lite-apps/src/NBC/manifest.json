@@ -1,14 +1,13 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "NBC",
   "priority": 10,
   "start_url": "http://www.nbcnews.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/NBC.hermit",
-  "lang": "en",
   "icon": "favicon.png",
   "theme_color": "#4372b8",
   "secondary_color": "#1f7db7",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "World",
       "url": "http://www.nbcnews.com/news/world"

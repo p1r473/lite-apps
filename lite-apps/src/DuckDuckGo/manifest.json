@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "DuckDuckGo",
   "priority": 10,
   "start_url": "https://duckduckgo.com/",
@@ -8,7 +7,7 @@
   "theme_color": "#e0572a",
   "secondary_color": "#fed400",
   "icon": "favicon.png",
-  "hermit_search": [
+  "search": [
     {
       "url": "https://duckduckgo.com/?t=hs&ia=web&q=%s",
       "name": "Search DuckDuckGo"

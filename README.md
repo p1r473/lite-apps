@@ -1,29 +1,25 @@
 ---
-title: README for Hermit Lite App Manifests
-description: Native apps eating up battery and slowing down your phone? Switch to Lite Apps — with Hermit.
+title: "Hermit Library: Lite Apps, Fonts, Styles, Scriptlets, Blocklists"
+description: "Repository of Hermit app-related data, served from https://lite-apps.chimbori.com/"
 ---
 
 # Lite App Manifests
 
-This is a directory of manifest files for [Hermit](https://hermit.chimbori.com). Manifests are zipped up into `.hermit` files, and can be used to set up a new Lite App in Hermit.
+This repo contains manifest files for [Hermit](https://hermit.chimbori.com). Manifests are zipped up into `.hermit` files, and can be used to set up a new Lite App in Hermit.
 
 [![Build Status](https://travis-ci.org/chimbori/lite-apps.svg?branch=master)](https://travis-ci.org/chimbori/lite-apps)
 
 ## Submitting New Lite Apps
 
-We welcome new additions to this Library, and enhancements to existing ones (e.g. adding new Bookmarks or Integrations).
-
-Please see the [step by step instructions](CONTRIBUTING.md) and an overview of the automated tools and tests we’ve made available.
+We welcome new additions to this Library, and enhancements to existing ones (e.g. adding new Bookmarks or Integrations). Please see the [step by step instructions](CONTRIBUTING.md) and an overview of the automated tools and tests we’ve made available.
 
 # Syntax
 
-Hermit Lite Apps are zip files, with the extension `.hermit`. Each zip file contains multiple files that define the Lite App, how it should be installed, and default settings to be used. Only two files are required, all others are optional.
+Hermit Lite Apps are `.zip` files, with the extension `.hermit`. Each zip file contains multiple files that define the Lite App, how it should be installed, and default settings to be used. Only two files are required, all others are optional.
 
 - `manifest.json` : The basic metadata about a Lite App is contained in a `manifest.json` file. This follows the [W3C Web App Manifest](https://www.w3.org/TR/appmanifest/) format with additional vendor-specific fields for Hermit that are not yet a part of the W3C standard.
 
 - `icons/favicon.png`: The icon to be used for this site when importing the Lite App. Ensure that icons are large enough (our automated tests require that the size be exactly 300×300px).
-
-All Hermit Lite Apps fully support localization, but it’s optional. So if you’re a German publication or Chinese site and only want to include one language in your Lite App definition, that’s completely fine. If included, localized strings must follow a specific directory structure (same as what Chrome extensions use.)
 
 ## Directory Structure
 
@@ -31,28 +27,17 @@ All Hermit Lite Apps fully support localization, but it’s optional. So if you�
     - manifest.json    (required)
     + icons
       - favicon.png    (required)
-    + _locales/
-      + en/
-        - messages.json
-      + es/
-        - messages.json
-      + de/
-        - messages.json
-      + pt_BR/
-        - messages.json
-      … etc.
 
 ## manifest.json
 
     {
       "manifest_version": 1,
-      "lang": "en",
       "name": "Lite App Example",
       "start_url": "https://example.com/",
       "theme_color": "#ff0000",
       "secondary_color": "#00ff00",
       "icon": "favicon.png",
-      "hermit_settings": {
+      "settings": {
         "block_malware":  true | false,
         "do_not_track":  true | false,
         "third_party_cookies":  true | false,
@@ -64,7 +49,7 @@ All Hermit Lite Apps fully support localization, but it’s optional. So if you�
         "text_zoom":  true | false,
         "user_agent": "desktop" | ""
       },
-      "hermit_bookmarks": [
+      "bookmarks": [
         {
           "url": "https://example.com/top-level-navigation",
           "name": "Top Level"
@@ -74,19 +59,19 @@ All Hermit Lite Apps fully support localization, but it’s optional. So if you�
           "name": "Another Top Level"
         }
       ],
-      "hermit_search": [
+      "search": [
         {
           "url": "https://example.com/search?q=%s",
           "name": "Integrated Search, use %s as a search query placeholder."
         }
       ],
-      "hermit_share": [
+      "share": [
         {
           "url": "https://example.com/share?u=%u&t=%t",
           "name": "Share from the native Android dialog to any Lite App"
         }
       ],
-      "hermit_feeds": [
+      "feeds": [
         {
           "url": "https://example.com/rss.xml",
           "name": "RSS feed of all new content"
@@ -102,7 +87,6 @@ All Hermit Lite Apps fully support localization, but it’s optional. So if you�
 ### Required Fields
 
 - `manifest_version`: Integer, must be `2` (the current version). Lite Apps may require Hermit to be upgraded if it is too old to support an older version of the manifest.
-- `lang`: The default language to use, in case there are no localized strings available. Ensure that strings for this language are available under the `_locales` directory.
 - `name`: The name of the Lite App, shown on the home screen & at the top of the app.
 - `manifest_url`: The URL where this Lite App Manifest will be hosted. Typically, this should be `https://hermit.chimbori.com/lite-apps/YOUR_APP_NAME.hermit`. This must be explicitly specified for every Lite App, although it is not present when you create your own Lite App in Hermit and export it.
 - `start_url`: The URL for the home page of the Lite App.
@@ -112,11 +96,11 @@ All Hermit Lite Apps fully support localization, but it’s optional. So if you�
 
 ### Optional Fields
 
-- `hermit_settings`: A vendor-specific addition to the W3C Web Manifest format, where Hermit settings are saved. See details below.
-- `hermit_bookmarks`: A list of bookmarks shown in the left sidebar in every Hermit Lite App.
-- `hermit_search`: Search can be integrated into any Lite App. [See details on how to configure this](https://hermit.chimbori.com/help/integrations).
-- `hermit_share`: Share text from any Android app directly (natively) into a Hermit Lite App. [See details on how to configure this](https://hermit.chimbori.com/help/integrations).
-- `hermit_feeds`: RSS or Atom feed URLs that Hermit will check regularly and notify the user about.
+- `settings`: A vendor-specific addition to the W3C Web Manifest format, where Hermit settings are saved. See details below.
+- `bookmarks`: A list of bookmarks shown in the left sidebar in every Hermit Lite App.
+- `search`: Search can be integrated into any Lite App. [See details on how to configure this](https://hermit.chimbori.com/help/integrations).
+- `share`: Share text from any Android app directly (natively) into a Hermit Lite App. [See details on how to configure this](https://hermit.chimbori.com/help/integrations).
+- `feeds`: RSS or Atom feed URLs that Hermit will check regularly and notify the user about.
 
 ### Settings
 

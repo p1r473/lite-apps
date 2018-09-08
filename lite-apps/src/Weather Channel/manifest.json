@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Weather Channel",
   "start_url": "https://weather.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Weather%20Channel.hermit",

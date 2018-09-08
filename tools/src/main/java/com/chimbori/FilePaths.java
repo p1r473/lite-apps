@@ -8,7 +8,6 @@ public class FilePaths {
   // Filenames
   public static final String MANIFEST_JSON_FILE_NAME = "manifest.json";
   public static final String MESSAGES_JSON_FILE_NAME = "messages.json";
-  public static final String LOCALES_DIR_NAME = "_locales";
   public static final String ICONS_DIR_NAME = "icons";
   public static final String ICON_EXTENSION = ".png";
 
@@ -30,7 +29,7 @@ public class FilePaths {
   // Lite Apps
   public static final File LITE_APPS_SRC_DIR        = new File(PROJECT_ROOT, "lite-apps/src");
   public static final File LITE_APPS_TAGS_JSON      = new File(PROJECT_ROOT, "lite-apps/src/tags.json");
-  public static final File LITE_APPS_OUTPUT_DIR     = new File(PROJECT_ROOT, "lite-apps/v2/");
+  public static final File LITE_APPS_OUTPUT_DIR     = new File(PROJECT_ROOT, "lite-apps/v3/");
 
   // Library
   public static final File LIBRARY_ICONS_DIR        = new File(PROJECT_ROOT, "library/112x112/");

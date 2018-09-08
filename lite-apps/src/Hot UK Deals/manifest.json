@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Hot UK Deals",
   "start_url": "https://www.hotukdeals.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Hot%20UK%20Deals.hermit",

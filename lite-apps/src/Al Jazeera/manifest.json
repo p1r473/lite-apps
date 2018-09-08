@@ -1,14 +1,13 @@
 {
   "theme_color": "#fe8000",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Al Jazeera",
   "priority": 10,
   "start_url": "http://aljazeera.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Al%20Jazeera.hermit",
   "secondary_color": "#e47300",
   "icon": "favicon.png",
-  "lang": "en",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "The Last 24",
       "url": "http://www.aljazeera.com/recent.html"
@@ -42,7 +41,7 @@
       "url": "http://www.aljazeera.com/topics/regions/latin-america.html"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "Al Jazeera English",
       "url": "http://www.aljazeera.com/xml/rss/all.xml"

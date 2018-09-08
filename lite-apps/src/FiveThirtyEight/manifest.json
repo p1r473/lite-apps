@@ -1,14 +1,13 @@
 {
   "theme_color": "#ef7237",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "FiveThirtyEight",
   "priority": 10,
   "start_url": "https://fivethirtyeight.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/FiveThirtyEight.hermit",
   "secondary_color": "#d76631",
-  "lang": "en",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Politics",
       "url": "https://fivethirtyeight.com/politics/"
@@ -34,7 +33,7 @@
       "url": "https://fivethirtyeight.com/life/"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "Politics – FiveThirtyEight",
       "url": "https://fivethirtyeight.com/politics/feed/"
@@ -60,7 +59,7 @@
       "url": "https://fivethirtyeight.com/contributors/nate-silver/feed/"
     }
   ],
-  "hermit_search": [
+  "search": [
     {
       "name": "Search",
       "url": "https://fivethirtyeight.com/?s=%s"

@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Google Maps",
   "start_url": "https://www.google.com/maps/?force=qVTs2FOxxTmHHo79-pwa",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20Maps.hermit",

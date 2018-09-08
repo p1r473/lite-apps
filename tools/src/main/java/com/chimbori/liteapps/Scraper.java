@@ -63,8 +63,8 @@ public class Scraper {
       manifest.name = doc.select("title").text();
     }
     manifest.themeColor = doc.select("meta[name=theme-color]").attr("content");
-    manifest.hermitBookmarks = findBookmarkableLinks();
-    manifest.hermitFeeds = findAtomAndRssFeeds();
+    manifest.bookmarks = findBookmarkableLinks();
+    manifest.feeds = findAtomAndRssFeeds();
     manifest.relatedApplications = findRelatedApps();
 
     return manifest;

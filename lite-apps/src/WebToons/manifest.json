@@ -1,13 +1,12 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "WebToons",
   "start_url": "https://m.webtoons.com/en/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/WebToons.hermit",
   "theme_color": "#00d564",
   "secondary_color": "#00bf5a",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "url": "http://m.webtoons.com/en/dailySchedule",
       "name": "Daily Featured"

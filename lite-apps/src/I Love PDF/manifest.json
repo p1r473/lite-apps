@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "I Love PDF",
   "start_url": "https://www.ilovepdf.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/I%20Love%20PDF.hermit",

@@ -1,14 +1,13 @@
 {
   "theme_color": "#000000",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Bored Panda",
   "priority": 50,
   "start_url": "http://boredpanda.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Bored%20Panda.hermit",
   "secondary_color": "#000000",
-  "lang": "en",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Art",
       "url": "http://www.boredpanda.com/category/art/"
@@ -98,7 +97,7 @@
       "url": "http://www.boredpanda.com/category/style/"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "Bored Panda",
       "url": "http://www.boredpanda.com/feed/"

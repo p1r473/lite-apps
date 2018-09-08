@@ -133,7 +133,6 @@ public class LiteAppsValidator {
     assertNotNull(manifest);
     assertFieldExists(tag, "name", manifest.name);
     assertFieldExists(tag, "start_url", manifest.startUrl);
-    assertFieldExists(tag, "lang", manifest.lang);
     assertFieldExists(tag, "manifest_url", manifest.manifestUrl);
     assertFieldExists(tag, "theme_color", manifest.themeColor);
     assertFieldExists(tag, "secondary_color", manifest.secondaryColor);
@@ -168,11 +167,11 @@ public class LiteAppsValidator {
     assertTrue(new File(iconsDirectory, IconFile.FAVICON_FILE.fileName).exists());
 
     // Test Endpoints for basic parseability.
-    validateEndpoints(tag, manifest.hermitBookmarks, EndpointRole.BOOKMARK);
-    validateEndpoints(tag, manifest.hermitFeeds, EndpointRole.FEED);
-    validateEndpoints(tag, manifest.hermitShare, EndpointRole.SHARE);
-    validateEndpoints(tag, manifest.hermitSearch, EndpointRole.SEARCH);
-    validateEndpoints(tag, manifest.hermitMonitors, EndpointRole.MONITOR);
+    validateEndpoints(tag, manifest.bookmarks, EndpointRole.BOOKMARK);
+    validateEndpoints(tag, manifest.feeds, EndpointRole.FEED);
+    validateEndpoints(tag, manifest.share, EndpointRole.SHARE);
+    validateEndpoints(tag, manifest.search, EndpointRole.SEARCH);
+    validateEndpoints(tag, manifest.monitors, EndpointRole.MONITOR);
 
     // Test all Settings to see whether they belong to our whitelisted set of allowable strings.
     validateSettings(tag, manifestFile);
@@ -184,23 +183,6 @@ public class LiteAppsValidator {
         assertFalse(relatedApplication.id.isEmpty());
         assertTrue(relatedApplication.url.startsWith("https://play.google.com/store/apps/details?id="));
         assertTrue(relatedApplication.url.endsWith(relatedApplication.id));
-      }
-    }
-
-    // Test that if any localization files are present, then they are well-formed.
-    File localesDirectory = new File(liteApp, FilePaths.LOCALES_DIR_NAME);
-    if (localesDirectory.exists()) {
-      File[] localizations = localesDirectory.listFiles(File::isDirectory);
-      if (localizations != null) {
-        for (File localization : localizations) {
-          File messagesFile = new File(localization, FilePaths.MESSAGES_JSON_FILE_NAME);
-          // With no specific field checks, we at least validate that the file is well-formed JSON.
-          try {
-            TestHelpers.assertJsonIsWellFormedAndReformat(messagesFile);
-          } catch (IOException e) {
-            fail(e.getMessage());
-          }
-        }
       }
     }
   }
@@ -237,7 +219,7 @@ public class LiteAppsValidator {
     }
 
     //noinspection unchecked
-    LinkedTreeMap settings = (LinkedTreeMap<String, Object>) json.get("hermit_settings");
+    LinkedTreeMap settings = (LinkedTreeMap<String, Object>) json.get("settings");
     if (settings != null) {
       for (Object key : settings.keySet()) {
         assertTrue(String.format("Unexpected setting found: [%s] in [%s]", key, tag), SETTINGS_SET.contains(key));

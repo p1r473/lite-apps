@@ -1,12 +1,11 @@
 {
   "theme_color": "#e4330b",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "AliExpress",
   "priority": 10,
   "start_url": "https://m.aliexpress.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/AliExpress.hermit",
   "secondary_color": "#cd2d09",
-  "lang": "en",
   "icon": "favicon.png",
   "tags": [
     "Shopping"

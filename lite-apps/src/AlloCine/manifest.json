@@ -1,13 +1,12 @@
 {
   "theme_color": "#ffca00",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "AlloCiné",
   "priority": 10,
   "start_url": "http://allocine.fr/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/AlloCine.hermit",
   "secondary_color": "#e5b500",
   "icon": "favicon.png",
-  "lang": "en",
   "tags": [
     "France",
     "Movies and TV"

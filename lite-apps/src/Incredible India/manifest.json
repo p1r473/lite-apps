@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Incredible India",
   "start_url": "https://incredibleindia.org/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Incredible%20India.hermit",

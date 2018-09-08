@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Bleacher Report",
   "start_url": "https://bleacherreport.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Bleacher%20Report.hermit",

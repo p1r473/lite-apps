@@ -1,13 +1,12 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Wikiwand",
   "start_url": "https://www.wikiwand.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Wikiwand.hermit",
   "theme_color": "#89bb5c",
   "secondary_color": "#7ba852",
   "icon": "favicon.png",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "url": "https://www.wikiwand.com/press",
       "name": "Press"

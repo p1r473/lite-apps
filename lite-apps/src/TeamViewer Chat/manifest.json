@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "TeamViewer Chat",
   "priority": 10,
   "start_url": "https://integratedchat.teamviewer.com/",
@@ -8,7 +7,7 @@
   "theme_color": "#2196f3",
   "secondary_color": "#1976d2",
   "icon": "favicon.png",
-  "hermit_settings": {
+  "settings": {
     "open_links": "browser"
   },
   "tags": [

@@ -1,13 +1,12 @@
 {
   "theme_color": "#3b438f",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Forecast.io",
   "priority": 10,
   "start_url": "https://forecast.io/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Forecast.io.hermit",
   "secondary_color": "#353c80",
   "icon": "favicon.png",
-  "lang": "en",
   "related_applications": [
     {
       "id": "net.darksky.darksky",

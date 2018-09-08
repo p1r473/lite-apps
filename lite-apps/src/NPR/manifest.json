@@ -1,14 +1,13 @@
 {
   "theme_color": "#2851a0",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "NPR",
   "priority": 10,
   "start_url": "http://npr.org/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/NPR.hermit",
   "secondary_color": "#244890",
   "icon": "favicon.png",
-  "lang": "en",
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "World",
       "url": "http://www.npr.org/sections/world/"
@@ -46,7 +45,7 @@
       "url": "http://www.npr.org/sections/arts/"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "NPR Top Stories",
       "url": "http://www.npr.org/rss/rss.php?id=1002"

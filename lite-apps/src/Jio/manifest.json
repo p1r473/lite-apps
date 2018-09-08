@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Jio",
   "start_url": "https://jio.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Jio.hermit",

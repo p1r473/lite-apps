@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Android Messages",
   "start_url": "https://messages.android.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Messages.hermit",

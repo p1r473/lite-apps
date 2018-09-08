@@ -1,18 +1,17 @@
 {
   "theme_color": "#ed1b2b",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Android Police",
   "priority": 10,
   "start_url": "https://androidpolice.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Police.hermit",
   "secondary_color": "#d51826",
   "icon": "favicon.png",
-  "lang": "en",
   "tags": [
     "Technology",
     "News"
   ],
-  "hermit_bookmarks": [
+  "bookmarks": [
     {
       "name": "Exclusives",
       "url": "http://www.androidpolice.com/topics/news/exclusive/"
@@ -66,13 +65,13 @@
       "url": "http://www.androidpolice.com/topics/reviews/phone-reviews/"
     }
   ],
-  "hermit_search": [
+  "search": [
     {
       "url": "http://www.androidpolice.com/?s=%s",
       "name": "Search"
     }
   ],
-  "hermit_feeds": [
+  "feeds": [
     {
       "name": "Android Police",
       "url": "http://www.androidpolice.com/feed/"

@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Uber",
   "start_url": "https://m.uber.com/looking",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Uber.hermit",

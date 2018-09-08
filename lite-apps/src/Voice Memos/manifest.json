@@ -1,6 +1,5 @@
 {
-  "manifest_version": 2,
-  "lang": "en",
+  "manifest_version": 3,
   "name": "Voice Memos",
   "start_url": "https://voice-memos.appspot.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Voice%20Memos.hermit",

@@ -1,13 +1,12 @@
 {
   "theme_color": "#1e892f",
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "TripAdvisor",
   "priority": 90,
   "start_url": "https://tripadvisor.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/TripAdvisor.hermit",
   "secondary_color": "#1b7b2a",
   "icon": "favicon.png",
-  "lang": "en",
   "tags": [
     "Travel"
   ]
