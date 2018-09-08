@@ -1,7 +1,7 @@
 title:    "Lite App Manifests"
 tagline:  "Lite Apps for use with Hermit: https://hermit.chimbori.com/"
-url:      "https://chimbori.github.io/lite-apps"
-cdn_url:  "https://chimbori.github.io/lite-apps"
+url:      "https://lite-apps.chimbori.com"
+cdn_url:  "https://lite-apps.chimbori.com"
 exclude:  [
             # Don’t add an exclusion for *.jsx, the JSX is compiled to JS inside the _site directory.
             "*.bat",

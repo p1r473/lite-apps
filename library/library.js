@@ -7,7 +7,7 @@ function encodeLiteAppName(liteApp) {
 }
 
 function makeImageUrl(liteApp) {
-  return 'https://chimbori.github.io/lite-apps/library/112x112/' + encodeLiteAppName(liteApp) + '.png';
+  return '/library/112x112/' + encodeLiteAppName(liteApp) + '.png';
 }
 
 function makeManifestUrl(liteApp) {
