@@ -7,7 +7,7 @@ description: "Repository of Hermit app-related data, served from https://lite-ap
 
 This repo contains manifest files for [Hermit](https://hermit.chimbori.com). Manifests are zipped up into `.hermit` files, and can be used to set up a new Lite App in Hermit.
 
-[![Build Status](https://travis-ci.org/chimbori/lite-apps.svg?branch=master)](https://travis-ci.org/chimbori/lite-apps)
+[![CircleCI](https://circleci.com/gh/chimbori/lite-apps/tree/master.svg?style=svg)](https://circleci.com/gh/chimbori/lite-apps/tree/master)
 
 ## Submitting New Lite Apps
 
