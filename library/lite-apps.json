@@ -1151,6 +1151,11 @@
           "url": "https://www.duolingo.com/"
         },
         {
+          "theme_color": "#479fdb",
+          "name": "edX",
+          "url": "https://www.edx.org/"
+        },
+        {
           "theme_color": "#ff302a",
           "name": "I Love PDF",
           "url": "https://www.ilovepdf.com/"
