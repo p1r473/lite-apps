@@ -7,7 +7,7 @@ import com.chimbori.hermitcrab.schema.manifest.Endpoint;
 import com.chimbori.hermitcrab.schema.manifest.EndpointRole;
 import com.chimbori.hermitcrab.schema.manifest.IconFile;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
-import com.chimbori.hermitcrab.schema.manifest.RelatedApp;
+import com.chimbori.hermitcrab.schema.manifest.RelatedApplication;
 import com.google.gson.Gson;
 import com.google.gson.internal.LinkedTreeMap;
 
@@ -178,7 +178,7 @@ public class LiteAppsValidator {
 
     // Test "related_apps" for basic sanity, that if one exists, then it’s pointing to a Play Store app.
     if (manifest.relatedApplications != null) {
-      for (RelatedApp relatedApplication : manifest.relatedApplications) {
+      for (RelatedApplication relatedApplication : manifest.relatedApplications) {
         assertEquals(GOOGLE_PLAY, relatedApplication.platform);
         assertFalse(relatedApplication.id.isEmpty());
         assertTrue(relatedApplication.url.startsWith("https://play.google.com/store/apps/details?id="));
