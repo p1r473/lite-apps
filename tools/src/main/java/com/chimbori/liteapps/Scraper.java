@@ -3,7 +3,7 @@ package com.chimbori.liteapps;
 
 import com.chimbori.hermitcrab.schema.manifest.Endpoint;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
-import com.chimbori.hermitcrab.schema.manifest.RelatedApplication;
+import com.chimbori.hermitcrab.schema.manifest.RelatedApp;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -79,15 +79,15 @@ public class Scraper {
     return iconUrl;
   }
 
-  private List<RelatedApplication> findRelatedApps() {
-    List<RelatedApplication> relatedApps = new ArrayList<>();
+  private List<RelatedApp> findRelatedApps() {
+    List<RelatedApp> relatedApps = new ArrayList<>();
     Elements playStoreLinks = doc.select("a[href*=play.google.com]");
     for (Element playStoreLink : playStoreLinks) {
       String playStoreUrl = playStoreLink.attr("href");
       System.out.println(playStoreUrl);
       Matcher matcher = Pattern.compile("id=([^&]+)").matcher(playStoreUrl);
       while (matcher.find()) {
-        relatedApps.add(new RelatedApplication(matcher.group(1)));
+        relatedApps.add(new RelatedApp(matcher.group(1)));
       }
     }
     return relatedApps.isEmpty() ? null : relatedApps;
