@@ -5,16 +5,19 @@ body,
 }
 
 .main {
+  background-color: $color-body-background;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   max-width: 800px;
-  padding: 8px;
   width: 100%;
+  box-shadow:0 0 24px rgba(0,0,0,0.5);
 }
 
 .query-container {
-  height: 54px;
+  height: 60px;
+  background-color: $color-primary;
+  padding: 8px;
 }
 
 .content {

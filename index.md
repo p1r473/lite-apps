@@ -12,13 +12,13 @@ description: Library of free Hermit Lite Apps
 </div>
 
 <div class="main">
-  <div class="query-container">
-    <input id="query" class="query" placeholder="Search Lite Apps" type="search">
-  </div>
   <div class="content">
     <div class="lite-apps-json"></div>
     <p class="tooltip">Recommend Lite Apps to add to <span class="notranslate">Hermit</span> Library: email hello@chimbori.com.</p>
     <p class="tooltip">All product names, icons, and web sites linked from this page are trademarks of their respective owners. <span class="notranslate">Hermit</span> only provides these links as a courtesy and may not be held accountable for their contents.</p>
+  </div>
+  <div class="query-container">
+    <input id="query" class="query" placeholder="Search for your favorite free Lite Apps" type="search">
   </div>
 </div>
 
