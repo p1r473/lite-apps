@@ -97,9 +97,9 @@ public class Scraper {
     List<Endpoint> feeds = new ArrayList<>();
     Elements atomOrRssFeeds = doc.select("link[type=application/rss+xml], link[type=application/atom+xml]");
     for (Element feed : atomOrRssFeeds) {
-      feeds.add(new Endpoint()
-          .url(feed.attr("abs:href"))
-          .title(feed.attr("title")));
+      Endpoint feedLink = new Endpoint().url(feed.attr("abs:href")).title(feed.attr("title"));
+      scrubFields(feedLink);
+      feeds.add(feedLink);
     }
     return feeds.isEmpty() ? null : feeds;
   }
@@ -112,18 +112,35 @@ public class Scraper {
     Elements ariaRoleNavigation = doc.select("*[role=navigation]").select("a[href]");
     for (Element navLink : ariaRoleNavigation) {
       String linkUrl = navLink.attr("abs:href");
-      bookmarkableLinks.put(linkUrl, new Endpoint().url(linkUrl).title(navLink.text()));
+      String linkText = navLink.text();
+      if (linkText == null || linkText.isEmpty()) {
+        continue; // Skip links where we could not recognize the anchor text.
+      }
+      bookmarkableLinks.put(linkUrl, new Endpoint().url(linkUrl).title(linkText));
     }
 
     if (bookmarkableLinks.isEmpty()) {
       Elements likelyNavigationLinks = doc.select("nav, .nav, #nav, .navbar, #navbar, .navigation, #navigation").select("a[href]");
       for (Element navLink : likelyNavigationLinks) {
         String linkUrl = navLink.attr("abs:href");
-        bookmarkableLinks.put(linkUrl, new Endpoint().url(linkUrl).title(navLink.text()));
+        Endpoint bookmarkableLink = new Endpoint().url(linkUrl).title(navLink.text());
+        scrubFields(bookmarkableLink);
+        bookmarkableLinks.put(linkUrl, bookmarkableLink);
       }
     }
 
     return bookmarkableLinks.isEmpty() ? null : new ArrayList<>(bookmarkableLinks.values());
+  }
+
+  /**
+   * No need to save timestamps and many other fields when scraping Endpoints.
+   */
+  private void scrubFields(Endpoint endpoint) {
+    endpoint.enabled = null;
+    endpoint.displayOrder = null;
+    endpoint.key = null;
+    endpoint.source = null;
+    endpoint.icon = null;
   }
 
   static class ManifestUnavailableException extends Exception {
