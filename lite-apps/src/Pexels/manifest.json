@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Pexels",
+  "start_url": "https://www.pexels.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Pexels.hermit",
+  "theme_color": "#52ada1",
+  "secondary_color": "#499b90",
+  "icon": "favicon.png",
+  "bookmarks": [
+    {
+      "name": "Photo Challenges",
+      "url": "https://www.pexels.com/challenges/"
+    },
+    {
+      "name": "Free Videos",
+      "url": "https://videos.pexels.com/"
+    },
+    {
+      "name": "Popular Photos",
+      "url": "https://www.pexels.com/popular-photos/"
+    },
+    {
+      "name": "Explore",
+      "url": "https://www.pexels.com/discover/"
+    },
+    {
+      "name": "Leaderboard",
+      "url": "https://www.pexels.com/leaderboard/"
+    },
+    {
+      "name": "Popular Searches",
+      "url": "https://www.pexels.com/popular-searches/"
+    }
+  ],
+  "feeds": [
+    {
+      "name": "Pexels",
+      "url": "https://www.pexels.com/rss/"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Art and Photography"
+  ]
+}

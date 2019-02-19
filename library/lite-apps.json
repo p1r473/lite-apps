@@ -881,6 +881,11 @@
           "url": "https://imgur.com/"
         },
         {
+          "theme_color": "#52ada1",
+          "name": "Pexels",
+          "url": "https://www.pexels.com/"
+        },
+        {
           "theme_color": "#000000",
           "name": "Unsplash",
           "url": "https://unsplash.com/"
@@ -953,6 +958,11 @@
           "theme_color": "#003096",
           "name": "Weather Channel",
           "url": "https://weather.com/"
+        },
+        {
+          "theme_color": "#970400",
+          "name": "Windy",
+          "url": "https://www.windy.com"
         }
       ]
     },
