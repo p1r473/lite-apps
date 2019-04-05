@@ -581,6 +581,11 @@
           "url": "https://www.target.com/"
         },
         {
+          "theme_color": "#82db4e",
+          "name": "Uber Eats",
+          "url": "https://ubereats.com/"
+        },
+        {
           "theme_color": "#4c6971",
           "name": "Walgreens",
           "url": "https://www.walgreens.com/"
@@ -1444,6 +1449,11 @@
           "theme_color": "#57a418",
           "name": "Trulia",
           "url": "https://m.trulia.com/"
+        },
+        {
+          "theme_color": "#82db4e",
+          "name": "Uber Eats",
+          "url": "https://ubereats.com/"
         }
       ]
     },

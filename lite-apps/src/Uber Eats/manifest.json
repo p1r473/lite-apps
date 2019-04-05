@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Uber Eats",
+  "start_url": "https://ubereats.com/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Uber%20Eats.hermit",
+  "theme_color": "#82db4e",
+  "secondary_color": "#75c546",
+  "icon": "favicon.png",
+  "priority": 10,
+  "tags": [
+    "Shopping",
+    "Home and Lifestyle"
+  ]
+}
