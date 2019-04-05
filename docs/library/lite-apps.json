@@ -11,6 +11,11 @@
           "url": "https://m.facebook.com/"
         },
         {
+          "theme_color": "#4485a7",
+          "name": "Google",
+          "url": "https://www.google.com/"
+        },
+        {
           "theme_color": "#0086ff",
           "name": "Messenger",
           "url": "https://m.facebook.com/messages/?more",
@@ -50,6 +55,11 @@
           "theme_color": "#000000",
           "name": "Wikipedia",
           "url": "https://wikipedia.org/"
+        },
+        {
+          "theme_color": "#0076b7",
+          "name": "Linked In",
+          "url": "https://www.linkedin.com/"
         }
       ]
     },
