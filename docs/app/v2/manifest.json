@@ -1,0 +1,93 @@
+{
+  "manifest": {
+    "locale": "en",
+    "versions": [
+      {
+        "track": "production",
+        "os": "android",
+        "version_code": 130204,
+        "version_name": "13.2.4",
+        "released": "2018-09-11",
+        "min_sdk_version": 21,
+        "features": [
+          "🎁 Grid View & Searchbox for Lite Apps, now in Early Access!",
+          "🎉 Scriptlets and Reader App available to all Premium users (out of Early Access)",
+          "Larger icons on launcher home screen",
+          "Added Russian translation",
+          "Updated Arabic translation",
+          "🎁 Introducing the Early Access Program: https://hermit.chimbori.com/early-access (experience new features before everyone else)",
+          "See the full list at https://hermit.chimbori.com/changes"
+        ]
+      }
+    ],
+    "blocklists": [
+      {
+        "url_pattern": "https://lite-apps.chimbori.com/blocklists/v2/%s",
+        "file_pattern": "%s",
+        "files": [
+          "adware-malware.json",
+          "coin-miners.json"
+        ]
+      }
+    ],
+    "fonts": [
+      {
+        "url_pattern": "https://lite-apps.chimbori.com/fonts/%s.ttf",
+        "file_pattern": "%s.ttf",
+        "files": [
+          "Alegreya",
+          "Cabin",
+          "Fira Sans Condensed",
+          "Hammersmith One",
+          "Inter UI",
+          "Lora",
+          "Montserrat",
+          "Muli",
+          "Open Sans",
+          "Overpass",
+          "Quattrocento Sans",
+          "Raleway",
+          "Roboto Mono",
+          "Roboto",
+          "Sanchez"
+        ]
+      }
+    ],
+    "styles": [
+      {
+        "url_pattern": "https://lite-apps.chimbori.com/styles/%s.css",
+        "file_pattern": "%s.css",
+        "files": [
+          "Azure Blue",
+          "Burgundy Red",
+          "Burnt Orange",
+          "Butterscotch Yellow",
+          "Chocolate Brown",
+          "Crimson Red",
+          "Hermit Orange",
+          "Navy Blue",
+          "Neutral White",
+          "Olive Green",
+          "Royal Purple"
+        ]
+      }
+    ],
+    "scriptlets": [
+      {
+        "url_pattern": "https://lite-apps.chimbori.com/scriptlets/%s.js",
+        "file_pattern": "%s.js",
+        "files": [
+          "Enable Text Copying",
+          "Google Define",
+          "Google Translate",
+          "Google Web Lite",
+          "Let It Snow",
+          "QR Code for This Page",
+          "Search This Site on Google",
+          "Show Cookies",
+          "Urban Dictionary"
+        ]
+      }
+    ]
+  }
+}

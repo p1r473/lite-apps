@@ -21,6 +21,7 @@ public class FileUtils {
   private static final OkHttpClient client = new OkHttpClient();
 
   public static boolean zip(File rootDir, File zipFile) {
+    zipFile.getParentFile().mkdirs();
     try (ZipOutputStream out = new ZipOutputStream(new BufferedOutputStream(new FileOutputStream(zipFile)))) {
       out.setLevel(9);
       for (File containedFile : rootDir.listFiles(pathname -> !pathname.getName().equals(".DS_Store"))) {

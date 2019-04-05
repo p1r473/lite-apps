@@ -7,7 +7,6 @@ import java.net.URISyntaxException;
 public class FilePaths {
   // Filenames
   public static final String MANIFEST_JSON_FILE_NAME = "manifest.json";
-  public static final String MESSAGES_JSON_FILE_NAME = "messages.json";
   public static final String ICONS_DIR_NAME = "icons";
   public static final String ICON_EXTENSION = ".png";
 
@@ -28,33 +27,24 @@ public class FilePaths {
 
   // Lite Apps
   public static final File LITE_APPS_SRC_DIR        = new File(PROJECT_ROOT, "lite-apps/src");
-  public static final File LITE_APPS_TAGS_JSON      = new File(PROJECT_ROOT, "lite-apps/src/tags.json");
-  public static final File LITE_APPS_OUTPUT_DIR     = new File(PROJECT_ROOT, "lite-apps/v3/");
-
-  // Library
-  public static final File LIBRARY_ICONS_DIR        = new File(PROJECT_ROOT, "library/112x112/");
-  public static final File LIBRARY_JSON             = new File(PROJECT_ROOT, "library/lite-apps.json");
+  public static final File LITE_APPS_TAGS_JSON      = new File(PROJECT_ROOT, "lite-apps/tags.json");
 
   // Block Lists
   public static final File BLOCKLISTS_SRC_DIR       = new File(PROJECT_ROOT, "blocklists/src/");
-  public static final File BLOCKLISTS_SOURCES_JSON  = new File(PROJECT_ROOT, "blocklists/src/sources.json");
-  public static final File BLOCKLISTS_OUTPUT_DIR    = new File(PROJECT_ROOT, "blocklists/v2/");
+  public static final File BLOCKLISTS_SOURCES_JSON  = new File(PROJECT_ROOT, "blocklists/sources.json");
 
-  // App Manifest
-  public static final File APP_MANIFEST_OUTPUT_DIR  = new File(PROJECT_ROOT, "app/v2/");
+  // Output Directories, under `/docs`.
+  public static final File LITE_APPS_OUTPUT_DIR     = new File(PROJECT_ROOT, "docs/lite-apps/v3/");
+  public static final File LIBRARY_ICONS_DIR        = new File(PROJECT_ROOT, "docs/library/112x112/");
+  public static final File LIBRARY_JSON             = new File(PROJECT_ROOT, "docs/library/lite-apps.json");
+  public static final File BLOCKLISTS_OUTPUT_DIR    = new File(PROJECT_ROOT, "docs/blocklists/v2/");
+  public static final File APP_MANIFEST_OUTPUT_DIR  = new File(PROJECT_ROOT, "docs/app/v2/");
 
-  // Fonts
-  public static final File FONTS_OUTPUT_DIR         = new File(PROJECT_ROOT, "fonts/v2/");
-
-  // Styles
-  public static final File STYLES_OUTPUT_DIR        = new File(PROJECT_ROOT, "styles/v2/");
 
   static {
     LITE_APPS_OUTPUT_DIR.mkdirs();
     LIBRARY_ICONS_DIR.mkdirs();
     BLOCKLISTS_OUTPUT_DIR.mkdirs();
     APP_MANIFEST_OUTPUT_DIR.mkdirs();
-    FONTS_OUTPUT_DIR.mkdirs();
-    STYLES_OUTPUT_DIR.mkdirs();
   }
 }
