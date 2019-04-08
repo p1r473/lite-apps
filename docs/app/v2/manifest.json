@@ -5,17 +5,19 @@
       {
         "track": "production",
         "os": "android",
-        "version_code": 130204,
-        "version_name": "13.2.4",
-        "released": "2018-09-11",
+        "version_code": 130404,
+        "version_name": "13.4.4",
+        "released": "2019-04-08",
         "min_sdk_version": 21,
         "features": [
-          "🎁 Grid View & Searchbox for Lite Apps, now in Early Access!",
-          "🎉 Scriptlets and Reader App available to all Premium users (out of Early Access)",
-          "Larger icons on launcher home screen",
-          "Added Russian translation",
-          "Updated Arabic translation",
-          "🎁 Introducing the Early Access Program: https://hermit.chimbori.com/early-access (experience new features before everyone else)",
+          "🎁 New Early Access Features",
+          "  • Custom User Agents",
+          "  • Print web pages to PDF or to a printer",
+          "  • Desktop Mode toggle in Quick Settings",
+          "🎨 Reader Mode toolbar button instead of “pill” button",
+          "🎨 Black is the new Orange! More subtle color scheme for the bottom bar",
+          "🆕 Better tooltips",
+          "🐞 Improvements to making purchases through the app",
           "See the full list at https://hermit.chimbori.com/changes"
         ]
       }
