@@ -1,0 +1,92 @@
+{
+  "manifest_version": 3,
+  "name": "Tildes",
+  "start_url": "https://tildes.net/",
+  "manifest_url": "https://hermit.chimbori.com/lite-apps/Tildes.hermit",
+  "theme_color": "#002b36",
+  "secondary_color": "#002630",
+  "icon": "favicon.png",
+  "bookmarks": [
+    {
+      "name": "~tv",
+      "url": "https://tildes.net/~tv"
+    },
+    {
+      "name": "~food",
+      "url": "https://tildes.net/~food"
+    },
+    {
+      "name": "~enviro",
+      "url": "https://tildes.net/~enviro"
+    },
+    {
+      "name": "~science",
+      "url": "https://tildes.net/~science"
+    },
+    {
+      "name": "~books",
+      "url": "https://tildes.net/~books"
+    },
+    {
+      "name": "~life",
+      "url": "https://tildes.net/~life"
+    },
+    {
+      "name": "~hobbies",
+      "url": "https://tildes.net/~hobbies"
+    },
+    {
+      "name": "~creative",
+      "url": "https://tildes.net/~creative"
+    },
+    {
+      "name": "~music",
+      "url": "https://tildes.net/~music"
+    },
+    {
+      "name": "~comp",
+      "url": "https://tildes.net/~comp"
+    },
+    {
+      "name": "~news",
+      "url": "https://tildes.net/~news"
+    },
+    {
+      "name": "~tech",
+      "url": "https://tildes.net/~tech"
+    },
+    {
+      "name": "~games",
+      "url": "https://tildes.net/~games"
+    },
+    {
+      "name": "~sports",
+      "url": "https://tildes.net/~sports"
+    },
+    {
+      "name": "~movies",
+      "url": "https://tildes.net/~movies"
+    },
+    {
+      "name": "~misc",
+      "url": "https://tildes.net/~misc"
+    },
+    {
+      "name": "~health",
+      "url": "https://tildes.net/~health"
+    },
+    {
+      "name": "~lgbt",
+      "url": "https://tildes.net/~lgbt"
+    },
+    {
+      "name": "~talk",
+      "url": "https://tildes.net/~talk"
+    }
+  ],
+  "priority": 10,
+  "tags": [
+    "Social",
+    "News"
+  ]
+}

@@ -130,6 +130,11 @@
           "url": "https://m.okcupid.com/"
         },
         {
+          "theme_color": "#002b36",
+          "name": "Tildes",
+          "url": "https://tildes.net/"
+        },
+        {
           "theme_color": "#36465d",
           "name": "Tumblr",
           "url": "https://tumblr.com/"
@@ -305,6 +310,11 @@
           "theme_color": "#0e5ba8",
           "name": "The Hindu",
           "url": "http://www.thehindu.com/"
+        },
+        {
+          "theme_color": "#002b36",
+          "name": "Tildes",
+          "url": "https://tildes.net/"
         },
         {
           "theme_color": "#d60002",
