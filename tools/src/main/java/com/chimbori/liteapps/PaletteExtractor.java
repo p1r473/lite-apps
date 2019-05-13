@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+import javax.annotation.Nullable;
 import javax.imageio.ImageIO;
 
 class PaletteExtractor {
@@ -33,7 +34,7 @@ class PaletteExtractor {
       // Create an entry for this Lite App to be put in the directory index file.
       Manifest manifest = gson.fromJson(new FileReader(manifestJsonFile), Manifest.class);
 
-      if (manifest.themeColor.equals("#") || manifest.secondaryColor.equals("#")) {
+      if (isUndefinedColor(manifest.themeColor) || isUndefinedColor(manifest.secondaryColor)) {
         System.out.println("manifest: " + manifest.name);
 
         File iconsDirectory = new File(liteAppDirectory, FilePaths.ICONS_DIR_NAME);
@@ -49,11 +50,14 @@ class PaletteExtractor {
             manifest.secondaryColor = themeColor.darken(0.9f).toString();
 
             FileUtils.writeFile(manifestJsonFile, gson.toJson(manifest));
-
           }
         }
       }
     }
+  }
+
+  private static boolean isUndefinedColor(@Nullable String color) {
+    return color == null || color.isEmpty() || color.equals("#");
   }
 
   public static void main(String[] arguments) {
