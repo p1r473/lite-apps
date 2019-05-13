@@ -4,8 +4,8 @@
   "priority": 100,
   "start_url": "https://m.facebook.com/",
   "manifest_url": "https://hermit.chimbori.com/lite-apps/Facebook.hermit",
-  "theme_color": "#3b5998",
-  "secondary_color": "#3b5998",
+  "theme_color": "#0672e8",
+  "secondary_color": "#0566d0",
   "icon": "favicon.png",
   "bookmarks": [
     {
