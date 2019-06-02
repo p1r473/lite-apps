@@ -11,6 +11,22 @@
     "block_third_party_cookies": false,
     "open_links": "in_app"
   },
+  "bookmarks": [
+    {
+      "name": "Direct",
+      "url": "https://www.instagram.com/direct/inbox/"
+    },
+    {
+      "name": "Search",
+      "url": "https://www.instagram.com/explore/search/"
+    }
+  ],
+  "search": [
+    {
+      "name": "Search",
+      "url": "https://www.instagram.com/explore/search/%s"
+    }
+  ],
   "tags": [
     "Popular",
     "Social",
