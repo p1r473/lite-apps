@@ -20,7 +20,6 @@ coinnebula.com
 crypto-loot.com
 crypto.csgocpu.com
 cryptoloot.pro
-cryptoloot.pro
 go.megabanners.cf
 gus.host
 jsccnn.com
@@ -40,5 +39,6 @@ party-nngvitbizn.now.sh
 ppoi.org
 projectpoi.com
 rocks.io
+smartlock.google.com
 static.reasedoper.pw
 webmine.cz
