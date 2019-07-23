@@ -3,7 +3,7 @@
 
 var libraryJson = {};
 
-var CURRENT_VERSION_CODE = 90003;
+var CURRENT_VERSION_CODE = 130000;
 
 function encodeLiteAppName(liteApp) {
   return encodeURIComponent(liteApp.name).replace(/ /g, '%20');
