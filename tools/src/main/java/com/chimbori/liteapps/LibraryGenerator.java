@@ -32,7 +32,7 @@ class LibraryGenerator {
    * This generator tool combines the basic organizational metadata from index.json & detailed
    * Lite Apps data from * / manifest.json files. It outputs the Library Data JSON file,
    * which is used as the basis for generating the Hermit Library page at
-   * https://hermit.chimbori.com/library.
+   * https://lite-apps.chimbori.com/library.
    */
   public static void generateLibraryData() throws IOException {
     Gson gson = GsonInstance.getPrettyPrinter();
