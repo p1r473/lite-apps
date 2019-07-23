@@ -80,14 +80,13 @@
         "file_pattern": "%s.js",
         "files": [
           "Enable Text Copying",
-          "Google Define",
+          "Define Selected Text",
           "Google Translate",
           "Google Web Lite",
           "Let It Snow",
           "QR Code for This Page",
           "Search This Site on Google",
-          "Show Cookies",
-          "Urban Dictionary"
+          "Show Cookies"
         ]
       }
     ]
