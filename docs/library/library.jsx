@@ -32,7 +32,7 @@ function LiteApp(props) {
   return <div className="lite-app-icon">
     <a href={ makeCreateUrl(props.liteApp) }>
       <img className="lite-app-icon-image" src={ makeImageUrl(props.liteApp) }/>
-      <p>{ props.liteApp.name }</p>
+      <span className="lite-app-icon-name">{ props.liteApp.name }</span>
     </a>
   </div>
 }

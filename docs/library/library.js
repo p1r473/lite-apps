@@ -34,8 +34,8 @@ function LiteApp(props) {
       { href: makeCreateUrl(props.liteApp) },
       React.createElement('img', { className: 'lite-app-icon-image', src: makeImageUrl(props.liteApp) }),
       React.createElement(
-        'p',
-        null,
+        'span',
+        { className: 'lite-app-icon-name' },
         props.liteApp.name
       )
     )

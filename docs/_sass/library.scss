@@ -1,7 +1,7 @@
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter var', sans-serif; }
+  html { font-family: 'Inter', sans-serif; }
 }
 
 body {
@@ -11,15 +11,17 @@ body {
 }
 
 h2 {
-  margin: 16px 16px 4px 16px;
+  margin: 16px 24px 4px 24px;
   font-size: 18pt;
   font-family: Montserrat;
   font-weight: 600;
+  color: $color-text-white;
 }
 
 h3 {
-  margin: 0 16px;
+  margin: 0 24px;
   font-weight: normal;
+  color: $color-text-white;
 }
 
 .tooltip {
@@ -36,34 +38,21 @@ h3 {
 
 .lite-app-category-count {
   float: right;
-  line-height: 26px;
-  margin-right: 8px;
+  line-height: 32px;
+  margin-right: 24px;
 }
 
 .lite-app-icon {
-  background: white;
-  border-radius: 16px;
-  margin: 0 4px 8px 4px;
-  padding: 4px;
-  display: inline-block;
+  background: $color-background-dark;
+  border-radius: 8px;
+  margin: 0 8px 8px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  text-align: center;
-  vertical-align: top;
 
   a:link,
   a:visited {
     text-decoration: none;
     color: $color-text-dark;
-  }
-
-  p {
-    font-size: 10pt;
-    margin: 0 8px 4px 8px;
-    width: 80px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
   }
 }
 
@@ -71,6 +60,17 @@ h3 {
   width: 56px;
   height: 56px;
   margin: 8px;
+}
+
+.lite-app-icon-name {
+  font-size: 12pt;
+  margin: 12px 4px;
+  overflow: hidden;
+  width: 100px;
+  max-width: 100px;
+  display: inline-block;
+  vertical-align: top;
+  color: $color-text-white;
 }
 
 .update-required {
