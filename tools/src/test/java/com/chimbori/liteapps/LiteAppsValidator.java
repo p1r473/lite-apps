@@ -2,14 +2,13 @@ package com.chimbori.liteapps;
 
 
 import com.chimbori.FilePaths;
-import com.chimbori.hermitcrab.schema.common.GsonInstance;
+import com.chimbori.hermitcrab.schema.appmanifest.AppManifest;
+import com.chimbori.hermitcrab.schema.common.MoshiAdapter;
 import com.chimbori.hermitcrab.schema.manifest.Endpoint;
 import com.chimbori.hermitcrab.schema.manifest.EndpointRole;
 import com.chimbori.hermitcrab.schema.manifest.IconFile;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
 import com.chimbori.hermitcrab.schema.manifest.RelatedApp;
-import com.google.gson.Gson;
-import com.google.gson.internal.LinkedTreeMap;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -17,10 +16,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLDecoder;
@@ -31,8 +27,9 @@ import java.nio.file.SimpleFileVisitor;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.HashSet;
 import java.util.regex.Pattern;
+
+import okio.Okio;
 
 import static com.chimbori.liteapps.TestHelpers.assertIsNotEmpty;
 import static com.chimbori.liteapps.TestHelpers.assertIsURL;
@@ -53,29 +50,10 @@ import static org.junit.Assert.fail;
 @RunWith(Parameterized.class)
 public class LiteAppsValidator {
   private static final String HEX_COLOR_REGEXP = "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$";
+
   private static final Pattern HEX_COLOR_PATTERN = Pattern.compile(HEX_COLOR_REGEXP);
 
   private static final String GOOGLE_PLAY = "play";
-
-  private static final HashSet<String> SETTINGS_SET = new HashSet<>(Arrays.asList(
-      "block_malware",
-      "block_popups",
-      "block_third_party_cookies",
-      "browser",
-      "day_night_mode",
-      "do_not_track",
-      "in_app",
-      "javascript",
-      "load_images",
-      "night_mode_page_style",
-      "open_links",
-      "preferred_view",
-      "pull_to_refresh",
-      "save_data",
-      "scroll_to_top",
-      "text_zoom",
-      "user_agent"
-  ));
 
   private final File liteApp;
 
@@ -125,25 +103,25 @@ public class LiteAppsValidator {
   }
 
   @Test
-  public void testManifestIsValid() throws UnsupportedEncodingException {
+  public void testManifestIsValid() throws IOException {
     File manifestFile = new File(liteApp, FilePaths.MANIFEST_JSON_FILE_NAME);
     Manifest manifest = readManifest(manifestFile);
     String tag = liteApp.getName();
 
     assertNotNull(manifest);
     assertFieldExists(tag, "name", manifest.name);
-    assertFieldExists(tag, "start_url", manifest.startUrl);
-    assertFieldExists(tag, "manifest_url", manifest.manifestUrl);
-    assertFieldExists(tag, "theme_color", manifest.themeColor);
-    assertFieldExists(tag, "secondary_color", manifest.secondaryColor);
-    assertFieldExists(tag, "manifest_version", manifest.manifestVersion);
+    assertFieldExists(tag, "start_url", manifest.start_url);
+    assertFieldExists(tag, "manifest_url", manifest.manifest_url);
+    assertFieldExists(tag, "theme_color", manifest.theme_color);
+    assertFieldExists(tag, "secondary_color", manifest.secondary_color);
+    assertFieldExists(tag, "manifest_version", manifest.manifest_version);
     assertFieldExists(tag, "icon", manifest.icon);
     assertNotEquals(String.format("priority not defined for %s", liteApp),
         0, manifest.priority.longValue());
 
     // Test that the "manifest_url" field contains a valid URL.
     try {
-      URL manifestUrl = new URL(manifest.manifestUrl);
+      URL manifestUrl = new URL(manifest.manifest_url);
       assertEquals("https", manifestUrl.getProtocol());
       assertEquals("hermit.chimbori.com", manifestUrl.getHost());
       assertTrue(manifestUrl.getPath().startsWith("/lite-apps/"));
@@ -155,9 +133,9 @@ public class LiteAppsValidator {
 
     // Test that colors are valid hex colors.
     assertTrue(String.format("[%s] theme_color should be a valid hex color", tag),
-        HEX_COLOR_PATTERN.matcher(manifest.themeColor).matches());
+        HEX_COLOR_PATTERN.matcher(manifest.theme_color).matches());
     assertTrue(String.format("[%s] secondary_color should be a valid hex color", tag),
-        HEX_COLOR_PATTERN.matcher(manifest.secondaryColor).matches());
+        HEX_COLOR_PATTERN.matcher(manifest.secondary_color).matches());
 
     // Test that the name of the icon file is "icon.png" & that the file exists.
     // Although any filename should work, having it be consistent in the library can let us
@@ -174,11 +152,14 @@ public class LiteAppsValidator {
     validateEndpoints(tag, manifest.monitors, EndpointRole.MONITOR);
 
     // Test all Settings to see whether they belong to our whitelisted set of allowable strings.
-    validateSettings(tag, manifestFile);
+    MoshiAdapter.get(AppManifest.class)
+        // TODO: Test every manifest with {@link .failOnUnknown} turned on.
+        // .failOnUnknown()
+        .fromJson(Okio.buffer(Okio.source(manifestFile)));
 
     // Test "related_apps" for basic sanity, that if one exists, then it’s pointing to a Play Store app.
-    if (manifest.relatedApplications != null) {
-      for (RelatedApp relatedApp : manifest.relatedApplications) {
+    if (manifest.related_applications != null) {
+      for (RelatedApp relatedApp : manifest.related_applications) {
         assertEquals(GOOGLE_PLAY, relatedApp.platform);
         assertFalse(relatedApp.id.isEmpty());
         assertTrue(relatedApp.url.startsWith("https://play.google.com/store/apps/details?id="));
@@ -208,33 +189,15 @@ public class LiteAppsValidator {
     }
   }
 
-  private void validateSettings(String tag, File manifest) {
-    Gson gson = GsonInstance.getPrettyPrinter();
-    LinkedTreeMap<String, Object> json = null;
-    try {
-      //noinspection unchecked
-      json = (LinkedTreeMap<String, Object>) gson.fromJson(new FileReader(manifest), Object.class);
-    } catch (FileNotFoundException e) {
-      fail(e.getMessage());
-    }
-
-    //noinspection unchecked
-    LinkedTreeMap settings = (LinkedTreeMap<String, Object>) json.get("settings");
-    if (settings != null) {
-      for (Object key : settings.keySet()) {
-        assertTrue(String.format("Unexpected setting found: [%s] in [%s]", key, tag), SETTINGS_SET.contains(key));
-      }
-    }
-  }
-
   private Manifest readManifest(File file) {
     if (file == null || !file.exists()) {
       fail("Not found: " + file.getAbsolutePath());
     }
 
-    Gson gson = GsonInstance.getPrettyPrinter();
     try {
-      return file.exists() ? gson.fromJson(new FileReader(file), Manifest.class) : null;
+      return file.exists()
+          ? MoshiAdapter.get(Manifest.class).fromJson(Okio.buffer(Okio.source(file)))
+          : null;
     } catch (IOException e) {
       fail(String.format("Invalid JSON: %s", file.getName()));
       return null;

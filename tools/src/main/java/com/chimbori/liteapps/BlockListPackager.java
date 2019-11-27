@@ -6,7 +6,7 @@ import com.chimbori.hermitcrab.schema.blocklists.BlockList;
 import com.chimbori.hermitcrab.schema.blocklists.BlockListsLibrary;
 import com.chimbori.hermitcrab.schema.blocklists.CombinedBlockList;
 import com.chimbori.hermitcrab.schema.blocklists.SourceBlockList;
-import com.chimbori.hermitcrab.schema.common.GsonInstance;
+import com.chimbori.hermitcrab.schema.common.MoshiAdapter;
 import com.chimbori.hermitcrab.schema.common.SchemaDate;
 import com.google.common.collect.ImmutableList;
 
@@ -20,6 +20,8 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import okio.Okio;
 
 /**
  * Parses a meta-list of block-lists, fetches the original blocklists from various remote URLs,
@@ -169,7 +171,7 @@ class BlockListPackager {
     appManifestBlockList.updated = SchemaDate.fromTimestamp(System.currentTimeMillis());
     appManifestBlockList.hosts = hostsArray;
 
-    FileUtils.writeFile(jsonFile, GsonInstance.getPrettyPrinter().toJson(appManifestBlockList));
+    FileUtils.writeFile(jsonFile, MoshiAdapter.get(BlockList.class).toJson(appManifestBlockList));
 
     System.out.println(String.format("Wrote %d hosts.\n", hosts.size()));
   }
@@ -188,8 +190,7 @@ class BlockListPackager {
   }
 
   private static BlockListsLibrary readBlockListsLibrary() throws IOException {
-    return GsonInstance.getPrettyPrinter().fromJson(
-        FileUtils.readFully(new FileInputStream(FilePaths.BLOCKLISTS_SOURCES_JSON)),
-        BlockListsLibrary.class);
+    return MoshiAdapter.get(BlockListsLibrary.class)
+        .fromJson(Okio.buffer(Okio.source(FilePaths.BLOCKLISTS_SOURCES_JSON)));
   }
 }

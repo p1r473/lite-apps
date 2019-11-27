@@ -62,10 +62,10 @@ public class Scraper {
       // But if the page isn’t using OpenGraph tags, then fallback to using the current page’s title.
       manifest.name = doc.select("title").text();
     }
-    manifest.themeColor = doc.select("meta[name=theme-color]").attr("content");
+    manifest.theme_color = doc.select("meta[name=theme-color]").attr("content");
     manifest.bookmarks = findBookmarkableLinks();
     manifest.feeds = findAtomAndRssFeeds();
-    manifest.relatedApplications = findRelatedApps();
+    manifest.related_applications = findRelatedApps();
 
     return manifest;
   }
@@ -137,7 +137,7 @@ public class Scraper {
    */
   private void scrubFields(Endpoint endpoint) {
     endpoint.enabled = null;
-    endpoint.displayOrder = null;
+    endpoint.display_order = null;
     endpoint.key = null;
     endpoint.source = null;
     endpoint.icon = null;

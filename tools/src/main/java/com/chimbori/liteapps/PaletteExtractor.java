@@ -3,22 +3,20 @@ package com.chimbori.liteapps;
 import com.chimbori.FilePaths;
 import com.chimbori.common.ColorExtractor;
 import com.chimbori.common.FileUtils;
-import com.chimbori.hermitcrab.schema.common.GsonInstance;
+import com.chimbori.hermitcrab.schema.common.MoshiAdapter;
 import com.chimbori.hermitcrab.schema.manifest.IconFile;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
-import com.google.gson.Gson;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 
 import javax.annotation.Nullable;
 import javax.imageio.ImageIO;
 
+import okio.Okio;
+
 class PaletteExtractor {
   private static void extractPaletteIfMissing() throws IOException {
-    Gson gson = GsonInstance.getPrettyPrinter();
-
     File[] liteAppDirs = FilePaths.LITE_APPS_SRC_DIR.listFiles();
     for (File liteAppDirectory : liteAppDirs) {
       if (!liteAppDirectory.isDirectory()) {
@@ -32,9 +30,9 @@ class PaletteExtractor {
       }
 
       // Create an entry for this Lite App to be put in the directory index file.
-      Manifest manifest = gson.fromJson(new FileReader(manifestJsonFile), Manifest.class);
+      Manifest manifest = MoshiAdapter.get(Manifest.class).fromJson(Okio.buffer(Okio.source(manifestJsonFile)));
 
-      if (isUndefinedColor(manifest.themeColor) || isUndefinedColor(manifest.secondaryColor)) {
+      if (isUndefinedColor(manifest.theme_color) || isUndefinedColor(manifest.secondary_color)) {
         System.out.println("manifest: " + manifest.name);
 
         File iconsDirectory = new File(liteAppDirectory, FilePaths.ICONS_DIR_NAME);
@@ -46,10 +44,10 @@ class PaletteExtractor {
           ColorExtractor.Color themeColor = ColorExtractor.getDominantColor(ImageIO.read(iconFile));
           if (themeColor != null) {
             // Overwrite the dummy values already inserted, if we are able to extract real values.
-            manifest.themeColor = themeColor.toString();
-            manifest.secondaryColor = themeColor.darken(0.9f).toString();
+            manifest.theme_color = themeColor.toString();
+            manifest.secondary_color = themeColor.darken(0.9f).toString();
 
-            FileUtils.writeFile(manifestJsonFile, gson.toJson(manifest));
+            FileUtils.writeFile(manifestJsonFile, MoshiAdapter.get(Manifest.class).toJson(manifest));
           }
         }
       }

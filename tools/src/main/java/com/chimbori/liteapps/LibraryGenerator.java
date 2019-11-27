@@ -2,20 +2,20 @@ package com.chimbori.liteapps;
 
 import com.chimbori.FilePaths;
 import com.chimbori.common.FileUtils;
-import com.chimbori.hermitcrab.schema.common.GsonInstance;
+import com.chimbori.hermitcrab.schema.common.MoshiAdapter;
 import com.chimbori.hermitcrab.schema.library.Library;
 import com.chimbori.hermitcrab.schema.library.LibraryApp;
 import com.chimbori.hermitcrab.schema.library.LibraryTagsList;
 import com.chimbori.hermitcrab.schema.manifest.IconFile;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
-import com.google.gson.Gson;
 
 import net.coobird.thumbnailator.Thumbnails;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
+
+import okio.Okio;
 
 class LibraryGenerator {
   private static final int LIBRARY_ICON_SIZE = 112;
@@ -35,11 +35,11 @@ class LibraryGenerator {
    * https://lite-apps.chimbori.com/library.
    */
   public static void generateLibraryData() throws IOException {
-    Gson gson = GsonInstance.getPrettyPrinter();
-
     // Read the list of all known tags from the tags.json file. In case we discover any new tags,
     // we will add them to this file, taking care not to overwrite those that already exist.
-    LibraryTagsList globalTags = LibraryTagsList.fromGson(gson, new FileReader(FilePaths.LITE_APPS_TAGS_JSON));
+    LibraryTagsList globalTags = MoshiAdapter.get(LibraryTagsList.class)
+        .fromJson(Okio.buffer(Okio.source(FilePaths.LITE_APPS_TAGS_JSON)))
+        .updateTransientFields();
     Library outputLibrary = new Library(globalTags);
 
     File[] liteAppDirs = FilePaths.LITE_APPS_SRC_DIR.listFiles();
@@ -57,16 +57,16 @@ class LibraryGenerator {
       }
 
       // Create an entry for this Lite App to be put in the directory index file.
-      Manifest manifest = gson.fromJson(new FileReader(manifestJsonFile), Manifest.class);
+      Manifest manifest = MoshiAdapter.get(Manifest.class).fromJson(Okio.buffer(Okio.source(manifestJsonFile)));
 
       LibraryApp outputApp = new LibraryApp();
-      outputApp.url = manifest.startUrl;
+      outputApp.url = manifest.start_url;
       outputApp.name = appName;
-      outputApp.theme_color = manifest.themeColor;
+      outputApp.theme_color = manifest.theme_color;
       outputApp.priority = manifest.priority;
 
       // Set user-agent from the settings stored in the Lite App’s manifest.json.
-      String userAgent = manifest.settings != null ? manifest.settings.userAgent : null;
+      String userAgent = manifest.settings != null ? manifest.settings.user_agent : null;
       if (USER_AGENT_DESKTOP.equals(userAgent)) {
         outputApp.user_agent = USER_AGENT_DESKTOP;
       }
@@ -85,6 +85,6 @@ class LibraryGenerator {
       }
     }
 
-    FileUtils.writeFile(FilePaths.LIBRARY_JSON, outputLibrary.toJson(gson));
+    FileUtils.writeFile(FilePaths.LIBRARY_JSON, MoshiAdapter.get(Library.class).toJson(outputLibrary));
   }
 }

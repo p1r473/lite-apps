@@ -2,26 +2,25 @@ package com.chimbori.liteapps;
 
 import com.chimbori.FilePaths;
 import com.chimbori.common.FileUtils;
-import com.chimbori.hermitcrab.schema.common.GsonInstance;
+import com.chimbori.hermitcrab.schema.common.MoshiAdapter;
 import com.chimbori.hermitcrab.schema.library.LibraryTag;
 import com.chimbori.hermitcrab.schema.library.LibraryTagsList;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
-import com.google.gson.Gson;
-import com.google.gson.JsonSyntaxException;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import okio.Okio;
+
 class TagsCollector {
   public static void updateTagsJson() throws IOException {
-    Gson gson = GsonInstance.getPrettyPrinter();
-
     // Read the list of all known tags from the tags.json file. In case we discover any new tags,
     // we will add them to this file, taking care not to overwrite those that already exist.
-    LibraryTagsList tagsGson = LibraryTagsList.fromGson(gson, new FileReader(FilePaths.LITE_APPS_TAGS_JSON));
+    LibraryTagsList libraryTagsList = MoshiAdapter.get(LibraryTagsList.class)
+        .fromJson(Okio.buffer(Okio.source(FilePaths.LITE_APPS_TAGS_JSON)))
+        .updateTransientFields();
 
     Map<String, LibraryTag> globalTags = new HashMap<>();
     File[] liteAppDirs = FilePaths.LITE_APPS_SRC_DIR.listFiles();
@@ -35,13 +34,7 @@ class TagsCollector {
         throw new MissingManifestException(liteAppDirectory.getName());
       }
 
-      Manifest manifest;
-      try {
-        manifest = gson.fromJson(new FileReader(manifestJsonFile), Manifest.class);
-      } catch (JsonSyntaxException e) {
-        System.err.println("Failed to parse JSON: " + liteAppDirectory.getName());
-        throw e;
-      }
+      Manifest manifest = MoshiAdapter.get(Manifest.class).fromJson(Okio.buffer(Okio.source(manifestJsonFile)));
 
       // For all tags applied to this manifest, check if they exist in the global tags list.
       if (manifest.tags != null) {
@@ -54,13 +47,14 @@ class TagsCollector {
             // If this is the first time we are seeing this tag, create a new JSONArray to hold its contents.
             LibraryTag newTag = new LibraryTag(tagName);
             globalTags.put(tagName, newTag);
-            tagsGson.addTag(newTag);
+            libraryTagsList.addTag(newTag);
           }
         }
       }
     }
 
     // Write the tags to JSON
-    FileUtils.writeFile(FilePaths.LITE_APPS_TAGS_JSON, tagsGson.toJson(gson));
+    FileUtils.writeFile(FilePaths.LITE_APPS_TAGS_JSON,
+        MoshiAdapter.get(LibraryTagsList.class).toJson(libraryTagsList));
   }
 }

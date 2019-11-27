@@ -4,7 +4,7 @@ import com.chimbori.FilePaths;
 import com.chimbori.common.ColorExtractor;
 import com.chimbori.common.FileUtils;
 import com.chimbori.common.Log;
-import com.chimbori.hermitcrab.schema.common.GsonInstance;
+import com.chimbori.hermitcrab.schema.common.MoshiAdapter;
 import com.chimbori.hermitcrab.schema.manifest.IconFile;
 import com.chimbori.hermitcrab.schema.manifest.Manifest;
 
@@ -17,7 +17,6 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 
 import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
@@ -29,6 +28,8 @@ import java.nio.file.StandardCopyOption;
 import java.util.Collections;
 
 import javax.imageio.ImageIO;
+
+import okio.Okio;
 
 /**
  * Generates a skeleton Lite App with as many fields pre-filled as possible.
@@ -52,7 +53,7 @@ class Scaffolder {
     File manifestJsonFile = new File(liteAppDirectoryRoot, FilePaths.MANIFEST_JSON_FILE_NAME);
     // If the manifest.json exists, read it before modifying, else create a new JSON object.
     if (manifestJsonFile.exists()) {
-      manifest = GsonInstance.getPrettyPrinter().fromJson(new FileReader(manifestJsonFile), Manifest.class);
+      manifest = MoshiAdapter.get(Manifest.class).fromJson(Okio.buffer(Okio.source(manifestJsonFile)));
 
     } else {
       Log.i("Creating new Lite App “%s”", appName);
@@ -65,12 +66,12 @@ class Scaffolder {
       manifest = scraper.extractManifest();
 
       // Constant fields, same for all apps.
-      manifest.manifestVersion = CURRENT_MANIFEST_VERSION;
+      manifest.manifest_version = CURRENT_MANIFEST_VERSION;
 
       // Fields that can be populated from the data provided on the command-line.
       manifest.name = appName;
-      manifest.startUrl = startUrl;
-      manifest.manifestUrl = String.format(MANIFEST_URL_TEMPLATE,
+      manifest.start_url = startUrl;
+      manifest.manifest_url = String.format(MANIFEST_URL_TEMPLATE,
           URLEncoder.encode(appName, "UTF-8").replace("+", "%20"));
 
       // Empty fields that must be manually populated.
@@ -110,27 +111,27 @@ class Scaffolder {
         ColorExtractor.Color themeColor = ColorExtractor.getDominantColor(ImageIO.read(iconFile));
         if (themeColor != null) {
           // Overwrite the dummy values already inserted, if we are able to extract real values.
-          manifest.themeColor = themeColor.toString();
-          manifest.secondaryColor = themeColor.darken(0.9f).toString();
+          manifest.theme_color = themeColor.toString();
+          manifest.secondary_color = themeColor.darken(0.9f).toString();
         } else {
           // Insert a placeholder for theme_color and secondary_color so we don’t have to
           // type it in manually, but put invalid values so that the validator will catch it
           // in case we forget to replace with valid values.
-          manifest.themeColor = "#";
-          manifest.secondaryColor = "#";
+          manifest.theme_color = "#";
+          manifest.secondary_color = "#";
         }
       } else {
         // Insert a placeholder for theme_color and secondary_color so we don’t have to
         // type it in manually, but put invalid values so that the validator will catch it
         // in case we forget to replace with valid values.
-        manifest.themeColor = "#";
-        manifest.secondaryColor = "#";
+        manifest.theme_color = "#";
+        manifest.secondary_color = "#";
       }
     }
 
     // Write the output manifest.
     System.out.println(manifest);
-    FileUtils.writeFile(manifestJsonFile, GsonInstance.getPrettyPrinter().toJson(manifest));
+    FileUtils.writeFile(manifestJsonFile, MoshiAdapter.get(Manifest.class).toJson(manifest));
   }
 
   public static void main(String[] arguments) {
