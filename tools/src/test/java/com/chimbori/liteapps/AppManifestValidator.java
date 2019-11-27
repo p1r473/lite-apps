@@ -27,9 +27,9 @@ public class AppManifestValidator {
     assertNotNull(appManifest);
 
     AppVersion latestProdVersion = appManifest.getLatestProdVersion(27);
-    assertEquals(140000, latestProdVersion.version_code);
+    assertEquals(150302, latestProdVersion.version_code);
     assertEquals(21, latestProdVersion.min_sdk_version);
-    assertEquals(new SchemaDate(2019, 7, 22), latestProdVersion.released);
+    assertEquals(new SchemaDate(2019, 11, 26), latestProdVersion.released);
 
     Manifest manifest = appManifest.manifest;
     assertNotNull(manifest);
