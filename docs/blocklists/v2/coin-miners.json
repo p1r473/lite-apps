@@ -1,6 +1,4 @@
 {
-  "name": "coin-miners.json",
-  "updated": "2019-07-20",
   "hosts": [
     "001.0x1f4b0.com",
     "002.0x1f4b0.com",
@@ -2857,7 +2855,6 @@
     "pkucwwgcnuxzo.bid",
     "platform.jsecoin.com",
     "play.besstahete.info",
-    "play.cc.gofile.io",
     "play.estream.nu",
     "play.estream.to",
     "play.estream.xyz",
@@ -3623,7 +3620,6 @@
     "sunnimiq5.cf",
     "sunnimiq6.cf",
     "suonvyzivnfy.com",
-    "support.2giga.link",
     "supportxmr.com",
     "suqufucjzffhay.bid",
     "suwadesdshrg.com",
@@ -5177,5 +5173,7 @@
     "zyxtecsff.bid",
     "zzevmjynoljz.bid",
     "zzvjaqnkq.bid"
-  ]
+  ],
+  "name": "coin-miners.json",
+  "updated": "2019-11-26"
 }
