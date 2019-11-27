@@ -2,7 +2,6 @@ package com.chimbori.liteapps;
 
 
 import com.chimbori.FilePaths;
-import com.chimbori.hermitcrab.schema.appmanifest.AppManifest;
 import com.chimbori.hermitcrab.schema.common.MoshiAdapter;
 import com.chimbori.hermitcrab.schema.manifest.Endpoint;
 import com.chimbori.hermitcrab.schema.manifest.EndpointRole;
@@ -152,9 +151,8 @@ public class LiteAppsValidator {
     validateEndpoints(tag, manifest.monitors, EndpointRole.MONITOR);
 
     // Test all Settings to see whether they belong to our whitelisted set of allowable strings.
-    MoshiAdapter.get(AppManifest.class)
-        // TODO: Test every manifest with {@link .failOnUnknown} turned on.
-        // .failOnUnknown()
+    MoshiAdapter.get(Manifest.class)
+        .failOnUnknown()
         .fromJson(Okio.buffer(Okio.source(manifestFile)));
 
     // Test "related_apps" for basic sanity, that if one exists, then it’s pointing to a Play Store app.
