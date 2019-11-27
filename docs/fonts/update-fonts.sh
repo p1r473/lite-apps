@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Fetch all the font TTFs again, because fonts are constantly being updated by their authors.
 # This is the canonical list of fonts; there is no other list. This is intentional to keep things simple and consistent.
