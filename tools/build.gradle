@@ -41,6 +41,8 @@ dependencies {
   implementation("net.coobird:thumbnailator:0.4.8")
   implementation("org.jsoup:jsoup:1.11.3")
 
+  testImplementation("junit:junit:4.12")
+
   // Eclipse Parser used only to confirm well-formed-ness of JSON, because the org.json parser does
   // not do a strict parse, allowing malformed files to be pushed that break the Android app.
   implementation("com.eclipsesource.minimal-json:minimal-json:0.9.4")
