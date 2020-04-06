@@ -66,26 +66,26 @@ class Scaffolder {
       manifest = scraper.extractManifest();
 
       // Constant fields, same for all apps.
-      manifest.manifest_version = CURRENT_MANIFEST_VERSION;
+      manifest.setManifest_version(CURRENT_MANIFEST_VERSION);
 
       // Fields that can be populated from the data provided on the command-line.
-      manifest.name = appName;
-      manifest.start_url = startUrl;
-      manifest.manifest_url = String.format(MANIFEST_URL_TEMPLATE,
-          URLEncoder.encode(appName, "UTF-8").replace("+", "%20"));
+      manifest.setName(appName);
+      manifest.setStart_url(startUrl);
+      manifest.setManifest_url(String.format(MANIFEST_URL_TEMPLATE,
+          URLEncoder.encode(appName, "UTF-8").replace("+", "%20")));
 
       // Empty fields that must be manually populated.
-      manifest.priority = 10;
-      manifest.tags = Collections.singletonList("");
+      manifest.setPriority(10);
+      manifest.setTags(Collections.singletonList(""));
 
       // Put the icon JSON entry even if we don’t manage to fetch an icon successfully.
       // This way, we can avoid additional typing, and the validator will check for the presence
       // of the file anyway (and fail as expected).
-      manifest.icon = IconFile.FAVICON_FILE;
+      manifest.setIcon(IconFile.FAVICON_FILE);
 
       File iconsDirectory = new File(liteAppDirectoryRoot, FilePaths.ICONS_DIR_NAME);
       iconsDirectory.mkdirs();
-      File iconFile = new File(iconsDirectory, IconFile.FAVICON_FILE.fileName);
+      File iconFile = new File(iconsDirectory, IconFile.FAVICON_FILE.getFileName());
 
       String remoteIconUrl = scraper.extractIconUrl();
       if (!iconFile.exists() && remoteIconUrl != null && !remoteIconUrl.isEmpty()) {
@@ -111,21 +111,21 @@ class Scaffolder {
         ColorExtractor.Color themeColor = ColorExtractor.getDominantColor(ImageIO.read(iconFile));
         if (themeColor != null) {
           // Overwrite the dummy values already inserted, if we are able to extract real values.
-          manifest.theme_color = themeColor.toString();
-          manifest.secondary_color = themeColor.darken(0.9f).toString();
+          manifest.setTheme_color(themeColor.toString());
+          manifest.setSecondary_color(themeColor.darken(0.9f).toString());
         } else {
           // Insert a placeholder for theme_color and secondary_color so we don’t have to
           // type it in manually, but put invalid values so that the validator will catch it
           // in case we forget to replace with valid values.
-          manifest.theme_color = "#";
-          manifest.secondary_color = "#";
+          manifest.setTheme_color("#");
+          manifest.setSecondary_color("#");
         }
       } else {
         // Insert a placeholder for theme_color and secondary_color so we don’t have to
         // type it in manually, but put invalid values so that the validator will catch it
         // in case we forget to replace with valid values.
-        manifest.theme_color = "#";
-        manifest.secondary_color = "#";
+        manifest.setTheme_color("#");
+        manifest.setSecondary_color("#");
       }
     }
 

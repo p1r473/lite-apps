@@ -19,8 +19,8 @@ class TagsCollector {
     // Read the list of all known tags from the tags.json file. In case we discover any new tags,
     // we will add them to this file, taking care not to overwrite those that already exist.
     LibraryTagsList libraryTagsList = MoshiAdapter.get(LibraryTagsList.class)
-        .fromJson(Okio.buffer(Okio.source(FilePaths.LITE_APPS_TAGS_JSON)))
-        .updateTransientFields();
+        .fromJson(Okio.buffer(Okio.source(FilePaths.LITE_APPS_TAGS_JSON)));
+    libraryTagsList.updateTransientFields();
 
     Map<String, LibraryTag> globalTags = new HashMap<>();
     File[] liteAppDirs = FilePaths.LITE_APPS_SRC_DIR.listFiles();
@@ -37,8 +37,8 @@ class TagsCollector {
       Manifest manifest = MoshiAdapter.get(Manifest.class).fromJson(Okio.buffer(Okio.source(manifestJsonFile)));
 
       // For all tags applied to this manifest, check if they exist in the global tags list.
-      if (manifest.tags != null) {
-        for (String tagName : manifest.tags) {
+      if (manifest.getTags() != null) {
+        for (String tagName : manifest.getTags()) {
           if (tagName == null || tagName.isEmpty()) {
             throw new IllegalArgumentException("Tag should not be blank");
           }

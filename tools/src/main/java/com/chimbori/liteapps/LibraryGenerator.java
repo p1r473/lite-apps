@@ -38,8 +38,8 @@ class LibraryGenerator {
     // Read the list of all known tags from the tags.json file. In case we discover any new tags,
     // we will add them to this file, taking care not to overwrite those that already exist.
     LibraryTagsList globalTags = MoshiAdapter.get(LibraryTagsList.class)
-        .fromJson(Okio.buffer(Okio.source(FilePaths.LITE_APPS_TAGS_JSON)))
-        .updateTransientFields();
+        .fromJson(Okio.buffer(Okio.source(FilePaths.LITE_APPS_TAGS_JSON)));
+    globalTags.updateTransientFields();
     Library outputLibrary = new Library(globalTags);
 
     File[] liteAppDirs = FilePaths.LITE_APPS_SRC_DIR.listFiles();
@@ -59,24 +59,26 @@ class LibraryGenerator {
       // Create an entry for this Lite App to be put in the directory index file.
       Manifest manifest = MoshiAdapter.get(Manifest.class).fromJson(Okio.buffer(Okio.source(manifestJsonFile)));
 
-      LibraryApp outputApp = new LibraryApp();
-      outputApp.url = manifest.start_url;
-      outputApp.name = appName;
-      outputApp.theme_color = manifest.theme_color;
-      outputApp.priority = manifest.priority;
+      LibraryApp outputApp = new LibraryApp(
+          manifest.getTheme_color(),
+          appName,
+          manifest.getStart_url(),
+          "",
+          manifest.getPriority()
+      );
 
       // Set user-agent from the settings stored in the Lite App’s manifest.json.
-      String userAgent = manifest.settings != null ? manifest.settings.user_agent : null;
+      String userAgent = manifest.getSettings() != null ? manifest.getSettings().getUser_agent() : null;
       if (USER_AGENT_DESKTOP.equals(userAgent)) {
-        outputApp.user_agent = USER_AGENT_DESKTOP;
+        outputApp.setUser_agent(USER_AGENT_DESKTOP);
       }
 
-      outputLibrary.addAppToCategories(outputApp, manifest.tags);
+      outputLibrary.addAppToCategories(outputApp, manifest.getTags());
 
       // Resize the icon to be suitable for the Web, and copy it to the Web-accessible icons directory.
       File thumbnailImage = new File(FilePaths.LIBRARY_ICONS_DIR, appName + FilePaths.ICON_EXTENSION);
       if (!thumbnailImage.exists()) {
-        Thumbnails.of(new File(iconsDirectory, IconFile.FAVICON_FILE.fileName))
+        Thumbnails.of(new File(iconsDirectory, IconFile.FAVICON_FILE.getFileName()))
             .outputQuality(1.0f)
             .useOriginalFormat()
             .size(LIBRARY_ICON_SIZE, LIBRARY_ICON_SIZE)

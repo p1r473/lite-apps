@@ -57,15 +57,15 @@ public class Scraper {
     }
 
     // First try to get the Site’s name (not just the current page’s title) via OpenGraph tags.
-    manifest.name = doc.select("meta[property=og:site_name]").attr("content");
-    if (manifest.name == null || manifest.name.isEmpty()) {
+    manifest.setName(doc.select("meta[property=og:site_name]").attr("content"));
+    if (manifest.getName() == null || manifest.getName().isEmpty()) {
       // But if the page isn’t using OpenGraph tags, then fallback to using the current page’s title.
-      manifest.name = doc.select("title").text();
+      manifest.setName(doc.select("title").text());
     }
-    manifest.theme_color = doc.select("meta[name=theme-color]").attr("content");
-    manifest.bookmarks = findBookmarkableLinks();
-    manifest.feeds = findAtomAndRssFeeds();
-    manifest.related_applications = findRelatedApps();
+    manifest.setTheme_color(doc.select("meta[name=theme-color]").attr("content"));
+    manifest.setBookmarks(findBookmarkableLinks());
+    manifest.setFeeds(findAtomAndRssFeeds());
+    manifest.setRelated_applications(findRelatedApps());
 
     return manifest;
   }
@@ -97,7 +97,9 @@ public class Scraper {
     List<Endpoint> feeds = new ArrayList<>();
     Elements atomOrRssFeeds = doc.select("link[type=application/rss+xml], link[type=application/atom+xml]");
     for (Element feed : atomOrRssFeeds) {
-      Endpoint feedLink = new Endpoint().url(feed.attr("abs:href")).title(feed.attr("title"));
+      Endpoint feedLink = new Endpoint();
+      feedLink.setUrl(feed.attr("abs:href"));
+      feedLink.setName(feed.attr("title"));
       scrubFields(feedLink);
       feeds.add(feedLink);
     }
@@ -116,14 +118,20 @@ public class Scraper {
       if (linkText == null || linkText.isEmpty()) {
         continue; // Skip links where we could not recognize the anchor text.
       }
-      bookmarkableLinks.put(linkUrl, new Endpoint().url(linkUrl).title(linkText));
+
+      Endpoint newBookmark = new Endpoint();
+      newBookmark.setUrl(linkUrl);
+      newBookmark.setName(linkText);
+      bookmarkableLinks.put(linkUrl, newBookmark);
     }
 
     if (bookmarkableLinks.isEmpty()) {
       Elements likelyNavigationLinks = doc.select("nav, .nav, #nav, .navbar, #navbar, .navigation, #navigation").select("a[href]");
       for (Element navLink : likelyNavigationLinks) {
         String linkUrl = navLink.attr("abs:href");
-        Endpoint bookmarkableLink = new Endpoint().url(linkUrl).title(navLink.text());
+        Endpoint bookmarkableLink = new Endpoint();
+        bookmarkableLink.setUrl(linkUrl);
+        bookmarkableLink.setName(navLink.text());
         scrubFields(bookmarkableLink);
         bookmarkableLinks.put(linkUrl, bookmarkableLink);
       }
@@ -136,11 +144,10 @@ public class Scraper {
    * No need to save timestamps and many other fields when scraping Endpoints.
    */
   private void scrubFields(Endpoint endpoint) {
-    endpoint.enabled = null;
-    endpoint.display_order = null;
-    endpoint.key = null;
-    endpoint.source = null;
-    endpoint.icon = null;
+//    endpoint.setEnabled(null);  // TODO:KOTLIN: Can’t fix this in Java because of auto-unboxing.
+//    endpoint.setDisplay_order(null);  // TODO:KOTLIN: Can’t fix this in Java because of auto-unboxing.
+    endpoint.setKey(null);
+    endpoint.setIcon(null);
   }
 
   static class ManifestUnavailableException extends Exception {

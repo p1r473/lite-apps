@@ -98,7 +98,7 @@ public class LiteAppsValidator {
   @Test
   public void testIconIs300x300() {
     File iconsDirectory = new File(liteApp, FilePaths.ICONS_DIR_NAME);
-    TestHelpers.assertThatIconIs300x300(new File(iconsDirectory, IconFile.FAVICON_FILE.fileName));
+    TestHelpers.assertThatIconIs300x300(new File(iconsDirectory, IconFile.FAVICON_FILE.getFileName()));
   }
 
   @Test
@@ -108,19 +108,19 @@ public class LiteAppsValidator {
     String tag = liteApp.getName();
 
     assertNotNull(manifest);
-    assertFieldExists(tag, "name", manifest.name);
-    assertFieldExists(tag, "start_url", manifest.start_url);
-    assertFieldExists(tag, "manifest_url", manifest.manifest_url);
-    assertFieldExists(tag, "theme_color", manifest.theme_color);
-    assertFieldExists(tag, "secondary_color", manifest.secondary_color);
-    assertFieldExists(tag, "manifest_version", manifest.manifest_version);
-    assertFieldExists(tag, "icon", manifest.icon);
+    assertFieldExists(tag, "name", manifest.getName());
+    assertFieldExists(tag, "start_url", manifest.getStart_url());
+    assertFieldExists(tag, "manifest_url", manifest.getManifest_url());
+    assertFieldExists(tag, "theme_color", manifest.getTheme_color());
+    assertFieldExists(tag, "secondary_color", manifest.getSecondary_color());
+    assertFieldExists(tag, "manifest_version", manifest.getManifest_version());
+    assertFieldExists(tag, "icon", manifest.getIcon());
     assertNotEquals(String.format("priority not defined for %s", liteApp),
-        0, manifest.priority.longValue());
+        0, manifest.getPriority().longValue());
 
     // Test that the "manifest_url" field contains a valid URL.
     try {
-      URL manifestUrl = new URL(manifest.manifest_url);
+      URL manifestUrl = new URL(manifest.getManifest_url());
       assertEquals("https", manifestUrl.getProtocol());
       assertEquals("hermit.chimbori.com", manifestUrl.getHost());
       assertTrue(manifestUrl.getPath().startsWith("/lite-apps/"));
@@ -132,23 +132,23 @@ public class LiteAppsValidator {
 
     // Test that colors are valid hex colors.
     assertTrue(String.format("[%s] theme_color should be a valid hex color", tag),
-        HEX_COLOR_PATTERN.matcher(manifest.theme_color).matches());
+        HEX_COLOR_PATTERN.matcher(manifest.getTheme_color()).matches());
     assertTrue(String.format("[%s] secondary_color should be a valid hex color", tag),
-        HEX_COLOR_PATTERN.matcher(manifest.secondary_color).matches());
+        HEX_COLOR_PATTERN.matcher(manifest.getSecondary_color()).matches());
 
     // Test that the name of the icon file is "icon.png" & that the file exists.
     // Although any filename should work, having it be consistent in the library can let us
     // avoid a filename lookup in automated tests and refactors.
-    assertEquals(IconFile.FAVICON_FILE, manifest.icon);
+    assertEquals(IconFile.FAVICON_FILE, manifest.getIcon());
     File iconsDirectory = new File(liteApp, FilePaths.ICONS_DIR_NAME);
-    assertTrue(new File(iconsDirectory, IconFile.FAVICON_FILE.fileName).exists());
+    assertTrue(new File(iconsDirectory, IconFile.FAVICON_FILE.getFileName()).exists());
 
     // Test Endpoints for basic parseability.
-    validateEndpoints(tag, manifest.bookmarks, EndpointRole.BOOKMARK);
-    validateEndpoints(tag, manifest.feeds, EndpointRole.FEED);
-    validateEndpoints(tag, manifest.share, EndpointRole.SHARE);
-    validateEndpoints(tag, manifest.search, EndpointRole.SEARCH);
-    validateEndpoints(tag, manifest.monitors, EndpointRole.MONITOR);
+    validateEndpoints(tag, manifest.getBookmarks(), EndpointRole.BOOKMARK);
+    validateEndpoints(tag, manifest.getFeeds(), EndpointRole.FEED);
+    validateEndpoints(tag, manifest.getShare(), EndpointRole.SHARE);
+    validateEndpoints(tag, manifest.getSearch(), EndpointRole.SEARCH);
+    validateEndpoints(tag, manifest.getMonitors(), EndpointRole.MONITOR);
 
     // Test all Settings to see whether they belong to our whitelisted set of allowable strings.
     MoshiAdapter.get(Manifest.class)
@@ -156,12 +156,12 @@ public class LiteAppsValidator {
         .fromJson(Okio.buffer(Okio.source(manifestFile)));
 
     // Test "related_apps" for basic sanity, that if one exists, then it’s pointing to a Play Store app.
-    if (manifest.related_applications != null) {
-      for (RelatedApp relatedApp : manifest.related_applications) {
-        assertEquals(GOOGLE_PLAY, relatedApp.platform);
-        assertFalse(relatedApp.id.isEmpty());
-        assertTrue(relatedApp.url.startsWith("https://play.google.com/store/apps/details?id="));
-        assertTrue(relatedApp.url.endsWith(relatedApp.id));
+    if (manifest.getRelated_applications() != null) {
+      for (RelatedApp relatedApp : manifest.getRelated_applications()) {
+        assertEquals(GOOGLE_PLAY, relatedApp.getPlatform());
+        assertFalse(relatedApp.getId().isEmpty());
+        assertTrue(relatedApp.getUrl().startsWith("https://play.google.com/store/apps/details?id="));
+        assertTrue(relatedApp.getUrl().endsWith(relatedApp.getId()));
       }
     }
   }
@@ -169,19 +169,19 @@ public class LiteAppsValidator {
   private void validateEndpoints(String tag, Collection<Endpoint> endpoints, EndpointRole role) {
     if (endpoints != null) {
       for (Endpoint endpoint : endpoints) {
-        assertIsNotEmpty("Endpoint name should not be empty: " + tag, endpoint.name);
-        assertIsURL("Endpoint should have a valid URL: " + tag, endpoint.url);
+        assertIsNotEmpty("Endpoint name should not be empty: " + tag, endpoint.getName());
+        assertIsURL("Endpoint should have a valid URL: " + tag, endpoint.getUrl());
 
         if (role == EndpointRole.SEARCH) {
-          assertTrue(endpoint.url, endpoint.url.contains("%s"));
+          assertTrue(endpoint.getUrl(), endpoint.getUrl().contains("%s"));
 
         } else if (role == EndpointRole.SHARE) {
-          assertTrue(endpoint.url, endpoint.url.contains("%s")
-              || endpoint.url.contains("%t")
-              || endpoint.url.contains("%u"));
+          assertTrue(endpoint.getUrl(), endpoint.getUrl().contains("%s")
+              || endpoint.getUrl().contains("%t")
+              || endpoint.getUrl().contains("%u"));
 
         } else if (role == EndpointRole.MONITOR) {
-          assertIsNotEmpty("Endpoint name should not be empty: " + tag, endpoint.selector);
+          assertIsNotEmpty("Endpoint name should not be empty: " + tag, endpoint.getSelector());
         }
       }
     }

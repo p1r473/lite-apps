@@ -32,20 +32,20 @@ class PaletteExtractor {
       // Create an entry for this Lite App to be put in the directory index file.
       Manifest manifest = MoshiAdapter.get(Manifest.class).fromJson(Okio.buffer(Okio.source(manifestJsonFile)));
 
-      if (isUndefinedColor(manifest.theme_color) || isUndefinedColor(manifest.secondary_color)) {
-        System.out.println("manifest: " + manifest.name);
+      if (isUndefinedColor(manifest.getTheme_color()) || isUndefinedColor(manifest.getSecondary_color())) {
+        System.out.println("manifest: " + manifest.getName());
 
         File iconsDirectory = new File(liteAppDirectory, FilePaths.ICONS_DIR_NAME);
         iconsDirectory.mkdirs();
-        File iconFile = new File(iconsDirectory, IconFile.FAVICON_FILE.fileName);
+        File iconFile = new File(iconsDirectory, IconFile.FAVICON_FILE.getFileName());
 
         // Extract the color from the icon (either newly downloaded, or from existing icon).
         if (iconFile.exists()) {
           ColorExtractor.Color themeColor = ColorExtractor.getDominantColor(ImageIO.read(iconFile));
           if (themeColor != null) {
             // Overwrite the dummy values already inserted, if we are able to extract real values.
-            manifest.theme_color = themeColor.toString();
-            manifest.secondary_color = themeColor.darken(0.9f).toString();
+            manifest.setTheme_color(themeColor.toString());
+            manifest.setSecondary_color(themeColor.darken(0.9f).toString());
 
             FileUtils.writeFile(manifestJsonFile, MoshiAdapter.get(Manifest.class).toJson(manifest));
           }

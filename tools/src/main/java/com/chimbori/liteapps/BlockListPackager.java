@@ -16,6 +16,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -64,13 +65,13 @@ class BlockListPackager {
    */
   public static void downloadFromSources() throws IOException {
     BlockListsLibrary blockListsLibrary = readBlockListsLibrary();
-    for (CombinedBlockList combinedBlockList : blockListsLibrary.blocklists) {
-      File blockListDirectory = new File(FilePaths.BLOCKLISTS_SRC_DIR, combinedBlockList.blocklist);
+    for (CombinedBlockList combinedBlockList : blockListsLibrary.getBlocklists()) {
+      File blockListDirectory = new File(FilePaths.BLOCKLISTS_SRC_DIR, combinedBlockList.getBlocklist());
       blockListDirectory.mkdirs();
-      for (SourceBlockList source : combinedBlockList.sources) {
+      for (SourceBlockList source : combinedBlockList.getSources()) {
         // A blank URL means it’s a local file, so no need to fetch it from a remote server.
-        if (source.url != null && !source.url.isEmpty()) {
-          FileUtils.writeFile(new File(blockListDirectory, source.name), FileUtils.fetch(source.url));
+        if (source.getUrl() != null && !source.getUrl().isEmpty()) {
+          FileUtils.writeFile(new File(blockListDirectory, source.getName()), FileUtils.fetch(source.getUrl()));
         }
       }
     }
@@ -84,23 +85,23 @@ class BlockListPackager {
 
     BlockListsLibrary blockListsLibrary = readBlockListsLibrary();
 
-    for (CombinedBlockList combinedBlockList : blockListsLibrary.blocklists) {
+    for (CombinedBlockList combinedBlockList : blockListsLibrary.getBlocklists()) {
       Set<String> hosts = new HashSet<>();
 
-      File blockListDirectory = new File(FilePaths.BLOCKLISTS_SRC_DIR, combinedBlockList.blocklist);
+      File blockListDirectory = new File(FilePaths.BLOCKLISTS_SRC_DIR, combinedBlockList.getBlocklist());
       blockListDirectory.mkdirs();
 
-      for (SourceBlockList source : combinedBlockList.sources) {
+      for (SourceBlockList source : combinedBlockList.getSources()) {
         // Since we don’t want to download the blocklists to keep the test hermetic, and we want to
         // still run the test on blocklists that are uploaded to the repo (i.e. first-party owned),
         // we skip adding hosts from a file if it doesn’t already exist.
-        File hostsList = new File(blockListDirectory, source.name);
+        File hostsList = new File(blockListDirectory, source.getName());
         if (hostsList.exists()) {
-          parseBlockList(source.name, new FileInputStream(hostsList), hosts);
+          parseBlockList(source.getName(), new FileInputStream(hostsList), hosts);
         }
       }
 
-      writeToDisk(FilePaths.BLOCKLISTS_OUTPUT_DIR, combinedBlockList.filename, hosts);
+      writeToDisk(FilePaths.BLOCKLISTS_OUTPUT_DIR, combinedBlockList.getFilename(), hosts);
       hosts.clear();  // Empty the list before writing each one.
     }
   }
@@ -161,15 +162,16 @@ class BlockListPackager {
   }
 
   private static void writeToDisk(File rootDirectory, String relativeFileName, Set<String> hosts) throws IOException {
-    String[] hostsArray = hosts.toArray(new String[0]);
-    Arrays.sort(hostsArray);
+    List<String> hostsArray = new ArrayList<>(hosts);
+    hostsArray.sort(String::compareToIgnoreCase);
 
     File jsonFile = new File(rootDirectory, relativeFileName);
 
-    BlockList appManifestBlockList = new BlockList();
-    appManifestBlockList.name = jsonFile.getName();
-    appManifestBlockList.updated = SchemaDate.fromTimestamp(System.currentTimeMillis());
-    appManifestBlockList.hosts = hostsArray;
+    BlockList appManifestBlockList = new BlockList(
+        jsonFile.getName(),
+        SchemaDate.Companion.fromTimestamp(System.currentTimeMillis()),
+        hostsArray
+    );
 
     FileUtils.writeFile(jsonFile, MoshiAdapter.get(BlockList.class).toJson(appManifestBlockList));
 
