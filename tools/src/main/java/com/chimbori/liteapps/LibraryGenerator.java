@@ -60,10 +60,10 @@ class LibraryGenerator {
       Manifest manifest = MoshiAdapter.get(Manifest.class).fromJson(Okio.buffer(Okio.source(manifestJsonFile)));
 
       LibraryApp outputApp = new LibraryApp(
-          manifest.getTheme_color(),
           appName,
+          manifest.getTheme_color(),
           manifest.getStart_url(),
-          "",
+          null,
           manifest.getPriority()
       );
 

@@ -1,6 +1,9 @@
 {
   "categories": [
     {
+      "category": {
+        "name": "Popular"
+      },
       "apps": [
         {
           "name": "Facebook",
@@ -58,12 +61,12 @@
           "theme_color": "#0076b7",
           "url": "https://www.linkedin.com/"
         }
-      ],
-      "category": {
-        "name": "Popular"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Social"
+      },
       "apps": [
         {
           "name": "Facebook",
@@ -141,12 +144,12 @@
           "theme_color": "#fdf1bc",
           "url": "https://m.weibo.cn/beta"
         }
-      ],
-      "category": {
-        "name": "Social"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "News"
+      },
       "apps": [
         {
           "name": "CNN",
@@ -338,12 +341,12 @@
           "theme_color": "#3d0092",
           "url": "https://finance.yahoo.com/"
         }
-      ],
-      "category": {
-        "name": "News"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Technology"
+      },
       "apps": [
         {
           "name": "AlternativeTo",
@@ -480,12 +483,12 @@
           "theme_color": "#ff8400",
           "url": "https://xda-developers.com/"
         }
-      ],
-      "category": {
-        "name": "Technology"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Shopping"
+      },
       "apps": [
         {
           "name": "Amazon",
@@ -617,12 +620,12 @@
           "theme_color": "#82bc17",
           "url": "https://woot.com/"
         }
-      ],
-      "category": {
-        "name": "Shopping"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Travel"
+      },
       "apps": [
         {
           "name": "Translate",
@@ -739,12 +742,12 @@
           "theme_color": "#ea2330",
           "url": "https://yatra.com/"
         }
-      ],
-      "category": {
-        "name": "Travel"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Movies and TV"
+      },
       "apps": [
         {
           "name": "Fandango",
@@ -821,12 +824,12 @@
           "theme_color": "#34aad2",
           "url": "https://twit.tv/"
         }
-      ],
-      "category": {
-        "name": "Movies and TV"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Communication"
+      },
       "apps": [
         {
           "name": "Messenger",
@@ -860,12 +863,12 @@
           "theme_color": "#1f95d4",
           "url": "https://web.telegram.org/"
         }
-      ],
-      "category": {
-        "name": "Communication"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Art and Photography"
+      },
       "apps": [
         {
           "name": "Instagram",
@@ -907,12 +910,12 @@
           "theme_color": "#000000",
           "url": "https://unsplash.com/"
         }
-      ],
-      "category": {
-        "name": "Art and Photography"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Search"
+      },
       "apps": [
         {
           "name": "Google",
@@ -949,12 +952,12 @@
           "theme_color": "#ff0000",
           "url": "https://yandex.ru/"
         }
-      ],
-      "category": {
-        "name": "Search"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Weather"
+      },
       "apps": [
         {
           "name": "AccuWeather",
@@ -981,12 +984,12 @@
           "theme_color": "#970400",
           "url": "https://www.windy.com"
         }
-      ],
-      "category": {
-        "name": "Weather"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Banking & Financial"
+      },
       "apps": [
         {
           "name": "American Express",
@@ -1053,12 +1056,12 @@
           "theme_color": "#f1b6bc",
           "url": "https://m.wellsfargo.com/"
         }
-      ],
-      "category": {
-        "name": "Banking & Financial"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Tools & Productivity"
+      },
       "apps": [
         {
           "name": "Translate",
@@ -1145,12 +1148,12 @@
           "theme_color": "#ff72b5",
           "url": "https://zenkit.com/"
         }
-      ],
-      "category": {
-        "name": "Tools & Productivity"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Education"
+      },
       "apps": [
         {
           "name": "Wikipedia",
@@ -1212,12 +1215,12 @@
           "theme_color": "#f3a294",
           "url": "http://m.wolframalpha.com/"
         }
-      ],
-      "category": {
-        "name": "Education"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Food and Cuisine"
+      },
       "apps": [
         {
           "name": "Yelp",
@@ -1249,12 +1252,12 @@
           "theme_color": "#e0601e",
           "url": "https://yummly.com/"
         }
-      ],
-      "category": {
-        "name": "Food and Cuisine"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Music"
+      },
       "apps": [
         {
           "name": "Guitar Tuner",
@@ -1291,12 +1294,12 @@
           "theme_color": "#d81f38",
           "url": "https://alexgibson.github.io/wavepad/"
         }
-      ],
-      "category": {
-        "name": "Music"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Books"
+      },
       "apps": [
         {
           "name": "Amazon",
@@ -1333,12 +1336,12 @@
           "theme_color": "#631a35",
           "url": "https://libbyapp.com/"
         }
-      ],
-      "category": {
-        "name": "Books"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Sports"
+      },
       "apps": [
         {
           "name": "Bleacher Report",
@@ -1380,12 +1383,12 @@
           "theme_color": "#000000",
           "url": "https://www.nhl.com/"
         }
-      ],
-      "category": {
-        "name": "Sports"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Email"
+      },
       "apps": [
         {
           "name": "Gmail",
@@ -1412,12 +1415,12 @@
           "theme_color": "#39008d",
           "url": "https://mail.yahoo.com/"
         }
-      ],
-      "category": {
-        "name": "Email"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Storage"
+      },
       "apps": [
         {
           "name": "Dropbox",
@@ -1445,12 +1448,12 @@
           "url": "https://mega.nz/",
           "user_agent": "desktop"
         }
-      ],
-      "category": {
-        "name": "Storage"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Home and Lifestyle"
+      },
       "apps": [
         {
           "name": "Realtor",
@@ -1467,12 +1470,12 @@
           "theme_color": "#82db4e",
           "url": "https://ubereats.com/"
         }
-      ],
-      "category": {
-        "name": "Home and Lifestyle"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Games"
+      },
       "apps": [
         {
           "name": "2048",
@@ -1499,12 +1502,12 @@
           "theme_color": "#719836",
           "url": "https://www.progressivewebflap.com/"
         }
-      ],
-      "category": {
-        "name": "Games"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Fun"
+      },
       "apps": [
         {
           "name": "Air Horner",
@@ -1516,12 +1519,12 @@
           "theme_color": "#a6b9ca",
           "url": "http://www.gocomics.com/"
         }
-      ],
-      "category": {
-        "name": "Fun"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Comics"
+      },
       "apps": [
         {
           "name": "Go Comics",
@@ -1548,12 +1551,12 @@
           "theme_color": "#95a7c9",
           "url": "https://m.xkcd.com/"
         }
-      ],
-      "category": {
-        "name": "Comics"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Social Content"
+      },
       "apps": [
         {
           "name": "Bored Panda",
@@ -1575,12 +1578,12 @@
           "theme_color": "#3bd443",
           "url": "https://imgur.com/"
         }
-      ],
-      "category": {
-        "name": "Social Content"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Business"
+      },
       "apps": [
         {
           "name": "GlassDoor",
@@ -1597,24 +1600,24 @@
           "theme_color": "#1f63f3",
           "url": "https://www.indeed.com/m/"
         }
-      ],
-      "category": {
-        "name": "Business"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Fitness"
+      },
       "apps": [
         {
           "name": "Training Peaks",
           "theme_color": "#005695",
           "url": "https://www.trainingpeaks.com/"
         }
-      ],
-      "category": {
-        "name": "Fitness"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "USA"
+      },
       "apps": [
         {
           "name": "CNN",
@@ -1691,12 +1694,12 @@
           "theme_color": "#4c6971",
           "url": "https://www.walgreens.com/"
         }
-      ],
-      "category": {
-        "name": "USA"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "India"
+      },
       "apps": [
         {
           "name": "FlipKart",
@@ -1833,12 +1836,12 @@
           "theme_color": "#ea2330",
           "url": "https://yatra.com/"
         }
-      ],
-      "category": {
-        "name": "India"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Brasil"
+      },
       "apps": [
         {
           "name": "ESPN Brasil",
@@ -1875,36 +1878,36 @@
           "theme_color": "#004f93",
           "url": "http://veja.abril.com.br/"
         }
-      ],
-      "category": {
-        "name": "Brasil"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Deutschland"
+      },
       "apps": [
         {
           "name": "Android Hilfe",
           "theme_color": "#1d9788",
           "url": "http://www.android-hilfe.de/"
         }
-      ],
-      "category": {
-        "name": "Deutschland"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "France"
+      },
       "apps": [
         {
           "name": "AlloCine",
           "theme_color": "#ffca00",
           "url": "http://allocine.fr/"
         }
-      ],
-      "category": {
-        "name": "France"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "China"
+      },
       "apps": [
         {
           "name": "Baidu",
@@ -1926,12 +1929,12 @@
           "theme_color": "#e81f1f",
           "url": "http://qq.com/"
         }
-      ],
-      "category": {
-        "name": "China"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Israel"
+      },
       "apps": [
         {
           "name": "Haaretz",
@@ -1943,36 +1946,36 @@
           "theme_color": "#c04d51",
           "url": "http://m.jpost.com/"
         }
-      ],
-      "category": {
-        "name": "Israel"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Canada"
+      },
       "apps": [
         {
           "name": "RBC Canada",
           "theme_color": "#263780",
           "url": "https://www.rbcroyalbank.com/"
         }
-      ],
-      "category": {
-        "name": "Canada"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Korea"
+      },
       "apps": [
         {
           "name": "WebToons",
           "theme_color": "#00d564",
           "url": "https://m.webtoons.com/en/"
         }
-      ],
-      "category": {
-        "name": "Korea"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "UK"
+      },
       "apps": [
         {
           "name": "BBC",
@@ -1984,34 +1987,31 @@
           "theme_color": "#708c00",
           "url": "https://www.hotukdeals.com/"
         }
-      ],
-      "category": {
-        "name": "UK"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Russia"
+      },
       "apps": [
         {
           "name": "Yandex",
           "theme_color": "#ff0000",
           "url": "https://yandex.ru/"
         }
-      ],
-      "category": {
-        "name": "Russia"
-      }
+      ]
     },
     {
+      "category": {
+        "name": "Taiwan"
+      },
       "apps": [
         {
           "name": "DQ 地球圖輯隊",
           "theme_color": "#245b90",
           "url": "https://dq.yam.com/"
         }
-      ],
-      "category": {
-        "name": "Taiwan"
-      }
+      ]
     }
   ]
 }
