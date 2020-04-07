@@ -36,17 +36,16 @@ object ColorExtractor {
   }
 
   class Color internal constructor(private val r: Int, private val g: Int, private val b: Int) {
-    val isGrey: Boolean
-      get() = Math.abs(r - b) <= TOLERANCE_FOR_GREY && Math.abs(r - g) <= TOLERANCE_FOR_GREY
+    val isGrey: Boolean = Math.abs(r - b) <= TOLERANCE_FOR_GREY && Math.abs(r - g) <= TOLERANCE_FOR_GREY
 
     fun darken(ratio: Float): Color {
       require(!(ratio < 0 || ratio >= 1))
       return Color((r * ratio).toInt(), (g * ratio).toInt(), (b * ratio).toInt())
     }
 
-    override fun toString(): String {
-      return String.format("#%02x%02x%02x", r, g, b)
-    }
+    override fun toString() = toHex()
+
+    fun toHex(): String = String.format("#%02x%02x%02x", r, g, b)
 
     companion object {
       private const val TOLERANCE_FOR_GREY = 16
