@@ -64,10 +64,10 @@ internal object LibraryGenerator {
           priority = manifest.priority ?: DEFAULT_PRIORITY)
 
       // Set user-agent from the settings stored in the Lite App’s manifest.json.
-      if (USER_AGENT_DESKTOP == manifest.settings.user_agent) {
+      if (USER_AGENT_DESKTOP == manifest.settings?.user_agent) {
         outputApp.user_agent = USER_AGENT_DESKTOP
       }
-      outputLibrary.addAppToCategories(outputApp, manifest.tags)
+      manifest.tags?.let { tags -> outputLibrary.addAppToCategories(outputApp, tags) }
 
       // Resize the icon to be suitable for the Web, and copy it to the Web-accessible icons directory.
       val thumbnailImage = File(LIBRARY_ICONS_DIR, appName + ICON_EXTENSION)
