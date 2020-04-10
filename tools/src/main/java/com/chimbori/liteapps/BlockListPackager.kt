@@ -118,7 +118,7 @@ internal object BlockListPackager {
 
   private fun addHostIfNotNullOrWhiteListed(host: String?, hosts: MutableSet<String>): Boolean {
     if (host != null && !isHostWhitelisted(host)) {
-      hosts.add(host.trim { it <= ' ' })
+      hosts.add(host.toLowerCase().trim { it <= ' ' })
       return true
     }
     return false
