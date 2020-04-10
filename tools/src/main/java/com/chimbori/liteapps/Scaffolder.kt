@@ -7,7 +7,6 @@ import com.chimbori.common.Log
 import com.chimbori.hermitcrab.schema.common.MoshiAdapter.get
 import com.chimbori.hermitcrab.schema.manifest.IconFile.FAVICON_FILE
 import com.chimbori.hermitcrab.schema.manifest.Manifest
-import com.chimbori.liteapps.Scraper.ManifestUnavailableException
 import okio.buffer
 import okio.source
 import org.apache.commons.cli.*
@@ -34,7 +33,7 @@ internal object Scaffolder {
    * The Library Data JSON file (containing metadata about all Lite Apps) is used as the basis for
    * generating scaffolding for the Lite App manifests.
    */
-  @Throws(IOException::class, ManifestUnavailableException::class)
+  @Throws(IOException::class)
   private fun createScaffolding(startUrl: String, appName: String) {
     val liteAppDirectoryRoot = File(LITE_APPS_SRC_DIR, appName)
 
@@ -52,10 +51,15 @@ internal object Scaffolder {
       // Scrape the Web looking for RSS & Atom feeds, theme colors, and site metadata.
       Log.i("Fetching %s…", startUrl)
       val scraper = Scraper(startUrl).fetch()
+
       manifest = scraper.extractManifest()
+      if (manifest == null) {
+        System.err.println("Did you call Scraper.fetch() first?")
+        System.exit(1)
+      }
 
       // Constant fields, same for all apps.
-      manifest.manifest_version = CURRENT_MANIFEST_VERSION
+      manifest!!.manifest_version = CURRENT_MANIFEST_VERSION
 
       // Fields that can be populated from the data provided on the command-line.
       manifest.name = appName
@@ -150,9 +154,6 @@ internal object Scaffolder {
       writer.flush()
       System.exit(1)
     } catch (e: IOException) {
-      e.printStackTrace()
-      System.exit(1)
-    } catch (e: ManifestUnavailableException) {
       e.printStackTrace()
       System.exit(1)
     }
