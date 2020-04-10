@@ -31,7 +31,7 @@ public class FilePaths {
 
   // Block Lists
   public static final File BLOCKLISTS_SRC_DIR       = new File(PROJECT_ROOT, "blocklists/src/");
-  public static final File BLOCKLISTS_SOURCES_JSON  = new File(PROJECT_ROOT, "blocklists/sources.json");
+  public static final File BLOCKLISTS_CONFIG_JSON   = new File(PROJECT_ROOT, "blocklists/config.json");
 
   // Output Directories, under `/docs`.
   public static final File LITE_APPS_OUTPUT_DIR     = new File(PROJECT_ROOT, "docs/lite-apps/v3/");

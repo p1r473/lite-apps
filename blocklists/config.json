@@ -1,59 +1,59 @@
 {
-  "blocklists": [
+  "packs": [
     {
-      "blocklist": "Adware and Malware",
+      "display_name": "Adware and Malware",
       "filename": "adware-malware.json",
       "sources": [
         {
-          "name": "PaidContentLinks.txt"
+          "filename": "PaidContentLinks.txt"
         },
         {
-          "name": "UserSuggested.txt"
+          "filename": "UserSuggested.txt"
         },
         {
           "url": "https://zeustracker.abuse.ch/blocklist.php?download=baddomains",
-          "name": "Abuse.ch.cached.txt"
+          "filename": "Abuse.ch.cached.txt"
         },
         {
           "url": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/hostnames.txt",
-          "name": "NoTracking.cached.txt"
+          "filename": "NoTracking.cached.txt"
         },
         {
           "url": "http://www.malwaredomainlist.com/hostslist/hosts.txt",
-          "name": "MalwareDomainList.cached.txt"
+          "filename": "MalwareDomainList.cached.txt"
         },
         {
           "url": "http://someonewhocares.org/hosts/hosts",
-          "name": "SomeoneWhoCares.cached.txt"
+          "filename": "SomeoneWhoCares.cached.txt"
         },
         {
           "url": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
-          "name": "StevenBlack.cached.txt"
+          "filename": "StevenBlack.cached.txt"
         },
         {
           "url": "http://sysctl.org/cameleon/hosts",
-          "name": "SysCtlCameleon.cached.txt"
+          "filename": "SysCtlCameleon.cached.txt"
         },
         {
           "url": "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext",
-          "name": "Yoyo.cached.txt"
+          "filename": "Yoyo.cached.txt"
         }
       ]
     },
     {
-      "blocklist": "Coin Miners",
+      "display_name": "Coin Miners",
       "filename": "coin-miners.json",
       "sources": [
         {
-          "name": "UserSuggested.txt"
+          "filename": "UserSuggested.txt"
         },
         {
           "url": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt",
-          "name": "NoCoin.cached.txt"
+          "filename": "NoCoin.cached.txt"
         },
         {
           "url": "https://raw.githubusercontent.com/Marfjeh/coinhive-block/master/domains",
-          "name": "CoinHive-Block.cached.txt"
+          "filename": "CoinHive-Block.cached.txt"
         }
       ]
     }

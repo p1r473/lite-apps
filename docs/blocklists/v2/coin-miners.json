@@ -1,4 +1,6 @@
 {
+  "name": "coin-miners.json",
+  "updated": "2020-04-10",
   "hosts": [
     "001.0x1f4b0.com",
     "002.0x1f4b0.com",
@@ -5173,7 +5175,5 @@
     "zyxtecsff.bid",
     "zzevmjynoljz.bid",
     "zzvjaqnkq.bid"
-  ],
-  "name": "coin-miners.json",
-  "updated": "2019-11-26"
+  ]
 }
