@@ -16,12 +16,12 @@ public class LibraryValidator {
   }
 
   @Test
-  public void testUpdateTagsJSON() throws IOException {
+  public void testUpdateTagsJSON() {
     TagsCollector.updateTagsJson();
   }
 
   @Test
-  public void testLibraryDataIsGeneratedSuccessfully() throws IOException {
+  public void testLibraryDataIsGeneratedSuccessfully() {
     LibraryGenerator.generateLibraryData();
   }
 }
