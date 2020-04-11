@@ -11,6 +11,7 @@ import com.chimbori.hermitcrab.schema.common.MoshiAdapter
 import com.chimbori.hermitcrab.schema.library.Library
 import com.chimbori.hermitcrab.schema.library.LibraryApp
 import com.chimbori.hermitcrab.schema.library.LibraryTagsList
+import com.chimbori.hermitcrab.schema.library.LiteAppCategoryWithApps
 import com.chimbori.hermitcrab.schema.manifest.DEFAULT_PRIORITY
 import com.chimbori.hermitcrab.schema.manifest.IconFile.FAVICON_FILE
 import com.chimbori.hermitcrab.schema.manifest.Manifest
@@ -20,63 +21,59 @@ import okio.source
 import java.awt.image.BufferedImage
 import java.io.File
 
+/**
+ * Generates the Library Data JSON file, which is used as the basis for generating the Hermit Library page at
+ * https://lite-apps.chimbori.com/library.
+ */
 internal object LibraryGenerator {
   private const val LIBRARY_ICON_SIZE = 112
-  private const val USER_AGENT_DESKTOP = "desktop"
 
-  /**
-   * Individual manifest.json files do not contain any information about the organization of the
-   * Lite Apps in the Library (e.g. categories, order within category, whether it should be
-   * displayed or not. This metadata is stored in a separate index.json file. To minimize
-   * duplication & to preserve a single source of truth, this file does not contain actual URLs
-   * or anything about a Lite App other than its name (same as the directory name).
-   *
-   * This generator tool combines the basic organizational metadata from index.json & detailed
-   * Lite Apps data from * / manifest.json files. It outputs the Library Data JSON file,
-   * which is used as the basis for generating the Hermit Library page at
-   * https://lite-apps.chimbori.com/library.
-   */
   fun generateLibraryData() {
-    // Read the list of all known tags from the tags.json file. In case we discover any new tags,
-    // we will add them to this file, taking care not to overwrite those that already exist.
-    val globalTags = MoshiAdapter.getAdapter(LibraryTagsList::class.java)
-        .fromJson(LITE_APPS_TAGS_JSON.source().buffer())
-        ?.apply { updateTransientFields() }
-        ?: return
+    // The order of categories displayed in the library is based on the order in [LITE_APPS_TAGS_JSON] file.
+    val outputLibrary = Library()
+    val categoryMap = mutableMapOf<String, LiteAppCategoryWithApps>()
 
-    val outputLibrary = Library(globalTags)
-    val liteAppDirs = LITE_APPS_SRC_DIR.listFiles()
-    liteAppDirs?.forEach { liteAppDirectory ->
+    MoshiAdapter.getAdapter(LibraryTagsList::class.java)
+        .fromJson(LITE_APPS_TAGS_JSON.source().buffer())!!
+        .tags.forEach { tag ->
+          val categoryWithApps = LiteAppCategoryWithApps(tag)
+          categoryMap.put(tag.name, categoryWithApps)
+          outputLibrary.categories.add(categoryWithApps)
+        }
+
+    LITE_APPS_SRC_DIR.listFiles()?.forEach { liteAppDirectory ->
       if (!liteAppDirectory.isDirectory) {
         return@forEach  // Probably a temporary file, like .DS_Store.
       }
-
-      val iconsDirectory = File(liteAppDirectory, ICONS_DIR_NAME)
-      val appName = liteAppDirectory.name
 
       val manifestJsonFile = File(liteAppDirectory, MANIFEST_JSON_FILE_NAME)
       if (!manifestJsonFile.exists()) {
         return@forEach
       }
 
-      // Create an entry for this Lite App to be put in the directory index file.
       val manifest = MoshiAdapter.getAdapter(Manifest::class.java).fromJson(manifestJsonFile.source().buffer())
           ?: return@forEach
+
+      // Create an entry for this Lite App to be put in the directory index file.
       val outputApp = LibraryApp(
-          name = appName,
+          name = manifest.name,
           theme_color = manifest.theme_color ?: "#ffffff",
           url = manifest.start_url,
           priority = manifest.priority ?: DEFAULT_PRIORITY)
 
-      // Set user-agent from the settings stored in the Lite App’s manifest.json.
-      if (USER_AGENT_DESKTOP == manifest.settings?.user_agent) {
-        outputApp.user_agent = USER_AGENT_DESKTOP
+      manifest.tags?.forEach { tagName ->
+        val category = categoryMap.get(tagName)
+        if (category == null) {
+          throw IllegalStateException("New tag “$tagName” not present in ${LITE_APPS_TAGS_JSON.name}. " +
+              "Add manually in the correct position, then re-run this.")
+        }
+        category.apps.add(outputApp)
       }
-      manifest.tags?.let { tags -> outputLibrary.addAppToCategories(outputApp, tags) }
 
       // Resize the icon to be suitable for the Web, and copy it to the Web-accessible icons directory.
-      val thumbnailImage = File(LIBRARY_ICONS_DIR, appName + ICON_EXTENSION)
+      val thumbnailImage = File(LIBRARY_ICONS_DIR, liteAppDirectory.name + ICON_EXTENSION)
       if (!thumbnailImage.exists()) {
+        val iconsDirectory = File(liteAppDirectory, ICONS_DIR_NAME)
         Thumbnails.of(File(iconsDirectory, FAVICON_FILE.fileName))
             .outputQuality(1.0f)
             .useOriginalFormat()
@@ -85,6 +82,13 @@ internal object LibraryGenerator {
             .toFile(thumbnailImage)
       }
     }
+
+    outputLibrary.categories.forEach { categoryWithApps ->
+      categoryWithApps.apps.sortWith(
+          compareByDescending<LibraryApp> { app -> app.priority }
+              .thenBy { app -> app.name?.toLowerCase() })
+    }
+
     LIBRARY_JSON.writeText(MoshiAdapter.getAdapter(Library::class.java).toJson(outputLibrary))
   }
 }
