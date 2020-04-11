@@ -4,7 +4,6 @@ import com.chimbori.FilePaths.ICONS_DIR_NAME
 import com.chimbori.FilePaths.LITE_APPS_SRC_DIR
 import com.chimbori.FilePaths.MANIFEST_JSON_FILE_NAME
 import com.chimbori.common.ColorExtractor.getDominantColor
-import com.chimbori.common.FileUtils
 import com.chimbori.common.Log
 import com.chimbori.hermitcrab.schema.common.MoshiAdapter.getAdapter
 import com.chimbori.hermitcrab.schema.manifest.IconFile.FAVICON_FILE
@@ -123,7 +122,7 @@ internal object Scaffolder {
 
     // Write the output manifest.
     println(manifest)
-    FileUtils.writeFile(manifestJsonFile, getAdapter(Manifest::class.java).toJson(manifest))
+    manifestJsonFile.writeText(getAdapter(Manifest::class.java).toJson(manifest))
   }
 
   @JvmStatic

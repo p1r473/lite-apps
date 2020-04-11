@@ -1,24 +1,16 @@
 package com.chimbori.common;
 
 import java.io.BufferedOutputStream;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.attribute.FileTime;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
-
 public class FileUtils {
   private static final int BUFFER_SIZE = 8192;
-
-  private static final OkHttpClient client = new OkHttpClient();
 
   public static boolean zip(File rootDir, File zipFile) {
     zipFile.getParentFile().mkdirs();
@@ -70,29 +62,5 @@ public class FileUtils {
         zipOutputStream.closeEntry();
       }
     }
-  }
-
-  public static String readFully(InputStream inputStream) throws IOException {
-    ByteArrayOutputStream baos = new ByteArrayOutputStream();
-    byte[] buffer = new byte[BUFFER_SIZE];
-    int length;
-    while ((length = inputStream.read(buffer)) != -1) {
-      baos.write(buffer, 0, length);
-    }
-    return baos.toString("UTF-8");
-  }
-
-  public static void writeFile(File file, String content) throws IOException {
-    file.getParentFile().mkdirs();
-    try (FileOutputStream fout = new FileOutputStream(file)) {
-      fout.write(content.getBytes());
-    }
-  }
-
-  public static String fetch(String url) throws IOException {
-    System.out.println("Fetching: " + url);
-    Request request = new Request.Builder().url(url).build();
-    Response response = client.newCall(request).execute();
-    return response.body().string();
   }
 }

@@ -3,11 +3,12 @@ package com.chimbori.liteapps
 import com.chimbori.FilePaths
 import com.chimbori.FilePaths.BLOCKLISTS_CONFIG_JSON
 import com.chimbori.FilePaths.BLOCKLISTS_SRC_DIR
-import com.chimbori.common.FileUtils
 import com.chimbori.hermitcrab.schema.blocklists.BlockList
 import com.chimbori.hermitcrab.schema.blocklists.Config
 import com.chimbori.hermitcrab.schema.common.MoshiAdapter
 import com.chimbori.hermitcrab.schema.common.SchemaDate.Companion.fromTimestamp
+import okhttp3.OkHttpClient
+import okhttp3.Request
 import okio.buffer
 import okio.source
 import java.io.File
@@ -41,8 +42,10 @@ internal object BlockListPackager {
       blockListDirectory.mkdirs()
       sources!!.forEach { (url, fileName) ->
         // A blank URL means it’s a local file, so no need to fetch it from a remote server.
-        if (url != null && !url.isEmpty()) {
-          File(blockListDirectory, fileName).writeText(FileUtils.fetch(url))
+        if (url != null && url.isNotEmpty()) {
+          fetch(url)?.let { fileContent ->
+            File(blockListDirectory, fileName).writeText(fileContent)
+          }
         }
       }
     }
@@ -135,6 +138,13 @@ internal object BlockListPackager {
       }
     }
     return false
+  }
+
+  private fun fetch(url: String): String? {
+    println("Fetching: $url")
+    return OkHttpClient()
+        .newCall(Request.Builder().url(url).build())
+        .execute().body?.string()
   }
 
   private val WHITELISTED_SUBSTRINGS: List<String> = listOf("youtube")

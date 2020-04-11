@@ -4,7 +4,6 @@ import com.chimbori.FilePaths
 import com.chimbori.FilePaths.LITE_APPS_OUTPUT_DIR
 import com.chimbori.FilePaths.LITE_APPS_SRC_DIR
 import com.chimbori.FilePaths.MANIFEST_JSON_FILE_NAME
-import com.chimbori.common.FileUtils
 import com.chimbori.hermitcrab.schema.common.MoshiAdapter
 import com.chimbori.hermitcrab.schema.manifest.Endpoint
 import com.chimbori.hermitcrab.schema.manifest.EndpointRole
@@ -26,7 +25,6 @@ import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 import java.awt.image.BufferedImage
 import java.io.File
-import java.io.FileInputStream
 import java.io.IOException
 import java.net.MalformedURLException
 import java.net.URL
@@ -207,9 +205,9 @@ class LiteAppsValidator(private val liteApp: File) {
       try {
         // Use a stricter parser than {@code Gson}, so we can catch issues such as
         // extra commas after the last element.
-        val manifest = Json.parse(FileUtils.readFully(FileInputStream(file)))
+        val manifest = Json.parse(file.source().buffer().readUtf8())
         // Re-indent the <b>source file</b> by saving the JSON back to the same file.
-        FileUtils.writeFile(file, manifest.toString(WriterConfig.PRETTY_PRINT))
+        file.writeText(manifest.toString(WriterConfig.PRETTY_PRINT))
       } catch (e: ParseException) {
         Assert.fail(String.format("%s: %s", file.path, e.message))
       }
