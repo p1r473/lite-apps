@@ -1,4 +1,4 @@
-package com.chimbori.liteapps
+package com.chimbori.blocklists
 
 import com.chimbori.FilePaths
 import com.chimbori.FilePaths.BLOCKLISTS_CONFIG_JSON

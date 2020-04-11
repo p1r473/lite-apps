@@ -19,7 +19,7 @@ task(extractPalette, dependsOn: jar, type: JavaExec) {
 }
 
 task(packageBlockLists, dependsOn: jar, type: JavaExec) {
-  main = "com.chimbori.liteapps.BlockListPackager"
+  main = "com.chimbori.blocklists.BlockListPackager"
   classpath = sourceSets.main.runtimeClasspath
   systemProperties System.getProperties()
   outputs.upToDateWhen { false }
