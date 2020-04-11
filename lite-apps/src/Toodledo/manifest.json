@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Toodledo",
   "start_url": "https://www.toodledo.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Toodledo.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Toodledo.hermit",
   "theme_color": "#4d7eb4",
   "secondary_color": "#4571a2",
   "icon": "favicon.png",

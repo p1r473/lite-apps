@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Online SBI",
   "start_url": "https://onlinesbi.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Online%20SBI.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Online%20SBI.hermit",
   "theme_color": "#2b74ba",
   "secondary_color": "#2668a7",
   "icon": "favicon.png",

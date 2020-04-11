@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Spiegel",
   "start_url": "http://www.spiegel.de/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Spiegel.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Spiegel.hermit",
   "theme_color": "#98141b",
   "secondary_color": "#881218",
   "icon": "favicon.png",

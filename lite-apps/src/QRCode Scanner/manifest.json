@@ -3,7 +3,7 @@
   "name": "QRCode Scanner",
   "priority": 50,
   "start_url": "https://qrcodescan.in/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/QRCode%20Scanner.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/QRCode%20Scanner.hermit",
   "theme_color": "#5f7d8c",
   "secondary_color": "#3f87ff",
   "icon": "favicon.png",

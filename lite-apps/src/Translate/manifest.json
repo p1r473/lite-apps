@@ -4,7 +4,7 @@
   "name": "Translate",
   "priority": 100,
   "start_url": "https://translate.google.com/m/translate",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Translate.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Translate.hermit",
   "secondary_color": "#3b4a9d",
   "icon": "favicon.png",
   "share": [

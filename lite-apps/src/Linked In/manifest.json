@@ -3,7 +3,7 @@
   "name": "Linked In",
   "priority": 10,
   "start_url": "https://www.linkedin.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Linked%20In.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Linked%20In.hermit",
   "theme_color": "#0076b7",
   "secondary_color": "#005d95",
   "search": [

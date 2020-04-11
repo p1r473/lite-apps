@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "PepperFry",
   "start_url": "https://pepperfry.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/PepperFry.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/PepperFry.hermit",
   "theme_color": "#ea983a",
   "secondary_color": "#d28834",
   "icon": "favicon.png",

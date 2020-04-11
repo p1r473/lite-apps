@@ -3,7 +3,7 @@
   "name": "App Sales",
   "priority": 10,
   "start_url": "http://app-sales.net/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/App%20Sales.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/App%20Sales.hermit",
   "theme_color": "#c20a00",
   "secondary_color": "#b20a00",
   "icon": "favicon.png",

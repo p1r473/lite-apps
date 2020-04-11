@@ -3,7 +3,7 @@
   "name": "TeamViewer Chat",
   "priority": 10,
   "start_url": "https://integratedchat.teamviewer.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/TeamViewer%20Chat.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TeamViewer%20Chat.hermit",
   "theme_color": "#2196f3",
   "secondary_color": "#1976d2",
   "icon": "favicon.png",

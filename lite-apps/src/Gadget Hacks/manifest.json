@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Gadget Hacks",
   "start_url": "https://www.gadgethacks.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Gadget%20Hacks.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Gadget%20Hacks.hermit",
   "theme_color": "#d9151a",
   "secondary_color": "#c31217",
   "icon": "favicon.png",

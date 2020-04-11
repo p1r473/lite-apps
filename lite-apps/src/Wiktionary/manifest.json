@@ -4,7 +4,7 @@
   "name": "Wiktionary",
   "priority": 10,
   "start_url": "https://www.wiktionary.org/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Wiktionary.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wiktionary.hermit",
   "secondary_color": "#2d885a",
   "icon": "favicon.png",
   "tags": [

@@ -3,7 +3,7 @@
   "name": "Chase",
   "priority": 10,
   "start_url": "https://m.chase.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Chase.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Chase.hermit",
   "theme_color": "#0459a9",
   "secondary_color": "#0077c4",
   "icon": "favicon.png",

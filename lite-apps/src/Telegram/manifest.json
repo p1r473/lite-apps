@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Telegram",
   "start_url": "https://web.telegram.org/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Telegram.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Telegram.hermit",
   "theme_color": "#1f95d4",
   "secondary_color": "#1b86be",
   "icon": "favicon.png",

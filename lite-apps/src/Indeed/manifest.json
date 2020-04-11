@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Indeed",
   "start_url": "https://www.indeed.com/m/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Indeed.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Indeed.hermit",
   "theme_color": "#1f63f3",
   "secondary_color": "#1b59da",
   "icon": "favicon.png",

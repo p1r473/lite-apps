@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Hot UK Deals",
   "start_url": "https://www.hotukdeals.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Hot%20UK%20Deals.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Hot%20UK%20Deals.hermit",
   "theme_color": "#708c00",
   "secondary_color": "#647e00",
   "icon": "favicon.png",

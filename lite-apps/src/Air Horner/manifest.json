@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Air Horner",
   "start_url": "https://airhorner.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Air%20Horner.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Air%20Horner.hermit",
   "theme_color": "#daeef2",
   "secondary_color": "#c4d6d9",
   "icon": "favicon.png",

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Letterboxd",
   "start_url": "https://letterboxd.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Letterboxd.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Letterboxd.hermit",
   "theme_color": "#252f39",
   "secondary_color": "#212a33",
   "icon": "favicon.png",

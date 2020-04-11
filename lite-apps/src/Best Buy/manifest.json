@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Best Buy",
   "start_url": "https://www.bestbuy.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Best%20Buy.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Best%20Buy.hermit",
   "theme_color": "#fff200",
   "secondary_color": "#e5d900",
   "icon": "favicon.png",

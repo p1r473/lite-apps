@@ -4,7 +4,7 @@
   "name": "Wolfram Alpha",
   "priority": 10,
   "start_url": "http://m.wolframalpha.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Wolfram%20Alpha.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wolfram%20Alpha.hermit",
   "secondary_color": "#da9185",
   "icon": "favicon.png",
   "tags": [

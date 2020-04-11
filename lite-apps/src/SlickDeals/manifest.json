@@ -4,7 +4,7 @@
   "name": "SlickDeals",
   "priority": 10,
   "start_url": "https://slickdeals.net/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/SlickDeals.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/SlickDeals.hermit",
   "secondary_color": "#0085bc",
   "icon": "favicon.png",
   "bookmarks": [

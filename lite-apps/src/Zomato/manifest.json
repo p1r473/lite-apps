@@ -4,7 +4,7 @@
   "name": "Zomato",
   "priority": 90,
   "start_url": "https://zomato.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Zomato.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Zomato.hermit",
   "secondary_color": "#b61c28",
   "icon": "favicon.png",
   "tags": [

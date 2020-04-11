@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "The Hindu",
   "start_url": "http://www.thehindu.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20Hindu.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/The%20Hindu.hermit",
   "theme_color": "#0e5ba8",
   "secondary_color": "#0c5197",
   "icon": "favicon.png",

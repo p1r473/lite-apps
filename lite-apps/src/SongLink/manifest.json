@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "SongLink",
   "start_url": "https://songlink.io/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/SongLink.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/SongLink.hermit",
   "theme_color": "#ee5359",
   "secondary_color": "#d64a50",
   "icon": "favicon.png",

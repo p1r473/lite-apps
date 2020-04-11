@@ -4,7 +4,7 @@
   "name": "The Verge",
   "priority": 10,
   "start_url": "https://theverge.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20Verge.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/The%20Verge.hermit",
   "secondary_color": "#e14325",
   "icon": "favicon.png",
   "feeds": [

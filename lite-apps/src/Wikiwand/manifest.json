@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Wikiwand",
   "start_url": "https://www.wikiwand.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Wikiwand.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wikiwand.hermit",
   "theme_color": "#89bb5c",
   "secondary_color": "#7ba852",
   "icon": "favicon.png",

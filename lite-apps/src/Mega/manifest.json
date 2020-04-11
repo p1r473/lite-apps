@@ -4,7 +4,7 @@
   "name": "Mega",
   "priority": 10,
   "start_url": "https://mega.nz/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Mega.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Mega.hermit",
   "secondary_color": "#d60c12",
   "icon": "favicon.png",
   "settings": {

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "JustDial",
   "start_url": "https://justdial.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/JustDial.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/JustDial.hermit",
   "theme_color": "#bcd9ed",
   "secondary_color": "#a9c3d5",
   "icon": "favicon.png",

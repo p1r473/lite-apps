@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "AirTel",
   "start_url": "https://airtel.in/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/AirTel.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AirTel.hermit",
   "theme_color": "#e81f1a",
   "secondary_color": "#d01b17",
   "icon": "favicon.png",

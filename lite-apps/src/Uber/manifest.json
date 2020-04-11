@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Uber",
   "start_url": "https://m.uber.com/looking",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Uber.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Uber.hermit",
   "theme_color": "#000000",
   "secondary_color": "#000000",
   "icon": "favicon.png",

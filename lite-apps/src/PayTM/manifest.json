@@ -4,7 +4,7 @@
   "name": "PayTM",
   "priority": 10,
   "start_url": "https://paytm.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/PayTM.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/PayTM.hermit",
   "secondary_color": "#002666",
   "icon": "favicon.png",
   "tags": [

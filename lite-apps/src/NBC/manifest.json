@@ -3,7 +3,7 @@
   "name": "NBC",
   "priority": 10,
   "start_url": "http://www.nbcnews.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/NBC.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NBC.hermit",
   "icon": "favicon.png",
   "theme_color": "#4372b8",
   "secondary_color": "#1f7db7",

@@ -4,7 +4,7 @@
   "name": "All Recipes",
   "priority": 10,
   "start_url": "https://allrecipes.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/All%20Recipes.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/All%20Recipes.hermit",
   "secondary_color": "#e57117",
   "icon": "favicon.png",
   "tags": [

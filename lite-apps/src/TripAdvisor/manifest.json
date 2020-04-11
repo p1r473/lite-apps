@@ -4,7 +4,7 @@
   "name": "TripAdvisor",
   "priority": 90,
   "start_url": "https://tripadvisor.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/TripAdvisor.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TripAdvisor.hermit",
   "secondary_color": "#1b7b2a",
   "icon": "favicon.png",
   "tags": [

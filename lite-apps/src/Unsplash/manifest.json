@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Unsplash",
   "start_url": "https://unsplash.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Unsplash.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Unsplash.hermit",
   "theme_color": "#000000",
   "secondary_color": "#000000",
   "icon": "favicon.png",

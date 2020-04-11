@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Go Comics",
   "start_url": "http://www.gocomics.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Go%20Comics.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Go%20Comics.hermit",
   "theme_color": "#a6b9ca",
   "secondary_color": "#95a6b5",
   "icon": "favicon.png",

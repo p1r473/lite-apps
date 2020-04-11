@@ -3,7 +3,7 @@
   "name": "CVS Pharmacy",
   "priority": 10,
   "start_url": "http://m.cvs.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/CVS%20Pharmacy.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CVS%20Pharmacy.hermit",
   "theme_color": "#cc0001",
   "secondary_color": "#f23859",
   "tags": [

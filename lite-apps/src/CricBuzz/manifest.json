@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "CricBuzz",
   "start_url": "https://cricbuzz.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/CricBuzz.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CricBuzz.hermit",
   "theme_color": "#bdceda",
   "secondary_color": "#aab9c4",
   "icon": "favicon.png",

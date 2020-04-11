@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "TaoBao",
   "start_url": "http://taobao.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/TaoBao.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TaoBao.hermit",
   "theme_color": "#fe7100",
   "secondary_color": "#e46500",
   "icon": "favicon.png",

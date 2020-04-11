@@ -4,7 +4,7 @@
   "name": "TV Guide",
   "priority": 10,
   "start_url": "https://tvguide.com/listings/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/TV%20Guide.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TV%20Guide.hermit",
   "secondary_color": "#8f1209",
   "icon": "favicon.png",
   "related_applications": [

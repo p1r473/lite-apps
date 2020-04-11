@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Google Books",
   "start_url": "https://books.google.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20Books.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Google%20Books.hermit",
   "theme_color": "#3ed7fa",
   "secondary_color": "#37c1e1",
   "priority": 10,

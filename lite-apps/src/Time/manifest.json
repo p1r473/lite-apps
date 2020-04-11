@@ -4,7 +4,7 @@
   "name": "Time",
   "priority": 10,
   "start_url": "https://time.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Time.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Time.hermit",
   "secondary_color": "#c00001",
   "icon": "favicon.png",
   "bookmarks": [

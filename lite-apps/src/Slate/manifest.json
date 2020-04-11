@@ -4,7 +4,7 @@
   "name": "Slate",
   "priority": 10,
   "start_url": "http://slate.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Slate.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Slate.hermit",
   "secondary_color": "#530229",
   "icon": "favicon.png",
   "feeds": [

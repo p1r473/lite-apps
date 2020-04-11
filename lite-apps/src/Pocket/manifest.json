@@ -4,7 +4,7 @@
   "name": "Pocket",
   "priority": 10,
   "start_url": "https://getpocket.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Pocket.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Pocket.hermit",
   "secondary_color": "#d6394c",
   "icon": "favicon.png",
   "tags": [

@@ -4,7 +4,7 @@
   "name": "NextDoor",
   "priority": 10,
   "start_url": "https://nextdoor.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/NextDoor.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NextDoor.hermit",
   "secondary_color": "#44b95c",
   "icon": "favicon.png",
   "tags": [

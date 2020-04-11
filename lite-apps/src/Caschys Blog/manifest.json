@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Caschys Blog",
   "start_url": "http://stadt-bremerhaven.de/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Caschys%20Blog.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Caschys%20Blog.hermit",
   "theme_color": "#0473bd",
   "secondary_color": "#0367aa",
   "icon": "favicon.png",

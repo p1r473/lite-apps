@@ -3,7 +3,7 @@
   "name": "APK Mirror",
   "priority": 10,
   "start_url": "http://www.apkmirror.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/APK%20Mirror.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/APK%20Mirror.hermit",
   "theme_color": "#ff9800",
   "secondary_color": "#f57c00",
   "icon": "favicon.png",

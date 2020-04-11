@@ -4,7 +4,7 @@
   "name": "FlipKart",
   "priority": 90,
   "start_url": "https://flipkart.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/FlipKart.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/FlipKart.hermit",
   "secondary_color": "#016ebe",
   "icon": "favicon.png",
   "tags": [

@@ -3,7 +3,7 @@
   "name": "Priceline",
   "priority": 10,
   "start_url": "http://priceline.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Priceline.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Priceline.hermit",
   "theme_color": "#0a84c1",
   "secondary_color": "#0976ad",
   "tags": [

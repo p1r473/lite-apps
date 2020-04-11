@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Quikr",
   "start_url": "https://quikr.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Quikr.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Quikr.hermit",
   "theme_color": "#0faa13",
   "secondary_color": "#0d9911",
   "icon": "favicon.png",

@@ -4,7 +4,7 @@
   "name": "Retail Me Not",
   "priority": 10,
   "start_url": "https://m.retailmenot.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Retail%20Me%20Not.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Retail%20Me%20Not.hermit",
   "secondary_color": "#6c347f",
   "icon": "favicon.png",
   "search": [

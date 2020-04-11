@@ -4,7 +4,7 @@
   "name": "Wall St. Journal",
   "priority": 10,
   "start_url": "https://mobile.wsj.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Wall%20St.%20Journal.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wall%20St.%20Journal.hermit",
   "secondary_color": "#000000",
   "icon": "favicon.png",
   "tags": [

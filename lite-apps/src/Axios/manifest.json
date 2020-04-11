@@ -4,7 +4,7 @@
   "name": "Axios",
   "priority": 10,
   "start_url": "https://www.axios.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Axios.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Axios.hermit",
   "secondary_color": "#007eb4",
   "icon": "favicon.png",
   "bookmarks": [

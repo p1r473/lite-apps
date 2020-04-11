@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "WebFlap",
   "start_url": "https://www.progressivewebflap.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/WebFlap.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/WebFlap.hermit",
   "theme_color": "#719836",
   "secondary_color": "#658830",
   "icon": "favicon.png",

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Jio",
   "start_url": "https://jio.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Jio.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Jio.hermit",
   "theme_color": "#005aab",
   "secondary_color": "#005199",
   "icon": "favicon.png",

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Android Messages",
   "start_url": "https://messages.android.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Messages.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20Messages.hermit",
   "theme_color": "#2b55be",
   "secondary_color": "#264cab",
   "icon": "favicon.png",

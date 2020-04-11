@@ -4,7 +4,7 @@
   "name": "Dropbox",
   "priority": 90,
   "start_url": "https://dropbox.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Dropbox.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Dropbox.hermit",
   "secondary_color": "#0994e1",
   "icon": "favicon.png",
   "tags": [

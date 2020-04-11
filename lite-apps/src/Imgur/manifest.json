@@ -4,7 +4,7 @@
   "name": "Imgur",
   "priority": 10,
   "start_url": "https://imgur.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Imgur.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Imgur.hermit",
   "secondary_color": "#35be3c",
   "icon": "favicon.png",
   "tags": [

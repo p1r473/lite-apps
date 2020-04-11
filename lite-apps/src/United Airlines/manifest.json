@@ -4,7 +4,7 @@
   "name": "United Airlines",
   "priority": 10,
   "start_url": "https://mobile.united.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/United%20Airlines.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/United%20Airlines.hermit",
   "secondary_color": "#000089",
   "icon": "favicon.png",
   "related_applications": [

@@ -4,7 +4,7 @@
   "name": "Groupon",
   "priority": 10,
   "start_url": "https://groupon.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Groupon.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Groupon.hermit",
   "secondary_color": "#7aa83e",
   "icon": "favicon.png",
   "bookmarks": [

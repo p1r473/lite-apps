@@ -4,7 +4,7 @@
   "name": "Bored Panda",
   "priority": 50,
   "start_url": "http://boredpanda.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Bored%20Panda.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Bored%20Panda.hermit",
   "secondary_color": "#000000",
   "icon": "favicon.png",
   "bookmarks": [

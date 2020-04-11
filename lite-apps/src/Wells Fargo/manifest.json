@@ -4,7 +4,7 @@
   "name": "Wells Fargo",
   "priority": 10,
   "start_url": "https://m.wellsfargo.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Wells%20Fargo.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wells%20Fargo.hermit",
   "secondary_color": "#d8a3a9",
   "icon": "favicon.png",
   "related_applications": [

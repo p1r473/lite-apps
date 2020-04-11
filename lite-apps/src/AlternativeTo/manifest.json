@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "AlternativeTo",
   "start_url": "https://alternativeto.net/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/AlternativeTo.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AlternativeTo.hermit",
   "theme_color": "#1073a8",
   "secondary_color": "#0e6797",
   "icon": "favicon.png",

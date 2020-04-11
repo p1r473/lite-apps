@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "NDTV",
   "start_url": "https://www.ndtv.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/NDTV.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NDTV.hermit",
   "theme_color": "#4d0001",
   "secondary_color": "#450000",
   "icon": "favicon.png",

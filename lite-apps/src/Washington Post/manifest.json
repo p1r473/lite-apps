@@ -4,7 +4,7 @@
   "name": "Washington Post",
   "priority": 50,
   "start_url": "https://m.washingtonpost.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Washington%20Post.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Washington%20Post.hermit",
   "secondary_color": "#001010",
   "icon": "favicon.png",
   "monitors": [

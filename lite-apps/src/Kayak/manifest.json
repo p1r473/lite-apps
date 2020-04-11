@@ -4,7 +4,7 @@
   "name": "Kayak",
   "priority": 10,
   "start_url": "https://kayak.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Kayak.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Kayak.hermit",
   "secondary_color": "#e28135",
   "icon": "favicon.png",
   "bookmarks": [

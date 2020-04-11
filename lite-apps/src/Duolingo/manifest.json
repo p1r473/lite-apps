@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Duolingo.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Duolingo.hermit",
   "name": "Duolingo",
   "priority": 10,
   "start_url": "https://www.duolingo.com/",

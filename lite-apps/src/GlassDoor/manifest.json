@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "GlassDoor",
   "start_url": "https://www.glassdoor.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/GlassDoor.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/GlassDoor.hermit",
   "theme_color": "#5faa04",
   "secondary_color": "#559903",
   "icon": "favicon.png",

@@ -4,7 +4,7 @@
   "name": "RBC Canada",
   "priority": 10,
   "start_url": "https://www.rbcroyalbank.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/RBC%20Canada.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/RBC%20Canada.hermit",
   "secondary_color": "#223173",
   "icon": "favicon.png",
   "tags": [

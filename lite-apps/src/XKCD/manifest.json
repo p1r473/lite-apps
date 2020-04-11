@@ -3,7 +3,7 @@
   "name": "XKCD",
   "priority": 10,
   "start_url": "https://m.xkcd.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/XKCD.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/XKCD.hermit",
   "theme_color": "#95a7c9",
   "secondary_color": "#6e7b92",
   "icon": "favicon.png",

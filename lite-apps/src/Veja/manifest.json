@@ -4,7 +4,7 @@
   "name": "Veja",
   "priority": 10,
   "start_url": "http://veja.abril.com.br/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Veja.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Veja.hermit",
   "secondary_color": "#004784",
   "icon": "favicon.png",
   "related_applications": [

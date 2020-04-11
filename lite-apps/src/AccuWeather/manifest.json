@@ -4,7 +4,7 @@
   "name": "AccuWeather",
   "priority": 10,
   "start_url": "https://m.accuweather.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/AccuWeather.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AccuWeather.hermit",
   "secondary_color": "#d84e12",
   "icon": "favicon.png",
   "tags": [

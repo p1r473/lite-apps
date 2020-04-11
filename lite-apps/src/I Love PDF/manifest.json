@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "I Love PDF",
   "start_url": "https://www.ilovepdf.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/I%20Love%20PDF.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/I%20Love%20PDF.hermit",
   "theme_color": "#ff302a",
   "secondary_color": "#e52b25",
   "icon": "favicon.png",

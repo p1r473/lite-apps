@@ -4,7 +4,7 @@
   "name": "Ha'aretz",
   "priority": 10,
   "start_url": "https://haaretz.co.il/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Haaretz.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Haaretz.hermit",
   "secondary_color": "#007ebe",
   "icon": "favicon.png",
   "related_applications": [

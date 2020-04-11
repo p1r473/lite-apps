@@ -4,7 +4,7 @@
   "name": "Android PIT",
   "priority": 10,
   "start_url": "https://www.androidpit.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20PIT.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20PIT.hermit",
   "secondary_color": "#3c9cc9",
   "icon": "favicon.png",
   "bookmarks": [

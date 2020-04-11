@@ -4,7 +4,7 @@
   "name": "Gmail",
   "priority": 90,
   "start_url": "https://mail.google.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Gmail.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Gmail.hermit",
   "secondary_color": "#c6483c",
   "icon": "favicon.png",
   "tags": [

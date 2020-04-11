@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Notes",
   "start_url": "https://sii.im/playground/notes/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Notes.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Notes.hermit",
   "theme_color": "#000000",
   "secondary_color": "#000000",
   "icon": "favicon.png",

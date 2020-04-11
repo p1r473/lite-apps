@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "NOAA Weather",
   "start_url": "http://mobile.weather.gov/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/NOAA%20Weather.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NOAA%20Weather.hermit",
   "theme_color": "#fd2e2e",
   "secondary_color": "#e32929",
   "icon": "favicon.png",

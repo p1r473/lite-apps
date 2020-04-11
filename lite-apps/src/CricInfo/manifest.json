@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "CricInfo",
   "start_url": "https://cricinfo.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/CricInfo.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CricInfo.hermit",
   "theme_color": "#00a9f4",
   "secondary_color": "#0098db",
   "icon": "favicon.png",

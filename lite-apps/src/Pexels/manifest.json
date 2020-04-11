@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Pexels",
   "start_url": "https://www.pexels.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Pexels.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Pexels.hermit",
   "theme_color": "#52ada1",
   "secondary_color": "#499b90",
   "icon": "favicon.png",

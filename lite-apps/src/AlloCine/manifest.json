@@ -4,7 +4,7 @@
   "name": "AlloCiné",
   "priority": 10,
   "start_url": "http://allocine.fr/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/AlloCine.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AlloCine.hermit",
   "secondary_color": "#e5b500",
   "icon": "favicon.png",
   "tags": [

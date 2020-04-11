@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "ICICI Bank",
   "start_url": "https://icicibank.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/ICICI%20Bank.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/ICICI%20Bank.hermit",
   "theme_color": "#9c2e23",
   "secondary_color": "#8c291f",
   "icon": "favicon.png",

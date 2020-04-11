@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Flight Aware",
   "start_url": "https://flightaware.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Flight%20Aware.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Flight%20Aware.hermit",
   "theme_color": "#d6edfd",
   "secondary_color": "#c0d5e3",
   "icon": "favicon.png",

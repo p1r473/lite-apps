@@ -4,7 +4,7 @@
   "name": "Hacker News",
   "priority": 10,
   "start_url": "https://news.ycombinator.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Hacker%20News.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Hacker%20News.hermit",
   "secondary_color": "#e55b00",
   "icon": "favicon.png",
   "feeds": [

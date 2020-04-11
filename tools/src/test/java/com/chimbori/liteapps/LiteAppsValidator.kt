@@ -100,8 +100,8 @@ class LiteAppsValidator(private val liteApp: File) {
     try {
       val manifestUrl = URL(manifest.manifest_url)
       Assert.assertEquals("https", manifestUrl.protocol)
-      Assert.assertEquals("hermit.chimbori.com", manifestUrl.host)
-      assertTrue(manifestUrl.path.startsWith("/lite-apps/"))
+      Assert.assertEquals("lite-apps.chimbori.com", manifestUrl.host)
+      assertTrue(manifestUrl.path.startsWith("/lite-apps/v3/"))
       assertTrue(manifestUrl.path.endsWith(".hermit"))
       Assert.assertEquals(liteApp.name + ".hermit", File(URLDecoder.decode(manifestUrl.file, "UTF-8")).name)
     } catch (e: MalformedURLException) {

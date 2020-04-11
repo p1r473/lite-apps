@@ -4,7 +4,7 @@
   "name": "Gizmodo",
   "priority": 10,
   "start_url": "https://gizmodo.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Gizmodo.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Gizmodo.hermit",
   "secondary_color": "#000000",
   "icon": "favicon.png",
   "feeds": [

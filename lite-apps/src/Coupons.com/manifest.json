@@ -3,7 +3,7 @@
   "name": "Coupons.com",
   "priority": 10,
   "start_url": "https://www.coupons.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Coupons.com.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Coupons.com.hermit",
   "theme_color": "#e67452",
   "secondary_color": "#ffc64b",
   "tags": [

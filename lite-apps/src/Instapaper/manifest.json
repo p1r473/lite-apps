@@ -3,7 +3,7 @@
   "name": "Instapaper",
   "priority": 10,
   "start_url": "https://instapaper.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Instapaper.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Instapaper.hermit",
   "theme_color": "#9a938d",
   "secondary_color": "#414042",
   "icon": "favicon.png",

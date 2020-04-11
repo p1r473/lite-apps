@@ -3,7 +3,7 @@
   "name": "Craigslist",
   "priority": 10,
   "start_url": "https://craigslist.org/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Craigslist.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Craigslist.hermit",
   "theme_color": "#5c008e",
   "secondary_color": "#5c008e",
   "icon": "favicon.png",

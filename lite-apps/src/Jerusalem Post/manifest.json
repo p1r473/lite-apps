@@ -4,7 +4,7 @@
   "name": "Jerusalem Post",
   "priority": 10,
   "start_url": "http://m.jpost.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Jerusalem%20Post.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Jerusalem%20Post.hermit",
   "secondary_color": "#ac4548",
   "icon": "favicon.png",
   "tags": [

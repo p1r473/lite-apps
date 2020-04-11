@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Tempo",
   "start_url": "https://sii.im/playground/tempo/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Tempo.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Tempo.hermit",
   "theme_color": "#120d2f",
   "secondary_color": "#120d2f",
   "icon": "favicon.png",

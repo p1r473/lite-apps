@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Tildes",
   "start_url": "https://tildes.net/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Tildes.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Tildes.hermit",
   "theme_color": "#002b36",
   "secondary_color": "#002630",
   "icon": "favicon.png",

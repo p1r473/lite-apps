@@ -4,7 +4,7 @@
   "name": "MixCloud",
   "priority": 10,
   "start_url": "https://m.mixcloud.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/MixCloud.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/MixCloud.hermit",
   "secondary_color": "#334a5e",
   "icon": "favicon.png",
   "related_applications": [

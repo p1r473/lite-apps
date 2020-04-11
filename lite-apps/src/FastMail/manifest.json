@@ -4,7 +4,7 @@
   "name": "FastMail",
   "priority": 10,
   "start_url": "https://www.fastmail.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/FastMail.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/FastMail.hermit",
   "secondary_color": "#e2ab22",
   "icon": "favicon.png",
   "tags": [

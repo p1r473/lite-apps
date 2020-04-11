@@ -4,7 +4,7 @@
   "name": "Yelp",
   "priority": 90,
   "start_url": "https://m.yelp.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Yelp.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Yelp.hermit",
   "secondary_color": "#bb1b0a",
   "icon": "favicon.png",
   "tags": [

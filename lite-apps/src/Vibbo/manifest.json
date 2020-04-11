@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Vibbo",
   "start_url": "https://www.vibbo.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Vibbo.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Vibbo.hermit",
   "theme_color": "#009f98",
   "secondary_color": "#008f88",
   "icon": "favicon.png",

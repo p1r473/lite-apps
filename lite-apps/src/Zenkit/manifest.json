@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Zenkit",
   "start_url": "https://zenkit.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Zenkit.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Zenkit.hermit",
   "theme_color": "#ff72b5",
   "secondary_color": "#e566a2",
   "icon": "favicon.png",

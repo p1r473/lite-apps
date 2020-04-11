@@ -4,7 +4,7 @@
   "name": "Al Jazeera",
   "priority": 10,
   "start_url": "http://aljazeera.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Al%20Jazeera.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Al%20Jazeera.hermit",
   "secondary_color": "#e47300",
   "icon": "favicon.png",
   "bookmarks": [

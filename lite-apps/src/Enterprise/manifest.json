@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Enterprise",
   "start_url": "https://www.enterprise.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Enterprise.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Enterprise.hermit",
   "theme_color": "#01975a",
   "secondary_color": "#2fa470",
   "priority": 10,

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "MakeMyTrip",
   "start_url": "https://makemytrip.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/MakeMyTrip.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/MakeMyTrip.hermit",
   "theme_color": "#ce381e",
   "secondary_color": "#b9321b",
   "icon": "favicon.png",

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Windy",
   "start_url": "https://www.windy.com",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Windy.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Windy.hermit",
   "theme_color": "#970400",
   "secondary_color": "#870300",
   "icon": "favicon.png",

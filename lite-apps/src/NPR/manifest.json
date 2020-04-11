@@ -4,7 +4,7 @@
   "name": "NPR",
   "priority": 10,
   "start_url": "http://npr.org/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/NPR.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NPR.hermit",
   "secondary_color": "#244890",
   "icon": "favicon.png",
   "bookmarks": [

@@ -4,7 +4,7 @@
   "name": "Delta Airlines",
   "priority": 10,
   "start_url": "https://m.delta.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Delta%20Airlines.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Delta%20Airlines.hermit",
   "secondary_color": "#15397d",
   "icon": "favicon.png",
   "tags": [

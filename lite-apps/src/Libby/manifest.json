@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Libby",
   "start_url": "https://libbyapp.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Libby.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Libby.hermit",
   "theme_color": "#631a35",
   "secondary_color": "#59172f",
   "icon": "favicon.png",

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Google Maps",
   "start_url": "https://www.google.com/maps/?force=qVTs2FOxxTmHHo79-pwa",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Google%20Maps.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Google%20Maps.hermit",
   "theme_color": "#dd4d40",
   "secondary_color": "#c64539",
   "icon": "favicon.png",

@@ -4,7 +4,7 @@
   "name": "SoundCloud",
   "priority": 10,
   "start_url": "https://m.soundcloud.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/SoundCloud.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/SoundCloud.hermit",
   "secondary_color": "#e57900",
   "icon": "favicon.png",
   "tags": [

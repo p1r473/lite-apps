@@ -4,7 +4,7 @@
   "name": "Estadao",
   "priority": 10,
   "start_url": "http://www.estadao.com.br/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Estadao.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Estadao.hermit",
   "secondary_color": "#5a81a2",
   "icon": "favicon.png",
   "bookmarks": [

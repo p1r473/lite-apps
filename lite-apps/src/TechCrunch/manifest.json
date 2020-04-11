@@ -4,7 +4,7 @@
   "name": "TechCrunch",
   "priority": 10,
   "start_url": "https://techcrunch.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/TechCrunch.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TechCrunch.hermit",
   "secondary_color": "#007a0b",
   "icon": "favicon.png",
   "bookmarks": [

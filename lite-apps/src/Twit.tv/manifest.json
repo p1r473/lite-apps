@@ -4,7 +4,7 @@
   "name": "Twit.tv",
   "priority": 10,
   "start_url": "https://twit.tv/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Twit.tv.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Twit.tv.hermit",
   "secondary_color": "#2e99bd",
   "icon": "favicon.png",
   "tags": [

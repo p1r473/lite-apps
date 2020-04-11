@@ -3,7 +3,7 @@
   "name": "The A.V. Club",
   "priority": 10,
   "start_url": "http://avclub.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20A.V.%20Club.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/The%20A.V.%20Club.hermit",
   "theme_color": "#1c243c",
   "secondary_color": "#1d263c",
   "icon": "favicon.png",

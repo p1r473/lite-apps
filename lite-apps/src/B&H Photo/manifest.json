@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "B&H Photo",
   "start_url": "https://www.bhphotovideo.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/B%26H%20Photo.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/B%26H%20Photo.hermit",
   "theme_color": "#d74a2c",
   "secondary_color": "#c14227",
   "icon": "favicon.png",

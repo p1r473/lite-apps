@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "DQ 地球圖輯隊",
   "start_url": "https://dq.yam.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/DQ%20%E5%9C%B0%E7%90%83%E5%9C%96%E8%BC%AF%E9%9A%8A.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/DQ%20%E5%9C%B0%E7%90%83%E5%9C%96%E8%BC%AF%E9%9A%8A.hermit",
   "theme_color": "#245b90",
   "secondary_color": "#205181",
   "icon": "favicon.png",

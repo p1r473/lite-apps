@@ -4,7 +4,7 @@
   "name": "AliExpress",
   "priority": 10,
   "start_url": "https://m.aliexpress.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/AliExpress.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AliExpress.hermit",
   "secondary_color": "#cd2d09",
   "icon": "favicon.png",
   "tags": [

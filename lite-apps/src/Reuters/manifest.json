@@ -4,7 +4,7 @@
   "name": "Reuters",
   "priority": 50,
   "start_url": "http://www.reuters.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Reuters.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Reuters.hermit",
   "secondary_color": "#e59646",
   "icon": "favicon.png",
   "bookmarks": [

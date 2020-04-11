@@ -4,7 +4,7 @@
   "name": "FiveThirtyEight",
   "priority": 10,
   "start_url": "https://fivethirtyeight.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/FiveThirtyEight.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/FiveThirtyEight.hermit",
   "secondary_color": "#d76631",
   "icon": "favicon.png",
   "bookmarks": [

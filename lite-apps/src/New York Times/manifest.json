@@ -3,7 +3,7 @@
   "name": "New York Times",
   "priority": 50,
   "start_url": "http://mobile.nytimes.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/New%20York%20Times.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/New%20York%20Times.hermit",
   "theme_color": "#000000",
   "secondary_color": "#333333",
   "icon": "favicon.png",

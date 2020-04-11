@@ -4,7 +4,7 @@
   "name": "Amazon",
   "priority": 100,
   "start_url": "https://amazon.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Amazon.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Amazon.hermit",
   "secondary_color": "#3073a7",
   "icon": "favicon.png",
   "search": [

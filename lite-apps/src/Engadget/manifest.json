@@ -4,7 +4,7 @@
   "name": "Engadget",
   "priority": 10,
   "start_url": "http://engadget.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Engadget.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Engadget.hermit",
   "secondary_color": "#0891d9",
   "icon": "favicon.png",
   "bookmarks": [

@@ -4,7 +4,7 @@
   "name": "Designer News",
   "priority": 10,
   "start_url": "http://designernews.co/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Designer%20News.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Designer%20News.hermit",
   "secondary_color": "#2665c1",
   "icon": "favicon.png",
   "bookmarks": [

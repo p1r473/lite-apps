@@ -4,7 +4,7 @@
   "name": "Globo eSporte",
   "priority": 10,
   "start_url": "http://globoesporte.globo.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Globo%20eSporte.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Globo%20eSporte.hermit",
   "secondary_color": "#5e674a",
   "icon": "favicon.png",
   "tags": [

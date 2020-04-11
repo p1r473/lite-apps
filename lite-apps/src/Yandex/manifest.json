@@ -4,7 +4,7 @@
   "name": "Yandex",
   "priority": 10,
   "start_url": "https://yandex.ru/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Yandex.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Yandex.hermit",
   "secondary_color": "#e50000",
   "icon": "favicon.png",
   "search": [

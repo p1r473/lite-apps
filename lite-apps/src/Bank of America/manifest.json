@@ -4,7 +4,7 @@
   "name": "Bank of America",
   "priority": 10,
   "start_url": "https://bankofamerica.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Bank%20of%20America.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Bank%20of%20America.hermit",
   "secondary_color": "#c6122c",
   "icon": "favicon.png",
   "bookmarks": [

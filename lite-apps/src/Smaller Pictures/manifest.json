@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Smaller Pictures",
   "start_url": "https://smaller-pictures.appspot.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Smaller%20Pictures.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Smaller%20Pictures.hermit",
   "theme_color": "#b1951b",
   "secondary_color": "#9f8618",
   "icon": "favicon.png",

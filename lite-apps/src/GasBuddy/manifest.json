@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "GasBuddy",
   "start_url": "https://gasbuddy.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/GasBuddy.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/GasBuddy.hermit",
   "theme_color": "#0098a9",
   "secondary_color": "#008898",
   "icon": "favicon.png",

@@ -4,7 +4,7 @@
   "name": "Baidu",
   "priority": 10,
   "start_url": "https://baidu.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Baidu.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Baidu.hermit",
   "secondary_color": "#a1b4e5",
   "icon": "favicon.png",
   "search": [

@@ -4,7 +4,7 @@
   "name": "ReCode",
   "priority": 10,
   "start_url": "https://recode.net/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/ReCode.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/ReCode.hermit",
   "secondary_color": "#b20015",
   "icon": "favicon.png",
   "feeds": [

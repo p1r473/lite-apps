@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "IRCTC",
   "start_url": "https://irctc.co.in/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/IRCTC.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/IRCTC.hermit",
   "theme_color": "#3c9ccf",
   "secondary_color": "#368cba",
   "icon": "favicon.png",

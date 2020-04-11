@@ -3,7 +3,7 @@
   "name": "Walgreens",
   "priority": 10,
   "start_url": "https://www.walgreens.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Walgreens.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Walgreens.hermit",
   "theme_color": "#4c6971",
   "secondary_color": "#445e65",
   "tags": [

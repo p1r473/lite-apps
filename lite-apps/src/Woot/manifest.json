@@ -4,7 +4,7 @@
   "name": "Woot",
   "priority": 10,
   "start_url": "https://woot.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Woot.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Woot.hermit",
   "secondary_color": "#75a914",
   "icon": "favicon.png",
   "feeds": [

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Wavepad",
   "start_url": "https://alexgibson.github.io/wavepad/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Wavepad.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wavepad.hermit",
   "theme_color": "#d81f38",
   "secondary_color": "#c21b32",
   "icon": "favicon.png",

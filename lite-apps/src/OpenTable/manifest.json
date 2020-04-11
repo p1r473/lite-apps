@@ -4,7 +4,7 @@
   "name": "OpenTable",
   "priority": 10,
   "start_url": "https://m.opentable.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/OpenTable.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/OpenTable.hermit",
   "secondary_color": "#b40e1a",
   "icon": "favicon.png",
   "tags": [

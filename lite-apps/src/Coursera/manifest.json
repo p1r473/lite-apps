@@ -4,7 +4,7 @@
   "name": "Coursera",
   "priority": 10,
   "start_url": "https://www.coursera.org/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Coursera.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Coursera.hermit",
   "secondary_color": "#3f7bb2",
   "icon": "favicon.png",
   "bookmarks": [

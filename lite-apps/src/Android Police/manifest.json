@@ -4,7 +4,7 @@
   "name": "Android Police",
   "priority": 10,
   "start_url": "https://androidpolice.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Police.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20Police.hermit",
   "secondary_color": "#d51826",
   "icon": "favicon.png",
   "tags": [

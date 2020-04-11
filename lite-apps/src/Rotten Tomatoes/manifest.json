@@ -4,7 +4,7 @@
   "name": "Rotten Tomatoes",
   "priority": 50,
   "start_url": "https://rottentomatoes.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Rotten%20Tomatoes.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Rotten%20Tomatoes.hermit",
   "secondary_color": "#0a7bb4",
   "icon": "favicon.png",
   "bookmarks": [

@@ -4,7 +4,7 @@
   "name": "IMDb",
   "priority": 50,
   "start_url": "https://m.imdb.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/IMDb.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/IMDb.hermit",
   "secondary_color": "#ddcc87",
   "icon": "favicon.png",
   "search": [

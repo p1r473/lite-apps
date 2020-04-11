@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "edX",
   "start_url": "https://www.edx.org/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/edX.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/edX.hermit",
   "theme_color": "#479fdb",
   "secondary_color": "#3f8fc5",
   "icon": "favicon.png",

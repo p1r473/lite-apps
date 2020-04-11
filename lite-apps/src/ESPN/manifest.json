@@ -4,7 +4,7 @@
   "name": "ESPN",
   "priority": 10,
   "start_url": "http://www.espn.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/ESPN.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/ESPN.hermit",
   "secondary_color": "#d6122d",
   "icon": "favicon.png",
   "bookmarks": [

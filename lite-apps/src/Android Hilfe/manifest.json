@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Android Hilfe",
   "start_url": "http://www.android-hilfe.de/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Hilfe.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20Hilfe.hermit",
   "theme_color": "#1d9788",
   "secondary_color": "#1a877a",
   "icon": "favicon.png",

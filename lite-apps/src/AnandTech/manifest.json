@@ -4,7 +4,7 @@
   "name": "AnandTech",
   "priority": 10,
   "start_url": "http://www.anandtech.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/AnandTech.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AnandTech.hermit",
   "secondary_color": "#4f9ab6",
   "icon": "favicon.png",
   "bookmarks": [

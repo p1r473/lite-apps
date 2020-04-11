@@ -4,7 +4,7 @@
   "name": "Flipboard",
   "priority": 10,
   "start_url": "https://flipboard.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Flipboard.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Flipboard.hermit",
   "secondary_color": "#ca2424",
   "icon": "favicon.png",
   "tags": [

@@ -4,7 +4,7 @@
   "name": "Instagram",
   "priority": 50,
   "start_url": "https://instagram.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Instagram.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Instagram.hermit",
   "secondary_color": "#213332",
   "icon": "favicon.png",
   "settings": {

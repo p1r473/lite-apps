@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Mediafire",
   "start_url": "https://www.mediafire.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Mediafire.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Mediafire.hermit",
   "theme_color": "#2f7cd0",
   "secondary_color": "#2a6fbb",
   "icon": "favicon.png",

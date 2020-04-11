@@ -4,7 +4,7 @@
   "name": "TechMeme",
   "priority": 10,
   "start_url": "https://techmeme.com/m/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/TechMeme.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TechMeme.hermit",
   "secondary_color": "#1b4459",
   "icon": "favicon.png",
   "tags": [

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Naukri",
   "start_url": "https://naukri.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Naukri.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Naukri.hermit",
   "theme_color": "#0c77c0",
   "secondary_color": "#0a6bac",
   "icon": "favicon.png",

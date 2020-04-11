@@ -4,7 +4,7 @@
   "name": "Android Central",
   "priority": 10,
   "start_url": "https://m.androidcentral.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Android%20Central.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20Central.hermit",
   "secondary_color": "#c1ce73",
   "icon": "favicon.png",
   "feeds": [

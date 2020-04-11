@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Mail.com",
   "start_url": "https://www.mail.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Mail.com.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Mail.com.hermit",
   "theme_color": "#003b8f",
   "secondary_color": "#003580",
   "icon": "favicon.png",

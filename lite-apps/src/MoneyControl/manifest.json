@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "MoneyControl",
   "start_url": "https://moneycontrol.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/MoneyControl.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/MoneyControl.hermit",
   "theme_color": "#54a732",
   "secondary_color": "#4b962d",
   "icon": "favicon.png",

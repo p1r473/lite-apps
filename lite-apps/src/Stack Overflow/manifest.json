@@ -4,7 +4,7 @@
   "name": "Stack Overflow",
   "priority": 10,
   "start_url": "https://stackoverflow.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Stack%20Overflow.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Stack%20Overflow.hermit",
   "secondary_color": "#cc5a27",
   "icon": "favicon.png",
   "related_applications": [

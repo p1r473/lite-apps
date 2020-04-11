@@ -4,7 +4,7 @@
   "name": "Skype",
   "priority": 10,
   "start_url": "https://web.skype.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Skype.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Skype.hermit",
   "secondary_color": "#008ec2",
   "icon": "favicon.png",
   "settings": {

@@ -3,7 +3,7 @@
   "name": "Bing",
   "priority": 10,
   "start_url": "https://www.bing.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Bing.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Bing.hermit",
   "theme_color": "#008485",
   "secondary_color": "#43a3a4",
   "icon": "favicon.png",

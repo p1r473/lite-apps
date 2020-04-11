@@ -4,7 +4,7 @@
   "name": "StartPage",
   "priority": 10,
   "start_url": "https://www.startpage.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/StartPage.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/StartPage.hermit",
   "secondary_color": "#d1d7e1",
   "icon": "favicon.png",
   "bookmarks": [

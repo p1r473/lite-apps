@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Atlas Obscura",
   "start_url": "https://www.atlasobscura.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Atlas%20Obscura.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Atlas%20Obscura.hermit",
   "theme_color": "#382c14",
   "secondary_color": "#322712",
   "icon": "favicon.png",

@@ -24,7 +24,7 @@ import javax.imageio.ImageIO
  * Generates a skeleton Lite App with as many fields pre-filled as possible.
  */
 internal object Scaffolder {
-  private const val MANIFEST_URL_TEMPLATE = "https://hermit.chimbori.com/lite-apps/%s.hermit"
+  private const val MANIFEST_URL_TEMPLATE = "https://lite-apps.chimbori.com/lite-apps/v3/%s.hermit"
   private const val COMMAND_LINE_OPTION_URL = "url"
   private const val COMMAND_LINE_OPTION_NAME = "name"
   private const val CURRENT_MANIFEST_VERSION = 3

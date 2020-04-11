@@ -4,7 +4,7 @@
   "name": "Plex",
   "priority": 10,
   "start_url": "https://plex.tv/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Plex.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Plex.hermit",
   "secondary_color": "#b97000",
   "icon": "favicon.png",
   "tags": [

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Twitch",
   "start_url": "https://twitch.tv/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Twitch.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Twitch.hermit",
   "theme_color": "#6341a5",
   "secondary_color": "#593a94",
   "icon": "favicon.png",

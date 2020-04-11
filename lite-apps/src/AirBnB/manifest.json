@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "AirBnB",
   "start_url": "https://www.airbnb.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/AirBnB.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AirBnB.hermit",
   "theme_color": "#ff5a5f",
   "secondary_color": "#e55155",
   "icon": "favicon.png",

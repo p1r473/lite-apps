@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Pokedex",
   "start_url": "https://www.pokedex.org/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Pokedex.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Pokedex.hermit",
   "theme_color": "#89061c",
   "secondary_color": "#7b0519",
   "icon": "favicon.png",

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Incredible India",
   "start_url": "https://incredibleindia.org/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Incredible%20India.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Incredible%20India.hermit",
   "theme_color": "#bad9b7",
   "secondary_color": "#a7c3a4",
   "icon": "favicon.png",

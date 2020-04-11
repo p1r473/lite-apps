@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Can I Stream It",
   "start_url": "http://www.canistream.it/mobile/query/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Can%20I%20Stream%20It.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Can%20I%20Stream%20It.hermit",
   "theme_color": "#35a5a1",
   "secondary_color": "#2f9490",
   "icon": "favicon.png",

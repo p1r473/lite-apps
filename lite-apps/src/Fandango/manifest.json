@@ -3,7 +3,7 @@
   "name": "Fandango",
   "priority": 50,
   "start_url": "https://mobile.fandango.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Fandango.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Fandango.hermit",
   "theme_color": "#f17604",
   "secondary_color": "#398ce1",
   "icon": "favicon.png",

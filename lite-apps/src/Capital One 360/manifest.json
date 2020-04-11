@@ -4,7 +4,7 @@
   "name": "Capital One 360",
   "priority": 10,
   "start_url": "https://home.capitalone360.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Capital%20One%20360.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Capital%20One%20360.hermit",
   "secondary_color": "#89c1d6",
   "icon": "favicon.png",
   "tags": [

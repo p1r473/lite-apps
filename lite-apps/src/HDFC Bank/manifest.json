@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "HDFC Bank",
   "start_url": "https://hdfcbank.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/HDFC%20Bank.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/HDFC%20Bank.hermit",
   "theme_color": "#ee7873",
   "secondary_color": "#d66c67",
   "icon": "favicon.png",

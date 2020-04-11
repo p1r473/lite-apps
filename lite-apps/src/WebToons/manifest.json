@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "WebToons",
   "start_url": "https://m.webtoons.com/en/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/WebToons.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/WebToons.hermit",
   "theme_color": "#00d564",
   "secondary_color": "#00bf5a",
   "icon": "favicon.png",

@@ -4,7 +4,7 @@
   "name": "Todoist",
   "priority": 10,
   "start_url": "https://todoist.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Todoist.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Todoist.hermit",
   "secondary_color": "#a92e28",
   "icon": "favicon.png",
   "tags": [

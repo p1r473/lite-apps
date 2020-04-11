@@ -4,7 +4,7 @@
   "name": "The Guardian",
   "priority": 50,
   "start_url": "https://theguardian.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/The%20Guardian.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/The%20Guardian.hermit",
   "secondary_color": "#004d7b",
   "icon": "favicon.png",
   "bookmarks": [

@@ -4,7 +4,7 @@
   "name": "Hotstar",
   "priority": 10,
   "start_url": "http://hotstar.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Hotstar.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Hotstar.hermit",
   "secondary_color": "#636300",
   "icon": "favicon.png",
   "tags": [

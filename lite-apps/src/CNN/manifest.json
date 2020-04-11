@@ -4,7 +4,7 @@
   "name": "CNN",
   "priority": 70,
   "start_url": "http://cnn.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/CNN.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CNN.hermit",
   "secondary_color": "#b70000",
   "icon": "favicon.png",
   "bookmarks": [

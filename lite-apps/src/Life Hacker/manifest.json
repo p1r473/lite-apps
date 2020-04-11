@@ -4,7 +4,7 @@
   "name": "Life Hacker",
   "priority": 10,
   "start_url": "https://lifehacker.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Life%20Hacker.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Life%20Hacker.hermit",
   "secondary_color": "#2c8b4d",
   "icon": "favicon.png",
   "feeds": [

@@ -4,7 +4,7 @@
   "name": "Orbitz",
   "priority": 10,
   "start_url": "https://www.orbitz.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Orbitz.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Orbitz.hermit",
   "secondary_color": "#009fe5",
   "icon": "favicon.png",
   "bookmarks": [

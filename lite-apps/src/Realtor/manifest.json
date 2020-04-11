@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Realtor",
   "start_url": "http://www.realtor.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Realtor.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Realtor.hermit",
   "theme_color": "#db251c",
   "secondary_color": "#de342e",
   "priority": 10,

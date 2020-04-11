@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Bleacher Report",
   "start_url": "https://bleacherreport.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Bleacher%20Report.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Bleacher%20Report.hermit",
   "theme_color": "#000000",
   "secondary_color": "#000000",
   "icon": "favicon.png",

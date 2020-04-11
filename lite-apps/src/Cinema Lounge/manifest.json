@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Cinema Lounge",
   "start_url": "https://cinemalounge.io/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Cinema%20Lounge.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Cinema%20Lounge.hermit",
   "theme_color": "#79c142",
   "secondary_color": "#6cad3b",
   "icon": "favicon.png",

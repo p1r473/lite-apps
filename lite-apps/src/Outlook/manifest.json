@@ -4,7 +4,7 @@
   "name": "Outlook",
   "priority": 10,
   "start_url": "https://outlook.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Outlook.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Outlook.hermit",
   "secondary_color": "#005ea3",
   "icon": "favicon.png",
   "tags": [

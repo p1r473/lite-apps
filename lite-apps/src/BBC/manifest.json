@@ -3,7 +3,7 @@
   "name": "BBC",
   "priority": 50,
   "start_url": "https://bbc.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/BBC.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/BBC.hermit",
   "theme_color": "#bd160d",
   "secondary_color": "#ab140d",
   "icon": "favicon.png",

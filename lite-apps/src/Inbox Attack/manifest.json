@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Inbox Attack",
   "start_url": "https://andreasbovens.github.io/inbox-attack/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Inbox%20Attack.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Inbox%20Attack.hermit",
   "theme_color": "#ccdea8",
   "secondary_color": "#b7c797",
   "icon": "favicon.png",

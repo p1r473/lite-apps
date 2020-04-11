@@ -3,7 +3,7 @@
   "name": "Target",
   "priority": 10,
   "start_url": "https://www.target.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Target.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Target.hermit",
   "theme_color": "#cc0000",
   "secondary_color": "#b70000",
   "tags": [

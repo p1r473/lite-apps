@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Trulia",
   "start_url": "https://m.trulia.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Trulia.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Trulia.hermit",
   "theme_color": "#57a418",
   "secondary_color": "#4e9315",
   "priority": 10,

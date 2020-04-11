@@ -4,7 +4,7 @@
   "name": "Sleepy Time",
   "priority": 10,
   "start_url": "http://sleepyti.me/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Sleepy%20Time.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Sleepy%20Time.hermit",
   "secondary_color": "#000000",
   "icon": "favicon.png",
   "tags": [

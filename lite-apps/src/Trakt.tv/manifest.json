@@ -4,7 +4,7 @@
   "name": "Trakt.tv",
   "priority": 10,
   "start_url": "https://trakt.tv/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Trakt.tv.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Trakt.tv.hermit",
   "secondary_color": "#d51e20",
   "icon": "favicon.png",
   "bookmarks": [

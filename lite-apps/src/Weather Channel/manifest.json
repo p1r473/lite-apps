@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Weather Channel",
   "start_url": "https://weather.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Weather%20Channel.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Weather%20Channel.hermit",
   "theme_color": "#003096",
   "secondary_color": "#002b87",
   "icon": "favicon.png",

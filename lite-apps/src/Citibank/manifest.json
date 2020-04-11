@@ -4,7 +4,7 @@
   "name": "Citibank",
   "priority": 10,
   "start_url": "https://online.citi.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Citibank.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Citibank.hermit",
   "secondary_color": "#003b6c",
   "icon": "favicon.png",
   "tags": [

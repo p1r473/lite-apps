@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Costco",
   "start_url": "https://www.costco.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Costco.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Costco.hermit",
   "theme_color": "#ee3a43",
   "secondary_color": "#d6343c",
   "icon": "favicon.png",

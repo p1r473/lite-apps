@@ -3,7 +3,7 @@
   "name": "Giphy",
   "priority": 10,
   "start_url": "https://giphy.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Giphy.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Giphy.hermit",
   "theme_color": "#fe6666",
   "secondary_color": "#00ccff",
   "icon": "favicon.png",

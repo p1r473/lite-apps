@@ -3,7 +3,7 @@
   "name": "Vimeo",
   "priority": 50,
   "start_url": "https://www.vimeo.com/",
-  "manifest_url": "https://hermit.chimbori.com/lite-apps/Vimeo.hermit",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Vimeo.hermit",
   "theme_color": "#00acf2",
   "secondary_color": "#009bd7",
   "icon": "favicon.png",
