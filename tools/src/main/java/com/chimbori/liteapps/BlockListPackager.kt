@@ -35,7 +35,7 @@ internal object BlockListPackager {
 
   /** Downloads all the meta-lists from index.json and saves them locally. */
   fun downloadFromSources() {
-    val metaList = MoshiAdapter.get(Config::class.java).fromJson(BLOCKLISTS_CONFIG_JSON.source().buffer())
+    val metaList = MoshiAdapter.getAdapter(Config::class.java).fromJson(BLOCKLISTS_CONFIG_JSON.source().buffer())
     metaList!!.packs!!.forEach { (displayName, fileName, sources) ->
       val blockListDirectory = File(BLOCKLISTS_SRC_DIR, displayName ?: fileName ?: "Default")
       blockListDirectory.mkdirs()
@@ -50,7 +50,7 @@ internal object BlockListPackager {
 
   /** Package multiple blocklists into a single JSON file, as specified in index.json. */
   fun packageBlockLists() {
-    val metaList = MoshiAdapter.get(Config::class.java).fromJson(BLOCKLISTS_CONFIG_JSON.source().buffer())
+    val metaList = MoshiAdapter.getAdapter(Config::class.java).fromJson(BLOCKLISTS_CONFIG_JSON.source().buffer())
     metaList!!.packs!!.forEach { (displayName, fileName, sources) ->
       val hosts = mutableSetOf<String>()
       val blockListDirectory = File(BLOCKLISTS_SRC_DIR, displayName)
@@ -74,7 +74,7 @@ internal object BlockListPackager {
           hosts = hosts.sortedBy { host -> host.toLowerCase() }
       )
       File(FilePaths.BLOCKLISTS_OUTPUT_DIR, fileName).writeText(
-          MoshiAdapter.get(BlockList::class.java).toJson(packagedBlockList))
+          MoshiAdapter.getAdapter(BlockList::class.java).toJson(packagedBlockList))
       println("  - Wrote ${hosts.size} hosts.")
     }
   }

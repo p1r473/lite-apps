@@ -1,10 +1,12 @@
 package com.chimbori.liteapps
 
-import com.chimbori.FilePaths.*
+import com.chimbori.FilePaths.ICONS_DIR_NAME
+import com.chimbori.FilePaths.LITE_APPS_SRC_DIR
+import com.chimbori.FilePaths.MANIFEST_JSON_FILE_NAME
 import com.chimbori.common.ColorExtractor.getDominantColor
 import com.chimbori.common.FileUtils
 import com.chimbori.common.Log
-import com.chimbori.hermitcrab.schema.common.MoshiAdapter.get
+import com.chimbori.hermitcrab.schema.common.MoshiAdapter.getAdapter
 import com.chimbori.hermitcrab.schema.manifest.IconFile.FAVICON_FILE
 import com.chimbori.hermitcrab.schema.manifest.Manifest
 import okio.buffer
@@ -41,7 +43,7 @@ internal object Scaffolder {
     val manifestJsonFile = File(liteAppDirectoryRoot, MANIFEST_JSON_FILE_NAME)
     // If the manifest.json exists, read it before modifying, else create a new JSON object.
     if (manifestJsonFile.exists()) {
-      manifest = get(Manifest::class.java).fromJson(manifestJsonFile.source().buffer())
+      manifest = getAdapter(Manifest::class.java).fromJson(manifestJsonFile.source().buffer())
     } else {
       Log.i("Creating new Lite App “%s”", appName)
       // Create the root directory if it doesn’t exist yet.
@@ -121,7 +123,7 @@ internal object Scaffolder {
 
     // Write the output manifest.
     println(manifest)
-    FileUtils.writeFile(manifestJsonFile, get(Manifest::class.java).toJson(manifest))
+    FileUtils.writeFile(manifestJsonFile, getAdapter(Manifest::class.java).toJson(manifest))
   }
 
   @JvmStatic

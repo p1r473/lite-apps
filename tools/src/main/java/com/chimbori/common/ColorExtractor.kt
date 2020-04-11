@@ -9,7 +9,6 @@ import java.awt.image.BufferedImage
  * to extract color from flat-color icons, it works well in practice for our dataset.
  */
 object ColorExtractor {
-  @JvmStatic
   fun getDominantColor(image: BufferedImage): Color? {
     val colorFrequencies = mutableMapOf<Color, Int>()
     val height = image.height

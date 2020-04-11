@@ -18,7 +18,6 @@ internal object LiteAppPackager {
    * Packages a single manifest from a source directory & individual files into a zipped file and
    * places it in the correct location.
    */
-  @JvmStatic
   fun packageManifest(liteAppDirectory: File): Boolean {
     val manifestJsonFile = File(liteAppDirectory, MANIFEST_JSON_FILE_NAME)
     val liteAppZippedFile = File(LITE_APPS_OUTPUT_DIR, "${liteAppDirectory.name}.hermit")

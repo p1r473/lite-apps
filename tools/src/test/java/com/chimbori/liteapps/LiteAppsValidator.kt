@@ -1,7 +1,9 @@
 package com.chimbori.liteapps
 
 import com.chimbori.FilePaths
-import com.chimbori.FilePaths.*
+import com.chimbori.FilePaths.LITE_APPS_OUTPUT_DIR
+import com.chimbori.FilePaths.LITE_APPS_SRC_DIR
+import com.chimbori.FilePaths.MANIFEST_JSON_FILE_NAME
 import com.chimbori.common.FileUtils
 import com.chimbori.hermitcrab.schema.common.MoshiAdapter
 import com.chimbori.hermitcrab.schema.manifest.Endpoint
@@ -129,7 +131,7 @@ class LiteAppsValidator(private val liteApp: File) {
     validateEndpoints(tag, manifest.monitors, MONITOR)
 
     // Test all Settings to see whether they belong to our whitelisted set of allowable strings.
-    MoshiAdapter.get(Manifest::class.java)
+    MoshiAdapter.getAdapter(Manifest::class.java)
         .failOnUnknown()
         .fromJson(manifestFile.source().buffer())
 
@@ -167,7 +169,7 @@ class LiteAppsValidator(private val liteApp: File) {
       Assert.fail("Not found: " + file!!.absolutePath)
     }
     return try {
-      if (file.exists()) MoshiAdapter.get(Manifest::class.java).fromJson(file.source().buffer()) else null
+      if (file.exists()) MoshiAdapter.getAdapter(Manifest::class.java).fromJson(file.source().buffer()) else null
     } catch (e: IOException) {
       Assert.fail(String.format("Invalid JSON: %s", file.name))
       null

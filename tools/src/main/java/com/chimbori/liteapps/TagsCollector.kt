@@ -1,6 +1,8 @@
 package com.chimbori.liteapps
 
-import com.chimbori.FilePaths.*
+import com.chimbori.FilePaths.LITE_APPS_SRC_DIR
+import com.chimbori.FilePaths.LITE_APPS_TAGS_JSON
+import com.chimbori.FilePaths.MANIFEST_JSON_FILE_NAME
 import com.chimbori.hermitcrab.schema.common.MoshiAdapter
 import com.chimbori.hermitcrab.schema.library.LibraryTag
 import com.chimbori.hermitcrab.schema.library.LibraryTagsList
@@ -14,9 +16,9 @@ internal object TagsCollector {
    * Read the list of all known tags from the tags.json file. In case we discover any new tags,
    * we will add them to this file, taking care not to overwrite those that already exist.
    */
-  @JvmStatic
   fun updateTagsJson() {
-    val libraryTagsList = MoshiAdapter.get(LibraryTagsList::class.java).fromJson(LITE_APPS_TAGS_JSON.source().buffer())
+    println("LITE_APPS_TAGS_JSON: ${LITE_APPS_TAGS_JSON.absolutePath}")
+    val libraryTagsList = MoshiAdapter.getAdapter(LibraryTagsList::class.java).fromJson(LITE_APPS_TAGS_JSON.source().buffer())
     libraryTagsList!!.updateTransientFields()
 
     val globalTags = mutableMapOf<String, LibraryTag>()
@@ -30,7 +32,7 @@ internal object TagsCollector {
         return@forEach
       }
 
-      val manifest = MoshiAdapter.get(Manifest::class.java).fromJson(manifestJsonFile.source().buffer())
+      val manifest = MoshiAdapter.getAdapter(Manifest::class.java).fromJson(manifestJsonFile.source().buffer())
           ?: return@forEach
 
       // For all tags applied to this manifest, check if they exist in the global tags list.
@@ -46,6 +48,6 @@ internal object TagsCollector {
       }
     }
 
-    LITE_APPS_TAGS_JSON.writeText(MoshiAdapter.get(LibraryTagsList::class.java).toJson(libraryTagsList))
+    LITE_APPS_TAGS_JSON.writeText(MoshiAdapter.getAdapter(LibraryTagsList::class.java).toJson(libraryTagsList))
   }
 }

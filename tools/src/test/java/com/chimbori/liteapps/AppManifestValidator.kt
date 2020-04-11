@@ -3,7 +3,7 @@ package com.chimbori.liteapps
 import com.chimbori.FilePaths
 import com.chimbori.hermitcrab.schema.appmanifest.AppManifest
 import com.chimbori.hermitcrab.schema.appmanifest.getLatestProdVersion
-import com.chimbori.hermitcrab.schema.common.MoshiAdapter.get
+import com.chimbori.hermitcrab.schema.common.MoshiAdapter.getAdapter
 import com.chimbori.hermitcrab.schema.common.SchemaDate
 import okio.buffer
 import okio.source
@@ -12,13 +12,12 @@ import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Test
 import java.io.File
-import java.io.IOException
 
 class AppManifestValidator {
   @Test
   fun testLiveAppManifestIsValid() {
     val appManifestFile = File(FilePaths.APP_MANIFEST_OUTPUT_DIR, FilePaths.MANIFEST_JSON_FILE_NAME)
-    val appManifest = get(AppManifest::class.java).fromJson(appManifestFile.source().buffer())
+    val appManifest = getAdapter(AppManifest::class.java).fromJson(appManifestFile.source().buffer())
     assertNotNull(appManifest)
 
     val (_, _, version_code, _, released, min_sdk_version) = appManifest!!.getLatestProdVersion(currentSdk = 27)!!

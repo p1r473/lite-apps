@@ -1,6 +1,12 @@
 package com.chimbori.liteapps
 
-import com.chimbori.FilePaths.*
+import com.chimbori.FilePaths.ICONS_DIR_NAME
+import com.chimbori.FilePaths.ICON_EXTENSION
+import com.chimbori.FilePaths.LIBRARY_ICONS_DIR
+import com.chimbori.FilePaths.LIBRARY_JSON
+import com.chimbori.FilePaths.LITE_APPS_SRC_DIR
+import com.chimbori.FilePaths.LITE_APPS_TAGS_JSON
+import com.chimbori.FilePaths.MANIFEST_JSON_FILE_NAME
 import com.chimbori.hermitcrab.schema.common.MoshiAdapter
 import com.chimbori.hermitcrab.schema.library.Library
 import com.chimbori.hermitcrab.schema.library.LibraryApp
@@ -30,11 +36,10 @@ internal object LibraryGenerator {
    * which is used as the basis for generating the Hermit Library page at
    * https://lite-apps.chimbori.com/library.
    */
-  @JvmStatic
   fun generateLibraryData() {
     // Read the list of all known tags from the tags.json file. In case we discover any new tags,
     // we will add them to this file, taking care not to overwrite those that already exist.
-    val globalTags = MoshiAdapter.get(LibraryTagsList::class.java)
+    val globalTags = MoshiAdapter.getAdapter(LibraryTagsList::class.java)
         .fromJson(LITE_APPS_TAGS_JSON.source().buffer())
         ?.apply { updateTransientFields() }
         ?: return
@@ -55,7 +60,7 @@ internal object LibraryGenerator {
       }
 
       // Create an entry for this Lite App to be put in the directory index file.
-      val manifest = MoshiAdapter.get(Manifest::class.java).fromJson(manifestJsonFile.source().buffer())
+      val manifest = MoshiAdapter.getAdapter(Manifest::class.java).fromJson(manifestJsonFile.source().buffer())
           ?: return@forEach
       val outputApp = LibraryApp(
           name = appName,
@@ -80,6 +85,6 @@ internal object LibraryGenerator {
             .toFile(thumbnailImage)
       }
     }
-    LIBRARY_JSON.writeText(MoshiAdapter.get(Library::class.java).toJson(outputLibrary))
+    LIBRARY_JSON.writeText(MoshiAdapter.getAdapter(Library::class.java).toJson(outputLibrary))
   }
 }

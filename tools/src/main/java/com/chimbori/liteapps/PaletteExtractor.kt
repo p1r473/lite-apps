@@ -1,8 +1,10 @@
 package com.chimbori.liteapps
 
-import com.chimbori.FilePaths.*
+import com.chimbori.FilePaths.ICONS_DIR_NAME
+import com.chimbori.FilePaths.LITE_APPS_SRC_DIR
+import com.chimbori.FilePaths.MANIFEST_JSON_FILE_NAME
 import com.chimbori.common.ColorExtractor.getDominantColor
-import com.chimbori.hermitcrab.schema.common.MoshiAdapter.get
+import com.chimbori.hermitcrab.schema.common.MoshiAdapter.getAdapter
 import com.chimbori.hermitcrab.schema.manifest.IconFile.FAVICON_FILE
 import com.chimbori.hermitcrab.schema.manifest.Manifest
 import okio.buffer
@@ -23,7 +25,7 @@ internal object PaletteExtractor {
         return@forEach
       }
 
-      val manifest = get(Manifest::class.java).fromJson(manifestJsonFile.source().buffer())
+      val manifest = getAdapter(Manifest::class.java).fromJson(manifestJsonFile.source().buffer())
           ?: return@forEach
 
       if (!(manifest.theme_color.isUndefinedColor() || manifest.secondary_color.isUndefinedColor())) {
@@ -45,7 +47,7 @@ internal object PaletteExtractor {
 
         manifest.theme_color = themeColor.toString()
         manifest.secondary_color = themeColor.darken(0.9f).toString()
-        manifestJsonFile.writeText(get(Manifest::class.java).toJson(manifest))
+        manifestJsonFile.writeText(getAdapter(Manifest::class.java).toJson(manifest))
       }
     }
   }
