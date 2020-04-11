@@ -33,7 +33,6 @@ internal object Scaffolder {
    * The Library Data JSON file (containing metadata about all Lite Apps) is used as the basis for
    * generating scaffolding for the Lite App manifests.
    */
-  @Throws(IOException::class)
   private fun createScaffolding(startUrl: String, appName: String) {
     val liteAppDirectoryRoot = File(LITE_APPS_SRC_DIR, appName)
 
