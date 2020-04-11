@@ -4,7 +4,6 @@ import com.chimbori.FilePaths.ICONS_DIR_NAME
 import com.chimbori.FilePaths.LITE_APPS_SRC_DIR
 import com.chimbori.FilePaths.MANIFEST_JSON_FILE_NAME
 import com.chimbori.common.ColorExtractor.getDominantColor
-import com.chimbori.common.Log
 import com.chimbori.hermitcrab.schema.common.MoshiAdapter.getAdapter
 import com.chimbori.hermitcrab.schema.manifest.IconFile.FAVICON_FILE
 import com.chimbori.hermitcrab.schema.manifest.Manifest
@@ -44,12 +43,12 @@ internal object Scaffolder {
     if (manifestJsonFile.exists()) {
       manifest = getAdapter(Manifest::class.java).fromJson(manifestJsonFile.source().buffer())
     } else {
-      Log.i("Creating new Lite App “%s”", appName)
+      println("Creating new Lite App “$appName”")
       // Create the root directory if it doesn’t exist yet.
       liteAppDirectoryRoot.mkdirs()
 
       // Scrape the Web looking for RSS & Atom feeds, theme colors, and site metadata.
-      Log.i("Fetching %s…", startUrl)
+      println("Fetching $startUrl…")
       val scraper = Scraper(startUrl).fetch()
 
       manifest = scraper.extractManifest()
@@ -80,7 +79,7 @@ internal object Scaffolder {
       val iconFile = File(iconsDirectory, FAVICON_FILE.fileName)
       val remoteIconUrl = scraper.extractIconUrl()
       if (!iconFile.exists() && remoteIconUrl != null && !remoteIconUrl.isEmpty()) {
-        Log.i("Fetching icon from %s…", remoteIconUrl)
+        println("Fetching icon from $remoteIconUrl…")
         var iconUrl: URL? = null
         try {
           iconUrl = URL(remoteIconUrl)
