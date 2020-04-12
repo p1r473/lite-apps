@@ -25,12 +25,12 @@ object FilePaths {
   }
 
   // Lite Apps
-  val LITE_APPS_SRC_DIR = File(PROJECT_ROOT, "lite-apps/src")
-  val LITE_APPS_TAGS_JSON = File(PROJECT_ROOT, "lite-apps/tags.json")
+  val LITE_APPS_SRC_DIR = File(PROJECT_ROOT, "src/lite-apps")
+  val LITE_APPS_TAGS_JSON = File(PROJECT_ROOT, "src/tags.json")
 
   // Block Lists
-  val BLOCKLISTS_SRC_DIR = File(PROJECT_ROOT, "blocklists/src/")
-  val BLOCKLISTS_CONFIG_JSON = File(PROJECT_ROOT, "blocklists/config.json")
+  val BLOCKLISTS_SRC_DIR = File(PROJECT_ROOT, "src/blocklists")
+  val BLOCKLISTS_CONFIG_JSON = File(PROJECT_ROOT, "src/blocklists/config.json")
 
   // Output Directories, under `/docs`.
   val LITE_APPS_OUTPUT_DIR = File(PROJECT_ROOT, "docs/lite-apps/v3/")
