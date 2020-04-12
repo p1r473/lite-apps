@@ -1,0 +1,2706 @@
+{
+  "categories": [
+    {
+      "category": {
+        "name": "Popular"
+      },
+      "apps": [
+        {
+          "name": "Facebook",
+          "theme_color": "#0672e8",
+          "url": "https://m.facebook.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Facebook.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Facebook.png"
+        },
+        {
+          "name": "Google",
+          "theme_color": "#4485a7",
+          "url": "https://www.google.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Google.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Google.png"
+        },
+        {
+          "name": "Messenger",
+          "theme_color": "#0086ff",
+          "url": "https://m.facebook.com/messages/?more",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Messenger.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Messenger.png"
+        },
+        {
+          "name": "Reddit",
+          "theme_color": "#ff4300",
+          "url": "https://m.reddit.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Reddit.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Reddit.png"
+        },
+        {
+          "name": "Twitter",
+          "theme_color": "#4798d8",
+          "url": "https://mobile.twitter.com/home/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Twitter.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Twitter.png"
+        },
+        {
+          "name": "BBC",
+          "theme_color": "#bd160d",
+          "url": "https://bbc.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/BBC.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/BBC.png"
+        },
+        {
+          "name": "Instagram",
+          "theme_color": "#253938",
+          "url": "https://instagram.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Instagram.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Instagram.png"
+        },
+        {
+          "name": "New York Times",
+          "theme_color": "#000000",
+          "url": "http://mobile.nytimes.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/New%20York%20Times.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/New%20York%20Times.png"
+        },
+        {
+          "name": "Washington Post",
+          "theme_color": "#001212",
+          "url": "https://m.washingtonpost.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Washington%20Post.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Washington%20Post.png"
+        },
+        {
+          "name": "Wikipedia",
+          "theme_color": "#000000",
+          "url": "https://wikipedia.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wikipedia.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Wikipedia.png"
+        },
+        {
+          "name": "Linked In",
+          "theme_color": "#0076b7",
+          "url": "https://www.linkedin.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Linked%20In.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Linked%20In.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Social"
+      },
+      "apps": [
+        {
+          "name": "Facebook",
+          "theme_color": "#0672e8",
+          "url": "https://m.facebook.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Facebook.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Facebook.png"
+        },
+        {
+          "name": "Facebook Lite",
+          "theme_color": "#3f5ea1",
+          "url": "https://mbasic.facebook.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Facebook%20Lite.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Facebook%20Lite.png"
+        },
+        {
+          "name": "Messenger",
+          "theme_color": "#0086ff",
+          "url": "https://m.facebook.com/messages/?more",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Messenger.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Messenger.png"
+        },
+        {
+          "name": "Reddit",
+          "theme_color": "#ff4300",
+          "url": "https://m.reddit.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Reddit.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Reddit.png"
+        },
+        {
+          "name": "Twitter",
+          "theme_color": "#4798d8",
+          "url": "https://mobile.twitter.com/home/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Twitter.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Twitter.png"
+        },
+        {
+          "name": "Instagram",
+          "theme_color": "#253938",
+          "url": "https://instagram.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Instagram.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Instagram.png"
+        },
+        {
+          "name": "Android Messages",
+          "theme_color": "#2b55be",
+          "url": "https://messages.android.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20Messages.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Android%20Messages.png"
+        },
+        {
+          "name": "Ask.fm",
+          "theme_color": "#ff6648",
+          "url": "https://ask.fm/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Ask.fm.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Ask.fm.png"
+        },
+        {
+          "name": "Letterboxd",
+          "theme_color": "#252f39",
+          "url": "https://letterboxd.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Letterboxd.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Letterboxd.png"
+        },
+        {
+          "name": "Linked In",
+          "theme_color": "#0076b7",
+          "url": "https://www.linkedin.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Linked%20In.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Linked%20In.png"
+        },
+        {
+          "name": "NextDoor",
+          "theme_color": "#4cce67",
+          "url": "https://nextdoor.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NextDoor.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/NextDoor.png"
+        },
+        {
+          "name": "OkCupid",
+          "theme_color": "#88a0ca",
+          "url": "https://m.okcupid.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/OkCupid.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/OkCupid.png"
+        },
+        {
+          "name": "Tildes",
+          "theme_color": "#002b36",
+          "url": "https://tildes.net/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Tildes.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Tildes.png"
+        },
+        {
+          "name": "Tumblr",
+          "theme_color": "#36465d",
+          "url": "https://tumblr.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Tumblr.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Tumblr.png"
+        },
+        {
+          "name": "Weibo",
+          "theme_color": "#fdf1bc",
+          "url": "https://m.weibo.cn/beta",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Weibo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Weibo.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "News"
+      },
+      "apps": [
+        {
+          "name": "CNN",
+          "theme_color": "#cc0000",
+          "url": "http://cnn.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CNN.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/CNN.png"
+        },
+        {
+          "name": "BBC",
+          "theme_color": "#bd160d",
+          "url": "https://bbc.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/BBC.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/BBC.png"
+        },
+        {
+          "name": "New York Times",
+          "theme_color": "#000000",
+          "url": "http://mobile.nytimes.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/New%20York%20Times.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/New%20York%20Times.png"
+        },
+        {
+          "name": "Reuters",
+          "theme_color": "#ffa74e",
+          "url": "http://www.reuters.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Reuters.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Reuters.png"
+        },
+        {
+          "name": "The Guardian",
+          "theme_color": "#005689",
+          "url": "https://theguardian.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/The%20Guardian.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/The%20Guardian.png"
+        },
+        {
+          "name": "Washington Post",
+          "theme_color": "#001212",
+          "url": "https://m.washingtonpost.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Washington%20Post.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Washington%20Post.png"
+        },
+        {
+          "name": "AccuWeather",
+          "theme_color": "#f05714",
+          "url": "https://m.accuweather.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AccuWeather.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/AccuWeather.png"
+        },
+        {
+          "name": "Al Jazeera",
+          "theme_color": "#fe8000",
+          "url": "http://aljazeera.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Al%20Jazeera.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Al%20Jazeera.png"
+        },
+        {
+          "name": "AnandTech",
+          "theme_color": "#58accb",
+          "url": "http://www.anandtech.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AnandTech.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/AnandTech.png"
+        },
+        {
+          "name": "Android Central",
+          "theme_color": "#d7e580",
+          "url": "https://m.androidcentral.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20Central.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Android%20Central.png"
+        },
+        {
+          "name": "Android Police",
+          "theme_color": "#ed1b2b",
+          "url": "https://androidpolice.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20Police.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Android%20Police.png"
+        },
+        {
+          "name": "Axios",
+          "theme_color": "#008dc8",
+          "url": "https://www.axios.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Axios.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Axios.png"
+        },
+        {
+          "name": "Bhaskar",
+          "theme_color": "#f58220",
+          "url": "https://bhaskar.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Bhaskar.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Bhaskar.png"
+        },
+        {
+          "name": "Bloomberg",
+          "theme_color": "#2800d7",
+          "url": "https://bloomberg.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Bloomberg.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Bloomberg.png"
+        },
+        {
+          "name": "Estadao",
+          "theme_color": "#6490b4",
+          "url": "http://www.estadao.com.br/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Estadao.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Estadao.png"
+        },
+        {
+          "name": "Financial Times",
+          "theme_color": "#fcdabb",
+          "url": "https://m.ft.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Financial%20Times.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Financial%20Times.png"
+        },
+        {
+          "name": "FiveThirtyEight",
+          "theme_color": "#ef7237",
+          "url": "https://fivethirtyeight.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/FiveThirtyEight.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/FiveThirtyEight.png"
+        },
+        {
+          "name": "Folha de São Paulo",
+          "theme_color": "#4cc7f2",
+          "url": "http://m.folha.uol.com.br/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Folha%20de%20São%20Paulo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Folha%20de%20S%C3%A3o%20Paulo.png"
+        },
+        {
+          "name": "Globo",
+          "theme_color": "#439ef6",
+          "url": "http://www.globo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Globo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Globo.png"
+        },
+        {
+          "name": "Google News",
+          "theme_color": "#0cacf4",
+          "url": "https://news.google.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Google%20News.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Google%20News.png"
+        },
+        {
+          "name": "Ha'aretz",
+          "theme_color": "#008cd4",
+          "url": "https://haaretz.co.il/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Haaretz.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Haaretz.png"
+        },
+        {
+          "name": "Hacker News",
+          "theme_color": "#ff6600",
+          "url": "https://news.ycombinator.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Hacker%20News.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Hacker%20News.png"
+        },
+        {
+          "name": "Heise",
+          "theme_color": "#000000",
+          "url": "https://www.heise.de/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Heise.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Heise.png"
+        },
+        {
+          "name": "Jerusalem Post",
+          "theme_color": "#c04d51",
+          "url": "http://m.jpost.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Jerusalem%20Post.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Jerusalem%20Post.png"
+        },
+        {
+          "name": "Medium",
+          "theme_color": "#0be370",
+          "url": "https://medium.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Medium.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Medium.png"
+        },
+        {
+          "name": "NBC",
+          "theme_color": "#4372b8",
+          "url": "http://www.nbcnews.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NBC.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/NBC.png"
+        },
+        {
+          "name": "NDTV",
+          "theme_color": "#4d0001",
+          "url": "https://www.ndtv.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NDTV.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/NDTV.png"
+        },
+        {
+          "name": "NPR",
+          "theme_color": "#2851a0",
+          "url": "http://npr.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NPR.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/NPR.png"
+        },
+        {
+          "name": "Slate",
+          "theme_color": "#760c3f",
+          "url": "http://slate.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Slate.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Slate.png"
+        },
+        {
+          "name": "Spiegel",
+          "theme_color": "#98141b",
+          "url": "http://www.spiegel.de/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Spiegel.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Spiegel.png"
+        },
+        {
+          "name": "The Atlantic",
+          "theme_color": "#000000",
+          "url": "https://www.theatlantic.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/The%20Atlantic.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/The%20Atlantic.png"
+        },
+        {
+          "name": "The Hindu",
+          "theme_color": "#0e5ba8",
+          "url": "http://www.thehindu.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/The%20Hindu.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/The%20Hindu.png"
+        },
+        {
+          "name": "Tildes",
+          "theme_color": "#002b36",
+          "url": "https://tildes.net/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Tildes.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Tildes.png"
+        },
+        {
+          "name": "Time",
+          "theme_color": "#d60002",
+          "url": "https://time.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Time.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Time.png"
+        },
+        {
+          "name": "Veja",
+          "theme_color": "#004f93",
+          "url": "http://veja.abril.com.br/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Veja.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Veja.png"
+        },
+        {
+          "name": "Vibbo",
+          "theme_color": "#009f98",
+          "url": "https://www.vibbo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Vibbo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Vibbo.png"
+        },
+        {
+          "name": "Wall St. Journal",
+          "theme_color": "#000000",
+          "url": "https://mobile.wsj.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wall%20St.%20Journal.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Wall%20St.%20Journal.png"
+        },
+        {
+          "name": "Yahoo! Finance",
+          "theme_color": "#3d0092",
+          "url": "https://finance.yahoo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Yahoo%21%20Finance.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Yahoo%21%20Finance.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Technology"
+      },
+      "apps": [
+        {
+          "name": "AlternativeTo",
+          "theme_color": "#1073a8",
+          "url": "https://alternativeto.net/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AlternativeTo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/AlternativeTo.png"
+        },
+        {
+          "name": "AnandTech",
+          "theme_color": "#58accb",
+          "url": "http://www.anandtech.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AnandTech.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/AnandTech.png"
+        },
+        {
+          "name": "Android Central",
+          "theme_color": "#d7e580",
+          "url": "https://m.androidcentral.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20Central.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Android%20Central.png"
+        },
+        {
+          "name": "Android Hilfe",
+          "theme_color": "#1d9788",
+          "url": "http://www.android-hilfe.de/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20Hilfe.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Android%20Hilfe.png"
+        },
+        {
+          "name": "Android PIT",
+          "theme_color": "#43aee0",
+          "url": "https://www.androidpit.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20PIT.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Android%20PIT.png"
+        },
+        {
+          "name": "Android Police",
+          "theme_color": "#ed1b2b",
+          "url": "https://androidpolice.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20Police.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Android%20Police.png"
+        },
+        {
+          "name": "APK Mirror",
+          "theme_color": "#ff9800",
+          "url": "http://www.apkmirror.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/APK%20Mirror.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/APK%20Mirror.png"
+        },
+        {
+          "name": "App Sales",
+          "theme_color": "#c20a00",
+          "url": "http://app-sales.net/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/App%20Sales.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/App%20Sales.png"
+        },
+        {
+          "name": "Caschys Blog",
+          "theme_color": "#0473bd",
+          "url": "http://stadt-bremerhaven.de/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Caschys%20Blog.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Caschys%20Blog.png"
+        },
+        {
+          "name": "CNet",
+          "theme_color": "#b80000",
+          "url": "http://cnet.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CNet.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/CNet.png"
+        },
+        {
+          "name": "Designer News",
+          "theme_color": "#2b71d7",
+          "url": "http://designernews.co/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Designer%20News.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Designer%20News.png"
+        },
+        {
+          "name": "Droid Life",
+          "theme_color": "#f99cc0",
+          "url": "https://droid-life.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Droid%20Life.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Droid%20Life.png"
+        },
+        {
+          "name": "Engadget",
+          "theme_color": "#09a2f2",
+          "url": "http://engadget.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Engadget.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Engadget.png"
+        },
+        {
+          "name": "Gadget Hacks",
+          "theme_color": "#d9151a",
+          "url": "https://www.gadgethacks.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Gadget%20Hacks.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Gadget%20Hacks.png"
+        },
+        {
+          "name": "Gizmodo",
+          "theme_color": "#000000",
+          "url": "https://gizmodo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Gizmodo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Gizmodo.png"
+        },
+        {
+          "name": "Hacker News",
+          "theme_color": "#ff6600",
+          "url": "https://news.ycombinator.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Hacker%20News.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Hacker%20News.png"
+        },
+        {
+          "name": "Jio",
+          "theme_color": "#005aab",
+          "url": "https://jio.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Jio.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Jio.png"
+        },
+        {
+          "name": "Malware Tips",
+          "theme_color": "#1565c0",
+          "url": "https://malwaretips.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Malware%20Tips.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Malware%20Tips.png"
+        },
+        {
+          "name": "Product Hunt",
+          "theme_color": "#da552f",
+          "url": "https://producthunt.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Product%20Hunt.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Product%20Hunt.png"
+        },
+        {
+          "name": "ReCode",
+          "theme_color": "#c60018",
+          "url": "https://recode.net/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/ReCode.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/ReCode.png"
+        },
+        {
+          "name": "Slashdot",
+          "theme_color": "#006a63",
+          "url": "https://slashdot.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Slashdot.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Slashdot.png"
+        },
+        {
+          "name": "Stack Overflow",
+          "theme_color": "#e3652c",
+          "url": "https://stackoverflow.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Stack%20Overflow.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Stack%20Overflow.png"
+        },
+        {
+          "name": "TechCrunch",
+          "theme_color": "#00880d",
+          "url": "https://techcrunch.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TechCrunch.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/TechCrunch.png"
+        },
+        {
+          "name": "TechMeme",
+          "theme_color": "#1e4c63",
+          "url": "https://techmeme.com/m/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TechMeme.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/TechMeme.png"
+        },
+        {
+          "name": "The Verge",
+          "theme_color": "#fa4b2a",
+          "url": "https://theverge.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/The%20Verge.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/The%20Verge.png"
+        },
+        {
+          "name": "Wired",
+          "theme_color": "#000000",
+          "url": "https://wired.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wired.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Wired.png"
+        },
+        {
+          "name": "XDA Developers",
+          "theme_color": "#ff8400",
+          "url": "https://xda-developers.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/XDA%20Developers.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/XDA%20Developers.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Shopping"
+      },
+      "apps": [
+        {
+          "name": "Amazon",
+          "theme_color": "#3680ba",
+          "url": "https://amazon.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Amazon.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Amazon.png"
+        },
+        {
+          "name": "FlipKart",
+          "theme_color": "#027bd4",
+          "url": "https://flipkart.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/FlipKart.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/FlipKart.png"
+        },
+        {
+          "name": "AliExpress",
+          "theme_color": "#e4330b",
+          "url": "https://m.aliexpress.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AliExpress.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/AliExpress.png"
+        },
+        {
+          "name": "Best Buy",
+          "theme_color": "#fff200",
+          "url": "https://www.bestbuy.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Best%20Buy.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Best%20Buy.png"
+        },
+        {
+          "name": "Costco",
+          "theme_color": "#ee3a43",
+          "url": "https://www.costco.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Costco.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Costco.png"
+        },
+        {
+          "name": "Coupons.com",
+          "theme_color": "#e67452",
+          "url": "https://www.coupons.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Coupons.com.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Coupons.com.png"
+        },
+        {
+          "name": "Craigslist",
+          "theme_color": "#5c008e",
+          "url": "https://craigslist.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Craigslist.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Craigslist.png"
+        },
+        {
+          "name": "CVS Pharmacy",
+          "theme_color": "#cc0001",
+          "url": "http://m.cvs.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CVS%20Pharmacy.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/CVS%20Pharmacy.png"
+        },
+        {
+          "name": "eBay",
+          "theme_color": "#e43138",
+          "url": "https://m.ebay.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/eBay.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/eBay.png"
+        },
+        {
+          "name": "Groupon",
+          "theme_color": "#88bb45",
+          "url": "https://groupon.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Groupon.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Groupon.png"
+        },
+        {
+          "name": "Hot UK Deals",
+          "theme_color": "#708c00",
+          "url": "https://www.hotukdeals.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Hot%20UK%20Deals.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Hot%20UK%20Deals.png"
+        },
+        {
+          "name": "Jabong",
+          "theme_color": "#f7931d",
+          "url": "https://www.jabong.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Jabong.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Jabong.png"
+        },
+        {
+          "name": "JustDial",
+          "theme_color": "#bcd9ed",
+          "url": "https://justdial.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/JustDial.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/JustDial.png"
+        },
+        {
+          "name": "Myntra",
+          "theme_color": "#b92156",
+          "url": "https://myntra.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Myntra.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Myntra.png"
+        },
+        {
+          "name": "PepperFry",
+          "theme_color": "#ea983a",
+          "url": "https://pepperfry.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/PepperFry.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/PepperFry.png"
+        },
+        {
+          "name": "Quikr",
+          "theme_color": "#0faa13",
+          "url": "https://quikr.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Quikr.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Quikr.png"
+        },
+        {
+          "name": "Retail Me Not",
+          "theme_color": "#783a8e",
+          "url": "https://m.retailmenot.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Retail%20Me%20Not.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Retail%20Me%20Not.png"
+        },
+        {
+          "name": "ShopClues",
+          "theme_color": "#38b2bb",
+          "url": "https://shopclues.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/ShopClues.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/ShopClues.png"
+        },
+        {
+          "name": "SlickDeals",
+          "theme_color": "#0094d1",
+          "url": "https://slickdeals.net/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/SlickDeals.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/SlickDeals.png"
+        },
+        {
+          "name": "SnapDeal",
+          "theme_color": "#ff2341",
+          "url": "https://snapdeal.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/SnapDeal.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/SnapDeal.png"
+        },
+        {
+          "name": "TaoBao",
+          "theme_color": "#fe7100",
+          "url": "http://taobao.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TaoBao.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/TaoBao.png"
+        },
+        {
+          "name": "Target",
+          "theme_color": "#cc0000",
+          "url": "https://www.target.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Target.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Target.png"
+        },
+        {
+          "name": "Uber Eats",
+          "theme_color": "#82db4e",
+          "url": "https://ubereats.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Uber%20Eats.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Uber%20Eats.png"
+        },
+        {
+          "name": "Walgreens",
+          "theme_color": "#4c6971",
+          "url": "https://www.walgreens.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Walgreens.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Walgreens.png"
+        },
+        {
+          "name": "WalMart",
+          "theme_color": "#1086f8",
+          "url": "https://www.walmart.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/WalMart.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/WalMart.png"
+        },
+        {
+          "name": "Woot",
+          "theme_color": "#82bc17",
+          "url": "https://woot.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Woot.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Woot.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Travel"
+      },
+      "apps": [
+        {
+          "name": "Translate",
+          "theme_color": "#508ff5",
+          "url": "https://translate.google.com/m/translate",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Translate.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Translate.png"
+        },
+        {
+          "name": "Google Maps",
+          "theme_color": "#dd4d40",
+          "url": "https://www.google.com/maps/?force=qVTs2FOxxTmHHo79-pwa",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Google%20Maps.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Google%20Maps.png"
+        },
+        {
+          "name": "TripAdvisor",
+          "theme_color": "#1e892f",
+          "url": "https://tripadvisor.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TripAdvisor.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/TripAdvisor.png"
+        },
+        {
+          "name": "Yelp",
+          "theme_color": "#d01e0c",
+          "url": "https://m.yelp.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Yelp.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Yelp.png"
+        },
+        {
+          "name": "Zomato",
+          "theme_color": "#cb202d",
+          "url": "https://zomato.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Zomato.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Zomato.png"
+        },
+        {
+          "name": "Atlas Obscura",
+          "theme_color": "#382c14",
+          "url": "https://www.atlasobscura.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Atlas%20Obscura.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Atlas%20Obscura.png"
+        },
+        {
+          "name": "AirBnB",
+          "theme_color": "#ff5a5f",
+          "url": "https://www.airbnb.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AirBnB.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/AirBnB.png"
+        },
+        {
+          "name": "B&H Photo",
+          "theme_color": "#d74a2c",
+          "url": "https://www.bhphotovideo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/B%26H%20Photo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/B%26H%20Photo.png"
+        },
+        {
+          "name": "Booking.com",
+          "theme_color": "#00246d",
+          "url": "https://www.booking.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Booking.com.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Booking.com.png"
+        },
+        {
+          "name": "Delta Airlines",
+          "theme_color": "#18408b",
+          "url": "https://m.delta.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Delta%20Airlines.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Delta%20Airlines.png"
+        },
+        {
+          "name": "Enterprise",
+          "theme_color": "#01975a",
+          "url": "https://www.enterprise.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Enterprise.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Enterprise.png"
+        },
+        {
+          "name": "Flight Aware",
+          "theme_color": "#d6edfd",
+          "url": "https://flightaware.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Flight%20Aware.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Flight%20Aware.png"
+        },
+        {
+          "name": "Fuelly",
+          "theme_color": "#3eb9ae",
+          "url": "https://www.fuelly.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Fuelly.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Fuelly.png"
+        },
+        {
+          "name": "GasBuddy",
+          "theme_color": "#0098a9",
+          "url": "https://gasbuddy.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/GasBuddy.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/GasBuddy.png"
+        },
+        {
+          "name": "Incredible India",
+          "theme_color": "#bad9b7",
+          "url": "https://incredibleindia.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Incredible%20India.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Incredible%20India.png"
+        },
+        {
+          "name": "IRCTC",
+          "theme_color": "#3c9ccf",
+          "url": "https://irctc.co.in/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/IRCTC.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/IRCTC.png"
+        },
+        {
+          "name": "Kayak",
+          "theme_color": "#fc903b",
+          "url": "https://kayak.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Kayak.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Kayak.png"
+        },
+        {
+          "name": "MakeMyTrip",
+          "theme_color": "#ce381e",
+          "url": "https://makemytrip.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/MakeMyTrip.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/MakeMyTrip.png"
+        },
+        {
+          "name": "Orbitz",
+          "theme_color": "#00b1ff",
+          "url": "https://www.orbitz.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Orbitz.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Orbitz.png"
+        },
+        {
+          "name": "Priceline",
+          "theme_color": "#0a84c1",
+          "url": "http://priceline.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Priceline.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Priceline.png"
+        },
+        {
+          "name": "Uber",
+          "theme_color": "#000000",
+          "url": "https://m.uber.com/looking",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Uber.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Uber.png"
+        },
+        {
+          "name": "United Airlines",
+          "theme_color": "#000099",
+          "url": "https://mobile.united.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/United%20Airlines.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/United%20Airlines.png"
+        },
+        {
+          "name": "Yatra",
+          "theme_color": "#ea2330",
+          "url": "https://yatra.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Yatra.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Yatra.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Movies and TV"
+      },
+      "apps": [
+        {
+          "name": "Fandango",
+          "theme_color": "#f17604",
+          "url": "https://mobile.fandango.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Fandango.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Fandango.png"
+        },
+        {
+          "name": "IMDb",
+          "theme_color": "#f6e397",
+          "url": "https://m.imdb.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/IMDb.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/IMDb.png"
+        },
+        {
+          "name": "Rotten Tomatoes",
+          "theme_color": "#0c89c9",
+          "url": "https://rottentomatoes.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Rotten%20Tomatoes.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Rotten%20Tomatoes.png"
+        },
+        {
+          "name": "Vimeo",
+          "theme_color": "#00acf2",
+          "url": "https://www.vimeo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Vimeo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Vimeo.png"
+        },
+        {
+          "name": "AlloCiné",
+          "theme_color": "#ffca00",
+          "url": "http://allocine.fr/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AlloCine.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/AlloCine.png"
+        },
+        {
+          "name": "Can I Stream It",
+          "theme_color": "#35a5a1",
+          "url": "http://www.canistream.it/mobile/query/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Can%20I%20Stream%20It.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Can%20I%20Stream%20It.png"
+        },
+        {
+          "name": "Cinema Lounge",
+          "theme_color": "#79c142",
+          "url": "https://cinemalounge.io/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Cinema%20Lounge.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Cinema%20Lounge.png"
+        },
+        {
+          "name": "E! Online",
+          "theme_color": "#3e4f53",
+          "url": "https://m.eonline.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/E%21%20Online.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/E%21%20Online.png"
+        },
+        {
+          "name": "Hotstar",
+          "theme_color": "#6f6f00",
+          "url": "http://hotstar.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Hotstar.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Hotstar.png"
+        },
+        {
+          "name": "Letterboxd",
+          "theme_color": "#252f39",
+          "url": "https://letterboxd.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Letterboxd.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Letterboxd.png"
+        },
+        {
+          "name": "Plex",
+          "theme_color": "#ce7d00",
+          "url": "https://plex.tv/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Plex.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Plex.png"
+        },
+        {
+          "name": "The A.V. Club",
+          "theme_color": "#1c243c",
+          "url": "http://avclub.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/The%20A.V.%20Club.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/The%20A.V.%20Club.png"
+        },
+        {
+          "name": "Trakt.tv",
+          "theme_color": "#ed2224",
+          "url": "https://trakt.tv/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Trakt.tv.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Trakt.tv.png"
+        },
+        {
+          "name": "TV Guide",
+          "theme_color": "#9f150a",
+          "url": "https://tvguide.com/listings/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TV%20Guide.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/TV%20Guide.png"
+        },
+        {
+          "name": "Twit.tv",
+          "theme_color": "#34aad2",
+          "url": "https://twit.tv/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Twit.tv.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Twit.tv.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Communication"
+      },
+      "apps": [
+        {
+          "name": "Messenger",
+          "theme_color": "#0086ff",
+          "url": "https://m.facebook.com/messages/?more",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Messenger.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Messenger.png"
+        },
+        {
+          "name": "Android Messages",
+          "theme_color": "#2b55be",
+          "url": "https://messages.android.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20Messages.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Android%20Messages.png"
+        },
+        {
+          "name": "Skype",
+          "theme_color": "#019ed8",
+          "url": "https://web.skype.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Skype.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Skype.png"
+        },
+        {
+          "name": "Slack",
+          "theme_color": "#73cddc",
+          "url": "https://slack.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Slack.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Slack.png"
+        },
+        {
+          "name": "TeamViewer Chat",
+          "theme_color": "#2196f3",
+          "url": "https://integratedchat.teamviewer.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TeamViewer%20Chat.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/TeamViewer%20Chat.png"
+        },
+        {
+          "name": "Telegram",
+          "theme_color": "#1f95d4",
+          "url": "https://web.telegram.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Telegram.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Telegram.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Art and Photography"
+      },
+      "apps": [
+        {
+          "name": "Instagram",
+          "theme_color": "#253938",
+          "url": "https://instagram.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Instagram.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Instagram.png"
+        },
+        {
+          "name": "B&H Photo",
+          "theme_color": "#d74a2c",
+          "url": "https://www.bhphotovideo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/B%26H%20Photo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/B%26H%20Photo.png"
+        },
+        {
+          "name": "Deviant Art",
+          "theme_color": "#06cc47",
+          "url": "https://deviantart.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Deviant%20Art.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Deviant%20Art.png"
+        },
+        {
+          "name": "Flickr",
+          "theme_color": "#0d64d2",
+          "url": "https://flickr.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Flickr.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Flickr.png"
+        },
+        {
+          "name": "Giphy",
+          "theme_color": "#fe6666",
+          "url": "https://giphy.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Giphy.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Giphy.png"
+        },
+        {
+          "name": "Imgur",
+          "theme_color": "#3bd443",
+          "url": "https://imgur.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Imgur.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Imgur.png"
+        },
+        {
+          "name": "Pexels",
+          "theme_color": "#52ada1",
+          "url": "https://www.pexels.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Pexels.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Pexels.png"
+        },
+        {
+          "name": "Unsplash",
+          "theme_color": "#000000",
+          "url": "https://unsplash.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Unsplash.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Unsplash.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Search"
+      },
+      "apps": [
+        {
+          "name": "Google",
+          "theme_color": "#4485a7",
+          "url": "https://www.google.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Google.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Google.png"
+        },
+        {
+          "name": "Baidu",
+          "theme_color": "#b3c9ff",
+          "url": "https://baidu.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Baidu.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Baidu.png"
+        },
+        {
+          "name": "Bing",
+          "theme_color": "#008485",
+          "url": "https://www.bing.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Bing.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Bing.png"
+        },
+        {
+          "name": "DuckDuckGo",
+          "theme_color": "#e0572a",
+          "url": "https://duckduckgo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/DuckDuckGo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/DuckDuckGo.png"
+        },
+        {
+          "name": "JustDial",
+          "theme_color": "#bcd9ed",
+          "url": "https://justdial.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/JustDial.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/JustDial.png"
+        },
+        {
+          "name": "StartPage",
+          "theme_color": "#e9effa",
+          "url": "https://www.startpage.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/StartPage.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/StartPage.png"
+        },
+        {
+          "name": "Yandex",
+          "theme_color": "#ff0000",
+          "url": "https://yandex.ru/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Yandex.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Yandex.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Weather"
+      },
+      "apps": [
+        {
+          "name": "AccuWeather",
+          "theme_color": "#f05714",
+          "url": "https://m.accuweather.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AccuWeather.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/AccuWeather.png"
+        },
+        {
+          "name": "Forecast.io",
+          "theme_color": "#3b438f",
+          "url": "https://forecast.io/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Forecast.io.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Forecast.io.png"
+        },
+        {
+          "name": "NOAA Weather",
+          "theme_color": "#fd2e2e",
+          "url": "http://mobile.weather.gov/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NOAA%20Weather.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/NOAA%20Weather.png"
+        },
+        {
+          "name": "Weather Channel",
+          "theme_color": "#003096",
+          "url": "https://weather.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Weather%20Channel.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Weather%20Channel.png"
+        },
+        {
+          "name": "Windy",
+          "theme_color": "#970400",
+          "url": "https://www.windy.com",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Windy.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Windy.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Banking & Financial"
+      },
+      "apps": [
+        {
+          "name": "American Express",
+          "theme_color": "#103a79",
+          "url": "https://www.americanexpress.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/American%20Express.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/American%20Express.png"
+        },
+        {
+          "name": "Bank of America",
+          "theme_color": "#dc1431",
+          "url": "https://bankofamerica.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Bank%20of%20America.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Bank%20of%20America.png"
+        },
+        {
+          "name": "Capital One 360",
+          "theme_color": "#99d7ee",
+          "url": "https://home.capitalone360.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Capital%20One%20360.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Capital%20One%20360.png"
+        },
+        {
+          "name": "Chase",
+          "theme_color": "#0459a9",
+          "url": "https://m.chase.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Chase.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Chase.png"
+        },
+        {
+          "name": "Citibank",
+          "theme_color": "#004278",
+          "url": "https://online.citi.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Citibank.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Citibank.png"
+        },
+        {
+          "name": "HDFC Bank",
+          "theme_color": "#ee7873",
+          "url": "https://hdfcbank.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/HDFC%20Bank.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/HDFC%20Bank.png"
+        },
+        {
+          "name": "ICICI Bank",
+          "theme_color": "#9c2e23",
+          "url": "https://icicibank.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/ICICI%20Bank.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/ICICI%20Bank.png"
+        },
+        {
+          "name": "MoneyControl",
+          "theme_color": "#54a732",
+          "url": "https://moneycontrol.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/MoneyControl.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/MoneyControl.png"
+        },
+        {
+          "name": "Online SBI",
+          "theme_color": "#2b74ba",
+          "url": "https://onlinesbi.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Online%20SBI.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Online%20SBI.png"
+        },
+        {
+          "name": "PayPal",
+          "theme_color": "#009cde",
+          "url": "https://paypal.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/PayPal.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/PayPal.png"
+        },
+        {
+          "name": "PayTM",
+          "theme_color": "#012b72",
+          "url": "https://paytm.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/PayTM.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/PayTM.png"
+        },
+        {
+          "name": "RBC Canada",
+          "theme_color": "#263780",
+          "url": "https://www.rbcroyalbank.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/RBC%20Canada.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/RBC%20Canada.png"
+        },
+        {
+          "name": "Wells Fargo",
+          "theme_color": "#f1b6bc",
+          "url": "https://m.wellsfargo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wells%20Fargo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Wells%20Fargo.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Tools & Productivity"
+      },
+      "apps": [
+        {
+          "name": "Translate",
+          "theme_color": "#508ff5",
+          "url": "https://translate.google.com/m/translate",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Translate.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Translate.png"
+        },
+        {
+          "name": "QRCode Scanner",
+          "theme_color": "#5f7d8c",
+          "url": "https://qrcodescan.in/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/QRCode%20Scanner.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/QRCode%20Scanner.png"
+        },
+        {
+          "name": "Clipperz",
+          "theme_color": "#b46202",
+          "url": "https://clipperz.is/app/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Clipperz.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Clipperz.png"
+        },
+        {
+          "name": "Flipboard",
+          "theme_color": "#e12828",
+          "url": "https://flipboard.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Flipboard.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Flipboard.png"
+        },
+        {
+          "name": "I Love PDF",
+          "theme_color": "#ff302a",
+          "url": "https://www.ilovepdf.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/I%20Love%20PDF.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/I%20Love%20PDF.png"
+        },
+        {
+          "name": "Instapaper",
+          "theme_color": "#9a938d",
+          "url": "https://instapaper.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Instapaper.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Instapaper.png"
+        },
+        {
+          "name": "Life Hacker",
+          "theme_color": "#319b56",
+          "url": "https://lifehacker.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Life%20Hacker.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Life%20Hacker.png"
+        },
+        {
+          "name": "Notes",
+          "theme_color": "#000000",
+          "url": "https://sii.im/playground/notes/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Notes.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Notes.png"
+        },
+        {
+          "name": "Pocket",
+          "theme_color": "#ee4055",
+          "url": "https://getpocket.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Pocket.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Pocket.png"
+        },
+        {
+          "name": "Sleepy Time",
+          "theme_color": "#000000",
+          "url": "http://sleepyti.me/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Sleepy%20Time.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Sleepy%20Time.png"
+        },
+        {
+          "name": "Smaller Pictures",
+          "theme_color": "#b1951b",
+          "url": "https://smaller-pictures.appspot.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Smaller%20Pictures.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Smaller%20Pictures.png"
+        },
+        {
+          "name": "Tempo",
+          "theme_color": "#120d2f",
+          "url": "https://sii.im/playground/tempo/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Tempo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Tempo.png"
+        },
+        {
+          "name": "Todoist",
+          "theme_color": "#bc342d",
+          "url": "https://todoist.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Todoist.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Todoist.png"
+        },
+        {
+          "name": "Toodledo",
+          "theme_color": "#4d7eb4",
+          "url": "https://www.toodledo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Toodledo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Toodledo.png"
+        },
+        {
+          "name": "Voice Memos",
+          "theme_color": "#673ab7",
+          "url": "https://voice-memos.appspot.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Voice%20Memos.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Voice%20Memos.png"
+        },
+        {
+          "name": "Wolfram Alpha",
+          "theme_color": "#f3a294",
+          "url": "http://m.wolframalpha.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wolfram%20Alpha.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Wolfram%20Alpha.png"
+        },
+        {
+          "name": "Zenkit",
+          "theme_color": "#ff72b5",
+          "url": "https://zenkit.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Zenkit.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Zenkit.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Education"
+      },
+      "apps": [
+        {
+          "name": "Wikipedia",
+          "theme_color": "#000000",
+          "url": "https://wikipedia.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wikipedia.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Wikipedia.png"
+        },
+        {
+          "name": "Coursera",
+          "theme_color": "#4689c6",
+          "url": "https://www.coursera.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Coursera.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Coursera.png"
+        },
+        {
+          "name": "Dictionary.com",
+          "theme_color": "#297dbe",
+          "url": "http://www.dictionary.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Dictionary.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Dictionary.png"
+        },
+        {
+          "name": "Duolingo",
+          "theme_color": "#75ca00",
+          "url": "https://www.duolingo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Duolingo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Duolingo.png"
+        },
+        {
+          "name": "edX",
+          "theme_color": "#479fdb",
+          "url": "https://www.edx.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/edX.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/edX.png"
+        },
+        {
+          "name": "I Love PDF",
+          "theme_color": "#ff302a",
+          "url": "https://www.ilovepdf.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/I%20Love%20PDF.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/I%20Love%20PDF.png"
+        },
+        {
+          "name": "Instructables",
+          "theme_color": "#f9bc58",
+          "url": "https://m.instructables.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Instructables.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Instructables.png"
+        },
+        {
+          "name": "Khan Academy",
+          "theme_color": "#9cb639",
+          "url": "https://khanacademy.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Khan%20Academy.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Khan%20Academy.png"
+        },
+        {
+          "name": "Libby",
+          "theme_color": "#631a35",
+          "url": "https://libbyapp.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Libby.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Libby.png"
+        },
+        {
+          "name": "Wikiwand",
+          "theme_color": "#89bb5c",
+          "url": "https://www.wikiwand.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wikiwand.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Wikiwand.png"
+        },
+        {
+          "name": "Wiktionary",
+          "theme_color": "#329865",
+          "url": "https://www.wiktionary.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wiktionary.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Wiktionary.png"
+        },
+        {
+          "name": "Wolfram Alpha",
+          "theme_color": "#f3a294",
+          "url": "http://m.wolframalpha.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wolfram%20Alpha.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Wolfram%20Alpha.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Food and Cuisine"
+      },
+      "apps": [
+        {
+          "name": "Yelp",
+          "theme_color": "#d01e0c",
+          "url": "https://m.yelp.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Yelp.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Yelp.png"
+        },
+        {
+          "name": "Zomato",
+          "theme_color": "#cb202d",
+          "url": "https://zomato.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Zomato.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Zomato.png"
+        },
+        {
+          "name": "All Recipes",
+          "theme_color": "#ff7e1a",
+          "url": "https://allrecipes.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/All%20Recipes.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/All%20Recipes.png"
+        },
+        {
+          "name": "JustDial",
+          "theme_color": "#bcd9ed",
+          "url": "https://justdial.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/JustDial.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/JustDial.png"
+        },
+        {
+          "name": "OpenTable",
+          "theme_color": "#c9101d",
+          "url": "https://m.opentable.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/OpenTable.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/OpenTable.png"
+        },
+        {
+          "name": "Yummly",
+          "theme_color": "#e0601e",
+          "url": "https://yummly.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Yummly.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Yummly.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Music"
+      },
+      "apps": [
+        {
+          "name": "Guitar Tuner",
+          "theme_color": "#e8debb",
+          "url": "https://guitar-tuner.appspot.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Guitar%20Tuner.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Guitar%20Tuner.png"
+        },
+        {
+          "name": "Last.fm",
+          "theme_color": "#cc0000",
+          "url": "https://last.fm/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Last.fm.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Last.fm.png"
+        },
+        {
+          "name": "Libby",
+          "theme_color": "#631a35",
+          "url": "https://libbyapp.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Libby.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Libby.png"
+        },
+        {
+          "name": "MixCloud",
+          "theme_color": "#395369",
+          "url": "https://m.mixcloud.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/MixCloud.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/MixCloud.png"
+        },
+        {
+          "name": "SongLink",
+          "theme_color": "#ee5359",
+          "url": "https://songlink.io/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/SongLink.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/SongLink.png"
+        },
+        {
+          "name": "SoundCloud",
+          "theme_color": "#ff8700",
+          "url": "https://m.soundcloud.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/SoundCloud.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/SoundCloud.png"
+        },
+        {
+          "name": "Wavepad",
+          "theme_color": "#d81f38",
+          "url": "https://alexgibson.github.io/wavepad/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Wavepad.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Wavepad.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Books"
+      },
+      "apps": [
+        {
+          "name": "Amazon",
+          "theme_color": "#3680ba",
+          "url": "https://amazon.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Amazon.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Amazon.png"
+        },
+        {
+          "name": "GoodReads",
+          "theme_color": "#e7e0c3",
+          "url": "https://www.goodreads.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/GoodReads.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/GoodReads.png"
+        },
+        {
+          "name": "Kobo",
+          "theme_color": "#007aba",
+          "url": "https://www.kobo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Kobo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Kobo.png"
+        },
+        {
+          "name": "Books A Million",
+          "theme_color": "#366e9e",
+          "url": "https://m.booksamillion.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Books%20A%20Million.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Books%20A%20Million.png"
+        },
+        {
+          "name": "Go Comics",
+          "theme_color": "#a6b9ca",
+          "url": "http://www.gocomics.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Go%20Comics.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Go%20Comics.png"
+        },
+        {
+          "name": "Google Books",
+          "theme_color": "#3ed7fa",
+          "url": "https://books.google.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Google%20Books.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Google%20Books.png"
+        },
+        {
+          "name": "Libby",
+          "theme_color": "#631a35",
+          "url": "https://libbyapp.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Libby.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Libby.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Sports"
+      },
+      "apps": [
+        {
+          "name": "Bleacher Report",
+          "theme_color": "#000000",
+          "url": "https://bleacherreport.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Bleacher%20Report.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Bleacher%20Report.png"
+        },
+        {
+          "name": "CricBuzz",
+          "theme_color": "#bdceda",
+          "url": "https://cricbuzz.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CricBuzz.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/CricBuzz.png"
+        },
+        {
+          "name": "CricInfo",
+          "theme_color": "#00a9f4",
+          "url": "https://cricinfo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CricInfo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/CricInfo.png"
+        },
+        {
+          "name": "ESPN",
+          "theme_color": "#ee1533",
+          "url": "http://www.espn.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/ESPN.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/ESPN.png"
+        },
+        {
+          "name": "ESPN Brasil",
+          "theme_color": "#cc0000",
+          "url": "http://espn.uol.com.br/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/ESPN%20Brasil.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/ESPN%20Brasil.png"
+        },
+        {
+          "name": "Globo eSporte",
+          "theme_color": "#697353",
+          "url": "http://globoesporte.globo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Globo%20eSporte.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Globo%20eSporte.png"
+        },
+        {
+          "name": "NFL",
+          "theme_color": "#b30013",
+          "url": "http://www.nfl.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NFL.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/NFL.png"
+        },
+        {
+          "name": "NHL",
+          "theme_color": "#000000",
+          "url": "https://www.nhl.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NHL.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/NHL.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Email"
+      },
+      "apps": [
+        {
+          "name": "Gmail",
+          "theme_color": "#dd5043",
+          "url": "https://mail.google.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Gmail.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Gmail.png"
+        },
+        {
+          "name": "FastMail",
+          "theme_color": "#fcbf26",
+          "url": "https://www.fastmail.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/FastMail.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/FastMail.png"
+        },
+        {
+          "name": "Mail.com",
+          "theme_color": "#003b8f",
+          "url": "https://www.mail.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Mail.com.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Mail.com.png"
+        },
+        {
+          "name": "Outlook",
+          "theme_color": "#0069b6",
+          "url": "https://outlook.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Outlook.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Outlook.png"
+        },
+        {
+          "name": "Yahoo! Mail",
+          "theme_color": "#39008d",
+          "url": "https://mail.yahoo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Yahoo%21%20Mail.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Yahoo%21%20Mail.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Storage"
+      },
+      "apps": [
+        {
+          "name": "Dropbox",
+          "theme_color": "#0aa5fb",
+          "url": "https://dropbox.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Dropbox.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Dropbox.png"
+        },
+        {
+          "name": "OneDrive",
+          "theme_color": "#2350a2",
+          "url": "https://onedrive.live.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/OneDrive.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/OneDrive.png"
+        },
+        {
+          "name": "Google Drive",
+          "theme_color": "#ffd038",
+          "url": "https://drive.google.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Google%20Drive.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Google%20Drive.png"
+        },
+        {
+          "name": "Mediafire",
+          "theme_color": "#2f7cd0",
+          "url": "https://www.mediafire.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Mediafire.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Mediafire.png"
+        },
+        {
+          "name": "Mega",
+          "theme_color": "#ee0e15",
+          "url": "https://mega.nz/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Mega.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Mega.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Home and Lifestyle"
+      },
+      "apps": [
+        {
+          "name": "Realtor",
+          "theme_color": "#db251c",
+          "url": "http://www.realtor.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Realtor.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Realtor.png"
+        },
+        {
+          "name": "Trulia",
+          "theme_color": "#57a418",
+          "url": "https://m.trulia.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Trulia.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Trulia.png"
+        },
+        {
+          "name": "Uber Eats",
+          "theme_color": "#82db4e",
+          "url": "https://ubereats.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Uber%20Eats.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Uber%20Eats.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Games"
+      },
+      "apps": [
+        {
+          "name": "2048",
+          "theme_color": "#ecc400",
+          "url": "https://2048-opera-pwa.surge.sh/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/2048.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/2048.png"
+        },
+        {
+          "name": "Inbox Attack",
+          "theme_color": "#ccdea8",
+          "url": "https://andreasbovens.github.io/inbox-attack/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Inbox%20Attack.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Inbox%20Attack.png"
+        },
+        {
+          "name": "Pokedex",
+          "theme_color": "#89061c",
+          "url": "https://www.pokedex.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Pokedex.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Pokedex.png"
+        },
+        {
+          "name": "Twitch",
+          "theme_color": "#6341a5",
+          "url": "https://twitch.tv/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Twitch.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Twitch.png"
+        },
+        {
+          "name": "WebFlap",
+          "theme_color": "#719836",
+          "url": "https://www.progressivewebflap.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/WebFlap.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/WebFlap.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Fun"
+      },
+      "apps": [
+        {
+          "name": "Air Horner",
+          "theme_color": "#daeef2",
+          "url": "https://airhorner.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Air%20Horner.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Air%20Horner.png"
+        },
+        {
+          "name": "Go Comics",
+          "theme_color": "#a6b9ca",
+          "url": "http://www.gocomics.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Go%20Comics.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Go%20Comics.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Comics"
+      },
+      "apps": [
+        {
+          "name": "Go Comics",
+          "theme_color": "#a6b9ca",
+          "url": "http://www.gocomics.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Go%20Comics.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Go%20Comics.png"
+        },
+        {
+          "name": "Lunar Baboon",
+          "theme_color": "#1f2900",
+          "url": "http://www.lunarbaboon.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Lunar%20Baboon.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Lunar%20Baboon.png"
+        },
+        {
+          "name": "SMBC Comics",
+          "theme_color": "#526b90",
+          "url": "https://www.smbc-comics.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/SMBC%20Comics.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/SMBC%20Comics.png"
+        },
+        {
+          "name": "WebToons",
+          "theme_color": "#00d564",
+          "url": "https://m.webtoons.com/en/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/WebToons.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/WebToons.png"
+        },
+        {
+          "name": "XKCD",
+          "theme_color": "#95a7c9",
+          "url": "https://m.xkcd.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/XKCD.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/XKCD.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Social Content"
+      },
+      "apps": [
+        {
+          "name": "Bored Panda",
+          "theme_color": "#000000",
+          "url": "http://boredpanda.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Bored%20Panda.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Bored%20Panda.png"
+        },
+        {
+          "name": "BuzzFeed",
+          "theme_color": "#ee3322",
+          "url": "https://www.buzzfeed.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/BuzzFeed.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/BuzzFeed.png"
+        },
+        {
+          "name": "Giphy",
+          "theme_color": "#fe6666",
+          "url": "https://giphy.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Giphy.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Giphy.png"
+        },
+        {
+          "name": "Imgur",
+          "theme_color": "#3bd443",
+          "url": "https://imgur.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Imgur.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Imgur.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Business"
+      },
+      "apps": [
+        {
+          "name": "GlassDoor",
+          "theme_color": "#5faa04",
+          "url": "https://www.glassdoor.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/GlassDoor.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/GlassDoor.png"
+        },
+        {
+          "name": "I Love PDF",
+          "theme_color": "#ff302a",
+          "url": "https://www.ilovepdf.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/I%20Love%20PDF.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/I%20Love%20PDF.png"
+        },
+        {
+          "name": "Indeed",
+          "theme_color": "#1f63f3",
+          "url": "https://www.indeed.com/m/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Indeed.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Indeed.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Fitness"
+      },
+      "apps": [
+        {
+          "name": "Training Peaks",
+          "theme_color": "#005695",
+          "url": "https://www.trainingpeaks.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Training%20Peaks.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Training%20Peaks.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "USA"
+      },
+      "apps": [
+        {
+          "name": "CNN",
+          "theme_color": "#cc0000",
+          "url": "http://cnn.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CNN.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/CNN.png"
+        },
+        {
+          "name": "Fandango",
+          "theme_color": "#f17604",
+          "url": "https://mobile.fandango.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Fandango.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Fandango.png"
+        },
+        {
+          "name": "Capital One 360",
+          "theme_color": "#99d7ee",
+          "url": "https://home.capitalone360.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Capital%20One%20360.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Capital%20One%20360.png"
+        },
+        {
+          "name": "Chase",
+          "theme_color": "#0459a9",
+          "url": "https://m.chase.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Chase.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Chase.png"
+        },
+        {
+          "name": "Citibank",
+          "theme_color": "#004278",
+          "url": "https://online.citi.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Citibank.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Citibank.png"
+        },
+        {
+          "name": "CVS Pharmacy",
+          "theme_color": "#cc0001",
+          "url": "http://m.cvs.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CVS%20Pharmacy.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/CVS%20Pharmacy.png"
+        },
+        {
+          "name": "Libby",
+          "theme_color": "#631a35",
+          "url": "https://libbyapp.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Libby.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Libby.png"
+        },
+        {
+          "name": "NBC",
+          "theme_color": "#4372b8",
+          "url": "http://www.nbcnews.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NBC.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/NBC.png"
+        },
+        {
+          "name": "NFL",
+          "theme_color": "#b30013",
+          "url": "http://www.nfl.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NFL.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/NFL.png"
+        },
+        {
+          "name": "NHL",
+          "theme_color": "#000000",
+          "url": "https://www.nhl.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NHL.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/NHL.png"
+        },
+        {
+          "name": "NPR",
+          "theme_color": "#2851a0",
+          "url": "http://npr.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NPR.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/NPR.png"
+        },
+        {
+          "name": "Realtor",
+          "theme_color": "#db251c",
+          "url": "http://www.realtor.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Realtor.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Realtor.png"
+        },
+        {
+          "name": "Target",
+          "theme_color": "#cc0000",
+          "url": "https://www.target.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Target.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Target.png"
+        },
+        {
+          "name": "TV Guide",
+          "theme_color": "#9f150a",
+          "url": "https://tvguide.com/listings/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TV%20Guide.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/TV%20Guide.png"
+        },
+        {
+          "name": "Walgreens",
+          "theme_color": "#4c6971",
+          "url": "https://www.walgreens.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Walgreens.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Walgreens.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "India"
+      },
+      "apps": [
+        {
+          "name": "FlipKart",
+          "theme_color": "#027bd4",
+          "url": "https://flipkart.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/FlipKart.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/FlipKart.png"
+        },
+        {
+          "name": "Zomato",
+          "theme_color": "#cb202d",
+          "url": "https://zomato.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Zomato.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Zomato.png"
+        },
+        {
+          "name": "AirTel",
+          "theme_color": "#e81f1a",
+          "url": "https://airtel.in/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AirTel.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/AirTel.png"
+        },
+        {
+          "name": "Bhaskar",
+          "theme_color": "#f58220",
+          "url": "https://bhaskar.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Bhaskar.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Bhaskar.png"
+        },
+        {
+          "name": "CricBuzz",
+          "theme_color": "#bdceda",
+          "url": "https://cricbuzz.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CricBuzz.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/CricBuzz.png"
+        },
+        {
+          "name": "CricInfo",
+          "theme_color": "#00a9f4",
+          "url": "https://cricinfo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/CricInfo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/CricInfo.png"
+        },
+        {
+          "name": "HDFC Bank",
+          "theme_color": "#ee7873",
+          "url": "https://hdfcbank.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/HDFC%20Bank.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/HDFC%20Bank.png"
+        },
+        {
+          "name": "Hotstar",
+          "theme_color": "#6f6f00",
+          "url": "http://hotstar.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Hotstar.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Hotstar.png"
+        },
+        {
+          "name": "ICICI Bank",
+          "theme_color": "#9c2e23",
+          "url": "https://icicibank.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/ICICI%20Bank.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/ICICI%20Bank.png"
+        },
+        {
+          "name": "Incredible India",
+          "theme_color": "#bad9b7",
+          "url": "https://incredibleindia.org/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Incredible%20India.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Incredible%20India.png"
+        },
+        {
+          "name": "IRCTC",
+          "theme_color": "#3c9ccf",
+          "url": "https://irctc.co.in/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/IRCTC.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/IRCTC.png"
+        },
+        {
+          "name": "Jabong",
+          "theme_color": "#f7931d",
+          "url": "https://www.jabong.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Jabong.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Jabong.png"
+        },
+        {
+          "name": "Jio",
+          "theme_color": "#005aab",
+          "url": "https://jio.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Jio.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Jio.png"
+        },
+        {
+          "name": "JustDial",
+          "theme_color": "#bcd9ed",
+          "url": "https://justdial.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/JustDial.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/JustDial.png"
+        },
+        {
+          "name": "MakeMyTrip",
+          "theme_color": "#ce381e",
+          "url": "https://makemytrip.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/MakeMyTrip.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/MakeMyTrip.png"
+        },
+        {
+          "name": "MoneyControl",
+          "theme_color": "#54a732",
+          "url": "https://moneycontrol.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/MoneyControl.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/MoneyControl.png"
+        },
+        {
+          "name": "Myntra",
+          "theme_color": "#b92156",
+          "url": "https://myntra.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Myntra.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Myntra.png"
+        },
+        {
+          "name": "Naukri",
+          "theme_color": "#0c77c0",
+          "url": "https://naukri.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Naukri.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Naukri.png"
+        },
+        {
+          "name": "NDTV",
+          "theme_color": "#4d0001",
+          "url": "https://www.ndtv.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/NDTV.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/NDTV.png"
+        },
+        {
+          "name": "Online SBI",
+          "theme_color": "#2b74ba",
+          "url": "https://onlinesbi.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Online%20SBI.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Online%20SBI.png"
+        },
+        {
+          "name": "PayTM",
+          "theme_color": "#012b72",
+          "url": "https://paytm.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/PayTM.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/PayTM.png"
+        },
+        {
+          "name": "PepperFry",
+          "theme_color": "#ea983a",
+          "url": "https://pepperfry.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/PepperFry.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/PepperFry.png"
+        },
+        {
+          "name": "Quikr",
+          "theme_color": "#0faa13",
+          "url": "https://quikr.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Quikr.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Quikr.png"
+        },
+        {
+          "name": "ShopClues",
+          "theme_color": "#38b2bb",
+          "url": "https://shopclues.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/ShopClues.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/ShopClues.png"
+        },
+        {
+          "name": "SnapDeal",
+          "theme_color": "#ff2341",
+          "url": "https://snapdeal.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/SnapDeal.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/SnapDeal.png"
+        },
+        {
+          "name": "The Hindu",
+          "theme_color": "#0e5ba8",
+          "url": "http://www.thehindu.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/The%20Hindu.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/The%20Hindu.png"
+        },
+        {
+          "name": "Yatra",
+          "theme_color": "#ea2330",
+          "url": "https://yatra.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Yatra.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Yatra.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Brasil"
+      },
+      "apps": [
+        {
+          "name": "ESPN Brasil",
+          "theme_color": "#cc0000",
+          "url": "http://espn.uol.com.br/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/ESPN%20Brasil.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/ESPN%20Brasil.png"
+        },
+        {
+          "name": "Estadao",
+          "theme_color": "#6490b4",
+          "url": "http://www.estadao.com.br/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Estadao.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Estadao.png"
+        },
+        {
+          "name": "Folha de São Paulo",
+          "theme_color": "#4cc7f2",
+          "url": "http://m.folha.uol.com.br/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Folha%20de%20São%20Paulo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Folha%20de%20S%C3%A3o%20Paulo.png"
+        },
+        {
+          "name": "Globo",
+          "theme_color": "#439ef6",
+          "url": "http://www.globo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Globo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Globo.png"
+        },
+        {
+          "name": "Globo eSporte",
+          "theme_color": "#697353",
+          "url": "http://globoesporte.globo.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Globo%20eSporte.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Globo%20eSporte.png"
+        },
+        {
+          "name": "Outer Space",
+          "theme_color": "#000000",
+          "url": "https://www.outerspace.com.br/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Outer%20Space.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Outer%20Space.png"
+        },
+        {
+          "name": "Veja",
+          "theme_color": "#004f93",
+          "url": "http://veja.abril.com.br/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Veja.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Veja.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Deutschland"
+      },
+      "apps": [
+        {
+          "name": "Android Hilfe",
+          "theme_color": "#1d9788",
+          "url": "http://www.android-hilfe.de/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Android%20Hilfe.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Android%20Hilfe.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "France"
+      },
+      "apps": [
+        {
+          "name": "AlloCiné",
+          "theme_color": "#ffca00",
+          "url": "http://allocine.fr/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/AlloCine.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/AlloCine.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "China"
+      },
+      "apps": [
+        {
+          "name": "Baidu",
+          "theme_color": "#b3c9ff",
+          "url": "https://baidu.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Baidu.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Baidu.png"
+        },
+        {
+          "name": "TaoBao",
+          "theme_color": "#fe7100",
+          "url": "http://taobao.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/TaoBao.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/TaoBao.png"
+        },
+        {
+          "name": "Weibo",
+          "theme_color": "#fdf1bc",
+          "url": "https://m.weibo.cn/beta",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Weibo.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Weibo.png"
+        },
+        {
+          "name": "腾讯首页",
+          "theme_color": "#e81f1f",
+          "url": "http://qq.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/%E8%85%BE%E8%AE%AF%E9%A6%96%E9%A1%B5.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/%E8%85%BE%E8%AE%AF%E9%A6%96%E9%A1%B5.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Israel"
+      },
+      "apps": [
+        {
+          "name": "Ha'aretz",
+          "theme_color": "#008cd4",
+          "url": "https://haaretz.co.il/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Haaretz.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Haaretz.png"
+        },
+        {
+          "name": "Jerusalem Post",
+          "theme_color": "#c04d51",
+          "url": "http://m.jpost.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Jerusalem%20Post.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Jerusalem%20Post.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Canada"
+      },
+      "apps": [
+        {
+          "name": "RBC Canada",
+          "theme_color": "#263780",
+          "url": "https://www.rbcroyalbank.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/RBC%20Canada.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/RBC%20Canada.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Korea"
+      },
+      "apps": [
+        {
+          "name": "WebToons",
+          "theme_color": "#00d564",
+          "url": "https://m.webtoons.com/en/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/WebToons.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/WebToons.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "UK"
+      },
+      "apps": [
+        {
+          "name": "BBC",
+          "theme_color": "#bd160d",
+          "url": "https://bbc.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/BBC.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/BBC.png"
+        },
+        {
+          "name": "Hot UK Deals",
+          "theme_color": "#708c00",
+          "url": "https://www.hotukdeals.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Hot%20UK%20Deals.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Hot%20UK%20Deals.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Russia"
+      },
+      "apps": [
+        {
+          "name": "Yandex",
+          "theme_color": "#ff0000",
+          "url": "https://yandex.ru/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Yandex.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Yandex.png"
+        }
+      ]
+    },
+    {
+      "category": {
+        "name": "Taiwan"
+      },
+      "apps": [
+        {
+          "name": "DQ 地球圖輯隊",
+          "theme_color": "#245b90",
+          "url": "https://dq.yam.com/",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/DQ%20%E5%9C%B0%E7%90%83%E5%9C%96%E8%BC%AF%E9%9A%8A.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/DQ%20%E5%9C%B0%E7%90%83%E5%9C%96%E8%BC%AF%E9%9A%8A.png"
+        }
+      ]
+    }
+  ]
+}

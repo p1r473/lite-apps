@@ -3,6 +3,7 @@ package com.chimbori.liteapps
 import com.chimbori.FilePaths.ICONS_DIR_NAME
 import com.chimbori.FilePaths.ICON_EXTENSION
 import com.chimbori.FilePaths.LIBRARY_ICONS_DIR
+import com.chimbori.FilePaths.LIBRARY_ICONS_URL_PREFIX
 import com.chimbori.FilePaths.LIBRARY_JSON
 import com.chimbori.FilePaths.LITE_APPS_SRC_DIR
 import com.chimbori.FilePaths.LITE_APPS_TAGS_JSON
@@ -61,7 +62,7 @@ internal object LibraryGenerator {
           theme_color = manifest.theme_color ?: "#ffffff",
           url = manifest.start_url,
           manifestUrl = manifest.manifest_url,
-          imageUrl = "https://lite-apps.chimbori.com/library/${LIBRARY_ICON_SIZE}x${LIBRARY_ICON_SIZE}/${URLEncoder.encode(liteAppDirectory.name, "utf-8").replace("+", "%20")}$ICON_EXTENSION",
+          imageUrl = "${LIBRARY_ICONS_URL_PREFIX}${URLEncoder.encode(liteAppDirectory.name, "utf-8").replace("+", "%20")}$ICON_EXTENSION",
           priority = manifest.priority ?: DEFAULT_PRIORITY)
 
       manifest.tags?.forEach { tagName ->

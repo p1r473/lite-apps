@@ -34,8 +34,9 @@ object FilePaths {
 
   // Output Directories, under `/docs`.
   val LITE_APPS_OUTPUT_DIR = File(PROJECT_ROOT, "docs/lite-apps/v3/")
-  val LIBRARY_ICONS_DIR = File(PROJECT_ROOT, "docs/library/112x112/")
-  val LIBRARY_JSON = File(PROJECT_ROOT, "docs/library/lite-apps.json")
+  val LIBRARY_ICONS_DIR = File(PROJECT_ROOT, "docs/lite-apps/icons/")
+  val LIBRARY_ICONS_URL_PREFIX = "https://lite-apps.chimbori.com/lite-apps/icons/"
+  val LIBRARY_JSON = File(PROJECT_ROOT, "docs/lite-apps/lite-apps.json")
   val BLOCKLISTS_OUTPUT_DIR = File(PROJECT_ROOT, "docs/blocklists/v2/")
   val APP_MANIFEST_OUTPUT_DIR = File(PROJECT_ROOT, "docs/app/v2/")
 
