@@ -5,33 +5,19 @@ var libraryJson = {};
 
 var CURRENT_VERSION_CODE = 130000;
 
-function encodeLiteAppName(liteApp) {
-  return encodeURIComponent(liteApp.name).replace(/ /g, '%20');
-}
-
-function makeImageUrl(liteApp) {
-  return '{{ site.cdn_url }}/library/112x112/' + encodeLiteAppName(liteApp) + '.png';
-}
-
-function makeManifestUrl(liteApp) {
-  return 'https://hermit.chimbori.com/lite-apps/' + encodeLiteAppName(liteApp) + '.hermit'
-}
-
 function makeCreateUrl(liteApp) {
-  var createUrl = 'https://hermit.chimbori.com/create?url=' + liteApp.url;
-  if (liteApp.user_agent == 'desktop') {
-    createUrl += '&ua=d';
-  }
-  createUrl += '&name=' + encodeLiteAppName(liteApp);  // The /create page uses this; don’t change.
-  createUrl += '&icon=' + encodeURIComponent(makeImageUrl(liteApp));  // The /create page uses this; don’t change.
-  createUrl += '&app=' + encodeURIComponent(makeManifestUrl(liteApp));  // The app uses this; don’t change.
+  var createUrl = 'https://hermit.chimbori.com/create';
+  createUrl += '?url=' + encodeURIComponent(liteApp.url);
+  createUrl += '&name=' + encodeURIComponent(liteApp.name);  // The /create page uses this; don’t change.
+  createUrl += '&icon=' + encodeURIComponent(liteApp.image_url);  // The /create page uses this; don’t change.
+  createUrl += '&app=' + encodeURIComponent(liteApp.manifest_url);  // The app uses this; don’t change.
   return createUrl;
 }
 
 function LiteApp(props) {
   return <div className="lite-app-icon">
     <a href={ makeCreateUrl(props.liteApp) }>
-      <img className="lite-app-icon-image" src={ makeImageUrl(props.liteApp) }/>
+      <img className="lite-app-icon-image" src={ props.liteApp.image_url }/>
       <span className="lite-app-icon-name">{ props.liteApp.name }</span>
     </a>
   </div>
@@ -103,7 +89,6 @@ document.querySelector('#query').addEventListener('input', function(e) {
   applyQueryFilter(e.target.value.toLowerCase());
   updateDisplay(libraryJson);
 });
-
 
 function getQueryVariable(paramName) {
   var query = window.location.search.substring(1);

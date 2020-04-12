@@ -20,6 +20,7 @@ import okio.buffer
 import okio.source
 import java.awt.image.BufferedImage
 import java.io.File
+import java.net.URLEncoder
 
 /**
  * Generates the Library Data JSON file, which is used as the basis for generating the Hermit Library page at
@@ -59,6 +60,8 @@ internal object LibraryGenerator {
           name = manifest.name,
           theme_color = manifest.theme_color ?: "#ffffff",
           url = manifest.start_url,
+          manifestUrl = manifest.manifest_url,
+          imageUrl = "https://lite-apps.chimbori.com/library/${LIBRARY_ICON_SIZE}x${LIBRARY_ICON_SIZE}/${URLEncoder.encode(liteAppDirectory.name, "utf-8").replace("+", "%20")}$ICON_EXTENSION",
           priority = manifest.priority ?: DEFAULT_PRIORITY)
 
       manifest.tags?.forEach { tagName ->
