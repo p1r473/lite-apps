@@ -1,0 +1,434 @@
+
+// CSS Formatting.
+
+body,
+input,
+button {
+  color: $color-text-dark;
+  font-family: Inter UI,Helvetica,sans-serif;
+  font-weight: 400;
+  font-size: 12pt;
+  line-height: 1.8rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  overflow: hidden;
+  background: $color-body-background;
+  @media screen and (max-width: $break-medium) {
+    font-size: 12pt;
+    line-height: 1.6rem;
+  }
+}
+
+body {
+  min-width: 320px;
+}
+
+a {
+  color: $color-link;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid $color-link;
+}
+
+strong {
+  color: #000;
+}
+
+p {
+  margin: 8px 0 8px 0;
+  overflow: auto;  // Disable margin collapsing.
+}
+
+p, td, li {
+  color: $color-text-light;
+}
+
+li {
+  margin-left: 16px;
+}
+
+code {
+  padding: 4px;
+  font-weight: bold;
+  border-radius: $border-radius-standard;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat,sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 64px 0 32px 0;
+  font-size: 48px;
+  @media screen and (max-width: $break-medium) {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 4rem;
+  margin: 32px 0 16px 0;
+  @media screen and (max-width: $break-medium) {
+    font-size: 28px;
+    line-height: 2.4rem;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  margin: 24px 0 8px 0;
+  line-height: 2.5rem;
+
+  @media screen and (max-width: $break-medium) {
+    font-size: 20px;
+    line-height: 2rem;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  margin: 18px 0 0 0;
+  line-height: 2.0rem;
+
+  @media screen and (max-width: $break-medium) {
+    font-size: 16px;
+    line-height: 1.6rem;
+  }
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+blockquote {
+  background: white;
+  padding: 12px 24px;
+  border-radius: $border-radius-standard;
+  border: 1px solid #ddd;
+}
+
+input,
+input[type=text],
+input[type=email] {
+  width: 100%;
+  background: #ffff;
+  border: 0;
+  padding: $padding-quarter;
+  outline: none;
+  border-bottom: 1px solid $color-primary;
+}
+
+.background-dark {
+  a:link,
+  a:visited {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+  }
+}
+
+.flex-tabs {
+  @media screen and (min-width: $break-medium) {
+    display: flex;
+  }
+
+  margin-bottom: 16px;
+  width: 100%;
+
+  .item {
+    flex: 1;
+    padding-bottom: 32px;
+  }
+
+  &.centered {
+    .item {
+      text-align: center;
+    }
+  }
+
+  &.no-padding {
+    .item {
+      padding: 0;
+    }
+  }
+}
+
+.padded {
+  padding: 16px;
+}
+
+.two-column {
+  @media screen and (min-width: $break-medium) {
+    column-width: ($width-limit / 2) - ($padding-standard * 2);
+    column-gap: $padding-standard;
+  }
+}
+
+.centered {
+  text-align: center;
+}
+
+.swash {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 32px;
+}
+
+.width-limit {
+  max-width: $width-limit;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.content-background {
+  background: #fff;
+  box-shadow: 0 0 24px rgba(0,0,0,0.5);
+  padding-bottom: 36px;  // Ensure that footer is significantly below main content.
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 16px 64px;
+  @media screen and (max-width: $break-medium) {
+    padding: 16px;
+  }
+
+  &.transparent {
+    background: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  &.homepage {
+    h2,
+    .tagline {
+      text-align: center;
+    }
+  }
+
+  &.header {
+    padding: 0 64px;
+    font-family: Montserrat,sans-serif;
+
+    @media screen and (max-width: $break-medium) {
+      padding: 0;
+    }
+
+    a:link,
+    a:visited {
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+      border-bottom: 0; // Remove the link highlight.
+    }
+
+    a.logo:link,
+    a.logo:visited {
+      color: white;
+      text-decoration: none;
+      border: none;
+
+      font-size: 28px;
+      @media screen and (max-width: $break-medium) {
+        font-size: 16px;
+      }
+
+      img {
+        vertical-align: middle;
+        width: 64px;
+        height: 64px;
+        margin-right: 8px;
+        @media screen and (max-width: $break-medium) {
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
+
+    a.download-button {
+      float: right;
+      border: 0;
+    }
+  }
+}
+
+.tagline {
+  font-size: 22px;
+  line-height: 2rem;
+  padding: 16px 0;
+}
+
+.carousel {
+  overflow: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  img {
+    height: 600px;
+    margin: 0 $padding-half;
+  }
+}
+
+nav {
+  text-align: center;
+  font-family: Montserrat,sans-serif;
+  font-size: 18px;
+  li {
+    display: inline-block;
+    padding: 4px 8px;
+    margin-left: 16px;
+    @media screen and (max-width: $break-medium) {
+      padding: 2px 8px;
+      margin-left: 4px;
+    }
+  }
+}
+
+footer {
+  background: $color-header-footer;
+  color: white;
+  margin: 0;
+  padding: 24px 128px;
+  @media screen and (max-width: $break-medium) {
+    padding: 24px 32px;
+  }
+
+  a,
+  a:link,
+  a:visited {
+    color: #fff;
+    border: none;
+  }
+
+  nav {
+    margin-bottom: 32px;
+  }
+}
+
+article {
+  background: $color-body-background;
+  overflow: hidden;
+  padding: 16px 48px;
+  @media screen and (max-width: $break-medium) {
+    padding: 16px 24px;
+    video {
+      padding: 32px 0;  // <video> tags should be full bleed.
+    }
+  }
+}
+
+.social-button {
+  margin: 0 12px;
+  @media screen and (max-width: $break-medium) {
+    margin: 0 6px;
+  }
+  display: inline-block;
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+  svg {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+hr {
+  margin: 64px 0;
+  color: #eee;
+  height: 1px;
+}
+
+.create-ui {
+  width: 192px;
+  background: #fff;
+  display: inline-block;
+  padding: $padding-standard;
+  border-radius: 8px;
+  border-bottom: 0; // Remove the link highlight.
+}
+
+.review-attribution {
+  text-align: right;
+}
+
+.background-1 {
+  background: linear-gradient(to bottom,#082e5f,#5a064e);
+  color: #fff;
+  * {
+    color: #fff;
+  }
+}
+
+.background-2 {
+  background: linear-gradient(to bottom,#03348f,#006e45);
+  color: #fff;
+  * {
+    color: #fff;
+  }
+}
+
+.background-3 {
+  background: linear-gradient(to bottom,#983055,#2e2a85);
+  color: #fff;
+  * {
+    color: #fff;
+  }
+}
+
+.padding-standard {
+  padding: $padding-standard;
+}
+
+.press-block {
+  border-radius: $border-radius-standard;
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: $padding-standard 0;
+  break-inside: avoid-column;
+  text-decoration: none;
+
+  a:link,
+  a:hover,
+  a:visited {
+    text-decoration: none!important;
+  }
+}
+
+.press-block-content {
+  padding: $padding-standard $padding-standard * 2;
+}
+
+a.press-title {
+  font-size: 12pt;
+  font-weight: bold;
+  text-decoration: none;
+  color: $color-text-dark;
+  line-height: 1.2rem;
+}
+
+.clear-floats {
+  clear: both;
+}
+
+.highlighted-box {
+  border-radius: $padding-half;
+  padding: $padding-double;
+  background: $color-highlighted-background;
+  color: $color-text-dark;
+}
