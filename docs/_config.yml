@@ -1,26 +1,20 @@
 title:    "Lite App Manifests"
-tagline:  "Lite Apps for use with Hermit: https://hermit.chimbori.com/"
+tagline:  "Lite Apps for Hermit: https://hermit.chimbori.com/"
 url:      "https://lite-apps.chimbori.com"
 cdn_url:  "https://lite-apps.chimbori.com"
 exclude:  [
             # Don’t add an exclusion for *.jsx, the JSX is compiled to JS inside the _site directory.
-            "*.bat",
-            "*.gradle",
-            "*.properties",
             "*.sh",
-            "blocklists/src",
+            "babel.config.js",
+            "CLA.md",
+            "CNAME",
+            "CONTRIBUTING.md",
             "Gemfile",
             "Gemfile.lock",
-            "lite-apps/src",
-            "gradle.properties",
-            "gradle/",
-            "gradlew",
-            "local.properties",
             "node_modules/",
+            "package-lock.json",
             "package.json",
-            "schema/",
-            "settings.gradle",
-            "tools/"
+            "README.md"
           ]
 minify_html: true
 sass:
