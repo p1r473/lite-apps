@@ -8,16 +8,16 @@
   <meta name="theme-color" content="#fe7a4d">
   <link rel="canonical" href="{{ site.url }}{{ page.url | remove:'/index.html' }}">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:600">
-  <link rel="apple-touch-icon-precomposed" sizes="192x192" href="{{ site.cdn_url }}/media/ic_apps-192.png">
-
+  <link rel="apple-touch-icon-precomposed" sizes="192x192" href="{{ site.cdn_url }}/favicon.png">
   <link rel="shortcut icon" type="image/x-icon" href="{{ site.cdn_url }}/favicon.ico">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" property="og:url" content="{{ site.url }}{{ page.url | remove:'/index.html' }}">
+  <meta name="twitter:url" property="og:url" content="{{ site.url }}{{ page.url | remove:'/index.html' | remove:'.html' }}">
   <meta name="twitter:title" property="og:title" content="{{ page.title }}">
   <meta name="twitter:description" property="og:description" content="{{ page.description }}">
-  <meta name="twitter:image" property="og:image" content="{{ site.cdn_url }}/media/cover-photo.png">
+  <meta name="twitter:image" property="og:image" content="{{ site.cdn_url }}{% if page.image_url %}{{ page.image_url }}{% else %}/favicon.png{% endif %}">
   <meta name="twitter:label1" value="Google Play" />
   <meta name="twitter:data1" value="★★★★★ 4.5+" />
   <meta name="twitter:label2" value="Downloads" />
   <meta name="twitter:data2" value="220,000+" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><!-- TODO: Move to footer, but just before inline scripts execute. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- TODO: Move to footer, but just before inline scripts execute. -->
