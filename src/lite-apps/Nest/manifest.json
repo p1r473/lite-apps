@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Nest",
+  "start_url": "https://home.nest.com/",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Nest.hermit",
+  "icon": "favicon.png",
+  "theme_color": "#55aaaa",
+  "secondary_color": "#4c9999",
+  "priority": 10,
+  "tags": [
+    "Home and Lifestyle"
+  ]
+}
