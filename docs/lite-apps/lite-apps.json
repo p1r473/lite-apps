@@ -1154,6 +1154,13 @@
           "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Android%20Messages.png"
         },
         {
+          "name": "DeepL Translator",
+          "theme_color": "#496d6d",
+          "url": "https://www.deepl.com/translator",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/DeepL%20Translator.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/DeepL%20Translator.png"
+        },
+        {
           "name": "Skype",
           "theme_color": "#019ed8",
           "url": "https://web.skype.com/",
@@ -1469,6 +1476,13 @@
           "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Clipperz.png"
         },
         {
+          "name": "DeepL Translator",
+          "theme_color": "#496d6d",
+          "url": "https://www.deepl.com/translator",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/DeepL%20Translator.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/DeepL%20Translator.png"
+        },
+        {
           "name": "Flipboard",
           "theme_color": "#e12828",
           "url": "https://flipboard.com/",
@@ -1586,6 +1600,13 @@
           "url": "https://www.coursera.org/",
           "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/Coursera.hermit",
           "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/Coursera.png"
+        },
+        {
+          "name": "DeepL Translator",
+          "theme_color": "#496d6d",
+          "url": "https://www.deepl.com/translator",
+          "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/DeepL%20Translator.hermit",
+          "image_url": "https://lite-apps.chimbori.com/lite-apps/icons/DeepL%20Translator.png"
         },
         {
           "name": "Dictionary.com",

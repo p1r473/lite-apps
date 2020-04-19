@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "DeepL Translator",
+  "start_url": "https://www.deepl.com/translator",
+  "manifest_url": "https://lite-apps.chimbori.com/lite-apps/v3/DeepL%20Translator.hermit",
+  "icon": "favicon.png",
+  "theme_color": "#496d6d",
+  "secondary_color": "#416262",
+  "priority": 10,
+  "tags": [
+    "Tools & Productivity",
+    "Communication",
+    "Education"
+  ],
+  "bookmarks": [
+    {
+      "name": "Blog",
+      "url": "https://www.deepl.com/blog.html"
+    },
+    {
+      "name": "Linguee",
+      "url": "https://www.linguee.com"
+    },
+    {
+      "name": "Translator",
+      "url": "https://www.deepl.com/translator"
+    }
+  ]
+}
